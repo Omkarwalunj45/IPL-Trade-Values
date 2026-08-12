@@ -148,10 +148,7 @@ elif TAB == "Methodology":
           {article.TITLE}</div>
           <div style="border-top:1px solid #E0DACA;border-bottom:1px solid #E0DACA;padding:12px 0">
           <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#16281C;
-            letter-spacing:.04em;text-transform:uppercase">{article.BY}</div>
-          <div style="font-family:'Source Serif 4',Georgia,serif;font-size:12.5px;color:#6B7A6F;
-            margin-top:5px;line-height:1.55">{article.CRED}</div>
-          <div style="font-size:11.5px;color:#8A9490;margin-top:7px">{article.DATE}</div></div>''',
+            letter-spacing:.04em;text-transform:uppercase">{article.BY}</div>''',
           unsafe_allow_html=True)
         st.markdown('<div class="essay">', unsafe_allow_html=True)
         for b in article.B:
