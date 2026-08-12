@@ -5,6 +5,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC, DATA = os.path.join(HERE, "src"), os.path.join(HERE, "Datasets")
 sys.path.insert(0, SRC)
 
+
 st.set_page_config(page_title="IPL Trade Values", layout="wide", initial_sidebar_state="collapsed")
 from shell import hero, splash, boot_splash
 from render import featured, trade_pair, CSS as CARDCSS
