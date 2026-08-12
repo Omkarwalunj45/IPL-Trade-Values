@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 TITLE = "What is an IPL trade actually worth?"
 BY    = "Omkar Walunj"
-CRED  = ("Biotechnology and Artificial Intelligence at IIT Kharagpur | Cricket Analytics and Strategy "
-         "Researcher | Presented at the ASA Sports Analytics Conference 2026 | Winner of Dream11 "
-         "Gameathon 2.0")
-DATE  = "August 9, 2026"
-
 B = [
 ('t', """We're pretty good at measuring performance these days. Expected runs, player impact models, win probability added. Plenty of numbers that tell us how much a player contributes on the field. We also know what teams paid for them at the auction. What we still don't have is a proper way to price the transaction itself.
 
