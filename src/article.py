@@ -7,7 +7,7 @@ B = [
 ('h', 'How IPL Trade Values Works?'),
 ('t', 'Example, If Mumbai Indians send a player to Chennai Super Kings, what has Chennai really received?'),
 ('t', 'To value a trade, we need to answer four questions:'),
-('t', '**What is the player worth?** **What is he worth to this particular team?** **What can the team realistically recover if he leaves?** **And is making the trade better than keeping him?**'),
+('t', '**What is the player worth?**   **What is he worth to this particular team?**   **What can the team realistically recover if he leaves?**   **And is making the trade better than keeping him?**'),
 ('t', 'IPL Trade Values answers these questions through five connected components:'),
 ('h', 'Player Valuation → Team Fit → Replacement & Auction → Trade Economics → Counterfactual Simulation'),
 ('t', "The framework starts by putting every player on a common scale using **Projected WAR (pWAR)**, then asks how that value changes when the player is placed inside a specific squad. It then models the auction pool and competition for replacements, thus calculates the possible recoverability from the auction, prices the financial side of the transaction, and finally compares the team in two worlds: **one where the trade happens and one where it doesn't.**"),
@@ -17,7 +17,7 @@ B = [
 ('t', 'Team Fit: A player is never worth the same to every side. A team is basically twelve slots (once you factor in the impact player) and a set of constraints.'),
 ('t', 'Replacement: When you trade a player away you go into an auction with a limited purse, competing against nine other teams for a pool of players that nobody knows during the time of trades.'),
 ('t', 'Most of the arguments you see online are reasonable enough, but they almost always stop at the first problem.'),
-('H', '1. What is a player worth?'),
+('H', '(I) What is a player worth?'),
 ('t', 'The first step is putting players into the same unit.'),
 ('t', "I use **Runs Above Replacement**, converted into wins, to measure a player's contribution. The model starts at the ball level and estimates how much value was created relative to what would normally be expected from that match state."),
 ('h', 'Run Expectancy'),
@@ -109,7 +109,7 @@ B = [
 ('t', 'Pant to Delhi, Kuldeep to Lucknow.'),
 ('i', 'pant_kuldeep.png', 'The Rishabh Pant–Kuldeep Yadav trade evaluated through the framework.'),
 ('t', "Lucknow gained nine points of playoff probability by giving up their captain. Pant on ₹27 crore was costing them more than he was returning, and shedding that contract freed up a squad they could actually build in the auction. Delhi barely moved either way meaning their playoff probability won't change much by this trade."),
-('t', """All I care is that if I can quantify what is being given up and show what has to be true for a trade to work, then I think I have got closer to answering the question I started with:
+('t', """All I care is that if I can quantify what is being given up and show what has to be true for a trade to work, then I think I have got closer to answering the question I started with:"""),
 
-**What is an IPL trade actually worth?**"""),
+('H', 'What is an IPL trade actually worth?'),
 ]
