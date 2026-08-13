@@ -9,7 +9,7 @@ B = [
 ('t',"What is the player worth?"), 
 ('t',"What is he worth to this particular team?"),
 ('t',"What can the team realistically recover if he leaves?"),
-('t',"And is making the trade better than keeping him?**"),
+('t',"And is making the trade better than keeping him?"),
 ('t', "IPL Trade Values answers these questions through five connected components: **Player Valuation → Team Fit → Replacement & Auction → Trade Economics → Counterfactual Simulation**. The framework starts by putting every player on a common scale using **Projected WAR (pWAR)**, then asks how that value changes when the player is placed inside a specific squad. It then models the auction pool and competition for replacements, thus calculates the possible recoverability from the auction, prices the financial side of the transaction, and finally compares the team in two worlds: **one where the trade happens and one where it doesn't.**"),
 ('h', 'What the model has to solve?'),
 ('t', "There are four problems to solve before a trade can be priced."), 
