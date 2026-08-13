@@ -5,7 +5,10 @@ BY    = "Omkar Walunj"
 B = [
 ('t', "An IPL trade can change the trajectory of multiple teams with a single decision. Yet we still don’t have a proper way to price the trade itself."),
 ('h', 'How IPL Trade Values Works?'),
-('t', "Example, If Mumbai Indians send a player to Chennai Super Kings, what has Chennai really received? To value a trade, we need to answer four questions: **What is the player worth? What is he worth to this particular team? What can the team realistically recover if he leaves? And is making the trade better than keeping him?**"),
+('t', "Example, If Mumbai Indians send a player to Chennai Super Kings, what has Chennai really received? To value a trade, we need to answer four questions:"),
+('t',"**What is the player worth? What is he worth to this particular team?"),
+('t',"What can the team realistically recover if he leaves?"),
+('t',"And is making the trade better than keeping him?**"),
 ('t', "IPL Trade Values answers these questions through five connected components: **Player Valuation → Team Fit → Replacement & Auction → Trade Economics → Counterfactual Simulation**. The framework starts by putting every player on a common scale using **Projected WAR (pWAR)**, then asks how that value changes when the player is placed inside a specific squad. It then models the auction pool and competition for replacements, thus calculates the possible recoverability from the auction, prices the financial side of the transaction, and finally compares the team in two worlds: **one where the trade happens and one where it doesn't.**"),
 ('h', 'What the model has to solve?'),
 ('t', "There are four problems to solve before a trade can be priced."), 
