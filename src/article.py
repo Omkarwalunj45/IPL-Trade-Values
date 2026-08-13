@@ -50,7 +50,7 @@ B = [
 ('t', "The first bracket is the guaranteed 2027 season. Market-fair price is:"),
 ('t', 'price = **−₹1.24cr + ₹1.20cr × pWAR + ₹2.21cr × scarcity + ₹0.27cr × flexibility + ₹4.42cr × capped − ₹1.37cr × overseas**'),
 ('t', "The second term is 2028 onward, and obviously it only exists if you retain him. So, it's only worth something when his projected value clears the slab price:"),
-('t', 'Option Value=t∑​max(0,Value\\_t​−Slab Price)×Discount\\_t​'),
+('t', 'Option Value=t∑\u200bmax(0,Value\\_t\u200b−Slab Price)×Discount\\_t\u200b'),
 ('t', "where value\\_t is his value in the year 't' and slab price is at least ₹11 crore for a capped player and ₹4 crore for an uncapped one."),
 ('h', 'Opportunity Cost'),
 ('t', "If I spend ₹10 crore acquiring one player, that ₹10 crore isn't available for the other vacancies in my squad. So the financial calculation feeds back into the auction model through **opportunity cost**. So the trade is evaluated using **Player value + team fit + replacement value + financial surplus − opportunity cost**, rather than simply comparing the two players involved."),
