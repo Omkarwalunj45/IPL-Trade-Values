@@ -11,7 +11,7 @@ To judge a trade properly you need four things: What the player is worth, What h
 I spent the last two weeks building a model that tries to tackle them. It ended up breaking into five segments: valuing the player, understanding the team's needs, finding the replacement, pricing the deal, and then checking whether the trade actually leaves the team better off.
 
 A quick note on that last part. The example trades are just examples. If you jump straight to the end to see whether the model likes or hates a particular swap, you'll get a yes or no, but you'll miss the useful bit. The useful bit is that a trade is really four separate problems, and three of them have almost nothing to do with how good the players are."""),
-
+('i', 'full_structure.png', ''),
 ('h', "What the model has to solve?"),
 ('t', """**Valuation:** What's a player's intrinsic worth, isolated from the team context.
 
@@ -47,9 +47,9 @@ So this means that if you improve your team by six runs a match, all season, you
 
 The final step is a rescaling that sets a league average regular at 1.00. On that scale, the top of the league sits between two and three. A regular player sits near one. Surprisingly plenty of contracted players are below half. Thus, we get the WAR for each player.
 
-Using the player's WAR I can potentially calculate: What should I expect this player to contribute if I put him on the field next season? This is the Projected WAR (pWAR)
-
-But it still wasn't enough to evaluate a trade. Because the way MI sees a player vs what CSK sees in that same player can differ. What we just found is the isolated worth of the player, now let's bring the element of the team to this."""),
+Using the player's WAR I can potentially calculate: What should I expect this player to contribute if I put him on the field next season? This is the Projected WAR (pWAR),"""),
+('i', 'war_construct.png', ''),
+('t',"""But it still wasn't enough to evaluate a trade. Because the way MI sees a player vs what CSK sees in that same player can differ. What we just found is the isolated worth of the player, now let's bring the element of the team to this."""),
 
 ('H', "(II) What is he worth to this team?"),
 ('t', """Let's take Dewald Brevis' case. His WAR comes out at 1.01, so slightly above a league average regular. Now if we ask what he'd be worth to Mumbai Indians? Answer is almost nothing, and it has nothing to do with how good he is. Mumbai already have Rickelton and Will Jacks, both of whom are ahead of him. Bringing Brevis in results in an option for a position that's already covered. What I mean is he wouldn't get picked (Also, Sherfane is already there with the team)"""),
@@ -66,9 +66,9 @@ Thus, I built a team-selection optimiser. For every player, I mapped the role he
 
 This sort of explains why someone like Hardik Pandya is particularly interesting. His value isn't simply his batting WAR plus his bowling WAR. The fact that he can occupy a number of batting positions and provide overs changes the number of ways a team can construct its XII.
 
-So a hole is not only just a player leaving, but also a slot where the best replacement player you have left is below what that position should deliver (calculated from the league average requirement for each role).
-
-So now I knew what a player is worth, and what a hole is worth. After this, the intuitive next step was to find: What the team actually loses when he leaves and how likely will the team recover that loss in the mini auction."""),
+So a hole is not only just a player leaving, but also a slot where the best replacement player you have left is below what that position should deliver (calculated from the league average requirement for each role)."""),
+('i', 'player_worth.png', ''),
+('t',"""So now I knew what a player is worth, and what a hole is worth. After this, the intuitive next step was to find: What the team actually loses when he leaves and how likely will the team recover that loss in the mini auction."""),
 
 ('H', "(III) Can you just buy a replacement?"),
 ('t', """Turns out, it's a bit complicated. The trade window shuts before the release deadline, which shuts before the auction, so at the moment you're deciding, you don't know which players will even be available.
