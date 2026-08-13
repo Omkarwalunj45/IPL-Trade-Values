@@ -70,5 +70,3 @@ B = [
 ('t', """All I care is that if I can quantify what is being given up and show what has to be true for a trade to work, then I think I have got closer to answering the question I started with:"""),
 ('H', 'What is an IPL trade actually worth?'),
 ]
-
-]
