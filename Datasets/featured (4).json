@@ -1,0 +1,372 @@
+{
+ "trades": [
+  {
+   "year": 2026,
+   "label": "Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",
+   "note": "The only completed deal of the 2026 window.",
+   "A": "DC",
+   "B": "LSG",
+   "players": [
+    {
+     "player": "Rishabh Pant",
+     "to": "DC",
+     "pWAR": 1.06,
+     "salary": 15.0,
+     "market": 8.89,
+     "surplus": -6.11,
+     "role": "WK-Batter"
+    },
+    {
+     "player": "Kuldeep Yadav",
+     "to": "LSG",
+     "pWAR": 1.19,
+     "salary": 13.5,
+     "market": 6.92,
+     "surplus": -6.58,
+     "role": "Bowler"
+    }
+   ],
+   "rows": [
+    {
+     "team": "DC",
+     "xii_no": 18.72,
+     "xii_yes": 18.54,
+     "top4_no": 24.6,
+     "top4_yes": 24.4,
+     "title_no": 4.3,
+     "title_yes": 4.6,
+     "purse_no": 21.15,
+     "purse_yes": 19.4,
+     "assets": 0.22,
+     "util": -0.02
+    },
+    {
+     "team": "LSG",
+     "xii_no": 20.63,
+     "xii_yes": 21.28,
+     "top4_no": 29.9,
+     "top4_yes": 31.1,
+     "title_no": 5.8,
+     "title_yes": 6.1,
+     "purse_no": 45.25,
+     "purse_yes": 31.75,
+     "assets": 11.53,
+     "util": 1.94
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "label": "Sanju Samson to Chennai, Jadeja and Curran to Rajasthan",
+   "note": "The largest swap of the window.",
+   "A": "CSK",
+   "B": "RR",
+   "players": [
+    {
+     "player": "Sanju Samson",
+     "to": "CSK",
+     "pWAR": 3.99,
+     "salary": 18.0,
+     "market": 12.52,
+     "surplus": -5.48,
+     "role": "WK-Batter"
+    },
+    {
+     "player": "Ravindra Jadeja",
+     "to": "RR",
+     "pWAR": 2.14,
+     "salary": 14.0,
+     "market": 7.77,
+     "surplus": -6.23,
+     "role": "Allrounder"
+    },
+    {
+     "player": "Sam Curran",
+     "to": "RR",
+     "pWAR": 2.58,
+     "salary": 2.4,
+     "market": 7.48,
+     "surplus": 5.08,
+     "role": "Allrounder"
+    }
+   ],
+   "rows": [
+    {
+     "team": "CSK",
+     "xii_no": 19.96,
+     "xii_yes": 22.56,
+     "top4_no": 28.4,
+     "top4_yes": 35.3,
+     "title_no": 5.1,
+     "title_yes": 6.9,
+     "purse_no": 28.0,
+     "purse_yes": 26.4,
+     "assets": -4.33,
+     "util": 3.06
+    },
+    {
+     "team": "RR",
+     "xii_no": 26.92,
+     "xii_yes": 25.54,
+     "top4_no": 48.6,
+     "top4_yes": 44.3,
+     "title_no": 13.5,
+     "title_yes": 10.5,
+     "purse_no": 37.25,
+     "purse_yes": 38.85,
+     "assets": 4.33,
+     "util": -2.45
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "label": "Mohammed Shami to Lucknow",
+   "note": "A cash deal.",
+   "A": "LSG",
+   "B": "SRH",
+   "players": [
+    {
+     "player": "Mohammed Shami",
+     "to": "LSG",
+     "pWAR": 1.73,
+     "salary": 10.0,
+     "market": 7.63,
+     "surplus": -2.37,
+     "role": "Bowler"
+    }
+   ],
+   "rows": [
+    {
+     "team": "LSG",
+     "xii_no": 19.0,
+     "xii_yes": 20.63,
+     "top4_no": 25.6,
+     "top4_yes": 29.9,
+     "title_no": 4.5,
+     "title_yes": 5.8,
+     "purse_no": 55.25,
+     "purse_yes": 45.25,
+     "assets": -2.37,
+     "util": 2.06
+    },
+    {
+     "team": "SRH",
+     "xii_no": 27.34,
+     "xii_yes": 26.16,
+     "top4_no": 49.6,
+     "top4_yes": 45.5,
+     "title_no": 14.2,
+     "title_yes": 13.5,
+     "purse_no": 23.45,
+     "purse_yes": 33.45,
+     "assets": 2.37,
+     "util": -1.32
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "label": "Sherfane Rutherford to Mumbai",
+   "note": "Cash.",
+   "A": "MI",
+   "B": "GT",
+   "players": [
+    {
+     "player": "Sherfane Rutherford",
+     "to": "MI",
+     "pWAR": 1.48,
+     "salary": 2.6,
+     "market": 5.4,
+     "surplus": 2.8,
+     "role": "Allrounder"
+    }
+   ],
+   "rows": [
+    {
+     "team": "MI",
+     "xii_no": 24.44,
+     "xii_yes": 24.56,
+     "top4_no": 40.3,
+     "top4_yes": 41.0,
+     "title_no": 9.9,
+     "title_yes": 10.9,
+     "purse_no": 51.2,
+     "purse_yes": 48.6,
+     "assets": 2.8,
+     "util": 0.91
+    },
+    {
+     "team": "GT",
+     "xii_no": 30.0,
+     "xii_yes": 30.01,
+     "top4_no": 57.6,
+     "top4_yes": 56.7,
+     "title_no": 18.8,
+     "title_yes": 17.7,
+     "purse_no": 13.15,
+     "purse_yes": 15.75,
+     "assets": -2.8,
+     "util": -0.83
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "label": "Nitish Rana to Delhi, Donovan Ferreira to Rajasthan",
+   "note": "A straight swap.",
+   "A": "DC",
+   "B": "RR",
+   "players": [
+    {
+     "player": "Nitish Rana",
+     "to": "DC",
+     "pWAR": 0.26,
+     "salary": 4.2,
+     "market": 5.5,
+     "surplus": 1.3,
+     "role": "Batter"
+    },
+    {
+     "player": "Donovan Ferreira",
+     "to": "RR",
+     "pWAR": 1.5,
+     "salary": 1.0,
+     "market": 5.51,
+     "surplus": 4.51,
+     "role": "Allrounder"
+    }
+   ],
+   "rows": [
+    {
+     "team": "DC",
+     "xii_no": 18.86,
+     "xii_yes": 18.72,
+     "top4_no": 25.4,
+     "top4_yes": 24.6,
+     "title_no": 4.8,
+     "title_yes": 4.3,
+     "purse_no": 24.35,
+     "purse_yes": 21.15,
+     "assets": -3.21,
+     "util": -0.72
+    },
+    {
+     "team": "RR",
+     "xii_no": 25.0,
+     "xii_yes": 25.54,
+     "top4_no": 42.8,
+     "top4_yes": 44.3,
+     "title_no": 10.5,
+     "title_yes": 10.5,
+     "purse_no": 35.65,
+     "purse_yes": 38.85,
+     "assets": 3.21,
+     "util": 0.88
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "label": "Mayank Markande to Mumbai",
+   "note": "Cash.",
+   "A": "MI",
+   "B": "KKR",
+   "players": [
+    {
+     "player": "Mayank Markande",
+     "to": "MI",
+     "pWAR": -0.68,
+     "salary": 0.3,
+     "market": 3.79,
+     "surplus": 3.49,
+     "role": "Bowler"
+    }
+   ],
+   "rows": [
+    {
+     "team": "MI",
+     "xii_no": 24.56,
+     "xii_yes": 24.56,
+     "top4_no": 40.8,
+     "top4_yes": 41.0,
+     "title_no": 10.1,
+     "title_yes": 10.9,
+     "purse_no": 48.9,
+     "purse_yes": 48.6,
+     "assets": 3.49,
+     "util": 0.73
+    },
+    {
+     "team": "KKR",
+     "xii_no": 20.61,
+     "xii_yes": 20.61,
+     "top4_no": 29.7,
+     "top4_yes": 29.7,
+     "title_no": 5.7,
+     "title_yes": 6.1,
+     "purse_no": 24.35,
+     "purse_yes": 24.65,
+     "assets": -3.49,
+     "util": -0.15
+    }
+   ]
+  },
+  {
+   "year": 2025,
+   "label": "Shardul Thakur to Mumbai, Arjun Tendulkar to Lucknow",
+   "note": "The smallest deal.",
+   "A": "MI",
+   "B": "LSG",
+   "players": [
+    {
+     "player": "Shardul Thakur",
+     "to": "MI",
+     "pWAR": -0.64,
+     "salary": 2.0,
+     "market": 4.47,
+     "surplus": 2.47,
+     "role": "Allrounder"
+    },
+    {
+     "player": "Arjun Tendulkar",
+     "to": "LSG",
+     "pWAR": 0.0,
+     "salary": 0.3,
+     "market": -0.34,
+     "surplus": -0.64,
+     "role": "Allrounder"
+    }
+   ],
+   "rows": [
+    {
+     "team": "MI",
+     "xii_no": 24.56,
+     "xii_yes": 24.56,
+     "top4_no": 40.8,
+     "top4_yes": 41.0,
+     "title_no": 10.1,
+     "title_yes": 10.9,
+     "purse_no": 50.3,
+     "purse_yes": 48.6,
+     "assets": 3.11,
+     "util": 0.69
+    },
+    {
+     "team": "LSG",
+     "xii_no": 20.63,
+     "xii_yes": 20.63,
+     "top4_no": 29.5,
+     "top4_yes": 29.9,
+     "title_no": 5.6,
+     "title_yes": 5.8,
+     "purse_no": 43.55,
+     "purse_yes": 45.25,
+     "assets": -3.11,
+     "util": -0.19
+    }
+   ]
+  }
+ ],
+ "k": 0.1171
+}
