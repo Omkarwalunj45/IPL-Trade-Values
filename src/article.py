@@ -75,7 +75,7 @@ B = [
 ('h', 'The trade that already happened'),
 ('t', 'Pant to Delhi, Kuldeep to Lucknow.'),
 ('i', 'pant_kuldeep.png', 'The Rishabh Pant–Kuldeep Yadav trade evaluated through the framework.'),
-('t', "Lucknow gained nine points of playoff probability by giving up their captain. Pant on ₹27 crore was costing them more than he was returning, and shedding that contract freed up a squad they could actually build in the auction. Delhi barely moved either way meaning their playoff probability won't change much by this trade."),
+('t', "Lucknow gained in their playoff probability by giving up their captain. Pant on ₹27 crore was costing them more than he was returning, and shedding that contract freed up a squad they could actually build in the auction. Delhi barely moved either way meaning their playoff probability won't change much by this trade."),
 ('t', """All I care is that if I can quantify what is being given up and show what has to be true for a trade to work, then I think I have got closer to answering the question I started with:"""),
 ('H', 'What is an IPL trade actually worth?'),
 ]
