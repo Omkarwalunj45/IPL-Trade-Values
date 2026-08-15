@@ -11,7 +11,10 @@ _sys.path.insert(0,_os.path.dirname(_os.path.abspath(__file__)))
 """
 import os as _os, numpy as np, pandas as pd, warnings; warnings.filterwarnings('ignore')
 
-ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy'}
+ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy',
+       'Philip Salt':'Phil Salt','Philip Dean Salt':'Phil Salt',
+       'Rasikh Dar Salam':'Rasikh Salam','Rasikh Dar':'Rasikh Salam',
+       'Rasikh Salam Dar':'Rasikh Salam'}
 RPW=82.5; SW={2024:1.0,2025:2.0,2026:3.0}
 
 def _prep(df, comp):
