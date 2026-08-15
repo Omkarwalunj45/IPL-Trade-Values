@@ -68,6 +68,7 @@ ALIAS = {
     'Philip Salt':                 'Phil Salt',
     'Philip Dean Salt':            'Phil Salt',
     'Pravin Dubey':                'Praveen Dubey',
+    'RS Hangargekar':              'Rajvardhan Hangargekar',
     'R Sai Kishore':               'Sai Kishore',
     'Ravisrinivasan Sai Kishore':  'Sai Kishore',
     'Rasikh Dar':                  'Rasikh Salam',
