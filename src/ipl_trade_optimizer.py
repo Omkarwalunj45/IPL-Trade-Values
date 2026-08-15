@@ -53,7 +53,10 @@ MANDATORY_BOWL_SLOTS = [1,2,3,4,5]     # must be filled
 OPTIONAL_BOWL_SLOTS  = [6,7]           # filled if a 6th/7th bowler helps
 BAT_POS_FLEX     = 1         # +/- 1 position, hard
 YEAR_W           = {2026:5, 2025:4, 2024:3, 2023:2}
-ALIAS            = {"Vaibhav Suryavanshi":"Vaibhav Sooryavanshi"}
+ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy',
+       'Philip Salt':'Phil Salt','Philip Dean Salt':'Phil Salt',
+       'Rasikh Dar Salam':'Rasikh Salam','Rasikh Dar':'Rasikh Salam',
+       'Rasikh Salam Dar':'Rasikh Salam'}
 TEAM_MAP = {"Chennai Super Kings":"CSK","Delhi Capitals":"DC","Gujarat Titans":"GT",
  "Kolkata Knight Riders":"KKR","Lucknow Super Giants":"LSG","Mumbai Indians":"MI",
  "Punjab Kings":"PBKS","Rajasthan Royals":"RR","Royal Challengers Bangalore":"RCB",
