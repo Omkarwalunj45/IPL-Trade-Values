@@ -13,6 +13,18 @@ import os, re, numpy as np, pandas as pd, warnings; warnings.filterwarnings('ign
 DATA=_DATA
 PWAR=_os.path.join(_DATA,'final_pwar.csv')
 RPW=82.5
+ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy',
+       'Philip Salt':'Phil Salt','Philip Dean Salt':'Phil Salt',
+       'Rasikh Dar Salam':'Rasikh Salam','Rasikh Dar':'Rasikh Salam',
+       'Rasikh Salam Dar':'Rasikh Salam'}
+# line 25, in players()
+d['player']=d.player.str.strip().replace(ALIAS)
+
+# line 35, in price_model()
+s['player']=s.playerName.str.strip().replace(ALIAS)
+
+# line 89, in price_model2()
+s['player']=s.playerName.str.strip().replace(ALIAS)
 BAT_EXP={'Opener':290.0,'No3':254.5,'Middle':215.0,'Lower':98.0,'Tail':13.0}
 BOWL_EXP={'Powerplay':290.0,'Middle':270.0,'Death':180.0}
 
