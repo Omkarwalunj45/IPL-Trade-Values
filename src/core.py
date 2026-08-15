@@ -36,7 +36,7 @@ def cr(x):
 
 def players():
     d=pd.read_csv(PWAR)
-    d['player']=d.player.str.strip()
+    d['player']=d.player.str.strip().replace(ALIAS)
     if 'pWAR_final' in d.columns: d['pWAR']=d.pWAR_final     # single source of truth
     return d
 
@@ -46,7 +46,7 @@ def price_model(P):
        scale entirely, so slope and intercept both have to be re-estimated."""
     a=pd.read_parquet(os.path.join(DATA,'ipl_auction_data_23_26.parquet'))
     s=a[a.auctionStatus.isin(['sold'])].copy()
-    s['player']=s.playerName.str.strip()
+    s['player']=s.playerName.str.strip().replace(ALIAS)
     s['price']=s.auctionPrice.map(cr)
     m=s.merge(P[['player','pWAR','ipl_balls_wtd']],on='player',how='inner').dropna(subset=['price','pWAR'])
     m=m[m.ipl_balls_wtd>=150]
@@ -100,7 +100,7 @@ def archetype_features(P):
 
 def price_model2(P):
     a=pd.read_parquet(os.path.join(DATA,'ipl_auction_data_23_26.parquet'))
-    s=a[a.auctionStatus=='sold'].copy(); s['player']=s.playerName.str.strip(); s['price']=s.auctionPrice.map(cr)
+    s=a[a.auctionStatus=='sold'].copy(); s['player']=s.playerName.str.strip().replace(ALIAS); s['price']=s.auctionPrice.map(cr)
     D=archetype_features(P)
     m=s.merge(D,on='player',how='inner').dropna(subset=['price','pWAR'])
     m=m[m.ipl_balls_wtd>=150]
