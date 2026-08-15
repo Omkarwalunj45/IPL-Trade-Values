@@ -37,7 +37,10 @@ def _base_price_pool():
             'UNCAPPED':a[(a.cappedStatus!='CAPPED')].b.dropna().values}
 _BASE=_base_price_pool()
 
-ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi'}
+ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy',
+       'Philip Salt':'Phil Salt','Philip Dean Salt':'Phil Salt',
+       'Rasikh Dar Salam':'Rasikh Salam','Rasikh Dar':'Rasikh Salam',
+       'Rasikh Salam Dar':'Rasikh Salam'}
 CAPTAINS={'CSK':'Ruturaj Gaikwad','GT':'Shubman Gill','RCB':'Rajat Patidar','RR':'Riyan Parag',
           'PBKS':'Shreyas Iyer','DC':'Axar Patel','SRH':'Pat Cummins'}
 # Batting requirements exist only to No.7.  Slot 8 is a bowling all-rounder and 9-12
