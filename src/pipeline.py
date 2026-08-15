@@ -19,7 +19,10 @@ from price2 import draw as _px_draw
 import os as _os
 
 
-ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy'}
+ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy',
+       'Philip Salt':'Phil Salt','Philip Dean Salt':'Phil Salt',
+       'Rasikh Dar Salam':'Rasikh Salam','Rasikh Dar':'Rasikh Salam',
+       'Rasikh Salam Dar':'Rasikh Salam'}
 RPW=82.5; PPW=1.57; MAX_MARKET=27.0   # PPW refitted on pWAR
 SLAB_CAPPED=11.0; SLAB_UNCAPPED=4.0
 PERSIST=0.296; AGE_COEF=-0.00200; DISCOUNT=0.88
