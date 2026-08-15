@@ -8,7 +8,10 @@ B) Bidder-specific valuation noise -> winner's curse -> endogenous price explosi
 import numpy as np, pandas as pd, re, warnings; warnings.filterwarnings('ignore')
 import os as _os
 
-RPW=82.5; ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi'}
+RPW=82.5; ALIAS={'Vaibhav Suryavanshi':'Vaibhav Sooryavanshi','Varun Chakaravarthy':'Varun Chakravarthy',
+                 'Philip Salt':'Phil Salt','Philip Dean Salt':'Phil Salt',
+                 'Rasikh Dar Salam':'Rasikh Salam','Rasikh Dar':'Rasikh Salam',
+                 'Rasikh Salam Dar':'Rasikh Salam'}
 
 def cr(x):
     if not isinstance(x,str) or str(x).strip() in ('--','','-','nan'): return np.nan
