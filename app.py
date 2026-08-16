@@ -106,8 +106,8 @@ elif TAB == "Team opportunities":
         elig_slots = st.session_state[elig_key]
         if not elig_slots:
             st.info("None of these holes currently has a trade that clears the fair-value test "
-                    "-- nobody on another squad both fixes the gap and is affordable to send back "
-                    "for. That's the rules working, not a search failure.")
+                    "as nobody on another squad both fixes the gap and is affordable to send back "
+                    "for.")
             pick_slot, go = None, False
         else:
             c1, c2 = st.columns([2, 1])
