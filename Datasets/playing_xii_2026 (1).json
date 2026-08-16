@@ -1,0 +1,802 @@
+{
+ "CSK": {
+  "team": "CSK",
+  "name": "Chennai Super Kings",
+  "season": 2026,
+  "p_match": 1529296,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Sanju Samson",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Ruturaj Gaikwad",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Urvil Patel",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Dewald Brevis",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Kartik Sharma",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Shivam Dube",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Jamie Overton",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Akeal Hosein",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Mukesh Choudhary",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Noor Ahmad",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Anshul Kamboj",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Prashant Veer",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "DC": {
+  "team": "DC",
+  "name": "Delhi Capitals",
+  "season": 2026,
+  "p_match": 1529298,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "KL Rahul",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Pathum Nissanka",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Nitish Rana",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Tristan Stubbs",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Axar Patel",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Ashutosh Sharma",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "David Miller",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Lungi Ngidi",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Mukesh Kumar",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Kuldeep Yadav",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "T Natarajan",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Vipraj Nigam",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "GT": {
+  "team": "GT",
+  "name": "Gujarat Titans",
+  "season": 2026,
+  "p_match": 1529299,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Sai Sudharsan",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Shubman Gill",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Jos Buttler",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Washington Sundar",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Nishant Sindhu",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Rahul Tewatia",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Jason Holder",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Rashid Khan",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Mohammed Siraj",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Prasidh Krishna",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Arshad Khan",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Kagiso Rabada",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "KKR": {
+  "team": "KKR",
+  "name": "Kolkata Knight Riders",
+  "season": 2026,
+  "p_match": 1529294,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Tim Seifert",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Finn Allen",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Angkrish Raghuvanshi",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Cameron Green",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Rovman Powell",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Rinku Singh",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Anukul Roy",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Ramandeep Singh",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Sunil Narine",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Varun Chakravarthy",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Vaibhav Arora",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Kartik Tyagi",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "LSG": {
+  "team": "LSG",
+  "name": "Lucknow Super Giants",
+  "season": 2026,
+  "p_match": 1529296,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Mitchell Marsh",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Josh Inglis",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Nicholas Pooran",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Aiden Markram",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Rishabh Pant",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Himmat Singh",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Mohammed Shami",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Mukul Choudhary",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Mohsin Khan",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Shahbaz Ahmed",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Prince Yadav",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Manimaran Siddharth",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "MI": {
+  "team": "MI",
+  "name": "Mumbai Indians",
+  "season": 2026,
+  "p_match": 1529297,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Ryan Rickelton",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Rohit Sharma",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Suryakumar Yadav",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Naman Dhir",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Tilak Varma",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Hardik Pandya",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Will Jacks",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Robin Minz",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Jasprit Bumrah",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Mitchell Santner",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Raj Bawa",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Deepak Chahar",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "PBKS": {
+  "team": "PBKS",
+  "name": "Punjab Kings",
+  "season": 2026,
+  "p_match": 1529298,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Priyansh Arya",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Prabhsimran Singh",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Shreyas Iyer",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Marcus Stoinis",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Cooper Connolly",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Suryansh Shedge",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Shashank Singh",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Vijaykumar Vyshak",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Arshdeep Singh",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Harpreet Brar",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Marco Jansen",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Yuzvendra Chahal",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "RCB": {
+  "team": "RCB",
+  "name": "Royal Challengers Bengaluru",
+  "season": 2026,
+  "p_match": 1529297,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Jacob Bethell",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Virat Kohli",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Devdutt Padikkal",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Rajat Patidar",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Jitesh Sharma",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Tim David",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Krunal Pandya",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Romario Shepherd",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Bhuvneshwar Kumar",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Suyash Sharma",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Rasikh Salam",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Josh Hazlewood",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "RR": {
+  "team": "RR",
+  "name": "Rajasthan Royals",
+  "season": 2026,
+  "p_match": 1529295,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Yashasvi Jaiswal",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Vaibhav Sooryavanshi",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Dhruv Jurel",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Riyan Parag",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Ravindra Jadeja",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Shubham Dubey",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Jofra Archer",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Donovan Ferreira",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Nandre Burger",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Yash Raj Punja",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Brijesh Sharma",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Tushar Deshpande",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ },
+ "SRH": {
+  "team": "SRH",
+  "name": "Sunrisers Hyderabad",
+  "season": 2026,
+  "p_match": 1529299,
+  "xii": [
+   {
+    "slot": 1,
+    "player": "Travis Head",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 2,
+    "player": "Abhishek Sharma",
+    "judged_on": "Batting",
+    "group": "Opener"
+   },
+   {
+    "slot": 3,
+    "player": "Ishan Kishan",
+    "judged_on": "Batting",
+    "group": "No3"
+   },
+   {
+    "slot": 4,
+    "player": "Heinrich Klaasen",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 5,
+    "player": "Nitish Kumar Reddy",
+    "judged_on": "Batting",
+    "group": "Middle"
+   },
+   {
+    "slot": 6,
+    "player": "Salil Arora",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 7,
+    "player": "Pat Cummins",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 8,
+    "player": "Eshan Malinga",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
+    "slot": 9,
+    "player": "Sakib Hussain",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 10,
+    "player": "Shivang Kumar",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 11,
+    "player": "Praful Hinge",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   },
+   {
+    "slot": 12,
+    "player": "Harsh Dubey",
+    "judged_on": "Bowling",
+    "group": "Bowler"
+   }
+  ]
+ }
+}
