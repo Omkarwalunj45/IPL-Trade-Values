@@ -50,7 +50,7 @@
    {
     "slot": 8,
     "player": "Akeal Hosein",
-    "judged_on": "Batting",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
@@ -111,7 +111,7 @@
    },
    {
     "slot": 5,
-    "player": "Axar Patel",
+    "player": "David Miller",
     "judged_on": "Batting",
     "group": "Middle"
    },
@@ -123,14 +123,14 @@
    },
    {
     "slot": 7,
-    "player": "David Miller",
-    "judged_on": "Batting",
+    "player": "Axar Patel",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
     "slot": 8,
     "player": "Lungi Ngidi",
-    "judged_on": "Batting",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
@@ -204,7 +204,7 @@
    {
     "slot": 7,
     "player": "Jason Holder",
-    "judged_on": "Batting",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
@@ -271,13 +271,13 @@
    },
    {
     "slot": 5,
-    "player": "Rovman Powell",
+    "player": "Rinku Singh",
     "judged_on": "Batting",
     "group": "Middle"
    },
    {
     "slot": 6,
-    "player": "Rinku Singh",
+    "player": "Ramandeep Singh",
     "judged_on": "Batting",
     "group": "Lower"
    },
@@ -289,8 +289,8 @@
    },
    {
     "slot": 8,
-    "player": "Ramandeep Singh",
-    "judged_on": "Batting",
+    "player": "RHarshit Rana",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
@@ -363,25 +363,25 @@
    },
    {
     "slot": 7,
-    "player": "Mohammed Shami",
-    "judged_on": "Batting",
-    "group": "Lower"
-   },
-   {
-    "slot": 8,
     "player": "Mukul Choudhary",
     "judged_on": "Batting",
     "group": "Lower"
    },
    {
+    "slot": 8,
+    "player": "Shahbaz Ahmed",
+    "judged_on": "Batting",
+    "group": "Lower"
+   },
+   {
     "slot": 9,
-    "player": "Mohsin Khan",
+    "player": "Mohammed Shami",
     "judged_on": "Bowling",
     "group": "Bowler"
    },
    {
     "slot": 10,
-    "player": "Shahbaz Ahmed",
+    "player": "Mohsin Khan",
     "judged_on": "Bowling",
     "group": "Bowler"
    },
@@ -419,13 +419,13 @@
    },
    {
     "slot": 3,
-    "player": "Suryakumar Yadav",
+    "player": "Naman Dhir",
     "judged_on": "Batting",
     "group": "No3"
    },
    {
     "slot": 4,
-    "player": "Naman Dhir",
+    "player": "Suryakumar Yadav",
     "judged_on": "Batting",
     "group": "Middle"
    },
@@ -449,7 +449,7 @@
    },
    {
     "slot": 8,
-    "player": "Robin Minz",
+    "player": "Krish Bhagat",
     "judged_on": "Batting",
     "group": "Lower"
    },
@@ -467,7 +467,7 @@
    },
    {
     "slot": 11,
-    "player": "Raj Bawa",
+    "player": "AM Ghazanfar",
     "judged_on": "Bowling",
     "group": "Bowler"
    },
@@ -499,19 +499,19 @@
    },
    {
     "slot": 3,
-    "player": "Shreyas Iyer",
+    "player": "Cooper Connolly",
     "judged_on": "Batting",
     "group": "No3"
    },
    {
     "slot": 4,
-    "player": "Marcus Stoinis",
+    "player": "Shreyas Iyer",
     "judged_on": "Batting",
     "group": "Middle"
    },
    {
     "slot": 5,
-    "player": "Cooper Connolly",
+    "player": "Marcus Stoinis",
     "judged_on": "Batting",
     "group": "Middle"
    },
@@ -529,8 +529,8 @@
    },
    {
     "slot": 8,
-    "player": "Vijaykumar Vyshak",
-    "judged_on": "Batting",
+    "player": "Marco Jansen",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
@@ -547,7 +547,7 @@
    },
    {
     "slot": 11,
-    "player": "Marco Jansen",
+    "player": "Vijaykumar Vyshak",
     "judged_on": "Bowling",
     "group": "Bowler"
    },
@@ -567,7 +567,7 @@
   "xii": [
    {
     "slot": 1,
-    "player": "Jacob Bethell",
+    "player": "Phil Salt",
     "judged_on": "Batting",
     "group": "Opener"
    },
@@ -683,14 +683,14 @@
    },
    {
     "slot": 7,
-    "player": "Jofra Archer",
+    "player": "Donovan Ferreira",
     "judged_on": "Batting",
     "group": "Lower"
    },
    {
     "slot": 8,
-    "player": "Donovan Ferreira",
-    "judged_on": "Batting",
+    "player": "Jofra Archer",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
@@ -763,14 +763,14 @@
    },
    {
     "slot": 7,
-    "player": "Pat Cummins",
+    "player": "Aniket Verma",
     "judged_on": "Batting",
     "group": "Lower"
    },
    {
     "slot": 8,
-    "player": "Eshan Malinga",
-    "judged_on": "Batting",
+    "player": "Pat Cummins",
+    "judged_on": "Bowling",
     "group": "Lower"
    },
    {
@@ -793,7 +793,7 @@
    },
    {
     "slot": 12,
-    "player": "Harsh Dubey",
+    "player": "Eshan Malinga",
     "judged_on": "Bowling",
     "group": "Bowler"
    }
