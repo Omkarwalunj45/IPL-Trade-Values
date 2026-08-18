@@ -137,7 +137,8 @@
       "player": "Sam Curran",
       "to": "RR",
       "projected": 2.58,
-      "actual": null
+      "actual": null,
+      "status": "Did Not Play"
      }
     ]
    }
@@ -452,7 +453,8 @@
       "player": "Arjun Tendulkar",
       "to": "LSG",
       "projected": 0.0,
-      "actual": null
+      "actual": null,
+      "status": "Inadequate Sample Size"
      }
     ]
    }
