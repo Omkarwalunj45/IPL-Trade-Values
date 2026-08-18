@@ -64,6 +64,6 @@ B = [
 ('H', 'What is an IPL trade actually worth?'),
 ('h', 'Questions?'),
 ('t', "If you are an IPL team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions."),
-('t', '[Contact me](?tab=Contact)'),
+('c', 'Contact me'),
 ('t', '© 2026 Omkar Walunj. All Rights Reserved.'),
 ]
