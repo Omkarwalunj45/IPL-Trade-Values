@@ -148,7 +148,14 @@ def _outcome(t):
 
        Built from the same card, title and table classes as the two cards above it,
        so it inherits the site's styling rather than carrying its own -- a separate
-       stylesheet was how the first version ended up invisible.
+       stylesheet was how the first version ended up invisible.  The three colours
+       are set inline for the same reason.
+
+       Graded on the GAP between projection and return, not on the sign of it.
+       Samson at 2.97 against a 3.99 projection is a shortfall, but it is a good
+       season by any reading, and colouring it the same red as a genuine collapse
+       would say something false.  So a miss inside about a win reads amber, and red
+       is kept for a player who was not remotely what was expected.
 
        A man who never took the field is marked as such rather than scored zero, and
        one who played too little to read is marked separately again: not playing and
@@ -156,22 +163,31 @@ def _outcome(t):
     o = t.get('outcome')
     if not o:
         return ''
+    GRN, AMB, RED, GRY = '#1F6F3F', '#9A7B1B', '#A63A2B', '#8A9690'
     rows = []
     for p in o['players']:
         a, st = p.get('actual'), p.get('status')
+        pr = p['projected']
         if a is None:
-            act, vd, cl = '&mdash;', (st or 'No record'), 'was'
+            act, dif, vd, col = '&mdash;', '&mdash;', (st or 'No record'), GRY
         else:
-            act = f"{a:+.2f}"
-            hit = a >= p['projected']
-            vd, cl = ('Delivered' if hit else 'Fell short'), ('now up' if hit else 'now dn')
+            d = a - pr
+            act, dif = f"{a:+.2f}", f"{d:+.2f}"
+            if d >= 0.30:
+                vd, col = 'Beat projection', GRN
+            elif d > -1.25:
+                vd, col = 'About as expected', AMB
+            else:
+                vd, col = 'Well short', RED
         rows.append(f'<tr><td>{p["player"]}<span style="color:#8A9690;font-size:11px;'
                     f'margin-left:6px">to {p["to"]}</span></td>'
-                    f'<td class="was">{p["projected"]:+.2f}</td>'
-                    f'<td class="{cl}">{act}</td>'
-                    f'<td class="{cl}">{vd}</td></tr>')
+                    f'<td class="was">{pr:+.2f}</td>'
+                    f'<td style="text-align:right;font-weight:700;color:{col}">{act}</td>'
+                    f'<td style="text-align:right;color:{col}">{dif}</td>'
+                    f'<td style="text-align:right;color:{col};font-weight:600">{vd}</td></tr>')
     head = ('<tr><th></th><th class="sb">Projected</th>'
-            f'<th class="sb">Actual {o["season"]}</th><th class="sb">Verdict</th></tr>')
+            f'<th class="sb">Actual {o["season"]}</th><th class="sb">Difference</th>'
+            '<th class="sb">Verdict</th></tr>')
     return ('<div class="row" style="grid-template-columns:1fr;margin-top:-14px">'
             '<div class="card" style="min-height:0">'
             f'<div class="ctitle">What happened in IPL {o["season"]}</div>'
