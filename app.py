@@ -17,6 +17,11 @@ boot_splash(); hero()
 
 NAV = ["Featured trades", "Trade simulator", "Player rankings", "Methodology", "Contact"]
 if "tab" not in st.session_state: st.session_state.tab = NAV[0]
+
+# Allow links such as ?tab=Contact (used by the Methodology "Contact me" link)
+_query_tab = st.query_params.get("tab")
+if _query_tab in NAV:
+    st.session_state.tab = _query_tab
 st.markdown('<div class="navwrap">', unsafe_allow_html=True)
 cols = st.columns(len(NAV)); clicked = None
 for i, n in enumerate(NAV):
