@@ -125,13 +125,13 @@
       "player": "Sanju Samson",
       "to": "CSK",
       "projected": 3.99,
-      "actual": 0.63
+      "actual": 2.97
      },
      {
       "player": "Ravindra Jadeja",
       "to": "RR",
       "projected": 2.14,
-      "actual": 2.83
+      "actual": 2.89
      },
      {
       "player": "Sam Curran",
@@ -195,7 +195,7 @@
       "player": "Mohammed Shami",
       "to": "LSG",
       "projected": 1.73,
-      "actual": 1.38
+      "actual": 1.25
      }
     ]
    }
@@ -252,7 +252,7 @@
       "player": "Sherfane Rutherford",
       "to": "MI",
       "projected": 1.48,
-      "actual": -0.03
+      "actual": 0.79
      }
     ]
    }
@@ -318,13 +318,13 @@
       "player": "Nitish Rana",
       "to": "DC",
       "projected": 0.26,
-      "actual": -0.64
+      "actual": 0.6
      },
      {
       "player": "Donovan Ferreira",
       "to": "RR",
       "projected": 1.5,
-      "actual": 1.06
+      "actual": 1.91
      }
     ]
    }
@@ -381,7 +381,7 @@
       "player": "Mayank Markande",
       "to": "MI",
       "projected": -0.68,
-      "actual": -0.23
+      "actual": -0.28
      }
     ]
    }
@@ -447,7 +447,7 @@
       "player": "Shardul Thakur",
       "to": "MI",
       "projected": -0.64,
-      "actual": -0.55
+      "actual": -0.12
      },
      {
       "player": "Arjun Tendulkar",
