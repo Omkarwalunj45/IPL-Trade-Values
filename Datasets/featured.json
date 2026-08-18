@@ -1,7 +1,7 @@
 {
  "trades": [
   {
-   "year": 2027,
+   "year": 2026,
    "label": "Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",
    "note": "The only completed deal of the 2026 window.",
    "A": "DC",
@@ -56,7 +56,7 @@
    ]
   },
   {
-   "year": 2026,
+   "year": 2025,
    "label": "Sanju Samson to Chennai, Jadeja and Curran to Rajasthan",
    "note": "The largest swap of the window.",
    "A": "CSK",
@@ -117,34 +117,10 @@
      "assets": 4.33,
      "util": -2.45
     }
-   ],
-   "outcome": {
-    "season": 2026,
-    "players": [
-     {
-      "player": "Sanju Samson",
-      "to": "CSK",
-      "projected": 3.99,
-      "actual": 2.97
-     },
-     {
-      "player": "Ravindra Jadeja",
-      "to": "RR",
-      "projected": 2.14,
-      "actual": 2.89
-     },
-     {
-      "player": "Sam Curran",
-      "to": "RR",
-      "projected": 2.58,
-      "actual": null,
-      "status": "Did Not Play"
-     }
-    ]
-   }
+   ]
   },
   {
-   "year": 2026,
+   "year": 2025,
    "label": "Mohammed Shami to Lucknow",
    "note": "A cash deal.",
    "A": "LSG",
@@ -187,21 +163,10 @@
      "assets": 2.37,
      "util": -1.32
     }
-   ],
-   "outcome": {
-    "season": 2026,
-    "players": [
-     {
-      "player": "Mohammed Shami",
-      "to": "LSG",
-      "projected": 1.73,
-      "actual": 1.25
-     }
-    ]
-   }
+   ]
   },
   {
-   "year": 2026,
+   "year": 2025,
    "label": "Sherfane Rutherford to Mumbai",
    "note": "Cash.",
    "A": "MI",
@@ -244,21 +209,10 @@
      "assets": -2.8,
      "util": -0.83
     }
-   ],
-   "outcome": {
-    "season": 2026,
-    "players": [
-     {
-      "player": "Sherfane Rutherford",
-      "to": "MI",
-      "projected": 1.48,
-      "actual": 0.79
-     }
-    ]
-   }
+   ]
   },
   {
-   "year": 2026,
+   "year": 2025,
    "label": "Nitish Rana to Delhi, Donovan Ferreira to Rajasthan",
    "note": "A straight swap.",
    "A": "DC",
@@ -310,27 +264,10 @@
      "assets": 3.21,
      "util": 0.88
     }
-   ],
-   "outcome": {
-    "season": 2026,
-    "players": [
-     {
-      "player": "Nitish Rana",
-      "to": "DC",
-      "projected": 0.26,
-      "actual": 0.6
-     },
-     {
-      "player": "Donovan Ferreira",
-      "to": "RR",
-      "projected": 1.5,
-      "actual": 1.91
-     }
-    ]
-   }
+   ]
   },
   {
-   "year": 2026,
+   "year": 2025,
    "label": "Mayank Markande to Mumbai",
    "note": "Cash.",
    "A": "MI",
@@ -373,21 +310,10 @@
      "assets": -3.49,
      "util": -0.15
     }
-   ],
-   "outcome": {
-    "season": 2026,
-    "players": [
-     {
-      "player": "Mayank Markande",
-      "to": "MI",
-      "projected": -0.68,
-      "actual": -0.28
-     }
-    ]
-   }
+   ]
   },
   {
-   "year": 2026,
+   "year": 2025,
    "label": "Shardul Thakur to Mumbai, Arjun Tendulkar to Lucknow",
    "note": "The smallest deal.",
    "A": "MI",
@@ -439,25 +365,7 @@
      "assets": -3.11,
      "util": -0.19
     }
-   ],
-   "outcome": {
-    "season": 2026,
-    "players": [
-     {
-      "player": "Shardul Thakur",
-      "to": "MI",
-      "projected": -0.64,
-      "actual": -0.12
-     },
-     {
-      "player": "Arjun Tendulkar",
-      "to": "LSG",
-      "projected": 0.0,
-      "actual": null,
-      "status": "Inadequate Sample Size"
-     }
-    ]
-   }
+   ]
   }
  ],
  "k": 0.1171
