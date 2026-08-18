@@ -1,0 +1,11 @@
+year,player,frm,to,fee,war_before,war_after,exp_cost_per_war,real_cost_per_war
+2021,Daniel Sams,DC,RCB,0.2,-1.15,-0.24,,
+2021,Harshal Patel,DC,RCB,0.2,-0.35,2.29,,0.1
+2023,Shardul Thakur,DC,KKR,10.75,0.25,0.16,43.6,67.8
+2023,Lockie Ferguson,GT,KKR,10.0,0.53,-0.34,18.8,
+2024,Cameron Green,MI,RCB,17.5,0.77,0.87,22.8,20.0
+2024,Hardik Pandya,GT,MI,15.0,0.71,0.6,21.1,24.8
+2024,Avesh Khan,LSG,RR,0.0,0.46,0.5,0.0,0.0
+2024,Devdutt Padikkal,RR,LSG,0.0,0.44,-0.08,0.0,
+2024,Mayank Dagar,SRH,RCB,0.0,0.09,-0.27,0.0,
+2024,Shahbaz Ahmed,RCB,SRH,0.0,-0.3,-0.25,,

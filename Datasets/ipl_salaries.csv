@@ -1,0 +1,953 @@
+player,salary,team,country,season,role,type
+Sam Curran,₹18.5 Cr,PBKS,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2023,All-rounder,Retention
+Pat Cummins,₹18 Cr,KKR,🇦🇺 Australia,2023,All-rounder,Auction
+Cameron Green,₹17.5 Cr,MI,🇦🇺 Australia,2023,All-rounder,Auction
+KL Rahul,₹17 Cr,LSG,🇮🇳 India,2023,WK-Batter,Retention
+Ben Stokes,₹16.25 Cr,CSK,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2023,All-rounder,Auction
+Ravindra Jadeja,₹16 Cr,CSK,🇮🇳 India,2023,All-rounder,Retention
+Rishabh Pant,₹16 Cr,DC,🇮🇳 India,2023,WK-Batter,Retention
+Nicholas Pooran,₹16 Cr,LSG,🇹🇹 West Indies (Trinidad),2023,WK-Batter,Retention
+Rohit Sharma,₹16 Cr,MI,🇮🇳 India,2023,Batter,Retention
+Ishan Kishan,₹15.25 Cr,MI,🇮🇳 India,2023,WK-Batter,Retention
+Hardik Pandya,₹15 Cr,GT,🇮🇳 India,2023,All-rounder,Retention
+Rashid Khan,₹15 Cr,GT,🇦🇫 Afghanistan,2023,Bowler,Retention
+Virat Kohli,₹15 Cr,RCB,🇮🇳 India,2023,Batter,Retention
+Deepak Chahar,₹14 Cr,CSK,🇮🇳 India,2023,Bowler,Retention
+Sanju Samson,₹14 Cr,RR,🇮🇳 India,2023,WK-Batter,Retention
+Harry Brook,₹13.25 Cr,SRH,🌍 Overseas,2023,Batter,Auction
+Shreyas Iyer,₹12.25 Cr,KKR,🇮🇳 India,2023,Batter,Retention
+MS Dhoni,₹12 Cr,CSK,🇮🇳 India,2023,WK-Batter,Retention
+Andre Russell,₹12 Cr,KKR,🇯🇲 West Indies (Jamaica),2023,All-rounder,Retention
+Jasprit Bumrah,₹12 Cr,MI,🇮🇳 India,2023,Bowler,Retention
+Liam Livingstone,₹11.5 Cr,PBKS,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2023,All-rounder,Retention
+Glenn Maxwell,₹11 Cr,RCB,🇦🇺 Australia,2023,All-rounder,Retention
+Shardul Thakur,₹10.75 Cr,KKR,🇮🇳 India,2023,All-rounder,Auction
+Wanindu Hasaranga,₹10.75 Cr,RCB,🌍 Overseas,2023,Bowler,Retention
+Harshal Patel,₹10.75 Cr,RCB,🇮🇳 India,2023,Bowler,Retention
+Lockie Ferguson,₹10 Cr,KKR,🌍 Overseas,2023,Bowler,Retention
+Avesh Khan,₹10 Cr,LSG,🇮🇳 India,2023,Bowler,Retention
+Prasidh Krishna,₹10 Cr,RR,🇮🇳 India,2023,Bowler,Retention
+Jos Buttler,₹10 Cr,RR,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2023,WK-Batter,Retention
+Kagiso Rabada,₹9.25 Cr,PBKS,🇿🇦 South Africa,2023,Bowler,Retention
+Marcus Stoinis,₹9.2 Cr,LSG,🇦🇺 Australia,2023,All-rounder,Retention
+Axar Patel,₹9 Cr,DC,🇮🇳 India,2023,All-rounder,Retention
+Rahul Tewatia,₹9 Cr,GT,🇮🇳 India,2023,All-rounder,Retention
+M Shahrukh Khan,₹9 Cr,PBKS,🇮🇳 India,2023,Batter,Retention
+Washington Sundar,₹8.75 Cr,SRH,🇮🇳 India,2023,All-rounder,Retention
+Shimron Hetmyer,₹8.5 Cr,RR,🇬🇾 West Indies (Guyana),2023,Batter,Retention
+Rahul Tripathi,₹8.5 Cr,SRH,🇮🇳 India,2023,Batter,Retention
+Krunal Pandya,₹8.25 Cr,LSG,🇮🇳 India,2023,All-rounder,Retention
+Tim David,₹8.25 Cr,MI,🇸🇬 Singapore,2023,Batter,Retention
+Shikhar Dhawan,₹8.25 Cr,PBKS,🇮🇳 India,2023,Batter,Retention
+Mayank Agarwal,₹8.25 Cr,SRH,🇮🇳 India,2023,Batter,Retention
+Moeen Ali,₹8 Cr,CSK,🌍 Overseas,2023,All-rounder,Retention
+Shubman Gill,₹8 Cr,GT,🇮🇳 India,2023,Batter,Retention
+Venkatesh Iyer,₹8 Cr,KKR,🇮🇳 India,2023,All-rounder,Retention
+Nitish Rana,₹8 Cr,KKR,🇮🇳 India,2023,Batter,Retention
+Varun Chakravarthy,₹8 Cr,KKR,🇮🇳 India,2023,Bowler,Retention
+Jofra Archer,₹8 Cr,MI,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2023,Bowler,Retention
+Suryakumar Yadav,₹8 Cr,MI,🇮🇳 India,2023,Batter,Retention
+Trent Boult,₹8 Cr,RR,🇳🇿 New Zealand,2023,Bowler,Retention
+Josh Hazlewood,₹7.75 Cr,RCB,🇦🇺 Australia,2023,Bowler,Auction
+Devdutt Padikkal,₹7.75 Cr,RR,🇮🇳 India,2023,Batter,Retention
+Prithvi Shaw,₹7.5 Cr,DC,🇮🇳 India,2023,Batter,Retention
+Mark Wood,₹7.5 Cr,LSG,🌍 Overseas,2023,Bowler,Auction
+Faf du Plessis,₹7 Cr,RCB,🇿🇦 South Africa,2023,Batter,Retention
+Mohammed Siraj,₹7 Cr,RCB,🇮🇳 India,2023,Bowler,Retention
+Ambati Rayudu,₹6.75 Cr,CSK,🇮🇳 India,2023,Batter,Retention
+Quinton de Kock,₹6.75 Cr,LSG,🌍 Overseas,2023,WK-Batter,Retention
+Jonny Bairstow,₹6.75 Cr,PBKS,🌍 Overseas,2023,WK-Batter,Retention
+Mitchell Marsh,₹6.5 Cr,DC,🇦🇺 Australia,2023,All-rounder,Retention
+Anrich Nortje,₹6.5 Cr,DC,🇿🇦 South Africa,2023,Bowler,Retention
+Yuzvendra Chahal,₹6.5 Cr,RR,🇮🇳 India,2023,Bowler,Retention
+Abhishek Sharma,₹6.5 Cr,SRH,🇮🇳 India,2023,Batter,Retention
+David Warner,₹6.25 Cr,DC,🇦🇺 Australia,2023,Batter,Retention
+Mohammed Shami,₹6.25 Cr,GT,🇮🇳 India,2023,Bowler,Retention
+Ruturaj Gaikwad,₹6 Cr,CSK,🇮🇳 India,2023,Batter,Retention
+Shivam Mavi,₹6 Cr,GT,🇮🇳 India,2023,Bowler,Retention
+Sunil Narine,₹6 Cr,KKR,🇹🇹 West Indies (Trinidad),2023,All-rounder,Retention
+Deepak Hooda,₹5.75 Cr,LSG,🇮🇳 India,2023,All-rounder,Retention
+Jason Holder,₹5.75 Cr,RR,🇧🇧 West Indies (Barbados),2023,All-rounder,Auction
+Mukesh Kumar,₹5.5 Cr,DC,🇮🇳 India,2023,Bowler,Auction
+Dinesh Karthik,₹5.5 Cr,RCB,🇮🇳 India,2023,WK-Batter,Retention
+Khaleel Ahmed,₹5.25 Cr,DC,🇮🇳 India,2023,Bowler,Retention
+Rahul Chahar,₹5.25 Cr,PBKS,🇮🇳 India,2023,Bowler,Retention
+Heinrich Klaasen,₹5.25 Cr,SRH,🇿🇦 South Africa,2023,WK-Batter,Auction
+Ravichandran Ashwin,₹5 Cr,RR,🇮🇳 India,2023,All-rounder,Retention
+Rilee Rossouw,₹4.6 Cr,DC,🌍 Overseas,2023,Batter,Auction
+Josh Little,₹4.4 Cr,GT,🌍 Overseas,2023,Bowler,Auction
+Chetan Sakariya,₹4.2 Cr,DC,🇮🇳 India,2023,Bowler,Retention
+Marco Jansen,₹4.2 Cr,SRH,🇿🇦 South Africa,2023,Bowler,Retention
+Bhuvneshwar Kumar,₹4.2 Cr,SRH,🇮🇳 India,2023,Bowler,Retention
+Shivam Dube,₹4 Cr,CSK,🇮🇳 India,2023,All-rounder,Retention
+Ravi Bishnoi,₹4 Cr,LSG,🇮🇳 India,2023,Bowler,Retention
+Arshdeep Singh,₹4 Cr,PBKS,🇮🇳 India,2023,Bowler,Retention
+Yashasvi Jaiswal,₹4 Cr,RR,🇮🇳 India,2023,Batter,Retention
+Abdul Samad,₹4 Cr,SRH,🇮🇳 India,2023,All-rounder,Retention
+Kartik Tyagi,₹4 Cr,SRH,🇮🇳 India,2023,Bowler,Retention
+T Natarajan,₹4 Cr,SRH,🇮🇳 India,2023,Bowler,Retention
+Umran Malik,₹4 Cr,SRH,🇮🇳 India,2023,Bowler,Retention
+Harpreet Brar,₹3.8 Cr,PBKS,🇮🇳 India,2023,Bowler,Retention
+Riyan Parag,₹3.8 Cr,RR,🇮🇳 India,2023,Batter,Retention
+Anuj Rawat,₹3.4 Cr,RCB,🇮🇳 India,2023,WK-Batter,Retention
+Yash Dayal,₹3.2 Cr,GT,🇮🇳 India,2023,Bowler,Retention
+Will Jacks,₹3.2 Cr,RCB,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2023,All-rounder,Auction
+David Miller,₹3 Cr,GT,🌍 Overseas,2023,Batter,Retention
+Sai Kishore,₹3 Cr,GT,🇮🇳 India,2023,Bowler,Retention
+Dewald Brevis,₹3 Cr,MI,🇿🇦 South Africa,2023,Batter,Retention
+Rovman Powell,₹2.8 Cr,DC,🌍 Overseas,2023,Batter,Retention
+Abhinav Manohar,₹2.6 Cr,GT,🇮🇳 India,2023,Batter,Retention
+Navdeep Saini,₹2.6 Cr,RR,🇮🇳 India,2023,Bowler,Retention
+Vivrant Sharma,₹2.6 Cr,SRH,🇮🇳 India,2023,Batter,Auction
+Aiden Markram,₹2.6 Cr,SRH,🌍 Overseas,2023,Batter,Retention
+Manish Pandey,₹2.4 Cr,DC,🇮🇳 India,2023,Batter,Retention
+Alzarri Joseph,₹2.4 Cr,GT,🇦🇬 West Indies (Antigua),2023,Bowler,Retention
+Matthew Wade,₹2.4 Cr,GT,🌍 Overseas,2023,WK-Batter,Retention
+Shahbaz Ahmed,₹2.4 Cr,RCB,🇮🇳 India,2023,All-rounder,Retention
+Kuldeep Yadav,₹2 Cr,DC,🇮🇳 India,2023,Bowler,Retention
+Mustafizur Rahman,₹2 Cr,DC,🇧🇩 Bangladesh,2023,Bowler,Auction
+Phil Salt,₹2 Cr,DC,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2023,WK-Batter,Auction
+Kane Williamson,₹2 Cr,GT,🌍 Overseas,2023,Batter,Retention
+Umesh Yadav,₹2 Cr,KKR,🇮🇳 India,2023,Bowler,Retention
+Raj Bawa,₹2 Cr,PBKS,🇮🇳 India,2023,All-rounder,Retention
+David Willey,₹2 Cr,RCB,🌍 Overseas,2023,All-rounder,Retention
+Adil Rashid,₹2 Cr,SRH,🌍 Overseas,2023,Bowler,Auction
+Mitchell Santner,₹1.9 Cr,CSK,🇳🇿 New Zealand,2023,All-rounder,Retention
+Wriddhiman Saha,₹1.9 Cr,GT,🇮🇳 India,2023,WK-Batter,Retention
+Reece Topley,₹1.9 Cr,RCB,🌍 Overseas,2023,Bowler,Retention
+Mayank Dagar,₹1.8 Cr,SRH,🇮🇳 India,2023,All-rounder,Retention
+Jayant Yadav,₹1.7 Cr,GT,🇮🇳 India,2023,All-rounder,Retention
+Tilak Varma,₹1.7 Cr,MI,🇮🇳 India,2023,Batter,Retention
+Rajvardhan Hangargekar,₹1.5 Cr,CSK,🇮🇳 India,2023,All-rounder,Retention
+Shakib Al Hasan,₹1.5 Cr,KKR,🌍 Overseas,2023,All-rounder,Auction
+Tim Southee,₹1.5 Cr,KKR,🌍 Overseas,2023,Bowler,Auction
+Jhye Richardson,₹1.5 Cr,MI,🌍 Overseas,2023,Bowler,Auction
+Adam Zampa,₹1.5 Cr,RR,🇦🇺 Australia,2023,Bowler,Retention
+Glenn Phillips,₹1.5 Cr,SRH,🌍 Overseas,2023,All-rounder,Retention
+Vijay Shankar,₹1.4 Cr,GT,🇮🇳 India,2023,All-rounder,Retention
+Prashant Solanki,₹1.2 Cr,CSK,🇮🇳 India,2023,All-rounder,Retention
+KS Bharat,₹1.2 Cr,GT,🇮🇳 India,2023,WK-Batter,Auction
+Kamlesh Nagarkoti,₹1.1 Cr,DC,🇮🇳 India,2023,Bowler,Retention
+Kyle Jamieson,₹1 Cr,CSK,🇳🇿 New Zealand,2023,All-rounder,Auction
+Devon Conway,₹1 Cr,CSK,🇳🇿 New Zealand,2023,WK-Batter,Auction
+David Wiese,₹1 Cr,KKR,🌍 Overseas,2023,All-rounder,Retention
+Joe Root,₹1 Cr,RR,🌍 Overseas,2023,Batter,Auction
+Akeal Hosein,₹1 Cr,SRH,🏝️ West Indies,2023,Bowler,Retention
+Mahipal Lomror,₹95 Lakh,RCB,🇮🇳 India,2023,All-rounder,Retention
+Narayan Jagadeesan,₹90 Lakh,KKR,🇮🇳 India,2023,WK-Batter,Auction
+Krishnappa Gowtham,₹90 Lakh,LSG,🇮🇳 India,2023,All-rounder,Retention
+Finn Allen,₹80 Lakh,RCB,🌍 Overseas,2023,WK-Batter,Auction
+Daniel Sams,₹75 Lakh,LSG,🌍 Overseas,2023,All-rounder,Retention
+Jason Behrendorff,₹75 Lakh,MI,🌍 Overseas,2023,Bowler,Retention
+Nathan Ellis,₹75 Lakh,PBKS,🇦🇺 Australia,2023,Bowler,Retention
+Siddharth Kaul,₹75 Lakh,RCB,🇮🇳 India,2023,Bowler,Retention
+Obed McCoy,₹75 Lakh,RR,🌍 Overseas,2023,Bowler,Retention
+Maheesh Theekshana,₹70 Lakh,CSK,🌍 Overseas,2023,Bowler,Retention
+Rajan Kumar,₹70 Lakh,RCB,🇮🇳 India,2023,Bowler,Retention
+Lalit Yadav,₹65 Lakh,DC,🇮🇳 India,2023,All-rounder,Retention
+Nishant Sindhu,₹60 Lakh,CSK,🇮🇳 India,2023,All-rounder,Retention
+Vaibhav Arora,₹60 Lakh,KKR,🇮🇳 India,2023,Bowler,Retention
+Prabhsimran Singh,₹60 Lakh,PBKS,🇮🇳 India,2023,WK-Batter,Retention
+Matthew Short,₹60 Lakh,PBKS,🇦🇺 Australia,2023,All-rounder,Retention
+Avinash Singh,₹60 Lakh,RCB,🇮🇳 India,2023,Bowler,Retention
+Rinku Singh,₹55 Lakh,KKR,🇮🇳 India,2023,Batter,Retention
+Rishi Dhawan,₹55 Lakh,PBKS,🇮🇳 India,2023,All-rounder,Retention
+Dwaine Pretorius,₹50 Lakh,CSK,🌍 Overseas,2023,All-rounder,Retention
+Ajinkya Rahane,₹50 Lakh,CSK,🇮🇳 India,2023,Batter,Retention
+Yash Dhull,₹50 Lakh,DC,🇮🇳 India,2023,Batter,Retention
+Ishant Sharma,₹50 Lakh,DC,🇮🇳 India,2023,Bowler,Auction
+Lungi Ngidi,₹50 Lakh,DC,🌍 Overseas,2023,Bowler,Auction
+Praveen Dubey,₹50 Lakh,DC,🇮🇳 India,2023,All-rounder,Retention
+Odean Smith,₹50 Lakh,GT,🌍 Overseas,2023,All-rounder,Retention
+Mohit Sharma,₹50 Lakh,GT,🇮🇳 India,2023,Bowler,Retention
+Mandeep Singh,₹50 Lakh,KKR,🇮🇳 India,2023,Batter,Retention
+Litton Das,₹50 Lakh,KKR,🌍 Overseas,2023,WK-Batter,Auction
+Rahmanullah Gurbaz,₹50 Lakh,KKR,🌍 Overseas,2023,WK-Batter,Retention
+Kyle Mayers,₹50 Lakh,LSG,🌍 Overseas,2023,All-rounder,Retention
+Romario Shepherd,₹50 Lakh,LSG,🌍 Overseas,2023,All-rounder,Retention
+Jaydev Unadkat,₹50 Lakh,LSG,🇮🇳 India,2023,Bowler,Retention
+Naveen Ul Haq,₹50 Lakh,LSG,🌍 Overseas,2023,Bowler,Retention
+Amit Mishra,₹50 Lakh,LSG,🇮🇳 India,2023,Bowler,Retention
+Piyush Chawla,₹50 Lakh,MI,🇮🇳 India,2023,Bowler,Auction
+Sikandar Raza,₹50 Lakh,PBKS,🌍 Overseas,2023,All-rounder,Retention
+Bhanuka Rajapaksa,₹50 Lakh,PBKS,🌍 Overseas,2023,Batter,Retention
+Karn Sharma,₹50 Lakh,RCB,🇮🇳 India,2023,Bowler,Retention
+Donovan Ferreira,₹50 Lakh,RR,🇿🇦 South Africa,2023,WK-Batter,Retention
+Fazalhaq Farooqi,₹50 Lakh,SRH,🌍 Overseas,2023,Bowler,Retention
+Mayank Markande,₹50 Lakh,SRH,🇮🇳 India,2023,Bowler,Retention
+Yash Thakur,₹45 Lakh,LSG,🇮🇳 India,2023,Bowler,Retention
+Harpreet Singh,₹40 Lakh,PBKS,🇮🇳 India,2023,Batter,Retention
+Noor Ahmad,₹30 Lakh,GT,🇦🇫 Afghanistan,2023,Bowler,Auction
+Arjun Tendulkar,₹30 Lakh,MI,🇮🇳 India,2023,All-rounder,Retention
+Suyash Prabhudessai,₹30 Lakh,RCB,🇮🇳 India,2023,Batter,Retention
+KM Asif,₹30 Lakh,RR,🇮🇳 India,2023,Bowler,Retention
+KC Cariappa,₹30 Lakh,RR,🇮🇳 India,2023,Bowler,Retention
+Upendra Yadav,₹25 Lakh,SRH,🇮🇳 India,2023,WK-Batter,Retention
+Ajay Jadav Mandal,₹20 Lakh,CSK,🇮🇳 India,2023,All-rounder,Retention
+Bhagath Varma,₹20 Lakh,CSK,🇮🇳 India,2023,Batter,Retention
+Shaik Rasheed,₹20 Lakh,CSK,🇮🇳 India,2023,Batter,Auction
+Subhranshu Senapati,₹20 Lakh,CSK,🇮🇳 India,2023,Batter,Retention
+Matheesha Pathirana,₹20 Lakh,CSK,🇱🇰 Sri Lanka,2023,Bowler,Auction
+Mukesh Choudhary,₹20 Lakh,CSK,🇮🇳 India,2023,Bowler,Retention
+Simarjeet Singh,₹20 Lakh,CSK,🇮🇳 India,2023,Bowler,Retention
+Tushar Deshpande,₹20 Lakh,CSK,🇮🇳 India,2023,Bowler,Retention
+Sarfaraz Khan,₹20 Lakh,DC,🇮🇳 India,2023,Batter,Auction
+Aman Khan,₹20 Lakh,DC,🇮🇳 India,2023,All-rounder,Retention
+Sai Sudharsan,₹20 Lakh,GT,🇮🇳 India,2023,Batter,Retention
+Darshan Nalkande,₹20 Lakh,GT,🇮🇳 India,2023,Bowler,Retention
+Urvil Patel,₹20 Lakh,GT,🇮🇳 India,2023,WK-Batter,Retention
+Harshit Rana,₹20 Lakh,KKR,🇮🇳 India,2023,Bowler,Retention
+Anukul Roy,₹20 Lakh,KKR,🇮🇳 India,2023,All-rounder,Retention
+Kulwant Khejroliya,₹20 Lakh,KKR,🇮🇳 India,2023,Bowler,Retention
+Suyash Sharma,₹20 Lakh,KKR,🇮🇳 India,2023,Bowler,Retention
+Ramandeep Singh,₹20 Lakh,KKR,🇮🇳 India,2023,All-rounder,Retention
+Karan Sharma,₹20 Lakh,LSG,🇮🇳 India,2023,All-rounder,Retention
+Prerak Mankad,₹20 Lakh,LSG,🇮🇳 India,2023,All-rounder,Retention
+Swapnil Singh,₹20 Lakh,LSG,🇮🇳 India,2023,All-rounder,Retention
+Yudhvir Charak,₹20 Lakh,LSG,🇮🇳 India,2023,Bowler,Retention
+Ayush Badoni,₹20 Lakh,LSG,🇮🇳 India,2023,Batter,Retention
+Manan Vohra,₹20 Lakh,LSG,🇮🇳 India,2023,Batter,Retention
+Mayank Yadav,₹20 Lakh,LSG,🇮🇳 India,2023,Bowler,Retention
+Mohsin Khan,₹20 Lakh,LSG,🇮🇳 India,2023,Bowler,Retention
+Arshad Khan,₹20 Lakh,MI,🇮🇳 India,2023,All-rounder,Retention
+Duan Jansen,₹20 Lakh,MI,🌍 Overseas,2023,Bowler,Retention
+Hrithik Shokeen,₹20 Lakh,MI,🇮🇳 India,2023,Bowler,Retention
+Nehal Wadhera,₹20 Lakh,MI,🇮🇳 India,2023,Batter,Retention
+Shams Mulani,₹20 Lakh,MI,🇮🇳 India,2023,Bowler,Retention
+Akash Madhwal,₹20 Lakh,MI,🇮🇳 India,2023,Bowler,Retention
+Kumar Kartikeya,₹20 Lakh,MI,🇮🇳 India,2023,Bowler,Retention
+Raghav Goyal,₹20 Lakh,MI,🇮🇳 India,2023,Bowler,Retention
+Tristan Stubbs,₹20 Lakh,MI,🇿🇦 South Africa,2023,WK-Batter,Retention
+Vishnu Vinod,₹20 Lakh,MI,🇮🇳 India,2023,WK-Batter,Retention
+Naman Dhir,₹20 Lakh,MI,🇮🇳 India,2023,All-rounder,Retention
+Mohit Rathee,₹20 Lakh,PBKS,🇮🇳 India,2023,Bowler,Retention
+Atharva Taide,₹20 Lakh,PBKS,🇮🇳 India,2023,Batter,Retention
+Shivam Singh,₹20 Lakh,PBKS,🇮🇳 India,2023,All-rounder,Retention
+Baltej Singh,₹20 Lakh,PBKS,🇮🇳 India,2023,Bowler,Retention
+Vidwath Kaverappa,₹20 Lakh,PBKS,🇮🇳 India,2023,Bowler,Retention
+Jitesh Sharma,₹20 Lakh,PBKS,🇮🇳 India,2023,WK-Batter,Retention
+Shashank Singh,₹20 Lakh,PBKS,🇮🇳 India,2023,All-rounder,Retention
+Manoj Bhandage,₹20 Lakh,RCB,🇮🇳 India,2023,All-rounder,Retention
+Rajat Patidar,₹20 Lakh,RCB,🇮🇳 India,2023,Batter,Retention
+Akash Deep,₹20 Lakh,RCB,🇮🇳 India,2023,Bowler,Retention
+Abdul Basith,₹20 Lakh,RR,🇮🇳 India,2023,Bowler,Retention
+Kunal Singh Rathore,₹20 Lakh,RR,🇮🇳 India,2023,WK-Batter,Retention
+Kuldeep Sen,₹20 Lakh,RR,🇮🇳 India,2023,Bowler,Retention
+Dhruv Jurel,₹20 Lakh,RR,🇮🇳 India,2023,WK-Batter,Retention
+Samarth Vyas,₹20 Lakh,SRH,🇮🇳 India,2023,Batter,Retention
+Sanvir Singh,₹20 Lakh,SRH,🇮🇳 India,2023,All-rounder,Retention
+Anmolpreet Singh,₹20 Lakh,SRH,🇮🇳 India,2023,Batter,Retention
+Nitish Kumar Reddy,₹20 Lakh,SRH,🇮🇳 India,2023,All-rounder,Auction
+₹24.75 Cr,Mitchell Starc,KKR,🇦🇺 Australia,2024,Bowler,Auction
+₹20.5 Cr,Pat Cummins,SRH,🇦🇺 Australia,2024,All-rounder,Auction
+₹18.5 Cr,Sam Curran,PBKS,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2024,All-rounder,Retention
+₹17.5 Cr,Cameron Green,RCB,🇦🇺 Australia,2024,All-rounder,Auction
+₹17 Cr,KL Rahul,LSG,🇮🇳 India,2024,WK-Batter,Retention
+₹16 Cr,Ravindra Jadeja,CSK,🇮🇳 India,2024,All-rounder,Retention
+₹16 Cr,Rishabh Pant,DC,🇮🇳 India,2024,WK-Batter,Retention
+₹16 Cr,Nicholas Pooran,LSG,🇹🇹 West Indies (Trinidad),2024,WK-Batter,Retention
+₹16 Cr,Rohit Sharma,MI,🇮🇳 India,2024,Batter,Retention
+₹15.25 Cr,Ishan Kishan,MI,🇮🇳 India,2024,WK-Batter,Retention
+₹15 Cr,Rashid Khan,GT,🇦🇫 Afghanistan,2024,Bowler,Retention
+₹15 Cr,Hardik Pandya,MI,🇮🇳 India,2024,All-rounder,Trade
+₹15 Cr,Virat Kohli,RCB,🇮🇳 India,2024,Batter,Retention
+₹14 Cr,Deepak Chahar,CSK,🇮🇳 India,2024,Bowler,Retention
+₹14 Cr,Daryl Mitchell,CSK,🌍 Overseas,2024,All-rounder,Auction
+₹14 Cr,Sanju Samson,RR,🇮🇳 India,2024,WK-Batter,Retention
+₹13.25 Cr,Phil Salt,KKR,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2024,WK-Batter,Auction
+₹13 Cr,Rinku Singh,KKR,🇮🇳 India,2024,Batter,Retention
+₹12.25 Cr,Shreyas Iyer,KKR,🇮🇳 India,2024,Batter,Retention
+₹12 Cr,MS Dhoni,CSK,🇮🇳 India,2024,WK-Batter,Retention
+₹12 Cr,Varun Chakravarthy,KKR,🇮🇳 India,2024,Bowler,Retention
+₹12 Cr,Andre Russell,KKR,🇯🇲 West Indies (Jamaica),2024,All-rounder,Retention
+₹12 Cr,Jasprit Bumrah,MI,🇮🇳 India,2024,Bowler,Retention
+₹11.75 Cr,Harshal Patel,PBKS,🇮🇳 India,2024,Bowler,Auction
+₹11.5 Cr,Liam Livingstone,PBKS,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2024,All-rounder,Retention
+₹11.5 Cr,Alzarri Joseph,RCB,🇦🇬 West Indies (Antigua),2024,Bowler,Auction
+₹11 Cr,Glenn Maxwell,RCB,🇦🇺 Australia,2024,All-rounder,Retention
+₹10 Cr,Spencer Johnson,GT,🌍 Overseas,2024,Bowler,Auction
+₹10 Cr,Avesh Khan,RR,🇮🇳 India,2024,Bowler,Retention
+₹10 Cr,Jos Buttler,RR,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2024,WK-Batter,Retention
+₹10 Cr,Prasidh Krishna,RR,🇮🇳 India,2024,Bowler,Retention
+₹9.25 Cr,Kagiso Rabada,PBKS,🇿🇦 South Africa,2024,Bowler,Retention
+₹9.2 Cr,Marcus Stoinis,LSG,🇦🇺 Australia,2024,All-rounder,Retention
+₹9 Cr,Axar Patel,DC,🇮🇳 India,2024,All-rounder,Retention
+₹9 Cr,Rahul Tewatia,GT,🇮🇳 India,2024,All-rounder,Retention
+₹8.75 Cr,Washington Sundar,SRH,🇮🇳 India,2024,All-rounder,Retention
+₹8.5 Cr,Shimron Hetmyer,RR,🇬🇾 West Indies (Guyana),2024,Batter,Retention
+₹8.5 Cr,Rahul Tripathi,SRH,🇮🇳 India,2024,Batter,Retention
+₹8.4 Cr,Sameer Rizvi,CSK,🇮🇳 India,2024,Batter,Auction
+₹8.25 Cr,Krunal Pandya,LSG,🇮🇳 India,2024,All-rounder,Retention
+₹8.25 Cr,Tim David,MI,🇸🇬 Singapore,2024,Batter,Retention
+₹8.25 Cr,Shikhar Dhawan,PBKS,🇮🇳 India,2024,Batter,Retention
+₹8.25 Cr,Mayank Agarwal,SRH,🇮🇳 India,2024,Batter,Retention
+₹8 Cr,Moeen Ali,CSK,🌍 Overseas,2024,All-rounder,Retention
+₹8 Cr,Shubman Gill,GT,🇮🇳 India,2024,Batter,Retention
+₹8 Cr,Venkatesh Iyer,KKR,🇮🇳 India,2024,All-rounder,Retention
+₹8 Cr,Nitish Rana,KKR,🇮🇳 India,2024,Batter,Retention
+₹8 Cr,Suryakumar Yadav,MI,🇮🇳 India,2024,Batter,Retention
+₹8 Cr,Rilee Rossouw,PBKS,🌍 Overseas,2024,Batter,Retention
+₹8 Cr,Trent Boult,RR,🇳🇿 New Zealand,2024,Bowler,Auction
+₹7.75 Cr,Devdutt Padikkal,LSG,🇮🇳 India,2024,Batter,Retention
+₹7.5 Cr,Prithvi Shaw,DC,🇮🇳 India,2024,Batter,Retention
+₹7.5 Cr,Mark Wood,LSG,🌍 Overseas,2024,Bowler,Auction
+₹7.4 Cr,M Shahrukh Khan,GT,🇮🇳 India,2024,Batter,Retention
+₹7.4 Cr,Shardul Thakur,KKR,🇮🇳 India,2024,All-rounder,Auction
+₹7.4 Cr,Rovman Powell,RR,🌍 Overseas,2024,Batter,Retention
+₹7.2 Cr,Kumar Kushagra,DC,🇮🇳 India,2024,WK-Batter,Retention
+₹7 Cr,Faf du Plessis,RCB,🇿🇦 South Africa,2024,Batter,Retention
+₹7 Cr,Mohammed Siraj,RCB,🇮🇳 India,2024,Bowler,Retention
+₹6.8 Cr,Travis Head,SRH,🇦🇺 Australia,2024,Batter,Auction
+₹6.75 Cr,Quinton de Kock,LSG,🌍 Overseas,2024,WK-Batter,Retention
+₹6.75 Cr,Jonny Bairstow,PBKS,🌍 Overseas,2024,WK-Batter,Retention
+₹6.5 Cr,Anrich Nortje,DC,🇿🇦 South Africa,2024,Bowler,Retention
+₹6.5 Cr,Mitchell Marsh,DC,🇦🇺 Australia,2024,All-rounder,Retention
+₹6.5 Cr,Yuzvendra Chahal,RR,🇮🇳 India,2024,Bowler,Retention
+₹6.5 Cr,Abhishek Sharma,SRH,🇮🇳 India,2024,Batter,Retention
+₹6.4 Cr,Shivam Mavi,LSG,🇮🇳 India,2024,Bowler,Auction
+₹6.25 Cr,David Warner,DC,🇦🇺 Australia,2024,Batter,Retention
+₹6.25 Cr,Mohammed Shami,GT,🇮🇳 India,2024,Bowler,Retention
+₹6 Cr,Ruturaj Gaikwad,CSK,🇮🇳 India,2024,Batter,Retention
+₹6 Cr,Sunil Narine,KKR,🇹🇹 West Indies (Trinidad),2024,All-rounder,Retention
+₹5.8 Cr,Umesh Yadav,GT,🇮🇳 India,2024,Bowler,Retention
+₹5.8 Cr,Shubham Dubey,RR,🇮🇳 India,2024,All-rounder,Retention
+₹5.75 Cr,Deepak Hooda,LSG,🇮🇳 India,2024,All-rounder,Retention
+₹5.5 Cr,Mukesh Kumar,DC,🇮🇳 India,2024,Bowler,Retention
+₹5.5 Cr,Dinesh Karthik,RCB,🇮🇳 India,2024,WK-Batter,Retention
+₹5.25 Cr,Khaleel Ahmed,DC,🇮🇳 India,2024,Bowler,Retention
+₹5.25 Cr,Rahul Chahar,PBKS,🇮🇳 India,2024,Bowler,Retention
+₹5.25 Cr,Heinrich Klaasen,SRH,🇿🇦 South Africa,2024,WK-Batter,Auction
+₹5 Cr,Jhye Richardson,DC,🌍 Overseas,2024,Bowler,Auction
+₹5 Cr,Gerald Coetzee,MI,🌍 Overseas,2024,Bowler,Auction
+₹5 Cr,Yash Dayal,RCB,🇮🇳 India,2024,Bowler,Retention
+₹5 Cr,Ravichandran Ashwin,RR,🇮🇳 India,2024,All-rounder,Retention
+₹4.8 Cr,Nuwan Thushara,MI,🇱🇰 Sri Lanka,2024,Bowler,Auction
+₹4.6 Cr,Dilshan Madushanka,MI,🌍 Overseas,2024,Bowler,Auction
+₹4.4 Cr,Josh Little,GT,🌍 Overseas,2024,Bowler,Retention
+₹4.2 Cr,Chris Woakes,PBKS,🌍 Overseas,2024,All-rounder,Auction
+₹4.2 Cr,Bhuvneshwar Kumar,SRH,🇮🇳 India,2024,Bowler,Retention
+₹4.2 Cr,Marco Jansen,SRH,🇿🇦 South Africa,2024,Bowler,Retention
+₹4 Cr,Shivam Dube,CSK,🇮🇳 India,2024,All-rounder,Retention
+₹4 Cr,Harry Brook,DC,🌍 Overseas,2024,Batter,Auction
+₹4 Cr,Ravi Bishnoi,LSG,🇮🇳 India,2024,Bowler,Retention
+₹4 Cr,Arshdeep Singh,PBKS,🇮🇳 India,2024,Bowler,Retention
+₹4 Cr,Yashasvi Jaiswal,RR,🇮🇳 India,2024,Batter,Retention
+₹4 Cr,Abdul Samad,SRH,🇮🇳 India,2024,All-rounder,Retention
+₹4 Cr,T Natarajan,SRH,🇮🇳 India,2024,Bowler,Retention
+₹4 Cr,Umran Malik,SRH,🇮🇳 India,2024,Bowler,Retention
+₹3.8 Cr,Harpreet Brar,PBKS,🇮🇳 India,2024,Bowler,Retention
+₹3.8 Cr,Riyan Parag,RR,🇮🇳 India,2024,Batter,Retention
+₹3.6 Cr,Robin Minz,GT,🇮🇳 India,2024,WK-Batter,Auction
+₹3.4 Cr,Anuj Rawat,RCB,🇮🇳 India,2024,WK-Batter,Retention
+₹3.2 Cr,Will Jacks,RCB,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2024,All-rounder,Retention
+₹3 Cr,David Miller,GT,🌍 Overseas,2024,Batter,Retention
+₹3 Cr,Sai Kishore,GT,🇮🇳 India,2024,Bowler,Retention
+₹3 Cr,Dewald Brevis,MI,🇿🇦 South Africa,2024,Batter,Retention
+₹2.8 Cr,Jason Roy,KKR,🌍 Overseas,2024,Batter,Retention
+₹2.6 Cr,Abhinav Manohar,GT,🇮🇳 India,2024,Batter,Retention
+₹2.6 Cr,Navdeep Saini,RR,🇮🇳 India,2024,Bowler,Retention
+₹2.6 Cr,Aiden Markram,SRH,🌍 Overseas,2024,Batter,Retention
+₹2.4 Cr,Matthew Wade,GT,🌍 Overseas,2024,WK-Batter,Retention
+₹2.4 Cr,Manimaran Siddharth,LSG,🇮🇳 India,2024,Bowler,Auction
+₹2.4 Cr,Shahbaz Ahmed,SRH,🇮🇳 India,2024,All-rounder,Retention
+₹2.2 Cr,Sushant Mishra,GT,🇮🇳 India,2024,Bowler,Auction
+₹2 Cr,Mustafizur Rahman,CSK,🇧🇩 Bangladesh,2024,Bowler,Auction
+₹2 Cr,Kuldeep Yadav,DC,🇮🇳 India,2024,Bowler,Retention
+₹2 Cr,Kane Williamson,GT,🌍 Overseas,2024,Batter,Retention
+₹2 Cr,Mujeeb Ur Rahman,KKR,🇦🇫 Afghanistan,2024,Bowler,Auction
+₹2 Cr,David Willey,LSG,🌍 Overseas,2024,All-rounder,Auction
+₹2 Cr,Lockie Ferguson,RCB,🌍 Overseas,2024,Bowler,Retention
+₹1.9 Cr,Mitchell Santner,CSK,🇳🇿 New Zealand,2024,All-rounder,Retention
+₹1.9 Cr,Wriddhiman Saha,GT,🇮🇳 India,2024,WK-Batter,Retention
+₹1.9 Cr,Reece Topley,RCB,🌍 Overseas,2024,Bowler,Retention
+₹1.8 Cr,Rachin Ravindra,CSK,🇳🇿 New Zealand,2024,All-rounder,Auction
+₹1.8 Cr,Mayank Dagar,RCB,🇮🇳 India,2024,All-rounder,Retention
+₹1.7 Cr,Jayant Yadav,GT,🇮🇳 India,2024,All-rounder,Retention
+₹1.7 Cr,Tilak Varma,MI,🇮🇳 India,2024,Batter,Retention
+₹1.6 Cr,Jaydev Unadkat,SRH,🇮🇳 India,2024,Bowler,Auction
+₹1.5 Cr,Rajvardhan Hangargekar,CSK,🇮🇳 India,2024,All-rounder,Retention
+₹1.5 Cr,Sherfane Rutherford,KKR,🇬🇾 West Indies (Guyana),2024,Batter,Retention
+₹1.5 Cr,Mohammad Nabi,MI,🌍 Overseas,2024,All-rounder,Auction
+₹1.5 Cr,Tom Curran,RCB,🌍 Overseas,2024,All-rounder,Retention
+₹1.5 Cr,Adam Zampa,RR,🇦🇺 Australia,2024,Bowler,Retention
+₹1.5 Cr,Glenn Phillips,SRH,🌍 Overseas,2024,All-rounder,Retention
+₹1.5 Cr,Wanindu Hasaranga,SRH,🌍 Overseas,2024,Bowler,Auction
+₹1.4 Cr,Vijay Shankar,GT,🇮🇳 India,2024,All-rounder,Retention
+₹1.2 Cr,Prashant Solanki,CSK,🇮🇳 India,2024,All-rounder,Retention
+₹1 Cr,Devon Conway,CSK,🇳🇿 New Zealand,2024,WK-Batter,Retention
+₹1 Cr,Sumit Kumar,DC,🇮🇳 India,2024,All-rounder,Auction
+₹1 Cr,Gus Atkinson,KKR,🌍 Overseas,2024,Bowler,Auction
+₹1 Cr,Ashton Turner,LSG,🌍 Overseas,2024,All-rounder,Auction
+₹95 Lakh,Mahipal Lomror,RCB,🇮🇳 India,2024,All-rounder,Retention
+₹90 Lakh,Krishnappa Gowtham,LSG,🇮🇳 India,2024,All-rounder,Retention
+₹75 Lakh,Shai Hope,DC,🌍 Overseas,2024,WK-Batter,Auction
+₹75 Lakh,KS Bharat,KKR,🇮🇳 India,2024,WK-Batter,Auction
+₹75 Lakh,Jason Behrendorff,MI,🌍 Overseas,2024,Bowler,Retention
+₹75 Lakh,Nathan Ellis,PBKS,🇦🇺 Australia,2024,Bowler,Retention
+₹70 Lakh,Maheesh Theekshana,CSK,🌍 Overseas,2024,Bowler,Retention
+₹70 Lakh,Rajan Kumar,RCB,🇮🇳 India,2024,Bowler,Retention
+₹65 Lakh,Lalit Yadav,DC,🇮🇳 India,2024,All-rounder,Retention
+₹60 Lakh,Nishant Sindhu,CSK,🇮🇳 India,2024,All-rounder,Retention
+₹60 Lakh,Kartik Tyagi,GT,🇮🇳 India,2024,Bowler,Retention
+₹60 Lakh,Vaibhav Arora,KKR,🇮🇳 India,2024,Bowler,Retention
+₹60 Lakh,Prabhsimran Singh,PBKS,🇮🇳 India,2024,WK-Batter,Retention
+₹60 Lakh,Matthew Short,PBKS,🇦🇺 Australia,2024,All-rounder,Retention
+₹55 Lakh,Rishi Dhawan,PBKS,🇮🇳 India,2024,All-rounder,Retention
+₹50 Lakh,Ajinkya Rahane,CSK,🇮🇳 India,2024,Batter,Retention
+₹50 Lakh,Ishant Sharma,DC,🇮🇳 India,2024,Bowler,Retention
+₹50 Lakh,Lungi Ngidi,DC,🌍 Overseas,2024,Bowler,Auction
+₹50 Lakh,Praveen Dubey,DC,🇮🇳 India,2024,All-rounder,Auction
+₹50 Lakh,Tristan Stubbs,DC,🇿🇦 South Africa,2024,WK-Batter,Retention
+₹50 Lakh,Yash Dhull,DC,🇮🇳 India,2024,Batter,Retention
+₹50 Lakh,Azmatullah Omarzai,GT,🌍 Overseas,2024,All-rounder,Retention
+₹50 Lakh,Mohit Sharma,GT,🇮🇳 India,2024,Bowler,Retention
+₹50 Lakh,Sai Sudharsan,GT,🇮🇳 India,2024,Batter,Retention
+₹50 Lakh,Chetan Sakariya,KKR,🇮🇳 India,2024,Bowler,Auction
+₹50 Lakh,Manish Pandey,KKR,🇮🇳 India,2024,Batter,Auction
+₹50 Lakh,Rahmanullah Gurbaz,KKR,🌍 Overseas,2024,WK-Batter,Retention
+₹50 Lakh,Amit Mishra,LSG,🇮🇳 India,2024,Bowler,Retention
+₹50 Lakh,Kyle Mayers,LSG,🌍 Overseas,2024,All-rounder,Retention
+₹50 Lakh,Naveen Ul Haq,LSG,🌍 Overseas,2024,Bowler,Retention
+₹50 Lakh,Piyush Chawla,MI,🇮🇳 India,2024,Bowler,Retention
+₹50 Lakh,Romario Shepherd,MI,🌍 Overseas,2024,All-rounder,Retention
+₹50 Lakh,Sikandar Raza,PBKS,🌍 Overseas,2024,All-rounder,Retention
+₹50 Lakh,Jitesh Sharma,PBKS,🇮🇳 India,2024,WK-Batter,Retention
+₹50 Lakh,Karn Sharma,RCB,🇮🇳 India,2024,Bowler,Retention
+₹50 Lakh,Rajat Patidar,RCB,🇮🇳 India,2024,Batter,Retention
+₹50 Lakh,Donovan Ferreira,RR,🇿🇦 South Africa,2024,WK-Batter,Retention
+₹50 Lakh,Nandre Burger,RR,🇿🇦 South Africa,2024,Bowler,Auction
+₹50 Lakh,Sandeep Sharma,RR,🇮🇳 India,2024,Bowler,Retention
+₹50 Lakh,Kuldeep Sen,RR,🇮🇳 India,2024,Bowler,Retention
+₹50 Lakh,Fazalhaq Farooqi,SRH,🌍 Overseas,2024,Bowler,Retention
+₹50 Lakh,Mayank Markande,SRH,🇮🇳 India,2024,Bowler,Retention
+₹45 Lakh,Yash Thakur,LSG,🇮🇳 India,2024,Bowler,Retention
+₹40 Lakh,Harpreet Singh,PBKS,🇮🇳 India,2024,Batter,Retention
+₹40 Lakh,Tom Kohler-Cadmore,RR,🌍 Overseas,2024,Batter,Retention
+₹30 Lakh,Noor Ahmad,GT,🇦🇫 Afghanistan,2024,Bowler,Retention
+₹30 Lakh,Arjun Tendulkar,MI,🇮🇳 India,2024,All-rounder,Retention
+₹30 Lakh,Suyash Prabhudessai,RCB,🇮🇳 India,2024,Batter,Retention
+₹25 Lakh,Upendra Yadav,SRH,🇮🇳 India,2024,WK-Batter,Retention
+₹20 Lakh,Ajay Jadav Mandal,CSK,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Avanish Rao Aravelly,CSK,🇮🇳 India,2024,Batter,Auction
+₹20 Lakh,Matheesha Pathirana,CSK,🇱🇰 Sri Lanka,2024,Bowler,Retention
+₹20 Lakh,Mukesh Choudhary,CSK,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Shaik Rasheed,CSK,🇮🇳 India,2024,Batter,Retention
+₹20 Lakh,Simarjeet Singh,CSK,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Abishek Porel,DC,🇮🇳 India,2024,WK-Batter,Retention
+₹20 Lakh,Rasikh Salam,DC,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Ricky Bhui,DC,🇮🇳 India,2024,Batter,Retention
+₹20 Lakh,Swastik Chikara,DC,🇮🇳 India,2024,Batter,Retention
+₹20 Lakh,Vicky Ostwal,DC,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Darshan Nalkande,GT,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Manav Suthar,GT,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Angkrish Raghuvanshi,KKR,🇮🇳 India,2024,Batter,Auction
+₹20 Lakh,Anukul Roy,KKR,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Harshit Rana,KKR,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Ramandeep Singh,KKR,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Arshad Khan,LSG,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Arshin Kulkarni,LSG,🇮🇳 India,2024,Batter,Auction
+₹20 Lakh,Ayush Badoni,LSG,🇮🇳 India,2024,Batter,Retention
+₹20 Lakh,Mayank Yadav,LSG,🇮🇳 India,2024,Bowler,Auction
+₹20 Lakh,Mohsin Khan,LSG,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Prerak Mankad,LSG,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Yudhvir Charak,LSG,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Akash Madhwal,MI,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Anshul Kamboj,MI,🇮🇳 India,2024,All-rounder,Auction
+₹20 Lakh,Kumar Kartikeya,MI,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Naman Dhir,MI,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Nehal Wadhera,MI,🇮🇳 India,2024,Batter,Retention
+₹20 Lakh,Shams Mulani,MI,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Shivalik Sharma,MI,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Shreyas Gopal,MI,🇮🇳 India,2024,Bowler,Auction
+₹20 Lakh,Vishnu Vinod,MI,🇮🇳 India,2024,WK-Batter,Retention
+₹20 Lakh,Ashutosh Sharma,PBKS,🇮🇳 India,2024,All-rounder,Auction
+₹20 Lakh,Atharva Taide,PBKS,🇮🇳 India,2024,Batter,Retention
+₹20 Lakh,Prince Choudhary,PBKS,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Shashank Singh,PBKS,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Shivam Singh,PBKS,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Vidwath Kaverappa,PBKS,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Mangesh Yadav,PBKS,🇮🇳 India,2024,Bowler,Auction
+₹20 Lakh,Akash Deep,RCB,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Himanshu Sharma,RCB,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Manoj Bhandage,RCB,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Swapnil Singh,RCB,🇮🇳 India,2024,All-rounder,Retention
+₹20 Lakh,Abid Mushtaq,RR,🇮🇳 India,2024,Bowler,Retention
+₹20 Lakh,Dhruv Jurel,RR,🇮🇳 India,2024,WK-Batter,Retention
+₹20 Lakh,Kunal Singh Rathore,RR,🇮🇳 India,2024,WK-Batter,Retention
+₹20 Lakh,Akash Singh,SRH,🇮🇳 India,2024,Bowler,Auction
+₹20 Lakh,Anmolpreet Singh,SRH,🇮🇳 India,2024,Batter,Retention
+₹20 Lakh,Jhathavedh Subramanyan,SRH,🇮🇳 India,2024,Bowler,Auction
+₹20 Lakh,Nitish Kumar Reddy,SRH,🇮🇳 India,2024,All-rounder,Auction
+₹20 Lakh,Sanvir Singh,SRH,🇮🇳 India,2024,All-rounder,Retention
+₹27 Cr,Rishabh Pant,LSG,🇮🇳 India,2025,WK-Batter,Auction
+₹26.75 Cr,Shreyas Iyer,PBKS,🇮🇳 India,2025,Batter,Auction
+₹23.75 Cr,Venkatesh Iyer,KKR,🇮🇳 India,2025,All-rounder,Auction
+₹23 Cr,Heinrich Klaasen,SRH,🇿🇦 South Africa,2025,WK-Batter,Auction
+₹21 Cr,Virat Kohli,RCB,🇮🇳 India,2025,Batter,Retention
+₹21 Cr,Nicholas Pooran,LSG,🇹🇹 West Indies (Trinidad),2025,WK-Batter,Retention
+₹18 Cr,Yashasvi Jaiswal,RR,🇮🇳 India,2025,Batter,Retention
+₹18 Cr,Arshdeep Singh,PBKS,🇮🇳 India,2025,Bowler,Retention
+₹18 Cr,Pat Cummins,SRH,🇦🇺 Australia,2025,Bowler,Retention
+₹18 Cr,Jasprit Bumrah,MI,🇮🇳 India,2025,Bowler,Retention
+₹18 Cr,Rashid Khan,GT,🇦🇫 Afghanistan,2025,Bowler,Retention
+₹18 Cr,Ruturaj Gaikwad,CSK,🇮🇳 India,2025,Batter,Retention
+₹18 Cr,Yuzvendra Chahal,PBKS,🇮🇳 India,2025,Bowler,Auction
+₹18 Cr,Ravindra Jadeja,CSK,🇮🇳 India,2025,All-rounder,Retention
+₹18 Cr,Sanju Samson,RR,🇮🇳 India,2025,WK-Batter,Retention
+₹16.5 Cr,Shubman Gill,GT,🇮🇳 India,2025,Batter,Retention
+₹16.5 Cr,Axar Patel,DC,🇮🇳 India,2025,All-rounder,Retention
+₹16.35 Cr,Suryakumar Yadav,MI,🇮🇳 India,2025,Batter,Retention
+₹16 Cr,Rohit Sharma,MI,🇮🇳 India,2025,Batter,Retention
+₹16 Cr,Hardik Pandya,MI,🇮🇳 India,2025,All-rounder,Retention
+₹15 Cr,Jos Buttler,RR,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2025,WK-Batter,Auction
+₹14 Cr,KL Rahul,DC,🇮🇳 India,2025,WK-Batter,Auction
+₹14 Cr,Riyan Parag,RR,🇮🇳 India,2025,Batter,Retention
+₹14 Cr,Dhruv Jurel,RR,🇮🇳 India,2025,WK-Batter,Retention
+₹14 Cr,Abhishek Sharma,SRH,🇮🇳 India,2025,Batter,Retention
+₹14 Cr,Travis Head,SRH,🇦🇺 Australia,2025,Batter,Auction
+₹13.25 Cr,Kuldeep Yadav,DC,🇮🇳 India,2025,Bowler,Retention
+₹13 Cr,Matheesha Pathirana,CSK,🇱🇰 Sri Lanka,2025,Bowler,Retention
+₹13 Cr,Rinku Singh,KKR,🇮🇳 India,2025,Batter,Retention
+₹12.5 Cr,Trent Boult,MI,🇳🇿 New Zealand,2025,Bowler,Retention
+₹12.5 Cr,Josh Hazlewood,RCB,🇦🇺 Australia,2025,Bowler,Auction
+₹12.5 Cr,Jofra Archer,RR,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2025,Bowler,Auction
+₹12.25 Cr,Mohammed Siraj,GT,🇮🇳 India,2025,Bowler,Auction
+₹12 Cr,Varun Chakravarthy,KKR,🇮🇳 India,2025,Bowler,Retention
+₹12 Cr,Andre Russell,KKR,🇯🇲 West Indies (Jamaica),2025,All-rounder,Retention
+₹12 Cr,Sunil Narine,KKR,🇹🇹 West Indies (Trinidad),2025,All-rounder,Retention
+₹12 Cr,Shivam Dube,CSK,🇮🇳 India,2025,All-rounder,Retention
+₹11.75 Cr,Mitchell Starc,KKR,🇦🇺 Australia,2025,Bowler,Retention
+₹11.5 Cr,Phil Salt,RCB,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2025,WK-Batter,Auction
+₹11.25 Cr,Ishan Kishan,SRH,🇮🇳 India,2025,WK-Batter,Auction
+₹11 Cr,Jitesh Sharma,RCB,🇮🇳 India,2025,WK-Batter,Auction
+₹11 Cr,Mayank Yadav,LSG,🇮🇳 India,2025,Bowler,Retention
+₹11 Cr,Shimron Hetmyer,RR,🇬🇾 West Indies (Guyana),2025,Batter,Retention
+₹11 Cr,Rajat Patidar,RCB,🇮🇳 India,2025,Batter,Retention
+₹11 Cr,Marcus Stoinis,PBKS,🇦🇺 Australia,2025,All-rounder,Auction
+₹10.75 Cr,Bhuvneshwar Kumar,RCB,🇮🇳 India,2025,Bowler,Auction
+₹10.75 Cr,T Natarajan,DC,🇮🇳 India,2025,Bowler,Auction
+₹10.75 Cr,Kagiso Rabada,GT,🇿🇦 South Africa,2025,Bowler,Auction
+₹10 Cr,Mohammed Shami,LSG,🇮🇳 India,2025,Bowler,Auction
+₹10 Cr,Noor Ahmad,CSK,🇦🇫 Afghanistan,2025,Bowler,Auction
+₹10 Cr,Tristan Stubbs,DC,🇿🇦 South Africa,2025,WK-Batter,Retention
+₹9.75 Cr,Ravichandran Ashwin,CSK,🇮🇳 India,2025,Bowler,Auction
+₹9.75 Cr,Avesh Khan,LSG,🇮🇳 India,2025,Bowler,Auction
+₹9.5 Cr,Prasidh Krishna,GT,🇮🇳 India,2025,Bowler,Auction
+₹9.25 Cr,Deepak Chahar,MI,🇮🇳 India,2025,Bowler,Auction
+₹9 Cr,Jake Fraser-McGurk,DC,🌍 Overseas,2025,Batter,Auction
+₹8.75 Cr,Liam Livingstone,RCB,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2025,All-rounder,Auction
+₹8.5 Cr,Sai Sudharsan,GT,🇮🇳 India,2025,Batter,Retention
+₹8 Cr,Harshal Patel,SRH,🇮🇳 India,2025,Bowler,Auction
+₹8 Cr,Tilak Varma,MI,🇮🇳 India,2025,Batter,Retention
+₹8 Cr,Mukesh Kumar,DC,🇮🇳 India,2025,Bowler,Auction
+₹8 Cr,Akash Deep,RCB,🇮🇳 India,2025,Bowler,Auction
+₹7.5 Cr,David Miller,LSG,🌍 Overseas,2025,Batter,Auction
+₹7.2 Cr,Ravi Bishnoi,RR,🇮🇳 India,2025,Bowler,Auction
+₹6.5 Cr,Tushar Deshpande,RR,🇮🇳 India,2025,Bowler,Auction
+₹6.5 Cr,Anrich Nortje,KKR,🇿🇦 South Africa,2025,Bowler,Auction
+₹6.25 Cr,Devon Conway,CSK,🇳🇿 New Zealand,2025,WK-Batter,Auction
+₹6.25 Cr,Harry Brook,DC,🌍 Overseas,2025,Batter,Auction
+₹6 Cr,Rasikh Salam,RCB,🇮🇳 India,2025,Bowler,Retention
+₹6 Cr,Nitish Kumar Reddy,SRH,🇮🇳 India,2025,All-rounder,Retention
+₹5.75 Cr,Krunal Pandya,RCB,🇮🇳 India,2025,All-rounder,Auction
+₹5.5 Cr,Shashank Singh,PBKS,🇮🇳 India,2025,Batter,Retention
+₹5.25 Cr,Naman Dhir,MI,🇮🇳 India,2025,All-rounder,Retention
+₹5.25 Cr,Will Jacks,MI,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2025,All-rounder,Auction
+₹5.25 Cr,Wanindu Hasaranga,RR,🌍 Overseas,2025,Bowler,Auction
+₹5.2 Cr,Mangesh Yadav,RCB,🇮🇳 India,2025,Bowler,Auction
+₹5 Cr,Yash Dayal,RCB,🇮🇳 India,2025,Bowler,Auction
+₹4.8 Cr,Khaleel Ahmed,CSK,🇮🇳 India,2025,Bowler,Auction
+₹4.8 Cr,AM Ghazanfar,MI,🇦🇫 Afghanistan,2025,Bowler,Auction
+₹4.4 Cr,Maheesh Theekshana,RR,🌍 Overseas,2025,Bowler,Auction
+₹4.2 Cr,Nitish Rana,RR,🇮🇳 India,2025,Batter,Auction
+₹4.2 Cr,Nehal Wadhera,PBKS,🇮🇳 India,2025,Batter,Retention
+₹4.2 Cr,Abdul Samad,LSG,🇮🇳 India,2025,All-rounder,Auction
+₹4.2 Cr,Glenn Maxwell,PBKS,🇦🇺 Australia,2025,All-rounder,Auction
+₹4 Cr,Ramandeep Singh,KKR,🇮🇳 India,2025,All-rounder,Retention
+₹4 Cr,Prabhsimran Singh,PBKS,🇮🇳 India,2025,WK-Batter,Retention
+₹4 Cr,Abishek Porel,DC,🇮🇳 India,2025,WK-Batter,Retention
+₹4 Cr,Ayush Badoni,LSG,🇮🇳 India,2025,Batter,Retention
+₹4 Cr,Mohsin Khan,LSG,🇮🇳 India,2025,Bowler,Retention
+₹4 Cr,Sandeep Sharma,RR,🇮🇳 India,2025,Bowler,Retention
+₹4 Cr,MS Dhoni,CSK,🇮🇳 India,2025,WK-Batter,Retention
+₹4 Cr,Rahul Tewatia,GT,🇮🇳 India,2025,All-rounder,Retention
+₹4 Cr,M Shahrukh Khan,GT,🇮🇳 India,2025,Batter,Retention
+₹4 Cr,Harshit Rana,KKR,🇮🇳 India,2025,Bowler,Retention
+₹4 Cr,Marco Jansen,PBKS,🇿🇦 South Africa,2025,All-rounder,Auction
+₹4 Cr,Rachin Ravindra,CSK,🇳🇿 New Zealand,2025,Batter,Auction
+₹3.8 Cr,Ashutosh Sharma,PBKS,🇮🇳 India,2025,Batter,Retention
+₹3.8 Cr,Priyansh Arya,DC,🇮🇳 India,2025,Batter,Auction
+₹3.6 Cr,Quinton de Kock,KKR,🌍 Overseas,2025,WK-Batter,Auction
+₹3.4 Cr,Rahul Tripathi,CSK,🇮🇳 India,2025,Batter,Auction
+₹3.4 Cr,Anshul Kamboj,CSK,🇮🇳 India,2025,Bowler,Auction
+₹3.4 Cr,Mitchell Marsh,LSG,🇦🇺 Australia,2025,All-rounder,Auction
+₹3.2 Cr,Rahul Chahar,SRH,🇮🇳 India,2025,Bowler,Auction
+₹3.2 Cr,Washington Sundar,GT,🇮🇳 India,2025,All-rounder,Auction
+₹3.2 Cr,Abhinav Manohar,SRH,🇮🇳 India,2025,Batter,Auction
+₹3 Cr,Tim David,RCB,🇸🇬 Singapore,2025,Batter,Auction
+₹3 Cr,Alzarri Joseph,GT,🇦🇬 West Indies (Antigua),2025,Bowler,Auction
+₹3 Cr,Robin Minz,GT,🇮🇳 India,2025,WK-Batter,Auction
+₹3 Cr,Angkrish Raghuvanshi,KKR,🇮🇳 India,2025,Batter,Retention
+₹3 Cr,Mitchell Owen,PBKS,🌍 Overseas,2025,Batter,Auction
+₹2.8 Cr,Spencer Johnson,KKR,🌍 Overseas,2025,Bowler,Auction
+₹2.6 Cr,Suyash Sharma,RCB,🇮🇳 India,2025,Bowler,Auction
+₹2.6 Cr,Josh Inglis,PBKS,🇦🇺 Australia,2025,WK-Batter,Auction
+₹2.6 Cr,Jacob Bethell,RCB,🌍 Overseas,2025,All-rounder,Auction
+₹2.4 Cr,Sherfane Rutherford,KKR,🇬🇾 West Indies (Guyana),2025,All-rounder,Auction
+₹2.4 Cr,Shahbaz Ahmed,RCB,🇮🇳 India,2025,All-rounder,Auction
+₹2.4 Cr,Sam Curran,CSK,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2025,All-rounder,Auction
+₹2.4 Cr,Gerald Coetzee,GT,🌍 Overseas,2025,Bowler,Auction
+₹2.4 Cr,Azmatullah Omarzai,PBKS,🌍 Overseas,2025,All-rounder,Auction
+₹2.2 Cr,Dewald Brevis,CSK,🇿🇦 South Africa,2025,Batter,Replacement
+₹2.2 Cr,Gurjapneet Singh,CSK,🇮🇳 India,2025,Bowler,Auction
+₹2.2 Cr,Mohit Sharma,DC,🇮🇳 India,2025,Bowler,Auction
+₹2 Cr,Sai Kishore,GT,🇮🇳 India,2025,Bowler,Auction
+₹2 Cr,Nathan Ellis,CSK,🇦🇺 Australia,2025,Bowler,Auction
+₹2 Cr,Shardul Thakur,LSG,🇮🇳 India,2025,All-rounder,Auction
+₹2 Cr,Devdutt Padikkal,RCB,🇮🇳 India,2025,Batter,Auction
+₹2 Cr,Faf du Plessis,DC,🇿🇦 South Africa,2025,Batter,Auction
+₹2 Cr,Glenn Phillips,GT,🌍 Overseas,2025,All-rounder,Auction
+₹2 Cr,Moeen Ali,KKR,🌍 Overseas,2025,All-rounder,Auction
+₹2 Cr,Rahmanullah Gurbaz,KKR,🌍 Overseas,2025,WK-Batter,Auction
+₹2 Cr,Aiden Markram,LSG,🌍 Overseas,2025,Batter,Auction
+₹2 Cr,Mitchell Santner,MI,🇳🇿 New Zealand,2025,All-rounder,Auction
+₹2 Cr,Lockie Ferguson,PBKS,🌍 Overseas,2025,Bowler,Auction
+₹2 Cr,Fazalhaq Farooqi,RR,🌍 Overseas,2025,Bowler,Auction
+₹1.9 Cr,Wriddhiman Saha,GT,🇮🇳 India,2025,WK-Batter,Retention
+₹1.8 Cr,Vaibhav Arora,KKR,🇮🇳 India,2025,Bowler,Auction
+₹1.8 Cr,Vijaykumar Vyshak,PBKS,🇮🇳 India,2025,Bowler,Auction
+₹1.7 Cr,Mahipal Lomror,GT,🇮🇳 India,2025,All-rounder,Auction
+₹1.6 Cr,Yash Thakur,PBKS,🇮🇳 India,2025,Bowler,Auction
+₹1.6 Cr,Nuwan Thushara,RCB,🇱🇰 Sri Lanka,2025,Bowler,Auction
+₹1.5 Cr,Matthew Short,CSK,🇦🇺 Australia,2025,Batter,Auction
+₹1.5 Cr,Ajinkya Rahane,KKR,🇮🇳 India,2025,Batter,Auction
+₹1.5 Cr,Jamie Overton,CSK,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2025,All-rounder,Auction
+₹1.5 Cr,Donovan Ferreira,PBKS,🇿🇦 South Africa,2025,Batter,Auction
+₹1.5 Cr,Adam Zampa,RCB,🇦🇺 Australia,2025,Bowler,Auction
+₹1.5 Cr,Rovman Powell,KKR,🌍 Overseas,2025,Batter,Auction
+₹1.5 Cr,Harpreet Brar,PBKS,🇮🇳 India,2025,Bowler,Auction
+₹1.5 Cr,Romario Shepherd,RCB,🌍 Overseas,2025,All-rounder,Auction
+₹1.5 Cr,Kwena Maphaka,RR,🇿🇦 South Africa,2025,Bowler,Auction
+₹1.5 Cr,Simarjeet Singh,SRH,🇮🇳 India,2025,Bowler,Auction
+₹1.3 Cr,Arshad Khan,GT,🇮🇳 India,2025,All-rounder,Auction
+₹1.3 Cr,Gurnoor Brar,GT,🇮🇳 India,2025,Bowler,Auction
+₹1.25 Cr,Aaron Hardie,PBKS,🌍 Overseas,2025,All-rounder,Auction
+₹1.2 Cr,Akash Madhwal,RR,🇮🇳 India,2025,Bowler,Auction
+₹1.2 Cr,Eshan Malinga,SRH,🌍 Overseas,2025,Bowler,Auction
+₹1.1 Cr,Vaibhav Sooryavanshi,RR,🇮🇳 India,2025,Batter,Auction
+₹1 Cr,Jaydev Unadkat,SRH,🇮🇳 India,2025,Bowler,Auction
+₹1 Cr,Kyle Jamieson,PBKS,🇳🇿 New Zealand,2025,Bowler,Replacement
+₹1 Cr,Ryan Rickelton,MI,🇿🇦 South Africa,2025,WK-Batter,Auction
+₹1 Cr,Lungi Ngidi,RCB,🌍 Overseas,2025,Bowler,Auction
+₹1 Cr,Brydon Carse,SRH,🌍 Overseas,2025,All-rounder,Auction
+₹95 Lakh,Sameer Rizvi,DC,🇮🇳 India,2025,Batter,Auction
+₹95 Lakh,Vishnu Vinod,PBKS,🇮🇳 India,2025,WK-Batter,Auction
+₹80 Lakh,Xavier Bartlett,PBKS,🌍 Overseas,2025,Bowler,Auction
+₹80 Lakh,Kuldeep Sen,PBKS,🇮🇳 India,2025,Bowler,Auction
+₹80 Lakh,Shubham Dubey,RR,🇮🇳 India,2025,All-rounder,Auction
+₹75 Lakh,Sarfaraz Khan,CSK,🇮🇳 India,2025,Batter,Auction
+₹75 Lakh,Prithvi Shaw,DC,🇮🇳 India,2025,Batter,Auction
+₹75 Lakh,Manish Pandey,KKR,🇮🇳 India,2025,Batter,Auction
+₹75 Lakh,Ishant Sharma,GT,🇮🇳 India,2025,Bowler,Auction
+₹75 Lakh,Umran Malik,KKR,🇮🇳 India,2025,Bowler,Auction
+₹75 Lakh,Deepak Hooda,CSK,🇮🇳 India,2025,All-rounder,Auction
+₹75 Lakh,Dushmantha Chameera,DC,🌍 Overseas,2025,Bowler,Auction
+₹75 Lakh,Jayant Yadav,GT,🇮🇳 India,2025,All-rounder,Auction
+₹75 Lakh,Karim Janat,GT,🌍 Overseas,2025,All-rounder,Auction
+₹75 Lakh,Shamar Joseph,LSG,🌍 Overseas,2025,Bowler,Auction
+₹75 Lakh,Manimaran Siddharth,LSG,🇮🇳 India,2025,Bowler,Auction
+₹75 Lakh,Reece Topley,MI,🌍 Overseas,2025,Bowler,Auction
+₹75 Lakh,Lizaad Williams,MI,🌍 Overseas,2025,Bowler,Auction
+₹75 Lakh,Kamindu Mendis,SRH,🌍 Overseas,2025,All-rounder,Auction
+₹65 Lakh,Kumar Kushagra,GT,🇮🇳 India,2025,WK-Batter,Retention
+₹50 Lakh,Karun Nair,DC,🇮🇳 India,2025,Batter,Retention
+₹50 Lakh,Swapnil Singh,RCB,🇮🇳 India,2025,All-rounder,Retention
+₹50 Lakh,Vipraj Nigam,DC,🇮🇳 India,2025,All-rounder,Auction
+₹40 Lakh,Madhav Tiwari,DC,🇮🇳 India,2025,All-rounder,Auction
+₹40 Lakh,Anukul Roy,KKR,🇮🇳 India,2025,All-rounder,Auction
+₹40 Lakh,Zeeshan Ansari,SRH,🇮🇳 India,2025,Bowler,Auction
+₹35 Lakh,Yudhvir Charak,RR,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Ayush Mhatre,CSK,🇮🇳 India,2025,Batter,Replacement
+₹30 Lakh,Urvil Patel,CSK,🇮🇳 India,2025,WK-Batter,Replacement
+₹30 Lakh,Shreyas Gopal,CSK,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Mukesh Choudhary,CSK,🇮🇳 India,2025,Bowler,Retention
+₹30 Lakh,Darshan Nalkande,DC,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Ajay Jadav Mandal,DC,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Tripurana Vijay,DC,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Manvanth Kumar,DC,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Anuj Rawat,GT,🇮🇳 India,2025,WK-Batter,Auction
+₹30 Lakh,Kulwant Khejroliya,GT,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Luvnith Sisodia,KKR,🇮🇳 India,2025,WK-Batter,Auction
+₹30 Lakh,Aryan Juyal,LSG,🇮🇳 India,2025,WK-Batter,Auction
+₹30 Lakh,Arshin Kulkarni,LSG,🇮🇳 India,2025,Batter,Auction
+₹30 Lakh,Digvesh Rathi,LSG,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Akash Singh,LSG,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Rajvardhan Hangargekar,LSG,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Himmat Singh,LSG,🇮🇳 India,2025,Batter,Auction
+₹30 Lakh,Prince Yadav,LSG,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Yuvraj Chaudhary,LSG,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Arjun Tendulkar,MI,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Raj Angad Bawa,MI,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Bevon Jacobs,MI,🌍 Overseas,2025,Batter,Auction
+₹30 Lakh,Ashwani Kumar,MI,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Vignesh Puthur,MI,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Shrijith Krishnan,MI,🇮🇳 India,2025,WK-Batter,Auction
+₹30 Lakh,Venkata Satyanarayana,MI,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Praveen Dubey,PBKS,🇮🇳 India,2025,All-rounder,Auction
+₹30 Lakh,Suryansh Shedge,PBKS,🇮🇳 India,2025,Batter,Auction
+₹30 Lakh,Musheer Khan,PBKS,🇮🇳 India,2025,Batter,Auction
+₹30 Lakh,Pyla Avinash,PBKS,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Harnoor Pannu,PBKS,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Abhinandan Singh,RCB,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Kumar Kartikeya,RR,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Kunal Singh Rathore,RR,🇮🇳 India,2025,WK-Batter,Auction
+₹30 Lakh,Ashok Sharma,RR,🇮🇳 India,2025,Bowler,Auction
+₹30 Lakh,Aniket Verma,SRH,🇮🇳 India,2025,Batter,Auction
+₹30 Lakh,Atharva Taide,SRH,🇮🇳 India,2025,Batter,Auction
+₹30 Lakh,Sachin Baby,SRH,🇮🇳 India,2025,Batter,Auction
+₹27 Cr,Rishabh Pant,LSG,🇮🇳 India,2026,WK-Batter,Retention
+₹26.75 Cr,Shreyas Iyer,PBKS,🇮🇳 India,2026,Batter,Retention
+₹25.2 Cr,Cameron Green,KKR,🇦🇺 Australia,2026,All-rounder,Auction
+₹23 Cr,Heinrich Klaasen,SRH,🇿🇦 South Africa,2026,WK-Batter,Retention
+₹21 Cr,Nicholas Pooran,LSG,🇹🇹 West Indies (Trinidad),2026,WK-Batter,Retention
+₹21 Cr,Virat Kohli,RCB,🇮🇳 India,2026,Batter,Retention
+₹18 Cr,Ruturaj Gaikwad,CSK,🇮🇳 India,2026,Batter,Trade
+₹18 Cr,Sanju Samson,CSK,🇮🇳 India,2026,WK-Batter,Trade
+₹18 Cr,Rashid Khan,GT,🇦🇫 Afghanistan,2026,Bowler,Retention
+₹18 Cr,Matheesha Pathirana,KKR,🇱🇰 Sri Lanka,2026,Bowler,Auction
+₹18 Cr,Jasprit Bumrah,MI,🇮🇳 India,2026,Bowler,Retention
+₹18 Cr,Arshdeep Singh,PBKS,🇮🇳 India,2026,Bowler,Retention
+₹18 Cr,Yuzvendra Chahal,PBKS,🇮🇳 India,2026,Bowler,Auction
+₹18 Cr,Yashasvi Jaiswal,RR,🇮🇳 India,2026,Batter,Retention
+₹18 Cr,Pat Cummins,SRH,🇦🇺 Australia,2026,Bowler,Retention
+₹16.5 Cr,Axar Patel,DC,🇮🇳 India,2026,All-rounder,Retention
+₹16.5 Cr,Shubman Gill,GT,🇮🇳 India,2026,Batter,Retention
+₹16.35 Cr,Hardik Pandya,MI,🇮🇳 India,2026,All-rounder,Retention
+₹16.35 Cr,Suryakumar Yadav,MI,🇮🇳 India,2026,Batter,Retention
+₹16.3 Cr,Rohit Sharma,MI,🇮🇳 India,2026,Batter,Retention
+₹15.75 Cr,Jos Buttler,GT,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2026,WK-Batter,Auction
+₹14.2 Cr,Kartik Sharma,CSK,🇮🇳 India,2026,WK-Batter,Auction
+₹14.2 Cr,Prashant Veer,CSK,🇮🇳 India,2026,All-rounder,Auction
+₹14 Cr,KL Rahul,DC,🇮🇳 India,2026,WK-Batter,Retention
+₹14 Cr,Abhishek Sharma,SRH,🇮🇳 India,2026,Batter,Retention
+₹14 Cr,Dhruv Jurel,RR,🇮🇳 India,2026,WK-Batter,Retention
+₹14 Cr,Ravindra Jadeja,RR,🇮🇳 India,2026,All-rounder,Trade
+₹14 Cr,Riyan Parag,RR,🇮🇳 India,2026,Batter,Retention
+₹14 Cr,Travis Head,SRH,🇦🇺 Australia,2026,Batter,Retention
+₹13.25 Cr,Kuldeep Yadav,DC,🇮🇳 India,2026,Bowler,Retention
+₹13 Cr,Rinku Singh,KKR,🇮🇳 India,2026,Batter,Retention
+₹13 Cr,Liam Livingstone,SRH,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2026,All-rounder,Auction
+₹12.5 Cr,Trent Boult,MI,🇳🇿 New Zealand,2026,Bowler,Retention
+₹12.5 Cr,Jofra Archer,RR,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2026,Bowler,Retention
+₹12.5 Cr,Josh Hazlewood,RCB,🇦🇺 Australia,2026,Bowler,Retention
+₹12.25 Cr,Mohammed Siraj,GT,🇮🇳 India,2026,Bowler,Retention
+₹12 Cr,Shivam Dube,CSK,🇮🇳 India,2026,All-rounder,Retention
+₹12 Cr,Sunil Narine,KKR,🇹🇹 West Indies (Trinidad),2026,All-rounder,Retention
+₹12 Cr,Varun Chakravarthy,KKR,🇮🇳 India,2026,Bowler,Retention
+₹12 Cr,Andre Russell,KKR,🇯🇲 West Indies (Jamaica),2026,All-rounder,Auction
+₹11.75 Cr,Mitchell Starc,DC,🇦🇺 Australia,2026,Bowler,Retention
+₹11.5 Cr,Phil Salt,RCB,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2026,WK-Batter,Retention
+₹11.25 Cr,Ishan Kishan,SRH,🇮🇳 India,2026,WK-Batter,Retention
+₹11 Cr,Mayank Yadav,LSG,🇮🇳 India,2026,Bowler,Retention
+₹11 Cr,Marcus Stoinis,PBKS,🇦🇺 Australia,2026,All-rounder,Auction
+₹11 Cr,Shimron Hetmyer,RR,🇬🇾 West Indies (Guyana),2026,Batter,Retention
+₹11 Cr,Jitesh Sharma,RCB,🇮🇳 India,2026,WK-Batter,Auction
+₹11 Cr,Rajat Patidar,RCB,🇮🇳 India,2026,Batter,Retention
+₹10.75 Cr,T Natarajan,DC,🇮🇳 India,2026,Bowler,Auction
+₹10.75 Cr,Kagiso Rabada,GT,🇿🇦 South Africa,2026,Bowler,Retention
+₹10.75 Cr,Bhuvneshwar Kumar,RCB,🇮🇳 India,2026,Bowler,Auction
+₹10 Cr,Noor Ahmad,CSK,🇦🇫 Afghanistan,2026,Bowler,Retention
+₹10 Cr,Tristan Stubbs,DC,🇿🇦 South Africa,2026,Batter,Retention
+₹10 Cr,Mohammed Shami,LSG,🇮🇳 India,2026,Bowler,Auction
+₹9.75 Cr,Avesh Khan,LSG,🇮🇳 India,2026,Bowler,Retention
+₹9.5 Cr,Prasidh Krishna,GT,🇮🇳 India,2026,Bowler,Retention
+₹9.25 Cr,Deepak Chahar,MI,🇮🇳 India,2026,Bowler,Auction
+₹8.6 Cr,Josh Inglis,LSG,🇦🇺 Australia,2026,WK-Batter,Auction
+₹8.5 Cr,Sai Sudharsan,GT,🇮🇳 India,2026,Batter,Retention
+₹8.4 Cr,Auqib Nabi,DC,🇮🇳 India,2026,Bowler,Auction
+₹8 Cr,Mukesh Kumar,DC,🇮🇳 India,2026,Bowler,Retention
+₹8 Cr,Tilak Varma,MI,🇮🇳 India,2026,Batter,Retention
+₹8 Cr,Harshal Patel,SRH,🇮🇳 India,2026,Bowler,Auction
+₹7.2 Cr,Ravi Bishnoi,RR,🇮🇳 India,2026,Bowler,Auction
+₹7 Cr,Jason Holder,GT,🇧🇧 West Indies (Barbados),2026,All-rounder,Auction
+₹7 Cr,Marco Jansen,PBKS,🇿🇦 South Africa,2026,All-rounder,Auction
+₹7 Cr,Venkatesh Iyer,RCB,🇮🇳 India,2026,All-rounder,Retention
+₹6.5 Cr,Tushar Deshpande,RR,🇮🇳 India,2026,Bowler,Auction
+₹6 Cr,Rasikh Salam,RCB,🇮🇳 India,2026,Bowler,Retention
+₹6 Cr,Nitish Kumar Reddy,SRH,🇮🇳 India,2026,All-rounder,Retention
+₹5.75 Cr,Krunal Pandya,RCB,🇮🇳 India,2026,All-rounder,Retention
+₹5.5 Cr,Shashank Singh,PBKS,🇮🇳 India,2026,Batter,Retention
+₹5.25 Cr,Naman Dhir,MI,🇮🇳 India,2026,All-rounder,Retention
+₹5.25 Cr,Will Jacks,MI,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2026,All-rounder,Retention
+₹5.2 Cr,Rahul Chahar,CSK,🇮🇳 India,2026,Bowler,Retention
+₹5.2 Cr,Mangesh Yadav,RCB,🇮🇳 India,2026,Bowler,Retention
+₹5 Cr,Yash Dayal,RCB,🇮🇳 India,2026,Bowler,Retention
+₹4.8 Cr,Khaleel Ahmed,CSK,🇮🇳 India,2026,Bowler,Retention
+₹4.8 Cr,AM Ghazanfar,MI,🇦🇫 Afghanistan,2026,Bowler,Auction
+₹4.2 Cr,Nitish Rana,DC,🇮🇳 India,2026,Batter,Retention
+₹4.2 Cr,Abdul Samad,LSG,🇮🇳 India,2026,All-rounder,Retention
+₹4.2 Cr,Nehal Wadhera,PBKS,🇮🇳 India,2026,Batter,Retention
+₹4 Cr,MS Dhoni,CSK,🇮🇳 India,2026,WK-Batter,Retention
+₹4 Cr,Abishek Porel,DC,🇮🇳 India,2026,WK-Batter,Retention
+₹4 Cr,Pathum Nissanka,DC,🇱🇰 Sri Lanka,2026,Batter,Retention
+₹4 Cr,Rahul Tewatia,GT,🇮🇳 India,2026,All-rounder,Retention
+₹4 Cr,M Shahrukh Khan,GT,🇮🇳 India,2026,Batter,Retention
+₹4 Cr,Harshit Rana,KKR,🇮🇳 India,2026,Bowler,Retention
+₹4 Cr,Ramandeep Singh,KKR,🇮🇳 India,2026,All-rounder,Retention
+₹4 Cr,Ayush Badoni,LSG,🇮🇳 India,2026,Batter,Retention
+₹4 Cr,Mohsin Khan,LSG,🇮🇳 India,2026,Bowler,Retention
+₹4 Cr,Prabhsimran Singh,PBKS,🇮🇳 India,2026,WK-Batter,Retention
+₹4 Cr,Sandeep Sharma,RR,🇮🇳 India,2026,Bowler,Retention
+₹3.8 Cr,Ashutosh Sharma,DC,🇮🇳 India,2026,Batter,Retention
+₹3.8 Cr,Priyansh Arya,PBKS,🇮🇳 India,2026,Batter,Retention
+₹3.5 Cr,Nandre Burger,RR,🇿🇦 South Africa,2026,Bowler,Auction
+₹3.4 Cr,Anshul Kamboj,CSK,🇮🇳 India,2026,Bowler,Retention
+₹3.4 Cr,Mitchell Marsh,LSG,🇦🇺 Australia,2026,All-rounder,Auction
+₹3.2 Cr,Washington Sundar,GT,🇮🇳 India,2026,All-rounder,Retention
+₹3 Cr,Angkrish Raghuvanshi,KKR,🇮🇳 India,2026,Batter,Retention
+₹3 Cr,Tim David,RCB,🇸🇬 Singapore,2026,Batter,Retention
+₹3 Cr,Mitchell Owen,PBKS,🌍 Overseas,2026,Batter,Auction
+₹3 Cr,Jack Edwards,SRH,🌍 Overseas,2026,All-rounder,Auction
+₹3 Cr,Tejasvi Singh,KKR,🇮🇳 India,2026,Batter,Auction
+₹2.6 Cr,Sherfane Rutherford,MI,🇬🇾 West Indies (Guyana),2026,All-rounder,Retention
+₹2.6 Cr,Suyash Sharma,RCB,🇮🇳 India,2026,Bowler,Retention
+₹2.6 Cr,Jacob Bethell,RCB,🌍 Overseas,2026,All-rounder,Auction
+₹2.4 Cr,Sam Curran,RR,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2026,All-rounder,Trade
+₹2.4 Cr,Shahbaz Ahmed,LSG,🇮🇳 India,2026,All-rounder,Retention
+₹2.4 Cr,Azmatullah Omarzai,PBKS,🌍 Overseas,2026,All-rounder,Auction
+₹2.2 Cr,Dewald Brevis,CSK,🇿🇦 South Africa,2026,Batter,Retention
+₹2.2 Cr,Gurjapneet Singh,CSK,🇮🇳 India,2026,Bowler,Retention
+₹2.2 Cr,Akshat Raghuwanshi,LSG,🇮🇳 India,2026,Batter,Auction
+₹2 Cr,Akeal Hosein,CSK,🏝️ West Indies,2026,All-rounder,Retention
+₹2 Cr,Matt Henry,CSK,🇳🇿 New Zealand,2026,Bowler,Retention
+₹2 Cr,Nathan Ellis,CSK,🇦🇺 Australia,2026,Bowler,Retention
+₹2 Cr,Kyle Jamieson,DC,🇳🇿 New Zealand,2026,All-rounder,Retention
+₹2 Cr,Devdutt Padikkal,RCB,🇮🇳 India,2026,Batter,Retention
+₹2 Cr,Shardul Thakur,MI,🇮🇳 India,2026,All-rounder,Retention
+₹2 Cr,Sai Kishore,GT,🇮🇳 India,2026,Bowler,Retention
+₹2 Cr,Mitchell Santner,MI,🇳🇿 New Zealand,2026,All-rounder,Retention
+₹2 Cr,Glenn Phillips,GT,🌍 Overseas,2026,All-rounder,Auction
+₹2 Cr,Aiden Markram,LSG,🌍 Overseas,2026,All-rounder,Auction
+₹2 Cr,David Miller,LSG,🌍 Overseas,2026,Batter,Auction
+₹2 Cr,Lockie Ferguson,PBKS,🌍 Overseas,2026,Bowler,Auction
+₹2 Cr,Adam Milne,RR,🌍 Overseas,2026,Bowler,Auction
+₹2 Cr,Ben Duckett,DC,🌍 Overseas,2026,Batter,Auction
+₹2 Cr,Jacob Duffy,RCB,🌍 Overseas,2026,Bowler,Auction
+₹2 Cr,Tom Banton,GT,🌍 Overseas,2026,WK-Batter,Auction
+₹1.8 Cr,Vaibhav Arora,KKR,🇮🇳 India,2026,Bowler,Auction
+₹1.8 Cr,Vijaykumar Vyshak,PBKS,🇮🇳 India,2026,Bowler,Auction
+₹1.6 Cr,Nuwan Thushara,RCB,🇱🇰 Sri Lanka,2026,Bowler,Auction
+₹1.6 Cr,Yash Thakur,PBKS,🇮🇳 India,2026,Bowler,Auction
+₹1.5 Cr,Jamie Overton,CSK,🏴󠁧󠁢󠁥󠁮󠁧󠁿 England,2026,All-rounder,Retention
+₹1.5 Cr,Matthew Short,CSK,🇦🇺 Australia,2026,Batter,Retention
+₹1.5 Cr,Ajinkya Rahane,KKR,🇮🇳 India,2026,Batter,Retention
+₹1.5 Cr,Rovman Powell,KKR,🌍 Overseas,2026,Batter,Auction
+₹1.5 Cr,Harpreet Brar,PBKS,🇮🇳 India,2026,All-rounder,Auction
+₹1.5 Cr,Kwena Maphaka,RR,🇿🇦 South Africa,2026,Bowler,Auction
+₹1.5 Cr,Romario Shepherd,RCB,🌍 Overseas,2026,All-rounder,Auction
+₹1.5 Cr,Spencer Johnson,CSK,🌍 Overseas,2026,Bowler,Replacement
+₹1.5 Cr,Salil Arora,SRH,🇮🇳 India,2026,Bowler,Auction
+₹1.3 Cr,Arshad Khan,DC,🇮🇳 India,2026,Bowler,Auction
+₹1.3 Cr,Gurnoor Brar,GT,🇮🇳 India,2026,Bowler,Auction
+₹1.2 Cr,Eshan Malinga,SRH,🌍 Overseas,2026,Bowler,Auction
+₹1.1 Cr,Vaibhav Sooryavanshi,RR,🇮🇳 India,2026,Batter,Retention
+₹1 Cr,Jaydev Unadkat,SRH,🇮🇳 India,2026,Bowler,Auction
+₹1 Cr,Ryan Rickelton,MI,🇿🇦 South Africa,2026,WK-Batter,Auction
+₹1 Cr,Quinton de Kock,MI,🌍 Overseas,2026,WK-Batter,Auction
+₹1 Cr,Donovan Ferreira,RR,🇿🇦 South Africa,2026,All-rounder,Auction
+₹1 Cr,Brydon Carse,SRH,🌍 Overseas,2026,Bowler,Auction
+₹1 Cr,Naman Tiwari,LSG,🇮🇳 India,2026,Batter,Auction
+₹95 Lakh,Sameer Rizvi,DC,🇮🇳 India,2026,Batter,Retention
+₹95 Lakh,Vishnu Vinod,PBKS,🇮🇳 India,2026,WK-Batter,Auction
+₹95 Lakh,Ravi Singh,RR,🇮🇳 India,2026,Bowler,Auction
+₹90 Lakh,Sushant Mishra,RR,🇮🇳 India,2026,Bowler,Auction
+₹90 Lakh,Ashok Sharma,GT,🇮🇳 India,2026,Bowler,Auction
+₹80 Lakh,Xavier Bartlett,PBKS,🌍 Overseas,2026,Bowler,Auction
+₹80 Lakh,Shubham Dubey,RR,🇮🇳 India,2026,Bowler,Auction
+₹75 Lakh,Sarfaraz Khan,CSK,🇮🇳 India,2026,Batter,Auction
+₹75 Lakh,Prithvi Shaw,DC,🇮🇳 India,2026,Batter,Retention
+₹75 Lakh,Ishant Sharma,GT,🇮🇳 India,2026,Bowler,Retention
+₹75 Lakh,Manish Pandey,KKR,🇮🇳 India,2026,Batter,Retention
+₹75 Lakh,Rahul Tripathi,KKR,🇮🇳 India,2026,Batter,Retention
+₹75 Lakh,Dushmantha Chameera,DC,🌍 Overseas,2026,Bowler,Auction
+₹75 Lakh,Jayant Yadav,GT,🇮🇳 India,2026,All-rounder,Auction
+₹75 Lakh,Umran Malik,KKR,🇮🇳 India,2026,Bowler,Auction
+₹75 Lakh,Blessing Muzarabani,KKR,🌍 Overseas,2026,Bowler,Auction
+₹75 Lakh,Moeen Ali,KKR,🌍 Overseas,2026,All-rounder,Auction
+₹75 Lakh,Matthew Breetzke,LSG,🌍 Overseas,2026,Batter,Auction
+₹75 Lakh,Manimaran Siddharth,LSG,🇮🇳 India,2026,Bowler,Auction
+₹75 Lakh,Shamar Joseph,LSG,🌍 Overseas,2026,Bowler,Auction
+₹75 Lakh,Corbin Bosch,MI,🌍 Overseas,2026,All-rounder,Auction
+₹75 Lakh,Glenn Maxwell,PBKS,🇦🇺 Australia,2026,All-rounder,Auction
+₹75 Lakh,Adam Zampa,SRH,🇦🇺 Australia,2026,Bowler,Auction
+₹75 Lakh,Kamindu Mendis,SRH,🌍 Overseas,2026,All-rounder,Auction
+₹75 Lakh,Zakary Foulkes,CSK,🌍 Overseas,2026,Bowler,Auction
+₹75 Lakh,Kuldeep Sen,RR,🇮🇳 India,2026,Bowler,Auction
+₹75 Lakh,Wiaan Mulder,SRH,🌍 Overseas,2026,All-rounder,Auction
+₹75 Lakh,Luke Wood,GT,🌍 Overseas,2026,Bowler,Auction
+₹65 Lakh,Robin Minz,MI,🇮🇳 India,2026,WK-Batter,Retention
+₹65 Lakh,Kumar Kushagra,GT,🇮🇳 India,2026,WK-Batter,Auction
+₹50 Lakh,Devon Conway,CSK,🇳🇿 New Zealand,2026,WK-Batter,Retention
+₹50 Lakh,Karun Nair,DC,🇮🇳 India,2026,Batter,Retention
+₹50 Lakh,Swapnil Singh,RCB,🇮🇳 India,2026,All-rounder,Retention
+₹50 Lakh,Vipraj Nigam,DC,🇮🇳 India,2026,All-rounder,Auction
+₹40 Lakh,Madhav Tiwari,DC,🇮🇳 India,2026,Bowler,Auction
+₹40 Lakh,Anukul Roy,KKR,🇮🇳 India,2026,All-rounder,Auction
+₹40 Lakh,Zeeshan Ansari,SRH,🇮🇳 India,2026,Bowler,Auction
+₹35 Lakh,Yudhvir Charak,RR,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Mukesh Choudhary,CSK,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Ramakrishna Ghosh,CSK,🇮🇳 India,2026,WK-Batter,Auction
+₹30 Lakh,Shreyas Gopal,CSK,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Ayush Mhatre,CSK,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Ajay Jadav Mandal,DC,🇮🇳 India,2026,All-rounder,Auction
+₹30 Lakh,Tripurana Vijay,DC,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Anuj Rawat,GT,🇮🇳 India,2026,WK-Batter,Auction
+₹30 Lakh,Manav Suthar,GT,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Darshan Nalkande,GT,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Nishant Sindhu,GT,🇮🇳 India,2026,All-rounder,Auction
+₹30 Lakh,Saurabh Dubey,KKR,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Luvnith Sisodia,KKR,🇮🇳 India,2026,WK-Batter,Auction
+₹30 Lakh,Manush Shah,KKR,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Akash Singh,LSG,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Arjun Tendulkar,LSG,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Arshin Kulkarni,LSG,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Digvesh Rathi,LSG,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Himmat Singh,LSG,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Prince Yadav,LSG,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Yudhvir Singh,LSG,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Ashwani Kumar,MI,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Raghu Sharma,MI,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Raj Angad Bawa,MI,🇮🇳 India,2026,All-rounder,Auction
+₹30 Lakh,Bevon Jacobs,MI,🌍 Overseas,2026,Batter,Auction
+₹30 Lakh,Mayank Markande,MI,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Karn Sharma,MI,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Harnoor Pannu,PBKS,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Musheer Khan,PBKS,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Pyla Avinash,PBKS,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Suryansh Shedge,PBKS,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Lhuan-dre Pretorius,RR,🌍 Overseas,2026,All-rounder,Auction
+₹30 Lakh,Abhinandan Singh,RCB,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Kanishk Chouhan,RCB,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Aneeshwar Gautam,RCB,🇮🇳 India,2026,WK-Batter,Auction
+₹30 Lakh,Aniket Verma,SRH,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Harsh Dubey,SRH,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Ravichandran Smaran,SRH,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Simarjeet Singh,SRH,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Vignesh Puthur,RR,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Yash Raj Punja,RR,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Aman Rao,RR,🇮🇳 India,2026,All-rounder,Auction
+₹30 Lakh,Brijesh Sharma,RR,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Shivang Kumar,SRH,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Onkar Tukaram Tarmale,SRH,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Sakib Hussain,SRH,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Praful Hinge,SRH,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Sahil Parakh,DC,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Daksh Kamra,KKR,🇮🇳 India,2026,All-rounder,Auction
+₹30 Lakh,Sarthak Ranjan,KKR,🇮🇳 India,2026,WK-Batter,Auction
+₹30 Lakh,Kartik Tyagi,KKR,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Cooper Connolly,PBKS,🌍 Overseas,2026,All-rounder,Auction
+₹30 Lakh,Harnoor Singh,PBKS,🇮🇳 India,2026,Bowler,Retention
+₹30 Lakh,Vihaan Malhotra,RCB,🇮🇳 India,2026,Batter,Auction
+₹30 Lakh,Prithvi Raj Yarra,GT,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Danish Malewar,MI,🇮🇳 India,2026,Bowler,Auction
+₹30 Lakh,Mohammad Izhar,MI,🇮🇳 India,2026,Bowler,Auction
