@@ -1,9 +1,9 @@
 {
  "trades": [
   {
-   "year": 2026,
+   "year": 2027,
    "label": "Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",
-   "note": "The only completed deal of the 2026 window.",
+   "note": "The only completed deal of the 2027 window.",
    "A": "DC",
    "B": "LSG",
    "players": [
@@ -56,7 +56,7 @@
    ]
   },
   {
-   "year": 2025,
+   "year": 2026,
    "label": "Sanju Samson to Chennai, Jadeja and Curran to Rajasthan",
    "note": "The largest swap of the window.",
    "A": "CSK",
@@ -120,7 +120,7 @@
    ]
   },
   {
-   "year": 2025,
+   "year": 2026,
    "label": "Mohammed Shami to Lucknow",
    "note": "A cash deal.",
    "A": "LSG",
@@ -166,7 +166,7 @@
    ]
   },
   {
-   "year": 2025,
+   "year": 2026,
    "label": "Sherfane Rutherford to Mumbai",
    "note": "Cash.",
    "A": "MI",
@@ -212,7 +212,7 @@
    ]
   },
   {
-   "year": 2025,
+   "year": 2026,
    "label": "Nitish Rana to Delhi, Donovan Ferreira to Rajasthan",
    "note": "A straight swap.",
    "A": "DC",
@@ -267,7 +267,7 @@
    ]
   },
   {
-   "year": 2025,
+   "year": 2026,
    "label": "Mayank Markande to Mumbai",
    "note": "Cash.",
    "A": "MI",
@@ -313,7 +313,7 @@
    ]
   },
   {
-   "year": 2025,
+   "year": 2026,
    "label": "Shardul Thakur to Mumbai, Arjun Tendulkar to Lucknow",
    "note": "The smallest deal.",
    "A": "MI",
