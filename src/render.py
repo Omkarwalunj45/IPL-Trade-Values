@@ -146,38 +146,37 @@ def trade_pair(t):
 def _outcome(t):
     """What the traded players were actually worth in the season that followed.
 
-       Shown only where that season has been played.  Projected is what the model
-       said before the trade; actual is what he returned.  A man who never took the
-       field is marked as such rather than scored zero -- not playing is a different
-       failure from playing badly."""
+       Built from the same card, title and table classes as the two cards above it,
+       so it inherits the site's styling rather than carrying its own -- a separate
+       stylesheet was how the first version ended up invisible.
+
+       A man who never took the field is marked as such rather than scored zero, and
+       one who played too little to read is marked separately again: not playing and
+       playing briefly are different things, and neither is a bad season."""
     o = t.get('outcome')
     if not o:
         return ''
-    cells = []
+    rows = []
     for p in o['players']:
-        a = p['actual']
+        a, st = p.get('actual'), p.get('status')
         if a is None:
-            v, cl = 'did not play', 'flat'
+            act, vd, cl = '&mdash;', (st or 'No record'), 'was'
         else:
-            v, cl = f"{a:+.2f}", ('up' if a >= p['projected'] else 'dn')
-        cells.append(f'<div class="ocell"><div class="oname">{p["player"]}'
-                     f'<span class="oto">to {p["to"]}</span></div>'
-                     f'<div class="orow"><span>Projected</span><b>{p["projected"]:+.2f}</b></div>'
-                     f'<div class="orow"><span>Actual {o["season"]}</span>'
-                     f'<b class="{cl}">{v}</b></div></div>')
-    return (f'<div class="oc"><div class="octitle">What happened in IPL {o["season"]}</div>'
-            f'<div class="ogrid">{"".join(cells)}</div></div>')
-
-OUTCOME_CSS = '''
-.oc{background:#fff;border:1px solid #E4E0D2;border-top:3px solid #C9A227;margin:-6px 0 26px;padding:12px 20px 16px}
-.octitle{font-family:Archivo,sans-serif;font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:#9A7B1B;margin-bottom:8px}
-.ogrid{display:flex;gap:26px;flex-wrap:wrap}
-.ocell{min-width:170px}
-.oname{font-family:Archivo,sans-serif;font-weight:700;font-size:13px;color:#1D3324}
-.oto{font-weight:400;color:#8A9690;font-size:11px;margin-left:6px}
-.orow{display:flex;justify-content:space-between;font-size:12.5px;color:#6B7A6F;padding:2px 0}
-.orow b{color:#2A3A30}.orow b.up{color:#1F6F3F}.orow b.dn{color:#A63A2B}.orow b.flat{color:#8A9690}
-'''
+            act = f"{a:+.2f}"
+            hit = a >= p['projected']
+            vd, cl = ('Delivered' if hit else 'Fell short'), ('now up' if hit else 'now dn')
+        rows.append(f'<tr><td>{p["player"]}<span style="color:#8A9690;font-size:11px;'
+                    f'margin-left:6px">to {p["to"]}</span></td>'
+                    f'<td class="was">{p["projected"]:+.2f}</td>'
+                    f'<td class="{cl}">{act}</td>'
+                    f'<td class="{cl}">{vd}</td></tr>')
+    head = ('<tr><th></th><th class="sb">Projected</th>'
+            f'<th class="sb">Actual {o["season"]}</th><th class="sb">Verdict</th></tr>')
+    return ('<div class="row" style="grid-template-columns:1fr;margin-top:-14px">'
+            '<div class="card" style="min-height:0">'
+            f'<div class="ctitle">What happened in IPL {o["season"]}</div>'
+            f'<div style="padding:6px 28px 18px"><table class="m">{head}{"".join(rows)}</table></div>'
+            '</div></div>')
 
 FOOT = ('<p class="foot"><b>Projected WAR</b> is wins above replacement: 0 is a freely available player, a '
         'regular sits near 2, the best season in the data reads 6. <b>Market value</b> is what the auction '
@@ -186,7 +185,7 @@ FOOT = ('<p class="foot"><b>Projected WAR</b> is wins above replacement: 0 is a 
         'Hover a player name for his card.</p>')
 
 def featured(data):
-    H = [f'<style>{CSS}{OUTCOME_CSS}</style><div class="wrap"><h2 class="sec">Featured Trades</h2>'
+    H = [f'<style>{CSS}</style><div class="wrap"><h2 class="sec">Featured Trades</h2>'
          '<p class="lede">Every deal below is evaluated against the world in which it never happened.</p>']
     for yr in sorted({t['year'] for t in data['trades']}, reverse=True):
         H.append(f'<div class="yr"><span>{yr} WINDOW</span><div class="ln"></div></div>')
