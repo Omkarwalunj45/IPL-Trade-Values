@@ -16,12 +16,27 @@ from render import featured, trade_pair, CSS as CARDCSS
 boot_splash(); hero()
 
 NAV = ["Featured trades", "Trade simulator", "Player rankings", "Methodology", "Contact"]
+st.markdown("""<style>
+.contact-link button {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 6px 0 0 !important;
+  color: #2F4A38 !important;
+  font-family: 'Source Serif 4', Georgia, serif !important;
+  font-size: 17.5px !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  box-shadow: none !important;
+}
+.contact-link button:hover {
+  color: #16281C !important;
+  background: transparent !important;
+}
+</style>""", unsafe_allow_html=True)
+
 if "tab" not in st.session_state: st.session_state.tab = NAV[0]
 
-# Allow links such as ?tab=Contact (used by the Methodology "Contact me" link)
-_query_tab = st.query_params.get("tab")
-if _query_tab in NAV:
-    st.session_state.tab = _query_tab
 st.markdown('<div class="navwrap">', unsafe_allow_html=True)
 cols = st.columns(len(NAV)); clicked = None
 for i, n in enumerate(NAV):
@@ -169,11 +184,21 @@ elif TAB == "Methodology":
             letter-spacing:.04em;text-transform:uppercase">{article.BY}</div>''',
           unsafe_allow_html=True)
         st.markdown('<div class="essay">', unsafe_allow_html=True)
-        for b in article.B:
-            if b[0] == 't':   st.markdown(b[1])
-            elif b[0] == 'h': st.markdown(f"### {b[1]}")
-            elif b[0] == 'H': st.markdown(f"## {b[1]}")
-            elif b[0] == 'f': st.latex(b[1])
+        for i, b in enumerate(article.B):
+            if b[0] == 't':
+                st.markdown(b[1])
+            elif b[0] == 'h':
+                st.markdown(f"### {b[1]}")
+            elif b[0] == 'H':
+                st.markdown(f"## {b[1]}")
+            elif b[0] == 'f':
+                st.latex(b[1])
+            elif b[0] == 'c':
+                st.markdown('<div class="contact-link">', unsafe_allow_html=True)
+                if st.button(b[1], key=f"article_contact_{i}"):
+                    st.session_state.tab = "Contact"
+                    st.rerun()
+                st.markdown('</div>', unsafe_allow_html=True)
             else:
                 enc = base64.b64encode(open(os.path.join(DATA, b[1]), 'rb').read()).decode()
                 st.markdown(f'<div class="figbox"><img src="data:image/png;base64,{enc}"></div>',
