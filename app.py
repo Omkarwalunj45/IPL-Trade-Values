@@ -11,9 +11,36 @@ for _p in (SRC, HERE):
 
 st.set_page_config(page_title="IPL Trade Values", layout="wide", initial_sidebar_state="collapsed")
 from shell import hero, splash, boot_splash
-from render import featured, trade_pair, site_footer, CSS as CARDCSS
+from render import featured, trade_pair, footer_text, CSS as CARDCSS
 
 boot_splash(); hero()
+
+st.markdown("""<style>
+button[kind="tertiary"]{
+  background:transparent!important;border:none!important;box-shadow:none!important;
+  padding:0!important;margin:6px 0 0!important;
+  color:#2b2a27!important;-webkit-text-fill-color:#2b2a27!important;
+  font-family:Arial,sans-serif!important;font-size:13px!important;font-weight:600!important;
+  text-decoration:none!important;justify-content:flex-start!important}
+button[kind="tertiary"]:hover{
+  background:transparent!important;color:#1D3324!important;-webkit-text-fill-color:#1D3324!important;
+  text-decoration:underline!important}
+</style>""", unsafe_allow_html=True)
+
+def show_site_footer(key):
+    q, body, copy = footer_text()
+    st.markdown(
+        f"""<div style="margin-top:34px;border-top:1px solid #e0ddd4;padding:22px 0 0;
+        font-family:Arial,sans-serif;color:#6f6a61;line-height:1.7">
+        <div style="font-size:14px;font-weight:700;color:#2b2a27;margin-bottom:5px">{q}</div>
+        <div style="font-size:13px;max-width:820px">{body}</div></div>""",
+        unsafe_allow_html=True)
+    if st.button('Contact me', key=key, type='tertiary'):
+        st.session_state.tab = 'Contact'
+        st.rerun()
+    st.markdown(
+        f"""<div style="font-family:Arial,sans-serif;font-size:12px;color:#8a8474;margin-top:10px">{copy}</div>""",
+        unsafe_allow_html=True)
 
 NAV = ["Featured trades", "Trade simulator", "Player rankings", "Methodology", "Contact"]
 if "tab" not in st.session_state: st.session_state.tab = NAV[0]
@@ -33,12 +60,14 @@ if TAB == "Featured trades":
     D = json.load(open(os.path.join(DATA, "featured.json")))
     C.html('<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>',
            height=13500, scrolling=False)
+    show_site_footer('contact_featured')
 
 # ---------------------------------------------------------------- SIMULATOR
 elif TAB == "Trade simulator":
     import engine
     if "_eng" not in st.session_state:
         b = splash("Loading squads, purses and the no-trade baseline", vh=34, size=25)
+        engine.boot()
         st.session_state["_eng"] = engine.boot()
         b.empty()
     B = st.session_state["_eng"]
@@ -120,7 +149,7 @@ elif TAB == "Trade simulator":
                         for c in ['Fills at all', 'Fills at the required standard']:
                             h[c] = (h[c] * 100).round(0).astype(int).astype(str) + '%'
                         st.dataframe(h.round(2), hide_index=True, use_container_width=True)
-    st.markdown(site_footer(), unsafe_allow_html=True)
+    show_site_footer('contact_simulator')
 
 # ---------------------------------------------------------------- RANKINGS
 elif TAB == "Player rankings":
@@ -167,11 +196,19 @@ elif TAB == "Methodology":
             letter-spacing:.04em;text-transform:uppercase">{article.BY}</div>''',
           unsafe_allow_html=True)
         st.markdown('<div class="essay">', unsafe_allow_html=True)
-        for b in article.B:
-            if b[0] == 't':   st.markdown(b[1])
-            elif b[0] == 'h': st.markdown(f"### {b[1]}")
-            elif b[0] == 'H': st.markdown(f"## {b[1]}")
-            elif b[0] == 'f': st.latex(b[1])
+        for i, b in enumerate(article.B):
+            if b[0] == 't':
+                st.markdown(b[1])
+            elif b[0] == 'c':
+                if st.button(b[1], key=f"article_contact_{i}", type="tertiary"):
+                    st.session_state.tab = "Contact"
+                    st.rerun()
+            elif b[0] == 'h':
+                st.markdown(f"### {b[1]}")
+            elif b[0] == 'H':
+                st.markdown(f"## {b[1]}")
+            elif b[0] == 'f':
+                st.latex(b[1])
             else:
                 enc = base64.b64encode(open(os.path.join(DATA, b[1]), 'rb').read()).decode()
                 st.markdown(f'<div class="figbox"><img src="data:image/png;base64,{enc}"></div>',
