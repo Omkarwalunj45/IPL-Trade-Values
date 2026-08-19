@@ -206,18 +206,6 @@ FOOT = ('<p class="foot"><b>Projected WAR</b> is wins above replacement: 0 is a 
         'a squad can field. Odds come from simulated seasons. <b>Net value</b> combines all three. '
         'Hover a player name for his card.</p>')
 
-FOOTER_Q = "Questions?"
-FOOTER_BODY = (
-    "If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using "
-    "IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be "
-    "applied to your specific questions."
-)
-FOOTER_COPY = "© 2026 Omkar Walunj. All Rights Reserved."
-
-def footer_text():
-    return FOOTER_Q, FOOTER_BODY, FOOTER_COPY
-
-
 def featured(data):
     H = [f'<style>{CSS}</style><div class="wrap"><h2 class="sec">Featured Trades</h2>'
          '<p class="lede">Every deal below is evaluated against the world in which it never happened. The valuation cards use only information available to the clubs at the time of the trade; where the season has since been played, a third card reports what actually followed.</p>']
