@@ -32,9 +32,14 @@ def show_site_footer(key):
     st.markdown(
         f"""<div style="margin-top:34px;border-top:1px solid #e0ddd4;padding:22px 0 0;
         font-family:Arial,sans-serif;color:#6f6a61;line-height:1.7">
-        <div style="font-size:14px;font-weight:700;color:#2b2a27;margin-bottom:5px">{q}</div>
+        <div style="font-family:Archivo,sans-serif;font-size:15px;font-weight:700;color:#1D3324;margin-bottom:5px">{q}</div>
         <div style="font-size:13px;max-width:820px">{body}</div></div>""",
         unsafe_allow_html=True)
+    st.markdown("""<style>
+    div[data-testid="stButton"] button[kind="tertiary"] p{
+        font-family:Archivo,sans-serif !important;font-size:15px !important;
+        font-weight:700 !important;color:#1D3324 !important}
+    </style>""", unsafe_allow_html=True)
     if st.button('Contact me', key=key, type='tertiary'):
         st.session_state.tab = 'Contact'
         st.rerun()
@@ -57,9 +62,18 @@ TAB = st.session_state.tab
 
 # ---------------------------------------------------------------- FEATURED
 if TAB == "Featured trades":
-    D = json.load(open(os.path.join(DATA, "featured.json")))
-    C.html('<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>',
-           height=13500, scrolling=False)
+    @st.cache_data(show_spinner=False)
+    def _featured_html():
+        # Assembling 21 trades was being redone on every rerun, which is what made
+        # leaving this tab feel slow. Built once and cached instead.
+        D = json.load(open(os.path.join(DATA, "featured.json")))
+        n_tr = len(D['trades'])
+        n_out = sum(1 for t in D['trades'] if t.get('outcome'))
+        n_yr = len({t['year'] for t in D['trades']})
+        h = 150 + 56 * n_yr + 452 * n_tr + 150 * n_out + 120
+        return '<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>', h
+    _html, _h = _featured_html()
+    C.html(_html, height=_h, scrolling=False)
     show_site_footer('contact_featured')
 
 # ---------------------------------------------------------------- SIMULATOR
