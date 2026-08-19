@@ -211,6 +211,7 @@ SITE_FOOT = (
     'font-family:Arial,sans-serif;color:#6f6a61;line-height:1.7">'
     '<div style="font-family:Arial,sans-serif;font-size:14px;font-weight:700;color:#2b2a27;margin-bottom:5px">Questions?</div>'
     '<div style="font-size:13px;max-width:820px">If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions.</div>'
+    '<div style="margin-top:14px;font-size:13px;font-weight:600;color:#2b2a27">Contact me</div>'
     '<div style="margin-top:16px;font-size:12px;color:#8a8474">© 2026 Omkar Walunj. All Rights Reserved.</div>'
     '</div>'
 )
