@@ -215,6 +215,17 @@ elif TAB == "Methodology":
           <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#16281C;
             letter-spacing:.04em;text-transform:uppercase">{article.BY}</div>''',
           unsafe_allow_html=True)
+        # The methodology tab builds its own footer out of article blocks rather than
+        # calling show_site_footer, so "Questions?" and "Contact me" were falling back
+        # to a plain markdown heading and an unstyled button. Both are matched to the
+        # other two tabs here: Archivo, bold, in the site green.
+        st.markdown("""<style>
+        div[data-testid="stButton"] button[kind="tertiary"] p{
+            font-family:Archivo,sans-serif !important;font-size:15px !important;
+            font-weight:700 !important;color:#1D3324 !important}
+        div[data-testid="stButton"] button[kind="tertiary"]{
+            padding-left:0 !important;margin-top:-6px}
+        </style>""", unsafe_allow_html=True)
         st.markdown('<div class="essay">', unsafe_allow_html=True)
         for i, b in enumerate(article.B):
             if b[0] == 't':
@@ -224,7 +235,12 @@ elif TAB == "Methodology":
                     st.session_state.tab = "Contact"
                     st.rerun()
             elif b[0] == 'h':
-                st.markdown(f"### {b[1]}")
+                if b[1].strip().lower() == 'questions?':
+                    st.markdown('<div style="font-family:Archivo,sans-serif;font-size:15px;'
+                                'font-weight:700;color:#1D3324;margin:26px 0 5px">'
+                                f'{b[1]}</div>', unsafe_allow_html=True)
+                else:
+                    st.markdown(f"### {b[1]}")
             elif b[0] == 'H':
                 st.markdown(f"## {b[1]}")
             elif b[0] == 'f':
