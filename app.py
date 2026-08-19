@@ -67,11 +67,9 @@ if TAB == "Featured trades":
         # Assembling 21 trades was being redone on every rerun, which is what made
         # leaving this tab feel slow. Built once and cached instead.
         D = json.load(open(os.path.join(DATA, "featured.json")))
-        n_tr = len(D['trades'])
-        n_out = sum(1 for t in D['trades'] if t.get('outcome'))
-        n_yr = len({t['year'] for t in D['trades']})
-        h = 150 + 56 * n_yr + 452 * n_tr + 150 * n_out + 120
-        return '<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>', h
+        from render import featured_height
+        return ('<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>',
+                featured_height(D))
     _html, _h = _featured_html()
     C.html(_html, height=_h, scrolling=False)
     show_site_footer('contact_featured')
