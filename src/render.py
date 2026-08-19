@@ -180,11 +180,11 @@ def _outcome(t):
             # names the season, and the colour grades the call.
             lvl = 'Strong' if a >= 1.00 else 'Useful' if a >= 0.30 else 'Poor'
             if d >= 0.30:
-                vd, col = f'{lvl} \u003A better than projected', GRN
+                vd, col = f'{lvl} \u2014 better than projected', GRN
             elif d > -1.25:
-                vd, col = f'{lvl} \u003A as projected', AMB
+                vd, col = f'{lvl} \u2014 as projected', AMB
             else:
-                vd, col = f'{lvl} \u003A well short', RED
+                vd, col = f'{lvl} \u2014 well short', RED
         rows.append(f'<tr><td>{p["player"]}<span style="color:#8A9690;font-size:11px;'
                     f'margin-left:6px">to {p["to"]}</span></td>'
                     f'<td class="was">{pr:+.2f}</td>'
@@ -211,7 +211,6 @@ SITE_FOOT = (
     'font-family:Arial,sans-serif;color:#6f6a61;line-height:1.7">'
     '<div style="font-family:Arial,sans-serif;font-size:14px;font-weight:700;color:#2b2a27;margin-bottom:5px">Questions?</div>'
     '<div style="font-size:13px;max-width:820px">If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions.</div>'
-    '<div style="margin-top:9px"><a href="?tab=Contact" style="color:#1D5E3B;text-decoration:underline;font-weight:700">Contact me</a></div>'
     '<div style="margin-top:16px;font-size:12px;color:#8a8474">© 2026 Omkar Walunj. All Rights Reserved.</div>'
     '</div>'
 )
