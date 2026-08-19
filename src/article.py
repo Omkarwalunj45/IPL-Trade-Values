@@ -63,7 +63,7 @@ B = [
 ('t', """All I care is that if I can quantify what is being given up and show what has to be true for a trade to work, then I think I have got closer to answering the question I started with:"""),
 ('H', 'What is an IPL trade actually worth?'),
 ('h', 'Questions?'),
-('t', "If you are an professional cricket team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions."),
+('t', "If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions."),
 ('c', 'Contact me'),
 ('t', '© 2026 Omkar Walunj. All Rights Reserved.'),
 ]
