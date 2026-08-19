@@ -1,0 +1,238 @@
+player,pWAR_final,pWAR,WAR_recent,team,role,salary,capped,overseas,auctionStatus,ipl_balls_wtd,t20i_balls_wtd,balls_eq,source,ipl_balls_faced,ipl_balls_bowled,bat_pos,bowl_phase,bowl_kind,bat_group,balls_recent,pWAR_base,chg,WAR
+Dwaine Pretorius,0.605,0.61,0.61,CSK,Allrounder,0.5,1,1,sold,140.85,0.0,140.85,T20I only,0.0,0.0,,,,,140.85,0.61,0.0,0.61
+Prashant Solanki,0.0,0.0,0.0,CSK,Bowler,1.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Hari Nishanth,0.0,0.0,0.0,CSK,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Narayan Jagadeesan,0.63,0.63,0.63,CSK,WK-Batter,0.2,0,0,sold,58.0,0.0,58.0,IPL only,29.0,0.0,4.0,,,Middle,58.0,0.63,0.0,0.63
+Subhranshu Senapati,0.0,0.0,0.0,CSK,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Bhagath Varma,0.0,0.0,0.0,CSK,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Mukesh Choudhary,0.0,0.0,0.0,CSK,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Simarjeet Singh,0.0,0.0,0.0,CSK,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Chris Jordan,0.375,0.38,0.38,CSK,Allrounder,3.6,1,1,sold,988.9,0.0,988.9,IPL+T20I,52.0,276.0,7.5,Middle+Death,pace bowler,Lower,988.9,0.38,0.0,0.38
+Adam Milne,0.243,0.24,0.24,CSK,Bowler,1.9,1,1,sold,363.15,0.0,363.15,IPL+T20I,17.0,87.0,8.0,Powerplay+Middle,pace bowler,Lower,363.15,0.24,0.0,0.24
+Mitchell Santner,0.568,0.57,0.57,CSK,Allrounder,1.9,1,1,sold,398.25,0.0,398.25,IPL+T20I,23.0,130.0,8.0,Middle,spin bowler,Lower,398.25,0.57,0.0,0.57
+Rajvardhan Hangargekar,0.0,0.0,0.0,CSK,Bowler,1.5,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Devon Conway,0.648,0.65,0.65,CSK,Batter,1.0,1,1,sold,177.15,0.0,177.15,T20I only,0.0,0.0,,,,,177.15,0.65,0.0,0.65
+Maheesh Theekshana,0.588,0.59,0.59,CSK,Bowler,0.7,1,1,sold,89.55,0.0,89.55,T20I only,0.0,0.0,,,,,89.55,0.59,0.0,0.59
+Shivam Dube,0.34,0.34,0.34,CSK,Allrounder,4.0,1,0,sold,1074.7,0.0,1074.7,IPL+T20I,331.0,97.0,5.0,Middle+Death,pace bowler,Middle,1074.7,0.34,0.0,0.34
+Deepak Chahar,0.527,0.53,0.53,CSK,Bowler,14.0,1,0,sold,2081.5,0.0,2081.5,IPL+T20I,22.0,1061.0,8.5,Powerplay+Middle+Death,pace bowler,Tail,2081.5,0.53,0.0,0.53
+Tushar Deshpande,0.167,0.17,0.17,CSK,Bowler,0.2,0,0,sold,230.0,0.0,230.0,IPL only,12.0,110.0,9.5,Powerplay+Middle,pace bowler,Tail,230.0,0.17,0.0,0.17
+KM Asif,0.622,0.62,0.62,CSK,Bowler,0.2,0,0,sold,42.0,0.0,42.0,IPL only,0.0,14.0,,,pace bowler,,42.0,0.62,0.0,0.62
+Ambati Rayudu,0.621,0.62,0.62,CSK,WK-Batter,6.75,1,0,sold,1377.0,0.0,1377.0,IPL only,755.0,0.0,4.0,,,Middle,1377.0,0.62,0.0,0.62
+Dwayne Bravo,0.791,0.79,0.79,CSK,Allrounder,4.4,1,1,sold,1479.45,0.0,1479.45,IPL+T20I,90.0,619.0,7.0,Middle+Death,pace bowler,Lower,1479.45,0.79,0.0,0.79
+Robin Uthappa,0.63,0.63,0.63,CSK,Batter,2.0,1,0,sold,825.0,0.0,825.0,IPL only,493.0,0.0,3.0,,,No3,825.0,0.63,0.0,0.63
+Ravindra Jadeja,0.765,0.77,0.77,CSK,Allrounder,16.0,1,0,retained,2560.55,0.0,2560.55,IPL+T20I,379.0,847.0,6.0,Middle+Death,spin bowler,Lower,2560.55,0.77,0.0,0.77
+Moeen Ali,0.852,0.85,0.85,CSK,Allrounder,8.0,1,1,retained,1769.25,0.0,1769.25,IPL+T20I,409.0,337.0,4.0,Middle+Death,spin bowler,Middle,1769.25,0.85,0.0,0.85
+Ruturaj Gaikwad,1.06,1.06,1.06,CSK,Batter,6.0,1,0,retained,1748.6,0.0,1748.6,IPL+T20I,635.0,0.0,1.0,,,Opener,1748.6,1.06,0.0,1.06
+MS Dhoni,0.354,0.35,0.35,CSK,WK-Batter,12.0,1,0,retained,990.8,0.0,990.8,IPL+T20I,588.0,0.0,5.0,,,Middle,990.8,0.35,0.0,0.35
+Vicky Ostwal,0.0,0.0,0.0,DC,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Tim Seifert,0.453,0.45,0.45,DC,WK-Batter,0.5,1,1,sold,142.79999999999998,0.0,142.79999999999998,IPL+T20I,4.0,0.0,7.0,,,Lower,142.79999999999998,0.45,0.0,0.45
+Lungi Ngidi,0.283,0.28,0.28,DC,Bowler,0.5,1,1,sold,544.3,0.0,544.3,IPL+T20I,0.0,179.0,,Middle+Death,pace bowler,,544.3,0.28,0.0,0.28
+Sarfaraz Khan,0.346,0.35,0.35,DC,Batter,0.2,0,0,sold,215.0,0.0,215.0,IPL only,176.0,2.0,4.0,,spin bowler,Middle,215.0,0.35,0.0,0.35
+Kamlesh Nagarkoti,0.089,0.09,0.09,DC,Bowler,1.1,0,0,sold,416.0,0.0,416.0,IPL only,33.0,172.0,9.0,Middle+Death,pace bowler,Tail,416.0,0.09,0.0,0.09
+Praveen Dubey,0.37,0.37,0.37,DC,Bowler,0.5,0,0,sold,122.0,0.0,122.0,IPL only,13.0,48.0,9.0,Middle,spin bowler,Tail,122.0,0.37,0.0,0.37
+Yash Dhull,0.0,0.0,0.0,DC,Batter,0.5,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Rovman Powell,0.0,0.0,0.0,DC,Batter,2.8,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Ripal Patel,0.533,0.53,0.53,DC,Allrounder,0.2,0,0,sold,135.0,0.0,135.0,IPL only,27.0,20.0,5.5,,pace bowler,Lower,135.0,0.53,0.0,0.53
+Lalit Yadav,0.325,0.33,0.33,DC,Allrounder,0.65,0,0,sold,471.0,0.0,471.0,IPL only,73.0,84.0,6.0,Middle,spin bowler,Lower,471.0,0.33,0.0,0.33
+Chetan Sakariya,0.698,0.7,0.7,DC,Bowler,4.2,1,0,sold,1036.95,0.0,1036.95,IPL+T20I,25.0,334.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1036.95,0.7,0.0,0.7
+Khaleel Ahmed,0.481,0.48,0.48,DC,Bowler,5.25,1,0,sold,1043.25,0.0,1043.25,IPL+T20I,5.0,548.0,10.0,Powerplay+Middle+Death,pace bowler,Tail,1043.25,0.48,0.0,0.48
+Mandeep Singh,0.482,0.48,0.48,DC,Batter,1.1,1,0,sold,392.0,0.0,392.0,IPL only,243.0,12.0,5.5,,pace bowler,Lower,392.0,0.48,0.0,0.48
+Srikar Bharat,0.667,0.67,0.67,DC,WK-Batter,2.0,0,0,sold,468.0,0.0,468.0,IPL only,156.0,0.0,3.0,,,No3,468.0,0.67,0.0,0.67
+Ashwin Hebbar,0.0,0.0,0.0,DC,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Kuldeep Yadav,0.371,0.37,0.37,DC,Bowler,2.0,1,0,sold,437.2,0.0,437.2,IPL+T20I,29.0,277.0,9.0,Middle+Death,spin bowler,Tail,437.2,0.37,0.0,0.37
+Mustafizur Rahman,0.557,0.56,0.56,DC,Bowler,2.0,1,1,sold,1149.6,0.0,1149.6,IPL+T20I,14.0,327.0,11.0,Powerplay+Middle+Death,pace bowler,Tail,1149.6,0.56,0.0,0.56
+Shardul Thakur,0.545,0.55,0.55,DC,Bowler,10.75,1,0,sold,1846.35,0.0,1846.35,IPL+T20I,33.0,781.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1846.35,0.55,0.0,0.55
+Mitchell Marsh,0.686,0.69,0.69,DC,Allrounder,6.5,1,1,sold,305.35,0.0,305.35,IPL+T20I,1.0,4.0,10.0,,pace bowler,Tail,305.35,0.69,0.0,0.69
+David Warner,0.978,0.98,0.98,DC,Batter,6.25,1,1,sold,2001.7,0.0,2001.7,IPL+T20I,1069.0,2.0,1.0,,spin bowler,Opener,2001.7,0.98,0.0,0.98
+Rishabh Pant,0.795,0.8,0.8,DC,WK-Batter,16.0,1,0,retained,1974.05,0.0,1974.05,IPL+T20I,927.0,0.0,4.0,,,Middle,1974.05,0.8,0.0,0.8
+Anrich Nortje,0.881,0.88,0.88,DC,Bowler,6.5,1,1,retained,1435.8,0.0,1435.8,IPL+T20I,6.0,563.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1435.8,0.88,0.0,0.88
+Axar Patel,0.773,0.77,0.77,DC,Allrounder,9.0,1,0,retained,2151.45,0.0,2151.45,IPL+T20I,219.0,894.0,7.0,Powerplay+Middle+Death,spin bowler,Lower,2151.45,0.77,0.0,0.77
+Prithvi Shaw,1.518,1.52,1.52,DC,Batter,7.5,1,0,retained,1501.45,0.0,1501.45,IPL+T20I,732.0,0.0,1.0,,,Opener,1501.45,1.52,0.0,1.52
+Pradeep Sangwan,0.0,0.0,0.0,GT,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Varun Aaron,0.131,0.13,0.13,GT,Bowler,0.5,1,0,sold,199.0,0.0,199.0,IPL only,17.0,128.0,11.0,Powerplay+Middle,pace bowler,Tail,199.0,0.13,0.0,0.13
+Matthew Wade,0.71,0.71,0.71,GT,WK-Batter,2.4,1,1,sold,141.45,0.0,141.45,T20I only,0.0,0.0,,,,,141.45,0.71,0.0,0.71
+Vijay Shankar,0.51,0.51,0.51,GT,Allrounder,1.4,1,0,sold,964.7,0.0,964.7,IPL+T20I,341.0,208.0,5.0,Middle+Death,pace bowler,Middle,964.7,0.51,0.0,0.51
+Rashid Khan,0.894,0.89,0.89,GT,Bowler,15.0,1,1,drafted,2522.15,0.0,2522.15,IPL+T20I,122.0,1094.0,8.0,Powerplay+Middle+Death,spin bowler,Lower,2522.15,0.89,0.0,0.89
+Sai Sudharsan,0.0,0.0,0.0,GT,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Gurkeerat Singh Mann,0.382,0.38,0.38,GT,Allrounder,0.5,1,0,sold,230.0,0.0,230.0,IPL only,150.0,0.0,5.0,,,Middle,230.0,0.38,0.0,0.38
+Wriddhiman Saha,0.741,0.74,0.74,GT,WK-Batter,1.9,1,0,sold,779.0,0.0,779.0,IPL only,346.0,0.0,2.0,,,Opener,779.0,0.74,0.0,0.74
+David Miller,0.477,0.48,0.48,GT,Batter,3.0,1,1,sold,655.85,0.0,655.85,IPL+T20I,277.0,0.0,4.5,,,Middle,655.85,0.48,0.0,0.48
+Alzarri Joseph,0.549,0.55,0.55,GT,Bowler,2.4,1,1,sold,65.0,0.0,65.0,IPL only,13.0,55.0,8.0,,pace bowler,Lower,65.0,0.55,0.0,0.55
+Darshan Nalkande,0.0,0.0,0.0,GT,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Yash Dayal,0.0,0.0,0.0,GT,Bowler,3.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Jayant Yadav,0.661,0.66,0.66,GT,Allrounder,1.7,1,0,sold,511.0,0.0,511.0,IPL only,26.0,191.0,8.5,Powerplay+Middle,spin bowler,Tail,511.0,0.66,0.0,0.66
+Dominic Drakes,0.0,0.0,0.0,GT,Allrounder,1.1,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Sai Kishore,0.0,0.0,0.0,GT,Bowler,3.0,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Noor Ahmad,0.0,0.0,0.0,GT,Bowler,0.3,0,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Rahul Tewatia,0.38,0.38,0.38,GT,Allrounder,9.0,0,0,sold,2089.0,0.0,2089.0,IPL only,352.0,554.0,7.0,Middle,spin bowler,Lower,2089.0,0.38,0.0,0.38
+Abhinav Manohar,0.0,0.0,0.0,GT,Batter,2.6,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Lockie Ferguson,0.806,0.81,0.81,GT,Bowler,10.0,1,1,sold,1032.1,0.0,1032.1,IPL+T20I,40.0,417.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1032.1,0.81,0.0,0.81
+Jason Roy,0.745,0.75,0.75,GT,Batter,2.0,1,1,sold,525.3,0.0,525.3,IPL+T20I,121.0,0.0,1.0,,,Opener,525.3,0.75,0.0,0.75
+Mohammed Shami,0.503,0.5,0.5,GT,Bowler,6.25,1,0,sold,2040.25,0.0,2040.25,IPL+T20I,22.0,987.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,2040.25,0.5,0.0,0.5
+Shubman Gill,0.685,0.68,0.68,GT,Batter,8.0,1,0,drafted,2195.0,0.0,2195.0,IPL only,1016.0,0.0,1.0,,,Opener,2195.0,0.68,0.0,0.68
+Hardik Pandya,0.762,0.76,0.76,GT,Allrounder,15.0,1,0,drafted,1267.35,0.0,1267.35,IPL+T20I,479.0,269.0,6.0,Middle+Death,pace bowler,Lower,1267.35,0.76,0.0,0.76
+Ramesh Kumar,0.0,0.0,0.0,KKR,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Umesh Yadav,0.269,0.27,0.27,KKR,Bowler,2.0,1,0,sold,347.2,0.0,347.2,IPL+T20I,27.0,284.0,8.0,Powerplay+Middle+Death,pace bowler,Lower,347.2,0.27,0.0,0.27
+Rasikh Salam,0.551,0.55,0.55,KKR,Bowler,0.2,0,0,sold,30.0,0.0,30.0,IPL only,4.0,27.0,10.0,,pace bowler,Tail,30.0,0.55,0.0,0.55
+Ashok Sharma,0.0,0.0,0.0,KKR,Bowler,0.55,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Chamika Karunaratne,0.575,0.58,0.58,KKR,Bowler,0.5,1,1,sold,109.35,0.0,109.35,T20I only,0.0,0.0,,,,,109.35,0.58,0.0,0.58
+Anukul Roy,0.0,0.0,0.0,KKR,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,15.0,,,spin bowler,,0.0,0.0,0.0,0.0
+Sunil Narine,0.753,0.75,0.75,KKR,Allrounder,6.0,1,1,retained,2147.1,0.0,2147.1,IPL+T20I,218.0,847.0,4.0,Powerplay+Middle+Death,spin bowler,Middle,2147.1,0.75,0.0,0.75
+Aman Hakim Khan,0.0,0.0,0.0,KKR,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Abhijeet Tomar,0.0,0.0,0.0,KKR,Batter,0.4,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Pratham Singh,0.0,0.0,0.0,KKR,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Mohammad Nabi,0.522,0.52,0.52,KKR,Allrounder,1.0,1,1,sold,667.8,0.0,667.8,IPL+T20I,104.0,249.0,6.0,Powerplay+Middle,spin bowler,Lower,667.8,0.52,0.0,0.52
+Tim Southee,0.409,0.41,0.41,KKR,Bowler,1.5,1,1,sold,544.8,0.0,544.8,IPL+T20I,14.0,132.0,7.5,Powerplay+Death,pace bowler,Lower,544.8,0.41,0.0,0.41
+Alex Hales,0.0,0.0,0.0,KKR,Batter,1.5,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Sam Billings,0.544,0.54,0.54,KKR,WK-Batter,2.0,1,1,sold,44.35,0.0,44.35,IPL+T20I,4.0,0.0,6.0,,,Lower,44.35,0.54,0.0,0.54
+Baba Indrajith,0.0,0.0,0.0,KKR,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Shivam Mavi,0.726,0.73,0.73,KKR,Bowler,7.25,0,0,sold,988.0,0.0,988.0,IPL only,34.0,366.0,10.0,Powerplay+Middle+Death,pace bowler,Tail,988.0,0.73,0.0,0.73
+Pat Cummins,0.402,0.4,0.4,KKR,Bowler,7.25,1,1,sold,1622.85,0.0,1622.85,IPL+T20I,170.0,489.0,8.0,Powerplay+Middle+Death,pace bowler,Lower,1622.85,0.4,0.0,0.4
+Rinku Singh,0.598,0.6,0.6,KKR,Batter,0.55,0,0,sold,56.0,0.0,56.0,IPL only,45.0,0.0,6.5,,,Lower,56.0,0.6,0.0,0.6
+Ajinkya Rahane,0.512,0.51,0.51,KKR,Batter,1.0,1,0,sold,524.0,0.0,524.0,IPL only,401.0,0.0,1.0,,,Opener,524.0,0.51,0.0,0.51
+Sheldon Jackson,0.0,0.0,0.0,KKR,WK-Batter,0.6,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Nitish Rana,0.787,0.79,0.79,KKR,Allrounder,8.0,1,0,sold,1805.15,0.0,1805.15,IPL+T20I,803.0,75.0,3.0,Middle,spin bowler,No3,1805.15,0.79,0.0,0.79
+Shreyas Iyer,0.521,0.52,0.52,KKR,Batter,12.25,1,0,sold,1838.05,0.0,1838.05,IPL+T20I,978.0,0.0,3.0,,,No3,1838.05,0.52,0.0,0.52
+Varun Chakravarthy,0.743,0.74,0.74,KKR,Bowler,8.0,1,0,retained,1970.55,0.0,1970.55,IPL+T20I,19.0,747.0,10.0,Powerplay+Middle+Death,spin bowler,Tail,1970.55,0.74,0.0,0.74
+Venkatesh Iyer,1.065,1.06,1.06,KKR,Allrounder,8.0,1,0,retained,1020.0,0.0,1020.0,IPL only,288.0,54.0,2.0,Middle,pace bowler,Opener,1020.0,1.06,0.0,1.06
+Andre Russell,0.826,0.83,0.83,KKR,Allrounder,12.0,1,1,retained,1701.5,0.0,1701.5,IPL+T20I,450.0,418.0,6.0,Powerplay+Middle+Death,pace bowler,Lower,1701.5,0.83,0.0,0.83
+Mayank Yadav,0.0,0.0,0.0,LSG,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Mohsin Khan,0.0,0.0,0.0,LSG,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Ayush Badoni,0.0,0.0,0.0,LSG,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Kyle Mayers,0.0,0.0,0.0,LSG,Allrounder,0.5,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Avesh Khan,0.895,0.89,0.89,LSG,Bowler,10.0,0,0,sold,1179.0,0.0,1179.0,IPL only,6.0,427.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1179.0,0.89,0.0,0.89
+Evin Lewis,1.017,1.02,1.02,LSG,Batter,2.0,1,1,sold,512.65,0.0,512.65,IPL+T20I,145.0,0.0,1.0,,,Opener,512.65,1.02,0.0,1.02
+Karan Sharma,0.0,0.0,0.0,LSG,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Manan Vohra,0.315,0.32,0.32,LSG,Batter,0.2,0,0,sold,117.0,0.0,117.0,IPL only,39.0,0.0,2.0,,,Opener,117.0,0.32,0.0,0.32
+Shahbaz Nadeem,0.172,0.17,0.17,LSG,Bowler,0.5,1,0,sold,415.0,0.0,415.0,IPL only,9.0,215.0,9.0,Middle,spin bowler,Tail,415.0,0.17,0.0,0.17
+Dushmantha Chameera,0.516,0.52,0.52,LSG,Bowler,2.0,1,1,sold,184.5,0.0,184.5,T20I only,0.0,0.0,,,,,184.5,0.52,0.0,0.52
+Krishnappa Gowtham,0.33,0.33,0.33,LSG,Allrounder,0.9,1,0,sold,289.0,0.0,289.0,IPL only,46.0,170.0,7.0,Powerplay+Middle,spin bowler,Lower,289.0,0.33,0.0,0.33
+Ankit Rajpoot,0.058,0.06,0.06,LSG,Bowler,0.5,0,0,sold,329.0,0.0,329.0,IPL only,10.0,217.0,10.5,Powerplay+Middle+Death,pace bowler,Tail,329.0,0.06,0.0,0.06
+Mark Wood,0.55,0.55,0.55,LSG,Bowler,7.5,1,1,sold,129.9,0.0,129.9,T20I only,0.0,0.0,,,,,129.9,0.55,0.0,0.55
+Krunal Pandya,0.346,0.35,0.35,LSG,Allrounder,8.25,1,0,sold,2240.7,0.0,2240.7,IPL+T20I,365.0,807.0,7.0,Powerplay+Middle+Death,spin bowler,Lower,2240.7,0.35,0.0,0.35
+Deepak Hooda,0.599,0.6,0.6,LSG,Allrounder,5.75,1,0,sold,886.0,0.0,886.0,IPL only,257.0,115.0,5.0,Middle,spin bowler,Middle,886.0,0.6,0.0,0.6
+Jason Holder,0.623,0.62,0.62,LSG,Allrounder,8.75,1,1,sold,1408.45,0.0,1408.45,IPL+T20I,125.0,379.0,7.0,Powerplay+Middle+Death,pace bowler,Lower,1408.45,0.62,0.0,0.62
+Manish Pandey,0.738,0.74,0.74,LSG,Batter,4.6,1,0,sold,1668.2,0.0,1668.2,IPL+T20I,832.0,0.0,3.0,,,No3,1668.2,0.74,0.0,0.74
+KL Rahul,1.142,1.14,1.14,LSG,WK-Batter,17.0,1,0,drafted,3021.7,0.0,3021.7,IPL+T20I,1407.0,0.0,1.0,,,Opener,3021.7,1.14,0.0,1.14
+Quinton de Kock,0.95,0.95,0.95,LSG,WK-Batter,6.75,1,1,sold,2127.55,0.0,2127.55,IPL+T20I,1012.0,0.0,2.0,,,Opener,2127.55,0.95,0.0,0.95
+Marcus Stoinis,0.446,0.45,0.45,LSG,Allrounder,9.2,1,1,drafted,1616.85,0.0,1616.85,IPL+T20I,465.0,356.0,5.0,Powerplay+Middle+Death,pace bowler,Middle,1616.85,0.45,0.0,0.45
+Ravi Bishnoi,0.675,0.68,0.68,LSG,Bowler,4.0,1,0,drafted,1296.0,0.0,1296.0,IPL only,16.0,538.0,9.0,Powerplay+Middle+Death,spin bowler,Tail,1296.0,0.68,0.0,0.68
+Ramandeep Singh,0.0,0.0,0.0,MI,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Arshad Khan,0.0,0.0,0.0,MI,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Arjun Tendulkar,0.0,0.0,0.0,MI,Allrounder,0.3,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Hrithik Shokeen,0.0,0.0,0.0,MI,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Aryan Juyal,0.0,0.0,0.0,MI,WK-Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Rahul Buddhi,0.0,0.0,0.0,MI,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Fabian Allen,0.215,0.21,0.21,MI,Allrounder,0.75,1,1,sold,409.65,0.0,409.65,IPL+T20I,12.0,67.0,6.5,Middle,spin bowler,Lower,409.65,0.21,0.0,0.21
+Ishan Kishan,1.192,1.19,1.19,MI,WK-Batter,15.25,1,0,sold,1376.35,0.0,1376.35,IPL+T20I,634.0,0.0,4.0,,,Middle,1376.35,1.19,0.0,1.19
+Anmolpreet Singh,0.629,0.63,0.63,MI,Batter,0.2,0,0,sold,42.0,0.0,42.0,IPL only,14.0,0.0,2.0,,,Opener,42.0,0.63,0.0,0.63
+Tim David,0.0,0.0,0.0,MI,Allrounder,8.25,0,1,sold,0.0,0.0,0.0,prior,3.0,0.0,5.0,,,Middle,0.0,0.0,0.0,0.0
+Riley Meredith,0.331,0.33,0.33,MI,Bowler,1.0,1,1,sold,360.3,0.0,360.3,IPL+T20I,0.0,108.0,,Powerplay+Middle,pace bowler,,360.3,0.33,0.0,0.33
+Jofra Archer,1.162,1.16,1.16,MI,Bowler,8.0,1,1,sold,1201.5,0.0,1201.5,IPL+T20I,103.0,609.0,8.0,Powerplay+Middle+Death,pace bowler,Lower,1201.5,1.16,0.0,1.16
+Tymal Mills,0.608,0.61,0.61,MI,Bowler,1.5,1,1,sold,36.45,0.0,36.45,T20I only,0.0,0.0,,,,,36.45,0.61,0.0,0.61
+Daniel Sams,0.384,0.38,0.38,MI,Allrounder,2.6,1,1,sold,317.4,0.0,317.4,IPL+T20I,8.0,115.0,7.0,Powerplay+Middle,pace bowler,Lower,317.4,0.38,0.0,0.38
+Tilak Varma,0.0,0.0,0.0,MI,Batter,1.7,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Sanjay Yadav,0.0,0.0,0.0,MI,Allrounder,0.5,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Mayank Markande,0.435,0.43,0.43,MI,Bowler,0.65,1,0,sold,98.6,0.0,98.6,IPL+T20I,5.0,55.0,9.0,Middle,spin bowler,Tail,98.6,0.43,0.0,0.43
+Jaydev Unadkat,0.295,0.29,0.29,MI,Bowler,1.3,1,0,sold,1012.0,0.0,1012.0,IPL only,45.0,514.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1012.0,0.29,0.0,0.29
+Murugan Ashwin,0.278,0.28,0.28,MI,Bowler,1.6,0,0,sold,869.0,0.0,869.0,IPL only,33.0,473.0,8.5,Middle+Death,spin bowler,Tail,869.0,0.28,0.0,0.28
+Basil Thampi,0.397,0.4,0.4,MI,Bowler,0.3,0,0,sold,122.0,0.0,122.0,IPL only,1.0,97.0,9.0,Middle,pace bowler,Tail,122.0,0.4,0.0,0.4
+Dewald Brevis,0.0,0.0,0.0,MI,Batter,3.0,0,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Rohit Sharma,0.995,0.99,0.99,MI,Batter,16.0,1,0,retained,1903.9,0.0,1903.9,IPL+T20I,874.0,7.0,1.0,,spin bowler,Opener,1903.9,0.99,0.0,0.99
+Kieron Pollard,0.76,0.76,0.76,MI,Allrounder,6.0,1,1,retained,1655.6,0.0,1655.6,IPL+T20I,483.0,223.0,6.0,Middle+Death,pace bowler,Lower,1655.6,0.76,0.0,0.76
+Suryakumar Yadav,1.201,1.2,1.2,MI,Batter,8.0,1,0,retained,1698.95,0.0,1698.95,IPL+T20I,876.0,0.0,3.0,,,No3,1698.95,1.2,0.0,1.2
+Jasprit Bumrah,1.14,1.14,1.14,MI,Bowler,12.0,1,0,retained,2242.7,0.0,2242.7,IPL+T20I,21.0,1097.0,10.0,Powerplay+Middle+Death,pace bowler,Tail,2242.7,1.14,0.0,1.14
+Raj Bawa,0.0,0.0,0.0,PBKS,Bowler,2.0,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Arshdeep Singh,0.671,0.67,0.67,PBKS,Bowler,4.0,1,0,retained,1119.0,0.0,1119.0,IPL only,6.0,486.0,11.0,Powerplay+Middle+Death,pace bowler,Tail,1119.0,0.67,0.0,0.67
+Vaibhav Arora,0.0,0.0,0.0,PBKS,Bowler,2.0,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Writtick Chatterjee,0.0,0.0,0.0,PBKS,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Benny Howell,0.0,0.0,0.0,PBKS,Allrounder,0.4,0,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Atharva Taide,0.0,0.0,0.0,PBKS,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Baltej Singh,0.0,0.0,0.0,PBKS,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Mayank Agarwal,1.339,1.34,1.34,PBKS,Batter,12.0,1,0,retained,1718.0,0.0,1718.0,IPL only,819.0,0.0,2.0,,,Opener,1718.0,1.34,0.0,1.34
+Prerak Mankad,0.0,0.0,0.0,PBKS,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Liam Livingstone,0.663,0.66,0.66,PBKS,Allrounder,11.5,1,1,sold,304.35,0.0,304.35,IPL+T20I,89.0,6.0,4.0,,spin bowler,Middle,304.35,0.66,0.0,0.66
+M Shahrukh Khan,0.616,0.62,0.62,PBKS,Batter,9.0,0,0,sold,342.0,0.0,342.0,IPL only,114.0,0.0,6.0,,,Lower,342.0,0.62,0.0,0.62
+Bhanuka Rajapaksa,0.62,0.62,0.62,PBKS,Batter,0.5,1,1,sold,75.45,0.0,75.45,T20I only,0.0,0.0,,,,,75.45,0.62,0.0,0.62
+Nathan Ellis,0.48,0.48,0.48,PBKS,Bowler,0.75,1,1,sold,270.75,0.0,270.75,IPL+T20I,16.0,68.0,8.0,Middle,pace bowler,Lower,270.75,0.48,0.0,0.48
+Ansh Patel,0.0,0.0,0.0,PBKS,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Harpreet Brar,0.767,0.77,0.77,PBKS,Bowler,3.8,0,0,sold,678.0,0.0,678.0,IPL only,70.0,196.0,7.5,Middle,spin bowler,Lower,678.0,0.77,0.0,0.77
+Jitesh Sharma,0.0,0.0,0.0,PBKS,WK-Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Odean Smith,0.0,0.0,0.0,PBKS,Bowler,6.0,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Rishi Dhawan,0.0,0.0,0.0,PBKS,Allrounder,0.55,1,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Sandeep Sharma,0.468,0.47,0.47,PBKS,Bowler,0.5,1,0,sold,1360.0,0.0,1360.0,IPL only,25.0,727.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1360.0,0.47,0.0,0.47
+Ishan Porel,0.474,0.47,0.47,PBKS,Bowler,0.25,0,0,sold,72.0,0.0,72.0,IPL only,0.0,26.0,,,pace bowler,,72.0,0.47,0.0,0.47
+Prabhsimran Singh,0.274,0.27,0.27,PBKS,WK-Batter,0.6,0,0,sold,116.0,0.0,116.0,IPL only,55.0,0.0,3.0,,,No3,116.0,0.27,0.0,0.27
+Rahul Chahar,0.395,0.4,0.4,PBKS,Bowler,5.25,1,0,sold,1801.45,0.0,1801.45,IPL+T20I,30.0,871.0,9.0,Powerplay+Middle+Death,spin bowler,Tail,1801.45,0.4,0.0,0.4
+Jonny Bairstow,1.002,1.0,1.0,PBKS,WK-Batter,6.75,1,1,sold,1531.25,0.0,1531.25,IPL+T20I,730.0,0.0,2.0,,,Opener,1531.25,1.0,0.0,1.0
+Shikhar Dhawan,1.181,1.18,1.18,PBKS,Batter,8.25,1,0,sold,2767.25,0.0,2767.25,IPL+T20I,1282.0,0.0,2.0,,,Opener,2767.25,1.18,0.0,1.18
+Kagiso Rabada,0.515,0.51,0.51,PBKS,Bowler,9.25,1,1,sold,2438.15,0.0,2438.15,IPL+T20I,70.0,1049.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,2438.15,0.51,0.0,0.51
+Suyash Prabhudessai,0.0,0.0,0.0,RCB,Batter,0.3,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Sherfane Rutherford,0.537,0.54,0.54,RCB,Allrounder,1.0,1,1,sold,109.55,0.0,109.55,IPL+T20I,54.0,46.0,7.0,Middle,pace bowler,Lower,109.55,0.54,0.0,0.54
+Chama V Milind,0.0,0.0,0.0,RCB,Bowler,0.25,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Aneeshwar Gautam,0.0,0.0,0.0,RCB,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Luvnith Sisodia,0.0,0.0,0.0,RCB,WK-Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+David Willey,0.625,0.63,0.63,RCB,Allrounder,2.0,1,1,sold,54.45,0.0,54.45,T20I only,0.0,0.0,,,,,54.45,0.63,0.0,0.63
+Siddarth Kaul,0.297,0.3,0.3,RCB,Bowler,0.75,1,0,sold,785.45,0.0,785.45,IPL+T20I,9.0,376.0,10.0,Powerplay+Middle+Death,pace bowler,Tail,785.45,0.3,0.0,0.3
+Karn Sharma,0.385,0.38,0.38,RCB,Bowler,0.5,1,0,sold,245.0,0.0,245.0,IPL only,0.0,135.0,,Middle,spin bowler,,245.0,0.38,0.0,0.38
+Finn Allen,0.678,0.68,0.68,RCB,WK-Batter,0.8,1,1,sold,36.9,0.0,36.9,T20I only,0.0,0.0,,,,,36.9,0.68,0.0,0.68
+Harshal Patel,0.619,0.62,0.62,RCB,Bowler,10.75,1,0,sold,1454.0,0.0,1454.0,IPL only,72.0,511.0,8.0,Middle+Death,pace bowler,Lower,1454.0,0.62,0.0,0.62
+Akash Deep,0.0,0.0,0.0,RCB,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Jason Behrendorff,0.523,0.52,0.52,RCB,Bowler,0.75,1,1,sold,140.1,0.0,140.1,IPL+T20I,0.0,117.0,,Powerplay+Middle,pace bowler,,140.1,0.52,0.0,0.52
+Mahipal Lomror,0.59,0.59,0.59,RCB,Allrounder,0.95,0,0,sold,456.0,0.0,456.0,IPL only,130.0,43.0,5.0,Middle,spin bowler,Middle,456.0,0.59,0.0,0.59
+Anuj Rawat,0.0,0.0,0.0,RCB,WK-Batter,3.4,0,0,sold,0.0,0.0,0.0,prior,1.0,0.0,5.0,,,Middle,0.0,0.0,0.0,0.0
+Shahbaz Ahmed,0.874,0.87,0.87,RCB,Allrounder,2.4,0,0,sold,485.0,0.0,485.0,IPL only,54.0,121.0,6.0,Middle,spin bowler,Lower,485.0,0.87,0.0,0.87
+Josh Hazlewood,0.436,0.44,0.44,RCB,Bowler,7.75,1,1,sold,919.8,0.0,919.8,IPL+T20I,0.0,276.0,,Powerplay+Middle+Death,pace bowler,,919.8,0.44,0.0,0.44
+Wanindu Hasaranga,0.0,0.0,0.0,RCB,Allrounder,10.75,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Dinesh Karthik,0.546,0.55,0.55,RCB,WK-Batter,5.5,1,0,sold,955.2,0.0,955.2,IPL+T20I,477.0,0.0,5.0,,,Middle,955.2,0.55,0.0,0.55
+Faf du Plessis,0.966,0.97,0.97,RCB,Batter,7.0,1,1,sold,2382.5,0.0,2382.5,IPL+T20I,1098.0,0.0,2.0,,,Opener,2382.5,0.97,0.0,0.97
+Virat Kohli,0.888,0.89,0.89,RCB,Batter,15.0,1,0,retained,2323.9,0.0,2323.9,IPL+T20I,1051.0,0.0,2.0,,,Opener,2323.9,0.89,0.0,0.89
+Mohammed Siraj,0.545,0.54,0.54,RCB,Bowler,7.0,1,0,retained,1555.0,0.0,1555.0,IPL only,54.0,672.0,10.0,Powerplay+Middle+Death,pace bowler,Tail,1555.0,0.54,0.0,0.54
+Glenn Maxwell,0.8,0.8,0.8,RCB,Allrounder,11.0,1,1,retained,1983.5,0.0,1983.5,IPL+T20I,462.0,225.0,4.0,Powerplay+Middle,spin bowler,Middle,1983.5,0.8,0.0,0.8
+Tejas Baroka,0.0,0.0,0.0,RR,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Kuldeep Sen,0.0,0.0,0.0,RR,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Kuldip Yadav,0.511,0.51,0.51,RR,Bowler,0.2,0,0,sold,48.0,0.0,48.0,IPL only,4.0,12.0,10.0,,pace bowler,Tail,48.0,0.51,0.0,0.51
+Shubham Garhwal,0.0,0.0,0.0,RR,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Anunay Singh,0.0,0.0,0.0,RR,Allrounder,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Dhruv Jurel,0.0,0.0,0.0,RR,WK-Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Jos Buttler,1.164,1.16,1.16,RR,WK-Batter,10.0,1,1,retained,1399.85,0.0,1399.85,IPL+T20I,598.0,0.0,2.0,,,Opener,1399.85,1.16,0.0,1.16
+Sanju Samson,0.997,1.0,1.0,RR,WK-Batter,14.0,1,0,retained,1794.0,0.0,1794.0,IPL+T20I,820.0,0.0,3.0,,,No3,1794.0,1.0,0.0,1.0
+Yashasvi Jaiswal,0.887,0.89,0.89,RR,Batter,4.0,0,0,retained,592.0,0.0,592.0,IPL only,212.0,0.0,2.0,,,Opener,592.0,0.89,0.0,0.89
+Daryl Mitchell,0.633,0.63,0.63,RR,Allrounder,0.75,1,1,sold,104.25,0.0,104.25,T20I only,0.0,0.0,,,,,104.25,0.63,0.0,0.63
+Rassie van der Dussen,0.556,0.56,0.56,RR,Batter,1.0,1,1,sold,224.7,0.0,224.7,T20I only,0.0,0.0,,,,,224.7,0.56,0.0,0.56
+Nathan Coulter-Nile,0.904,0.9,0.9,RR,Bowler,2.0,1,1,sold,727.5,0.0,727.5,IPL+T20I,20.0,286.0,8.0,Powerplay+Middle+Death,pace bowler,Lower,727.5,0.9,0.0,0.9
+James Neesham,0.304,0.3,0.3,RR,Allrounder,1.5,1,1,sold,503.25,0.0,503.25,IPL+T20I,20.0,147.0,7.0,Middle,pace bowler,Lower,503.25,0.3,0.0,0.3
+Karun Nair,0.397,0.4,0.4,RR,Batter,1.4,1,0,sold,34.0,0.0,34.0,IPL only,20.0,0.0,3.5,,,Middle,34.0,0.4,0.0,0.4
+Obed McCoy,0.624,0.62,0.62,RR,Bowler,0.75,1,1,sold,118.05,0.0,118.05,T20I only,0.0,0.0,,,,,118.05,0.62,0.0,0.62
+Navdeep Saini,0.324,0.32,0.32,RR,Bowler,2.6,1,0,sold,1037.25,0.0,1037.25,IPL+T20I,35.0,612.0,8.5,Powerplay+Middle+Death,pace bowler,Tail,1037.25,0.32,0.0,0.32
+KC Cariappa,0.0,0.0,0.0,RR,Bowler,0.3,0,0,sold,0.0,0.0,0.0,prior,3.0,13.0,10.0,,spin bowler,Tail,0.0,0.0,0.0,0.0
+Riyan Parag,0.018,0.02,0.02,RR,Allrounder,3.8,0,0,sold,748.0,0.0,748.0,IPL only,286.0,136.0,6.0,Middle,spin bowler,Lower,748.0,0.02,0.0,0.02
+Yuzvendra Chahal,0.449,0.45,0.45,RR,Bowler,6.5,1,0,sold,2182.8,0.0,2182.8,IPL+T20I,46.0,979.0,11.0,Powerplay+Middle+Death,spin bowler,Tail,2182.8,0.45,0.0,0.45
+Prasidh Krishna,0.407,0.41,0.41,RR,Bowler,10.0,1,0,sold,1190.0,0.0,1190.0,IPL only,7.0,616.0,11.0,Powerplay+Middle+Death,pace bowler,Tail,1190.0,0.41,0.0,0.41
+Devdutt Padikkal,0.772,0.77,0.77,RR,Batter,7.75,1,0,sold,1759.1,0.0,1759.1,IPL+T20I,707.0,0.0,2.0,,,Opener,1759.1,0.77,0.0,0.77
+Shimron Hetmyer,0.939,0.94,0.94,RR,Batter,8.5,1,1,sold,915.95,0.0,915.95,IPL+T20I,342.0,0.0,5.0,,,Middle,915.95,0.94,0.0,0.94
+Trent Boult,0.462,0.46,0.46,RR,Bowler,8.0,1,1,sold,1876.0,0.0,1876.0,IPL+T20I,9.0,787.0,10.0,Powerplay+Middle+Death,pace bowler,Tail,1876.0,0.46,0.0,0.46
+Ravichandran Ashwin,0.518,0.52,0.52,RR,Allrounder,5.0,1,0,sold,1981.8,0.0,1981.8,IPL+T20I,104.0,932.0,8.0,Powerplay+Middle+Death,spin bowler,Lower,1981.8,0.52,0.0,0.52
+Fazalhaq Farooqi,0.0,0.0,0.0,SRH,Bowler,0.5,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Umran Malik,0.591,0.59,0.59,SRH,Bowler,4.0,0,0,retained,216.0,0.0,216.0,IPL only,0.0,75.0,,Middle,pace bowler,,216.0,0.59,0.0,0.59
+Saurabh Dubey,0.0,0.0,0.0,SRH,Bowler,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Ravikumar Samarth,0.0,0.0,0.0,SRH,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Shashank Singh,0.0,0.0,0.0,SRH,Batter,0.2,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Glenn Phillips,0.504,0.5,0.5,SRH,WK-Batter,1.5,1,1,sold,274.95,0.0,274.95,IPL+T20I,33.0,13.0,5.0,,spin bowler,Middle,274.95,0.5,0.0,0.5
+Vishnu Vinod,0.0,0.0,0.0,SRH,WK-Batter,0.5,0,0,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Sean Abbott,0.0,0.0,0.0,SRH,Allrounder,2.4,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Romario Shepherd,0.0,0.0,0.0,SRH,Bowler,7.75,1,1,sold,0.0,0.0,0.0,prior,0.0,0.0,,,,,0.0,0.0,0.0,0.0
+Marco Jansen,0.437,0.44,0.44,SRH,Allrounder,4.2,1,1,sold,120.0,0.0,120.0,IPL only,3.0,40.0,8.0,,pace bowler,Lower,120.0,0.44,0.0,0.44
+Aiden Markram,0.793,0.79,0.79,SRH,Batter,2.6,1,1,sold,652.5,0.0,652.5,IPL+T20I,119.0,25.0,4.0,,spin bowler,Middle,652.5,0.79,0.0,0.79
+Jagadeesha Suchith,0.385,0.39,0.39,SRH,Bowler,0.2,0,0,sold,183.0,0.0,183.0,IPL only,21.0,66.0,9.0,Middle,spin bowler,Tail,183.0,0.39,0.0,0.39
+Shreyas Gopal,0.036,0.04,0.04,SRH,Bowler,0.75,0,0,sold,1154.0,0.0,1154.0,IPL only,90.0,636.0,8.5,Powerplay+Middle+Death,spin bowler,Tail,1154.0,0.04,0.0,0.04
+Kartik Tyagi,0.189,0.19,0.19,SRH,Bowler,4.0,0,0,sold,739.0,0.0,739.0,IPL only,10.0,334.0,10.0,Powerplay+Middle+Death,pace bowler,Tail,739.0,0.19,0.0,0.19
+Abhishek Sharma,0.372,0.37,0.37,SRH,Allrounder,6.5,0,0,sold,659.0,0.0,659.0,IPL only,140.0,137.0,6.0,Middle,spin bowler,Lower,659.0,0.37,0.0,0.37
+Rahul Tripathi,1.088,1.09,1.09,SRH,Batter,8.5,0,0,sold,1329.0,0.0,1329.0,IPL only,582.0,0.0,3.0,,,No3,1329.0,1.09,0.0,1.09
+Priyam Garg,0.35,0.35,0.35,SRH,Batter,0.2,0,0,sold,444.0,0.0,444.0,IPL only,185.0,0.0,5.0,,,Middle,444.0,0.35,0.0,0.35
+Bhuvneshwar Kumar,0.556,0.56,0.56,SRH,Bowler,4.2,1,0,sold,1529.65,0.0,1529.65,IPL+T20I,51.0,714.0,9.0,Powerplay+Middle+Death,pace bowler,Tail,1529.65,0.56,0.0,0.56
+T Natarajan,0.473,0.47,0.47,SRH,Bowler,4.0,1,0,sold,942.4,0.0,942.4,IPL+T20I,5.0,439.0,10.5,Powerplay+Middle+Death,pace bowler,Tail,942.4,0.47,0.0,0.47
+Nicholas Pooran,1.015,1.02,1.02,SRH,WK-Batter,10.75,1,1,sold,920.2,0.0,920.2,IPL+T20I,391.0,0.0,4.0,,,Middle,920.2,1.02,0.0,1.02
+Washington Sundar,0.577,0.58,0.58,SRH,Allrounder,8.75,1,0,sold,1404.9,0.0,1404.9,IPL+T20I,145.0,454.0,6.0,Powerplay+Middle,spin bowler,Lower,1404.9,0.58,0.0,0.58
+Abdul Samad,0.554,0.55,0.55,SRH,Allrounder,4.0,0,0,retained,493.0,0.0,493.0,IPL only,152.0,49.0,6.0,Middle,spin bowler,Lower,493.0,0.55,0.0,0.55
+Kane Williamson,0.543,0.54,0.54,SRH,Batter,14.0,1,1,retained,1498.3,0.0,1498.3,IPL+T20I,602.0,12.0,3.5,,spin bowler,Middle,1498.3,0.54,0.0,0.54
