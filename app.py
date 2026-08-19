@@ -11,12 +11,16 @@ for _p in (SRC, HERE):
 
 st.set_page_config(page_title="IPL Trade Values", layout="wide", initial_sidebar_state="collapsed")
 from shell import hero, splash, boot_splash
-from render import featured, trade_pair, CSS as CARDCSS
+from render import featured, trade_pair, site_footer, CSS as CARDCSS
 
 boot_splash(); hero()
 
 NAV = ["Featured trades", "Trade simulator", "Player rankings", "Methodology", "Contact"]
 if "tab" not in st.session_state: st.session_state.tab = NAV[0]
+_query_tab = st.query_params.get("tab")
+if _query_tab in NAV:
+    st.session_state.tab = _query_tab
+    del st.query_params["tab"]
 st.markdown('<div class="navwrap">', unsafe_allow_html=True)
 cols = st.columns(len(NAV)); clicked = None
 for i, n in enumerate(NAV):
@@ -118,6 +122,7 @@ elif TAB == "Trade simulator":
                         for c in ['Fills at all', 'Fills at the required standard']:
                             h[c] = (h[c] * 100).round(0).astype(int).astype(str) + '%'
                         st.dataframe(h.round(2), hide_index=True, use_container_width=True)
+    st.markdown(site_footer(), unsafe_allow_html=True)
 
 # ---------------------------------------------------------------- RANKINGS
 elif TAB == "Player rankings":
@@ -169,6 +174,8 @@ elif TAB == "Methodology":
             elif b[0] == 'h': st.markdown(f"### {b[1]}")
             elif b[0] == 'H': st.markdown(f"## {b[1]}")
             elif b[0] == 'f': st.latex(b[1])
+            elif b[0] == 'c':
+                st.markdown(f'<div style="margin:8px 0 18px"><a href="?tab=Contact" style="color:#1D5E3B;text-decoration:underline;font-weight:700">{b[1]}</a></div>', unsafe_allow_html=True)
             else:
                 enc = base64.b64encode(open(os.path.join(DATA, b[1]), 'rb').read()).decode()
                 st.markdown(f'<div class="figbox"><img src="data:image/png;base64,{enc}"></div>',
