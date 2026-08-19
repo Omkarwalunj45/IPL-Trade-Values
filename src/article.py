@@ -1,318 +1,69 @@
-"""IPL TRADE VALUES  --  streamlit run app.py"""
-import os, sys, json, base64
-import streamlit as st, streamlit.components.v1 as C
-HERE = os.path.dirname(os.path.abspath(__file__))
-SRC, DATA = os.path.join(HERE, "src"), os.path.join(HERE, "Datasets")
-# Modules may sit in src/ or beside app.py depending on how the repo was uploaded;
-# both are searched so a file in either place is found.
-for _p in (SRC, HERE):
-    if os.path.isdir(_p) and _p not in sys.path:
-        sys.path.insert(0, _p)
+# -*- coding: utf-8 -*-
+TITLE = "What is an IPL Trade actually worth?"
+BY    = "Omkar Walunj"
 
-st.set_page_config(page_title="IPL Trade Values", layout="wide", initial_sidebar_state="collapsed")
-from shell import hero, splash, boot_splash
-from render import featured, featured_height, trade_pair, CSS as CARDCSS
-
-boot_splash(); hero()
-
-NAV = ["Featured trades", "Trade simulator", "Player rankings", "Methodology", "Contact"]
-if "tab" not in st.session_state: st.session_state.tab = NAV[0]
-st.markdown('<div class="navwrap">', unsafe_allow_html=True)
-cols = st.columns(len(NAV)); clicked = None
-for i, n in enumerate(NAV):
-    if cols[i].button(n, key=f"nav{i}", use_container_width=True): clicked = n
-if clicked: st.session_state.tab = clicked
-for i, n in enumerate(NAV):
-    cols[i].markdown('<div class="%s"></div>' % ('navon' if st.session_state.tab == n else 'navoff'),
-                     unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
-TAB = st.session_state.tab
-
-
-SITE_GREEN = "#2F4A38"
-SITE_FOOTER_TEXT = (
-    "If you are a professional cricket team, a sports organisation, an analyst, or an individual "
-    "interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, "
-    "its outputs, or how it can be applied to your specific questions."
-)
-
-st.markdown(f"""
-<style>
-.site-footer {{
-    margin-top: 34px;
-    padding: 30px 0 38px;
-    border-top: 1px solid #E0DACA;
-}}
-.site-footer .qhead,
-.essay .qhead {{
-    font-family: 'Archivo', sans-serif !important;
-    font-size: 20px !important;
-    line-height: 1.35 !important;
-    font-weight: 700 !important;
-    color: {SITE_GREEN} !important;
-    -webkit-text-fill-color: {SITE_GREEN} !important;
-    margin: 0 0 12px;
-}}
-.site-footer .qcopy {{
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 17px;
-    line-height: 1.7;
-    color: #1F2A22;
-    margin: 0 0 16px;
-}}
-button[kind="tertiary"],
-[data-testid="stBaseButton-tertiary"],
-.essay button[kind="tertiary"],
-.essay [data-testid="stBaseButton-tertiary"] {{
-    padding: 0 !important;
-    margin: 0 !important;
-    min-height: 0 !important;
-    height: auto !important;
-    background: transparent !important;
-    border: 0 !important;
-    box-shadow: none !important;
-    font-family: 'Archivo', sans-serif !important;
-    font-size: 20px !important;
-    line-height: 1.35 !important;
-    font-weight: 700 !important;
-    color: {SITE_GREEN} !important;
-    -webkit-text-fill-color: {SITE_GREEN} !important;
-}}
-button[kind="tertiary"] p,
-[data-testid="stBaseButton-tertiary"] p,
-.essay button[kind="tertiary"] p,
-.essay [data-testid="stBaseButton-tertiary"] p {{
-    font-family: 'Archivo', sans-serif !important;
-    font-size: 20px !important;
-    line-height: 1.35 !important;
-    font-weight: 700 !important;
-    color: {SITE_GREEN} !important;
-    -webkit-text-fill-color: {SITE_GREEN} !important;
-}}
-button[kind="tertiary"]:hover,
-[data-testid="stBaseButton-tertiary"]:hover {{
-    color: #1D3324 !important;
-    -webkit-text-fill-color: #1D3324 !important;
-}}
-button[kind="tertiary"]:hover p,
-[data-testid="stBaseButton-tertiary"]:hover p {{
-    color: #1D3324 !important;
-    -webkit-text-fill-color: #1D3324 !important;
-}}
-.site-footer .copyright,
-.essay .copyright {{
-    margin-top: 18px;
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 16px;
-    color: #5B6B5F;
-}}
-</style>
-""", unsafe_allow_html=True)
-
-def site_footer(key):
-    st.markdown(
-        f'<div class="site-footer"><div class="qhead">Questions?</div>'
-        f'<div class="qcopy">{SITE_FOOTER_TEXT}</div>',
-        unsafe_allow_html=True,
-    )
-    if st.button("Contact me", key=key, type="tertiary"):
-        st.session_state.tab = "Contact"
-        st.rerun()
-    st.markdown('<div class="copyright">© 2026 Omkar Walunj. All Rights Reserved.</div></div>',
-                unsafe_allow_html=True)
-
-# ---------------------------------------------------------------- FEATURED
-if TAB == "Featured trades":
-    D = json.load(open(os.path.join(DATA, "featured.json")))
-    C.html('<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>',
-           height=featured_height(D), scrolling=False)
-    site_footer("contact_featured")
-
-# ---------------------------------------------------------------- SIMULATOR
-elif TAB == "Trade simulator":
-    import engine
-    B = st.session_state.get("_engine_state")
-    if not isinstance(B, dict) or 'teams' not in B or 'squads' not in B:
-        b = splash("Loading squads, purses and the no-trade baseline", vh=34, size=25)
-        engine.boot()
-        B = engine.boot()
-        b.empty()
-        if not isinstance(B, dict) or 'teams' not in B or 'squads' not in B:
-            raise TypeError("engine.boot() did not return the expected engine state")
-        st.session_state["_engine_state"] = B
-    TEAMS, SQ = B['teams'], B['squads']
-    st.markdown('<div class="sechead">Trade Simulator</div><p>Build any deal between two squads. '
-                'Salaries pre-fill from the 2026 contract and stay editable.</p>', unsafe_allow_html=True)
-    c1, c2 = st.columns(2)
-    A = c1.selectbox("Team A", TEAMS, index=TEAMS.index('CSK'))
-    B_ = c2.selectbox("Team B", [t for t in TEAMS if t != A], index=0)
-
-    def pick(col, label, src, key):
-        col.markdown(f'<div style="font-family:Archivo,sans-serif;font-weight:700;font-size:11px;'
-                     f'letter-spacing:.7px;text-transform:uppercase;color:#6B7A6F;margin:16px 0 3px">'
-                     f'{label}</div>', unsafe_allow_html=True)
-        out = []
-        for i in range(3):
-            n = col.selectbox(f"p{i}", ["-"] + SQ.get(src, []), key=f"{key}p{i}",
-                              label_visibility="collapsed")
-            if n == "-": continue
-            cur = engine.salary_of(n)
-            s = col.number_input(f"{n} - salary ₹cr (was ₹{cur:.2f})", value=cur, step=0.05,
-                                 key=f"{key}s{i}_{n}")
-            out.append((n, float(s)))
-        return out
-    ag = pick(c1, f"{A} receives", B_, "a")
-    bg = pick(c2, f"{B_} receives", A, "b")
-
-    if st.button("Evaluate trade", type="primary", use_container_width=True):
-        if not ag and not bg:
-            st.warning("Pick at least one player.")
-        else:
-            box = splash("Re-optimising both XIs, running the auction and the season", vh=34, size=25)
-            res = engine.evaluate(A, B_, [p for p, _ in ag], [p for p, _ in bg],
-                                  {p: s for p, s in ag + bg})
-            box.empty()
-            poor = res.get('unaffordable', [])
-            if poor:
-                who = " and ".join(poor)
-                st.markdown(f'''<div style="background:#FFF6E6;border:1.5px solid #E6C98A;border-radius:10px;
-                  padding:16px 22px;margin-top:8px">
-                  <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;color:#8A5A08;
-                    margin-bottom:5px">{who} cannot afford this trade</div>
-                  <div style="font-family:'Source Serif 4',Georgia,serif;font-size:14px;color:#7A5A2A;
-                    line-height:1.6">The incoming salary is larger than the purse available after releases.
-                    They would need to free up more money first, so the numbers below assume they somehow
-                    could.</div></div>''', unsafe_allow_html=True)
-            bad = res.get('infeasible', [])
-            if bad:
-                who = " and ".join(bad)
-                st.markdown(f'''<div style="background:#FCEDED;border:1.5px solid #E4B4B4;border-radius:10px;
-                  padding:18px 22px;margin-top:8px">
-                  <div style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#9B2226;
-                    margin-bottom:6px">This trade cannot be made</div>
-                  <div style="font-family:'Source Serif 4',Georgia,serif;font-size:14.5px;color:#7A3A3A;
-                    line-height:1.6">{who} cannot field a legal side even with replacement-level cover.
-                    Send back a player who fills the gap, or take fewer players away.</div></div>''', unsafe_allow_html=True)
-            else:
-                C.html('<body style="margin:0;background:#F7F5EE"><style>%s</style><div class="wrap">%s</div>'
-                       '</body>' % (CARDCSS, trade_pair(res)), height=490, scrolling=False)
-                with st.expander("More analysis"):
-                    import pandas as pd
-                    r0, r1 = res['rows']
-                    dw = lambda r: r['xii_yes'] - r['xii_no']
-                    dt = lambda r: r['title_yes'] - r['title_no']
-                    brk = pd.DataFrame({"Where the value came from":
-                        ["Change in best XII", "Title probability, in points", "Asset value, ₹cr",
-                         "Purse after the trade, ₹cr", "Net value"],
-                        r0['team']: [f"{dw(r0):+.2f}", f"{dt(r0):+.1f}", f"{r0['assets']:+.2f}",
-                                     f"{r0['purse_yes']:.2f}", f"{r0['util']:+.2f}"],
-                        r1['team']: [f"{dw(r1):+.2f}", f"{dt(r1):+.1f}", f"{r1['assets']:+.2f}",
-                                     f"{r1['purse_yes']:.2f}", f"{r1['util']:+.2f}"]})
-                    st.dataframe(brk, hide_index=True, use_container_width=True)
-                    if res.get('holes'):
-                        h = pd.DataFrame(res['holes']).groupby('team').agg(
-                            H=('slot', 'size'), F=('p_fill', 'mean'), P=('p_at_par', 'mean'),
-                            R=('recovery', 'sum')).reset_index()
-                        h.columns = ['Team', 'Holes after the trade', 'Fills at all',
-                                     'Fills at the required standard', 'Expected recovery (WAR)']
-                        for c in ['Fills at all', 'Fills at the required standard']:
-                            h[c] = (h[c] * 100).round(0).astype(int).astype(str) + '%'
-                        st.dataframe(h.round(2), hide_index=True, use_container_width=True)
-    site_footer("contact_simulator")
-
-# ---------------------------------------------------------------- RANKINGS
-elif TAB == "Player rankings":
-    import pandas as pd
-    st.markdown('<div class="sechead">Player Rankings</div><p>Every player with an IPL record, valued on '
-                'one scale.</p>', unsafe_allow_html=True)
-    d = pd.read_csv(os.path.join(DATA, "final_pwar.csv"))
-    d = d[d.source.astype(str).str.contains("IPL", na=False)].copy()
-    d['capped'] = d.capped.map({1: "Capped", 0: "Uncapped"}).fillna("Uncapped")
-    d['overseas'] = d.overseas.map({1: "Overseas", 0: "Indian"}).fillna("Indian")
-    d = d[['player', 'pWAR_final', 'team', 'role', 'salary', 'capped', 'overseas',
-           'bat_group', 'bowl_phase', 'bowl_kind']]
-    d.columns = ['Player', 'Projected WAR', 'Team', 'Role', 'Salary (₹cr)', 'Capped status',
-                 'Nationality', 'Batting position', 'Bowling phases', 'Bowling type']
-    f1, f2, f3, f4 = st.columns(4)
-    tm = f1.selectbox("Team", ["All"] + sorted(d.Team.dropna().unique()))
-    ro = f2.selectbox("Role", ["All"] + sorted(d.Role.dropna().unique()))
-    bg = f3.selectbox("Batting position", ["All"] + sorted(d['Batting position'].dropna().unique()))
-    na = f4.selectbox("Nationality", ["All", "Indian", "Overseas"])
-    for col, v in [('Team', tm), ('Role', ro), ('Batting position', bg), ('Nationality', na)]:
-        if v != "All": d = d[d[col] == v]
-    d = d.sort_values('Projected WAR', ascending=False).reset_index(drop=True)
-    st.caption(f"{len(d)} players")
-    head = "".join(f"<th>{c}</th>" for c in ["#"] + list(d.columns))
-    rows = ""
-    for i, r in d.iterrows():
-        cells = "".join(
-            f"<td>{'' if pd.isna(v) else (f'{v:.2f}' if isinstance(v, float) else v)}</td>"
-            for v in r)
-        rows += f"<tr><td>{i+1}</td>{cells}</tr>"
-    st.markdown(f'<div class="rkwrap"><table class="rk"><thead><tr>{head}</tr></thead>'
-                f'<tbody>{rows}</tbody></table></div>', unsafe_allow_html=True)
-
-# ---------------------------------------------------------------- METHODOLOGY
-elif TAB == "Methodology":
-    import article
-    L, M, R = st.columns([1, 5.2, 1])
-    with M:
-        st.markdown(f'''<div style="font-family:'Archivo',sans-serif;font-weight:900;font-size:42px;
-          line-height:1.06;letter-spacing:-1.4px;color:#16281C;margin:12px 0 16px;text-transform:uppercase">
-          {article.TITLE}</div>
-          <div style="border-top:1px solid #E0DACA;border-bottom:1px solid #E0DACA;padding:12px 0">
-          <div style="font-family:'Archivo',sans-serif;font-weight:800;font-size:15px;color:#16281C;
-            letter-spacing:.04em;text-transform:uppercase">{article.BY}</div>''',
-          unsafe_allow_html=True)
-        st.markdown('<div class="essay">', unsafe_allow_html=True)
-        for b in article.B:
-            if b[0] == 't':
-                if b[1] == '© 2026 Omkar Walunj. All Rights Reserved.':
-                    st.markdown('<div class="copyright">© 2026 Omkar Walunj. All Rights Reserved.</div>', unsafe_allow_html=True)
-                else:
-                    st.markdown(b[1])
-            elif b[0] == 'h':
-                if b[1] == 'Questions?':
-                    st.markdown('<div class="qhead">Questions?</div>', unsafe_allow_html=True)
-                else:
-                    st.markdown(f"### {b[1]}")
-            elif b[0] == 'H':
-                st.markdown(f"## {b[1]}")
-            elif b[0] == 'c':
-                if st.button(b[1], key="contact_methodology", type="tertiary"):
-                    st.session_state.tab = "Contact"
-                    st.rerun()
-            elif b[0] == 'f':
-                st.latex(b[1])
-            else:
-                enc = base64.b64encode(open(os.path.join(DATA, b[1]), 'rb').read()).decode()
-                st.markdown(f'<div class="figbox"><img src="data:image/png;base64,{enc}"></div>',
-                            unsafe_allow_html=True)
-                if b[2]: st.markdown(f'<div class="figcap">{b[2]}</div>', unsafe_allow_html=True)
-        st.markdown('</div>', unsafe_allow_html=True)
-
-# ---------------------------------------------------------------- CONTACT
-else:
-    st.markdown('<div class="sechead">Contact</div><p>Questions, corrections and franchise enquiries '
-                'are all welcome.</p>', unsafe_allow_html=True)
-    st.markdown('''<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:680px">
-      <a href="mailto:omkarvwalunj45@gmail.com" style="text-decoration:none"><div style="background:#fff;
-        border:1.5px solid #E0DACA;border-radius:12px;padding:18px 20px">
-        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8A9490">Email</div>
-        <div style="font-size:15px;font-weight:600;color:#16281C;margin-top:5px">omkarvwalunj45@gmail.com</div>
-      </div></a>
-      <a href="https://substack.com/@theunseengame" target="_blank" style="text-decoration:none">
-        <div style="background:#fff;border:1.5px solid #E0DACA;border-radius:12px;padding:18px 20px">
-        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8A9490">Substack</div>
-        <div style="font-size:15px;font-weight:600;color:#16281C;margin-top:5px">The Unseen Game</div>
-      </div></a>
-      <a href="https://twitter.com/the_cricketest" target="_blank" style="text-decoration:none">
-        <div style="background:#fff;border:1.5px solid #E0DACA;border-radius:12px;padding:18px 20px">
-        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8A9490">Twitter</div>
-        <div style="font-size:15px;font-weight:600;color:#16281C;margin-top:5px">@the_cricketest</div>
-      </div></a>
-      <a href="https://www.linkedin.com/in/omkar-walunj-8256a4280/" target="_blank" style="text-decoration:none">
-        <div style="background:#fff;border:1.5px solid #E0DACA;border-radius:12px;padding:18px 20px">
-        <div style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8A9490">LinkedIn</div>
-        <div style="font-size:15px;font-weight:600;color:#16281C;margin-top:5px">Omkar Walunj</div>
-      </div></a></div>''', unsafe_allow_html=True)
+B = [
+('t', "An IPL trade can change the trajectory of multiple teams with a single decision. Yet we still don’t have a proper way to price the trade itself."),
+('h', 'How IPL Trade Values Works?'),
+('t', "Example, If Mumbai Indians send a player to Chennai Super Kings, what has Chennai really received? To value a trade, we need to answer four questions:"),
+('t',"What is the player worth?"), 
+('t',"What is he worth to this particular team?"),
+('t',"What can the team realistically recover if he leaves?"),
+('t',"And is making the trade better than keeping him?"),
+('t', "IPL Trade Values answers these questions through five connected components:"),
+('t',"**Player Valuation → Team Fit → Replacement & Auction → Trade Economics → Counterfactual Simulation**."),
+('t',"The framework starts by putting every player on a common scale using **Projected WAR (pWAR)**, then asks how that value changes when the player is placed inside a specific squad. It then models the auction pool and competition for replacements, thus calculates the possible recoverability from the auction, prices the financial side of the transaction, and finally compares the team in two worlds: **one where the trade happens and one where it doesn't.**"),
+('h', 'What the model has to solve?'),
+('t', "There are four problems to solve before a trade can be priced."), 
+('t',"**Valuation:** What’s a player’s intrinsic worth, isolated from the team context."),
+('t',"**Projection:** What is he likely to be worth next season and the one after that. This is much harder in a league as short and volatile as the IPL."), 
+('t',"**Team Fit:** A player is never worth the same to every side. A team is basically twelve slots (once you factor in the impact player) and a set of constraints."),
+('t',"**Replacement:** When you trade a player away you go into an auction with a limited purse, competing against nine other teams for a pool of players that nobody knows during the time of trades."),
+('H', '(I) What is a player worth?'),
+('h', 'Run Expectancy'),
+('t', "For every ball, the model estimates the runs a team would be expected to score from the current over-and-wickets state. A player's **Runs Created** is then based on the difference between the actual outcome and that expected outcome, with wickets valued through the change in run expectancy between the state before and after the wicket."),
+('i', 'wicket_value.png', 'Wicket value changes with the match state and remaining run expectancy.'),
+('h', 'Context'),
+('t', "The contribution is then adjusted for the context in which it occurred. The model accounts for **venue, leverage, innings, pace vs spin, and batter handedness**. Batting and bowling contributions are also linked through the same run-based framework, so the value created by one side is the value conceded by the other."),
+('H', '(II) What is he worth to this team?'),
+('t', "A player's WAR tells us what he is worth in isolation. It does **not** tell us what he is worth to a particular team. Let's take Dewald Brevis' case. His WAR comes out at 1.12, so now, if we ask what he'd be worth to Mumbai Indians? Answer is almost nothing, as MI already have Rickelton and Will Jacks, both of whom are ahead of him. Bringing Brevis in results in an option for a position that's already covered."),
+('i', 'brevis_four_teams.png', "Dewald Brevis's team-specific value across possible team contexts."),
+('h', 'Slots are not equal'),
+('t', "I treat a squad as a set of roles and slots rather than simply a collection of players. Different positions receive different amounts of exposure. An opener faces far more balls than a number eight, while a primary bowler contributes far more deliveries than a seventh bowling option. Therefore, the same improvement in pWAR can have very different value depending on **where the improvement occurs**. This exposure is combined with the estimated importance of each batting position and bowling phase when evaluating the team's needs."),
+('i', 'slot_exposure.png', 'Slot exposure and role importance across the XI.'),
+('t', "Thus, I built a **team-selection optimizer**. For every player, I mapped the role he can realistically perform. It respects the overseas limit, batting positions and bowling-phase coverage, and finds the best legal XII for each squad. So, a hole is not only just a player leaving, but also a slot where the best replacement player you have left is below what that position should deliver (calculated from the league average requirement for each role)."),
+('t', "After we know this, the intuitive next step was to find: **What the team actually loses when a player leaves and how likely will the team recover that loss in the mini auction.**"),
+('H', '(III) Can you just buy a replacement?'),
+('t', "For the auction itself I ran it as a sequential thing. First, I asked what kind of player the vacancy in that team actually needs. Each team bids what the player is worth to its remaining holes, and walks away when the price goes past that."),
+('h', "Willingness to pay:"),
+('t',"For any player, a team's ceiling is the improvement he makes to their best legal XII, converted into money. Take KKR's opening slot. If the man currently filling it projects at 1.85 pWAR and a 2.60 pWAR opener replaces him, the gain is **0.75 pWAR** and because an opener slot carries more of a season's exposure than most, that gain is worth roughly one and a half times what the same upgrade would be at number six."),
+('h', "Which gives you a demand curve:"),
+('i', 'demand_curve.png', 'Team-specific auction demand curves for a role.'),
+('h', 'Recovery Probability'),
+('t', "This gives us the quantity I actually need for trade evaluation: **If this player leaves, what is the probability that the team can recover his value through the auction?** I separate this into the **Probability of filling the vacancy** and the **Probability of acquiring someone at least as good as the player lost.** A team can have a high probability of filling a role while having a much lower probability of replacing the actual quality it lost. That distinction is what produces the **recovery-value distribution** used in the trade evaluation."),
+('H', '(IV) Putting a price on Trades'),
+('t', "In Football or Baseball you buy a player and you can keep him for years. In IPL, due to a 3-year cycle the upcoming 2027 is the last season of the current cycle."),
+('t', "**Surplus value:** (What he's worth - what he costs) summed over every year you hold him."),
+('t', '**Surplus = (market-fair price − salary) + retention option value**'),
+('h', 'Opportunity Cost'),
+('t', "If I spend ₹10 crore acquiring one player, that ₹10 crore isn't available for the other vacancies in my squad. So the financial calculation feeds back into the auction model through **opportunity cost**. So the trade is evaluated using **Player value + team fit + replacement value + financial surplus − opportunity cost**, rather than simply comparing the two players involved."),
+('H', '(V) Does the team actually end up better off?'),
+('t', "So now we've got something substantial- there's a value, a price, and a probability of recovery. The last thing left is to actually run the season and see what changes wrt States S1 and S2 as they're 2 different states of the same team based on the decision they took in the trade."),
+('t',"S1: No trade so the player(s) stays. The team goes into the release process with its original squad, builds its purse, enters the auction and fills whatever vacancies it has."),
+('t',"S2: Trade. The trade happens first which in turn changes the squad, the salaries and the vacancies. The release decisions are then applied to that new state, the purse changes accordingly, and the team enters the auction with a different set of needs."),
+('h', 'Season Simulation'),
+('t', "Then I simulated the season 2000 times for both states, and predicted the Win%, Playoff probability, Title Probability. The simulation produces distributions for **Regular-season win percentage, Playoff probability, Title probability, Final squad/XII value, and Asset value**."),
+('t', "The trade's effect is then measured as the difference between the two states: **Δ=S2−S1**. So, for example: **Δ Playoff Probability=P(Playoffs∣S2)−P(Playoffs∣S1)** and similarly for the other outcomes."),
+('h', 'Trade Utility'),
+('t', "The final trade utility therefore asks a counterfactual question: **Is the team better off after making the trade than it would have been if the trade had never happened?** That is the final output of the framework."),
+('h', 'The trade that already happened'),
+('t', 'Pant to Delhi, Kuldeep to Lucknow.'),
+('i', 'pant_kuldeep.png', 'The Rishabh Pant–Kuldeep Yadav trade evaluated through the framework.'),
+('t', "Lucknow gained in their playoff probability by giving up their captain. Pant on ₹27 crore was costing them more than he was returning, and shedding that contract freed up a squad they could actually build in the auction. Delhi barely moved either way meaning their playoff probability won't change much by this trade."),
+('t', """All I care is that if I can quantify what is being given up and show what has to be true for a trade to work, then I think I have got closer to answering the question I started with:"""),
+('H', 'What is an IPL trade actually worth?'),
+('h', 'Questions?'),
+('t', "If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions."),
+('c', 'Contact me'),
+('t', '© 2026 Omkar Walunj. All Rights Reserved.'),
+]
