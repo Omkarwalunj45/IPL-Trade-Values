@@ -36,7 +36,7 @@ TAB = st.session_state.tab
 if TAB == "Featured trades":
     D = json.load(open(os.path.join(DATA, "featured.json")))
     C.html('<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>',
-           height=14000, scrolling=False)
+           height=10000, scrolling=False)
 
 # ---------------------------------------------------------------- SIMULATOR
 elif TAB == "Trade simulator":
