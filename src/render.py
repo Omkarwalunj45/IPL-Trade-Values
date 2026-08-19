@@ -155,3 +155,12 @@ def featured(data):
         H.append(f'<div class="yr"><span>{yr} WINDOW</span><div class="ln"></div></div>')
         H += [trade_pair(t) for t in data['trades'] if t['year'] == yr]
     return ''.join(H) + FOOT + '</div>'
+
+
+SITE_FOOTER_HEADING = 'Questions?'
+SITE_FOOTER_TEXT = ("If you are a professional cricket team, a sports organisation, an analyst, "
+                    "or an individual interested in using IPL Trade Values, please get in touch. "
+                    "I’d be happy to talk about the framework, its outputs, or how it can be applied "
+                    "to your specific questions.")
+SITE_FOOTER_CONTACT = 'Contact me'
+SITE_FOOTER_COPYRIGHT = '© 2026 Omkar Walunj. All Rights Reserved.'
