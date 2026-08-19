@@ -11,32 +11,22 @@ for _p in (SRC, HERE):
 
 st.set_page_config(page_title="IPL Trade Values", layout="wide", initial_sidebar_state="collapsed")
 from shell import hero, splash, boot_splash
-from render import featured, trade_pair, CSS as CARDCSS
+from render import featured, trade_pair, CSS as CARDCSS, SITE_FOOTER_HEADING, SITE_FOOTER_TEXT, SITE_FOOTER_CONTACT, SITE_FOOTER_COPYRIGHT
 
 boot_splash(); hero()
 
+def site_footer(scope):
+    st.markdown(f"<div style=\"margin-top:42px;padding-top:18px;border-top:1px solid #E0DACA;max-width:960px;\">"
+                f"<div style=\"font-family:'Archivo',sans-serif;font-weight:800;font-size:18px;color:#16281C;margin-bottom:8px;\">{SITE_FOOTER_HEADING}</div>"
+                f"<div style=\"font-family:'Source Serif 4',Georgia,serif;font-size:16px;line-height:1.65;color:#1F2A22;max-width:900px;margin-bottom:10px;\">{SITE_FOOTER_TEXT}</div>"
+                f"</div>", unsafe_allow_html=True)
+    if st.button(SITE_FOOTER_CONTACT, key=f"contact_footer_{scope}"):
+        st.session_state.tab = "Contact"
+        st.rerun()
+    st.markdown(f"<div style=\"font-family:'Source Serif 4',Georgia,serif;font-size:12px;color:#6B7A6F;margin-top:10px;margin-bottom:10px;\">{SITE_FOOTER_COPYRIGHT}</div>", unsafe_allow_html=True)
+
 NAV = ["Featured trades", "Trade simulator", "Player rankings", "Methodology", "Contact"]
-st.markdown("""<style>
-.contact-link button {
-  background: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-  margin: 6px 0 0 !important;
-  color: #2F4A38 !important;
-  font-family: 'Source Serif 4', Georgia, serif !important;
-  font-size: 17.5px !important;
-  text-decoration: underline !important;
-  text-underline-offset: 3px !important;
-  box-shadow: none !important;
-}
-.contact-link button:hover {
-  color: #16281C !important;
-  background: transparent !important;
-}
-</style>""", unsafe_allow_html=True)
-
 if "tab" not in st.session_state: st.session_state.tab = NAV[0]
-
 st.markdown('<div class="navwrap">', unsafe_allow_html=True)
 cols = st.columns(len(NAV)); clicked = None
 for i, n in enumerate(NAV):
@@ -53,6 +43,7 @@ if TAB == "Featured trades":
     D = json.load(open(os.path.join(DATA, "featured.json")))
     C.html('<body style="margin:0;background:#F7F5EE">' + featured(D) + '</body>',
            height=3500, scrolling=False)
+    site_footer('featured')
 
 # ---------------------------------------------------------------- SIMULATOR
 elif TAB == "Trade simulator":
@@ -139,6 +130,8 @@ elif TAB == "Trade simulator":
                             h[c] = (h[c] * 100).round(0).astype(int).astype(str) + '%'
                         st.dataframe(h.round(2), hide_index=True, use_container_width=True)
 
+    site_footer('simulator')
+
 # ---------------------------------------------------------------- RANKINGS
 elif TAB == "Player rankings":
     import pandas as pd
@@ -184,21 +177,15 @@ elif TAB == "Methodology":
             letter-spacing:.04em;text-transform:uppercase">{article.BY}</div>''',
           unsafe_allow_html=True)
         st.markdown('<div class="essay">', unsafe_allow_html=True)
-        for i, b in enumerate(article.B):
-            if b[0] == 't':
-                st.markdown(b[1])
-            elif b[0] == 'h':
-                st.markdown(f"### {b[1]}")
-            elif b[0] == 'H':
-                st.markdown(f"## {b[1]}")
-            elif b[0] == 'f':
-                st.latex(b[1])
+        for b in article.B:
+            if b[0] == 't':   st.markdown(b[1])
+            elif b[0] == 'h': st.markdown(f"### {b[1]}")
+            elif b[0] == 'H': st.markdown(f"## {b[1]}")
             elif b[0] == 'c':
-                st.markdown('<div class="contact-link">', unsafe_allow_html=True)
-                if st.button(b[1], key=f"article_contact_{i}"):
+                if st.button(b[1], key="methodology_contact"):
                     st.session_state.tab = "Contact"
                     st.rerun()
-                st.markdown('</div>', unsafe_allow_html=True)
+            elif b[0] == 'f': st.latex(b[1])
             else:
                 enc = base64.b64encode(open(os.path.join(DATA, b[1]), 'rb').read()).decode()
                 st.markdown(f'<div class="figbox"><img src="data:image/png;base64,{enc}"></div>',
