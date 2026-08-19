@@ -180,11 +180,11 @@ def _outcome(t):
             # names the season, and the colour grades the call.
             lvl = 'Strong' if a >= 1.00 else 'Useful' if a >= 0.30 else 'Poor'
             if d >= 0.30:
-                vd, col = f'{lvl} \u2014 better than projected', GRN
+                vd, col = f'{lvl}: better than projected', GRN
             elif d > -1.25:
-                vd, col = f'{lvl} \u2014 as projected', AMB
+                vd, col = f'{lvl}: as projected', AMB
             else:
-                vd, col = f'{lvl} \u2014 well short', RED
+                vd, col = f'{lvl}: well short', RED
         rows.append(f'<tr><td>{p["player"]}<span style="color:#8A9690;font-size:11px;'
                     f'margin-left:6px">to {p["to"]}</span></td>'
                     f'<td class="was">{pr:+.2f}</td>'
@@ -213,3 +213,18 @@ def featured(data):
         H.append(f'<div class="yr"><span>{yr} WINDOW</span><div class="ln"></div></div>')
         H += [trade_pair(t) for t in data['trades'] if t['year'] == yr]
     return ''.join(H) + FOOT + '</div>'
+
+
+def footer_text():
+    """The site footer, shared by Featured trades, Trade simulator and Methodology.
+
+       app.py imports this but it was missing from render.py, so the app would not
+       start from a clean checkout. Defined here so the three tabs stay identical.
+    """
+    q = 'Questions?'
+    body = ("If you are a professional cricket team, a sports organisation, an analyst, "
+            "or an individual interested in using IPL Trade Values, please get in touch. "
+            "I&rsquo;d be happy to talk about the framework, its outputs, or how it can "
+            "be applied to your specific questions.")
+    copy = '&copy; 2026 Omkar Walunj. All Rights Reserved.'
+    return q, body, copy
