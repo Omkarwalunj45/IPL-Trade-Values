@@ -37,10 +37,12 @@ if TAB == "Featured trades":
 # ---------------------------------------------------------------- SIMULATOR
 elif TAB == "Trade simulator":
     import engine
-    if not st.session_state.get("_eng"):
+    if "_eng" not in st.session_state:
         b = splash("Loading squads, purses and the no-trade baseline", vh=34, size=25)
-        engine.boot(); b.empty(); st.session_state["_eng"] = True
-    B = engine.boot(); TEAMS, SQ = B['teams'], B['squads']
+        st.session_state["_eng"] = engine.boot()
+        b.empty()
+    B = st.session_state["_eng"]
+    TEAMS, SQ = B['teams'], B['squads']
     st.markdown('<div class="sechead">Trade Simulator</div><p>Build any deal between two squads. '
                 'Salaries pre-fill from the 2026 contract and stay editable.</p>', unsafe_allow_html=True)
     c1, c2 = st.columns(2)
