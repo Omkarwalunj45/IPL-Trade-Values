@@ -143,9 +143,9 @@ def trade_pair(t):
     return f'<div class="row">{"".join(L)}{R}</div>'
 
 FOOT = ('<p class="foot"><b>Projected WAR</b> is wins above replacement: 0 is a freely available player, a '
-        'regular sits near 2, the best season in the data reads 6. <b>Market value</b> is what the auction '
-        'would pay, fitted on 2023&ndash;26 prices. <b>XII value</b> is the strength of the best legal twelve '
-        'a squad can field. Odds come from simulated seasons. <b>Net value</b> combines all three. '
+        'regular sits near 2, the best season in the data reads 6\n. <b>Market value</b> is what the auction '
+        'would pay, fitted on 2023&ndash;26 prices\n. <b>XII value</b> is the strength of the best legal twelve '
+        'a squad can field. Odds come from simulated seasons\n. <b>Net value</b> combines all three. '
         'Hover a player name for his card.</p>')
 
 def featured(data):
