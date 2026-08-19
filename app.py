@@ -18,12 +18,12 @@ boot_splash(); hero()
 st.markdown("""<style>
 button[kind="tertiary"]{
   background:transparent!important;border:none!important;box-shadow:none!important;
-  padding:0!important;margin:6px 0 0!important;
-  color:#2b2a27!important;-webkit-text-fill-color:#2b2a27!important;
-  font-family:Arial,sans-serif!important;font-size:13px!important;font-weight:600!important;
+  padding:0!important;margin:8px 0 0!important;
+  color:#1D3324!important;-webkit-text-fill-color:#1D3324!important;
+  font-family:Arial,sans-serif!important;font-size:17px!important;font-weight:700!important;
   text-decoration:none!important;justify-content:flex-start!important}
 button[kind="tertiary"]:hover{
-  background:transparent!important;color:#1D3324!important;-webkit-text-fill-color:#1D3324!important;
+  background:transparent!important;color:#16281C!important;-webkit-text-fill-color:#16281C!important;
   text-decoration:underline!important}
 </style>""", unsafe_allow_html=True)
 
@@ -65,12 +65,18 @@ if TAB == "Featured trades":
 # ---------------------------------------------------------------- SIMULATOR
 elif TAB == "Trade simulator":
     import engine
-    if "_eng" not in st.session_state:
+    B = st.session_state.get("_eng")
+    if not isinstance(B, dict) or "teams" not in B or "squads" not in B:
         b = splash("Loading squads, purses and the no-trade baseline", vh=34, size=25)
         engine.boot()
-        st.session_state["_eng"] = engine.boot()
+        B = engine.boot()
+        if not isinstance(B, dict) or "teams" not in B or "squads" not in B:
+            B = engine.boot()
+        if not isinstance(B, dict) or "teams" not in B or "squads" not in B:
+            b.empty()
+            raise TypeError("engine.boot() did not return the expected teams/squads state")
+        st.session_state["_eng"] = B
         b.empty()
-    B = st.session_state["_eng"]
     TEAMS, SQ = B['teams'], B['squads']
     st.markdown('<div class="sechead">Trade Simulator</div><p>Build any deal between two squads. '
                 'Salaries pre-fill from the 2026 contract and stay editable.</p>', unsafe_allow_html=True)
