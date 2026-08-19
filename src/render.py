@@ -228,3 +228,17 @@ def footer_text():
             "be applied to your specific questions.")
     copy = '&copy; 2026 Omkar Walunj. All Rights Reserved.'
     return q, body, copy
+
+
+def featured_height(data):
+    """Pixel height the Featured Trades iframe needs for this many trades.
+
+       Derived from the content rather than hardcoded, so adding a window or a trade
+       does not leave dead space below the last card or clip it. app.py and
+       article.py both import this, so the number cannot drift between them.
+    """
+    tr = data['trades']
+    n_tr = len(tr)
+    n_out = sum(1 for t in tr if t.get('outcome'))
+    n_yr = len({t['year'] for t in tr})
+    return 150 + 56 * n_yr + 452 * n_tr + 150 * n_out + 120
