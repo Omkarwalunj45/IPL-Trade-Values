@@ -180,11 +180,11 @@ def _outcome(t):
             # names the season, and the colour grades the call.
             lvl = 'Strong' if a >= 1.00 else 'Useful' if a >= 0.30 else 'Poor'
             if d >= 0.30:
-                vd, col = f'{lvl} \u2014 better than projected', GRN
+                vd, col = f'{lvl} \u003A better than projected', GRN
             elif d > -1.25:
-                vd, col = f'{lvl} \u2014 as projected', AMB
+                vd, col = f'{lvl} \u003A as projected', AMB
             else:
-                vd, col = f'{lvl} \u2014 well short', RED
+                vd, col = f'{lvl} \u003A well short', RED
         rows.append(f'<tr><td>{p["player"]}<span style="color:#8A9690;font-size:11px;'
                     f'margin-left:6px">to {p["to"]}</span></td>'
                     f'<td class="was">{pr:+.2f}</td>'
