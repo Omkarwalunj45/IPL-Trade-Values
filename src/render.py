@@ -206,18 +206,17 @@ FOOT = ('<p class="foot"><b>Projected WAR</b> is wins above replacement: 0 is a 
         'a squad can field. Odds come from simulated seasons. <b>Net value</b> combines all three. '
         'Hover a player name for his card.</p>')
 
-SITE_FOOT = (
-    '<div style="margin-top:34px;border-top:1px solid #e0ddd4;padding:22px 0 6px;'
-    'font-family:Arial,sans-serif;color:#6f6a61;line-height:1.7">'
-    '<div style="font-family:Arial,sans-serif;font-size:14px;font-weight:700;color:#2b2a27;margin-bottom:5px">Questions?</div>'
-    '<div style="font-size:13px;max-width:820px">If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions.</div>'
-    '<div style="margin-top:14px;font-size:13px;font-weight:600;color:#2b2a27">Contact me</div>'
-    '<div style="margin-top:16px;font-size:12px;color:#8a8474">© 2026 Omkar Walunj. All Rights Reserved.</div>'
-    '</div>'
+FOOTER_Q = "Questions?"
+FOOTER_BODY = (
+    "If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using "
+    "IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be "
+    "applied to your specific questions."
 )
+FOOTER_COPY = "© 2026 Omkar Walunj. All Rights Reserved."
 
-def site_footer():
-    return SITE_FOOT
+def footer_text():
+    return FOOTER_Q, FOOTER_BODY, FOOTER_COPY
+
 
 def featured(data):
     H = [f'<style>{CSS}</style><div class="wrap"><h2 class="sec">Featured Trades</h2>'
@@ -225,4 +224,4 @@ def featured(data):
     for yr in sorted({t['year'] for t in data['trades']}, reverse=True):
         H.append(f'<div class="yr"><span>{yr} WINDOW</span><div class="ln"></div></div>')
         H += [trade_pair(t) for t in data['trades'] if t['year'] == yr]
-    return ''.join(H) + FOOT + SITE_FOOT + '</div>'
+    return ''.join(H) + FOOT + '</div>'
