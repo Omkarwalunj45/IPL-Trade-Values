@@ -65,7 +65,7 @@ B = [
 ('h', 'Questions?'),
 ('t', "If you are a professional cricket team, a sports organisation, an analyst, or an individual interested in using IPL Trade Values, please get in touch. I’d be happy to talk about the framework, its outputs, or how it can be applied to your specific questions."),
 ('c', 'Contact me'),
-('c', 'A little bit about me'),
+('t', 'A little bit about me'),
 ('t', "Omkar Walunj is a sports analytics and strategy researcher studying at the Indian Institute of Technology, Kharagpur. He has been working in cricket analytics for the past two years, applying data science to questions around player performance, tactics, team strategy and decision-making. His work includes developing the Integrated Contextual Rating (ICR), a context-aware framework for evaluating T20 player performance, which was presented at the American Statistical Association's Virtual Sports Analytics Conference 2026. He has also contributed analytical insights during the IPL auction, engaging with coaches on player evaluation and team strategy. "),
 ('t', '© 2026 Omkar Walunj. All Rights Reserved.'),
 ]
