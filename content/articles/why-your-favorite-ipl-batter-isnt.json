@@ -1,0 +1,185 @@
+{
+ "title": "Why Your Favorite T20 Batter Isn't Actually That Good",
+ "subtitle": "The \"Venue Factor\" Reality Check in the IPL",
+ "description": "The \"Venue Factor\" Reality Check in the IPL",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "January 2026",
+ "date_sort": "2026-01-06",
+ "cover": "why-your-favorite-ipl-batter-isnt-01.png",
+ "likes": 6,
+ "order": null,
+ "blocks": [
+  [
+   "t",
+   "Stop comparing runs."
+  ],
+  [
+   "t",
+   "Seriously. In a league where one night you’re playing on a postage stamp in Delhi and the next you’re navigating a literal minefield in Lucknow, a “50” doesn’t mean the same thing twice."
+  ],
+  [
+   "t",
+   "We’ve all seen it: a batter smashes a 200 SR century at the Wankhede, and the internet crowns them the next GOAT. Meanwhile, a middle-order anchor grafts a match-winning 45 on a slow turner at the Ekana, and fans call for them to be dropped for “lack of intent.”"
+  ],
+  [
+   "t",
+   "**It’s time to stop the madness.** I’ve spent time developing a metric that levels the playing field: The **Venue Factor (VF)**."
+  ],
+  [
+   "i",
+   "why-your-favorite-ipl-batter-isnt-02.png",
+   ""
+  ],
+  [
+   "h",
+   "The Invisible Wall: Why Raw Stats Lie"
+  ],
+  [
+   "t",
+   "Think about it. In almost every other major sport, the field is a constant. A football pitch is a pitch; a basketball court is 94 feet long. But in cricket? The ground is a variable. It’s an active participant in the game."
+  ],
+  [
+   "t",
+   "When a batter steps onto the **Arun Jaitley Stadium**, they are essentially playing on a highway with short fences. The air is dry, the boundaries are close, and the ball carries. When that same batter goes to the **Ekana Stadium**, they are walking into a tactical nightmare of sluggish soil and “heavy” air that kills even the cleanest of hits."
+  ],
+  [
+   "t",
+   "If we judge both performances by the same yardstick, we are rewarding luck and punishing geography."
+  ],
+  [
+   "h",
+   "The Solution: What is Venue Factor (VF)?"
+  ],
+  [
+   "t",
+   "The Venue Factor is a normalization constant. It answers a simple question: **How much is 1 run worth at an average venue compared to this specific ground?**"
+  ],
+  [
+   "t",
+   "- **If VF > 1:** You’re in a batting paradise. Runs come cheap."
+  ],
+  [
+   "t",
+   "- **If VF < 1:** You’re in a bowler’s graveyard. Every run is earned in blood."
+  ],
+  [
+   "t",
+   "For Example, the Venue Factor of 1.17 means that 117 runs at this venue is 100 runs at an average venue."
+  ],
+  [
+   "t",
+   "- Let’s say a Winning Score at an Average Venue is 178, then in a Venue with VF = 1.17, it will be around 208."
+  ],
+  [
+   "h",
+   "The Data: The IPL Venue Hierarchy"
+  ],
+  [
+   "t",
+   "I’ve mapped out the current IPL circuit, and the results are... well, they’re going to make some “superstars” look very human."
+  ],
+  [
+   "i",
+   "why-your-favorite-ipl-batter-isnt-03.png",
+   ""
+  ],
+  [
+   "h",
+   "Your Runs Created leaderboard answers:"
+  ],
+  [
+   "q",
+   "**“Who created the most runs** ***relative to how hard it was to score*****?”**"
+  ],
+  [
+   "t",
+   "That distinction is **exactly** what modern teams must care about."
+  ],
+  [
+   "t",
+   "- **Dropped by Runs Created**: \n→ Parag, Rahane"
+  ],
+  [
+   "t",
+   "- **Added by Runs Created**: \n→ Wadhera, Dube"
+  ],
+  [
+   "t",
+   "Runs Created values the relative difficulty in scoring runs, and this is what makes difference in an auction/ draft where teams need to decide whom to pick for that venue as half of their league matches are played at a single venue!"
+  ],
+  [
+   "i",
+   "why-your-favorite-ipl-batter-isnt-04.png",
+   ""
+  ],
+  [
+   "h",
+   "The Kotla Blindspot: Is Delhi Capitals’ ”Killer Miller” Signing a Tactical Suicide Note?"
+  ],
+  [
+   "t",
+   "In the auction, franchises often fall into the trap of buying “Archetypes” rather than “Assets.” Delhi Capitals just did exactly that. By signing David Miller to be their designated death-over finisher, they’ve ignored the most fundamental law of squad construction: **Venue DNA.**"
+  ],
+  [
+   "h",
+   "1. The Spin-Choke: Why Kotla is Miller’s Kryptonite"
+  ],
+  [
+   "t",
+   "The Arun Jaitley Stadium (Kotla) isn’t just a cricket ground; it’s a tactical bottleneck. While many focus on the short boundaries, the data that matters is the **Spin Index: 0.37**. Statistically, Kotla has become a spin-friendly theater that can be even more punishing for pace-reliant power hitters than Ekana in Lucknow."
+  ],
+  [
+   "t",
+   "- **The DC Perception:** They see “Killer Miller”—the man who can clear any boundary at will."
+  ],
+  [
+   "t",
+   "- **The Strategic Reality:** They’ve bought a finisher for a ground where the ball stops, grips, and turns precisely the conditions where Miller’s engine begins to stall. What they should have seen was a player whose primary weakness is perfectly aligned with their own home ground’s primary strength."
+  ],
+  [
+   "h",
+   "2. The Data Drop: The Myth of the Spin-Basher"
+  ],
+  [
+   "t",
+   "Miller’s reputation as a spin-slayer is increasingly becoming a legacy artifact rather than a current reality. When you look at his numbers against spin since 2024, the “finishing” impact disappears:"
+  ],
+  [
+   "t",
+   "- **Miller vs. Spin (Middle Overs):** **126.46 SR**"
+  ],
+  [
+   "t",
+   "- **Miller vs. Spin (Death Overs):** **116.66 SR**"
+  ],
+  [
+   "t",
+   "Notice the trend? His acceleration doesn’t just plateau against spin; it **regresses.** In the death overs at Kotla, where opposition captains will inevitably save their best spinners to exploit the surface, Miller isn’t just a sub-optimal choice—he’s a liability."
+  ],
+  [
+   "t",
+   "**Good teams buy talent.** \n**Great teams buy context-fit.**"
+  ],
+  [
+   "H",
+   "Closing Thoughts"
+  ],
+  [
+   "t",
+   "For years, we’ve argued about talent, intent, and temperament. But cricket, like every other mature sport, is finally being forced to confront an uncomfortable truth: **performance doesn’t exist in isolation**."
+  ],
+  [
+   "t",
+   "The teams that adapt to this shift will stop asking *“Who scored the most?”* and start asking *“Who survives when scoring is expensive?”*"
+  ],
+  [
+   "t",
+   "That question will define the next competitive edge in T20 cricket."
+  ],
+  [
+   "t",
+   "I’ll be applying this same framework to the **IPL 2026 squads**, mapping player profiles against the surfaces they’re most likely to face. Some roster constructions look far less stable once venue difficulty enters the equation."
+  ]
+ ]
+}

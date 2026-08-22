@@ -1,0 +1,412 @@
+{
+ "title": "To trade or not to trade?",
+ "subtitle": "What is an IPL trade actually worth?",
+ "description": "What is an IPL trade actually worth?",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "August 2026",
+ "date_sort": "2026-08-14",
+ "cover": "to-trade-or-not-to-trade-01.png",
+ "likes": 7,
+ "order": null,
+ "blocks": [
+  [
+   "t",
+   "An IPL trade can change the trajectory of multiple teams with a single decision. Yet we still don’t have a proper way to price the trade and its consequences."
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-02.jpg",
+   ""
+  ],
+  [
+   "h",
+   "How IPL Trade Values Works?"
+  ],
+  [
+   "t",
+   "We’re pretty good at measuring performance these days. We’ve built Expected runs, player impact models, win probability added which tell us how much a player contributes on the field. We also know what teams paid for them at the auction."
+  ],
+  [
+   "t",
+   "However, a trade is a bit different. Ex, If Mumbai Indians send a player to Chennai Super Kings, what has Chennai really received?"
+  ],
+  [
+   "t",
+   "To value a trade, we need to primarily answer four questions:"
+  ],
+  [
+   "t",
+   "- What is the player worth?"
+  ],
+  [
+   "t",
+   "- What is he worth to this particular team?"
+  ],
+  [
+   "t",
+   "- What can the team realistically recover if he leaves?"
+  ],
+  [
+   "t",
+   "- Is making the trade better than keeping him?"
+  ],
+  [
+   "t",
+   "IPL Trade Values answers these questions through five connected components:"
+  ],
+  [
+   "t",
+   "**Player Valuation → Team Fit → Replacement & Auction → Trade Economics → Counterfactual Simulation**."
+  ],
+  [
+   "t",
+   "The framework starts by putting every player on a common scale using **Projected WAR (pWAR)**, then asks how that value changes when the player is placed inside a specific squad. It then models the auction pool and competition for replacements, thus calculates the possible recoverability from the auction, prices the financial side of the transaction, and finally compares the team in two different states: **one where the trade happens and one where it doesn’t.**"
+  ],
+  [
+   "h",
+   "What the model has to solve?"
+  ],
+  [
+   "t",
+   "There are four problems to solve before a trade can be priced."
+  ],
+  [
+   "t",
+   "**Valuation:** What’s a player’s intrinsic worth, isolated from the team context."
+  ],
+  [
+   "t",
+   "**Projection:** What is he likely to be worth next season and the one after that. This is much harder in a league as short and volatile as the IPL."
+  ],
+  [
+   "t",
+   "**Team Fit:** A player is never worth the same to every side. A team is basically twelve slots (once you factor in the impact player) of different exposure and importance, which together contribute to a collective Win% and a set of constraints."
+  ],
+  [
+   "t",
+   "**Replacement:** When you trade a player away you go into an auction with a limited purse, competing against nine other teams for a pool of players that is not known during the time of trades."
+  ],
+  [
+   "H",
+   "I. What is a player worth?"
+  ],
+  [
+   "t",
+   "Firstly, we need to put players in the same units, because there are number of roles and each comes with its own context. What I’ve used is runs above replacement, converted into wins."
+  ],
+  [
+   "t",
+   "For every ball, I computed ‘Runs Created’: (Actual runs - what a team would expect from that over-and-wickets state, with the cost of a wicket priced in properly). The batter gains that value and the bowler loses exactly the same amount. Each of those steps has intricacies worth understanding. So, before I move on, let me discuss those first."
+  ],
+  [
+   "t",
+   "**A wicket is not worth a fixed number of runs:** I fitted run expectancy across the 2023 to 2026 seasons, which gives you the average runs a team still scores from any given position. The value of a wicket is then just the gap between the state before and the state after. At any fixed point in the innings, a wicket costs more when more have already fallen, because you’re pulling the tail closer."
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-03.jpg",
+   "Wicket value changes with the match state and remaining run expectancy."
+  ],
+  [
+   "t",
+   "With 120 balls left and nobody out, a wicket costs about 14 runs. In the last five overs it costs around 2.5."
+  ],
+  [
+   "t",
+   "**Runs are not worth the same at every ground:** Over a season the venues a player happens to visit can shift his numbers by a few percent in either direction. So every ball is adjusted by a venue factor before it counts."
+  ],
+  [
+   "t",
+   "Every ball is also divided by a *Leverage Index*, so a run in the powerplay and a run at the death are weighed by how much scoring that state normally produces."
+  ],
+  [
+   "t",
+   "**How many runs is one additional win?**"
+  ],
+  [
+   "t",
+   "The answer is about **5.9 runs per match**, or **82.5 runs across a 14 game season**."
+  ],
+  [
+   "t",
+   "So this means that if you improve your team by six runs a match, all season, you will win one extra game. In the 2023 to 2026 data, about **one loss in six** was by six runs or fewer."
+  ],
+  [
+   "t",
+   "Now, I had to define first **Who exactly is the replacement?** I’ve defined “Replacement level” as the standard you’d get from a player who is freely available. What I believe is a franchise watches its players every day in the nets and then decides who to pick. Hence, I sorted every player by the share of his team’s matches he actually played, and performance tracks it almost perfectly in the IPL. Players picked in more than 80% of games strike at 154. Between 60% and 80%, 145. Below 15%, 106."
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-04.jpg",
+   ""
+  ],
+  [
+   "t",
+   "So, replacement level is basically the standard player freely available. I took the top eight batters and top six bowlers per team by playing time as league-level because they’re replacing someone who would’ve been in their place in their absence, and everyone below that line sets the bar."
+  ],
+  [
+   "h",
+   "Converting Runs to WAR"
+  ],
+  [
+   "t",
+   "The final step is a rescaling that sets a league average regular at **1.00**. On that scale: replacement is 0, a regular sits near 1.5-2, MVPs are worth around 5 WAR and notably 62 of 318 contracted players are below replacement. Also, I must mention that many players have thin IPL records. So I ran the same engine on T20Is and blended the two by precision."
+  ],
+  [
+   "t",
+   "Using the player’s WAR I can potentially calculate: **What should I expect this player to contribute if I put him on the field next season?** This is the Projected WAR (pWAR) which will be used in all the simulations going forward."
+  ],
+  [
+   "t",
+   "But it still wasn’t enough to evaluate a trade. Because the way MI sees a player vs what CSK sees in that same player can differ based on their requirements and other intangible constraints. What we just found is the isolated worth of the player, now let’s bring the element of the team to this."
+  ],
+  [
+   "H",
+   "II. What is he worth to this team?"
+  ],
+  [
+   "t",
+   "Let's take Dewald Brevis' case. His WAR comes out at 1.12, so now, if we ask what he'd be worth to Mumbai Indians (if traded)? Answer is almost nothing, as MI already have Rickelton and Jacks, both of whom are ahead of him. Bringing Brevis in results in an option for a position that's already covered."
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-05.jpg",
+   "Dewald Brevis's team-specific value across possible team contexts."
+  ],
+  [
+   "h",
+   "Slots are not equal"
+  ],
+  [
+   "t",
+   "I want you to think of a squad as a set of roles and slots rather than simply a collection of players. Different positions receive different amounts of exposure, meaning a potential chance to contribute. An opener faces far more balls than a number eight, while a primary bowler contributes far more deliveries than a seventh bowling option. Therefore, the same improvement in pWAR can have very different contribution in *projected Win%* depending on **where** the improvement occurs. This exposure is combined with the estimated importance of each batting position and bowling phase when evaluating the team’s needs."
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-06.jpg",
+   "Slot exposure and role importance across the XI."
+  ],
+  [
+   "t",
+   "To solve this, I built a **team-selection optimizer**. For every player, I mapped the role he can realistically perform. It respects the overseas limit, batting positions and bowling-phase coverage, and finds the best legal XII for each squad."
+  ],
+  [
+   "t",
+   "So, a hole can be: a player leaving, or a slot where the best replacement player you have left is below what that position should deliver (calculated from the league average requirement for each role)."
+  ],
+  [
+   "t",
+   "Now after knowing this, the intuitive next step was to find: **What the team actually loses when a player leaves and how likely will the team recover that loss in the mini auction.**"
+  ],
+  [
+   "H",
+   "III. Can you just buy a replacement?"
+  ],
+  [
+   "t",
+   "Turns out, it's a bit complicated."
+  ],
+  [
+   "t",
+   "The problem is that the trade window shuts before the release deadline, which shuts before the auction, so at the moment you’re deciding ‘to trade or not to trade’, you don’t know which players will even be available. So, how do I know whether I’ll be having those options in the auction pool which can be brought to solve my team’s vacant slots. And, ideally I don’t want only a player who can fill that slot, but I would hope he’s someone who’s better than the average player of the same role."
+  ],
+  [
+   "t",
+   "To solve this ambiguity, I had to predict the auction pool. I trained a model on the 2023 to 2026 transitions using salary, share of matches played, performance against the average for that specific role, and squad depth in front of the player. The model outputs a probability for every contracted player. I set the cutoff separately for each role and nationality, choosing the probability that reproduces that group’s own historical release rate. That produced my release list."
+  ],
+  [
+   "t",
+   "Hardik Pandya’s release probability lands at 0.78, which is worth noting given the trade talk, because it says Mumbai were probably moving on either way. At the other end, Sooryavanshi sits at 0.004 and Sai Sudharsan at 0.006 meaning nobody is releasing those two."
+  ],
+  [
+   "t",
+   "For the auction itself, I ran it as a sequential thing. First, I asked what kind of player the vacancy in that team actually needs. Each team bids what the player is worth to its remaining holes, and walks away when the price goes past that."
+  ],
+  [
+   "h",
+   "Willingness to pay:"
+  ],
+  [
+   "t",
+   "For any player, a team’s ceiling is the improvement he makes to their best legal XII, converted into money. Take KKR’s opening slot. If the player currently filling it projects at 1.85 pWAR and a 2.60 pWAR opener replaces him, the gain is **0.75 pWAR** and because an opener slot carries more of a season’s exposure than most, that gain is worth roughly one and a half times what the same upgrade would be at number six."
+  ],
+  [
+   "t",
+   "For converting this calculation in terms of money, I regressed what teams actually paid at the 2023, 2024 and 2026 mini-auctions against what each player was worth going in:"
+  ],
+  [
+   "t",
+   "*price = **−₹1.24cr + ₹1.20cr × pWAR + ₹2.21cr × scarcity + ₹0.27cr × flexibility + ₹4.42cr × capped − ₹1.37cr × overseas***"
+  ],
+  [
+   "t",
+   "So Kolkata’s ceiling for that opener works out near **₹7 crore**, and above that they’re overpaying, for that **0.75 pWAR** gain."
+  ],
+  [
+   "t",
+   "But we should also remember that in auctions, most of what a player costs in this market has very little to do with how many wins he is likely to produce."
+  ],
+  [
+   "h",
+   "Which gives you a demand curve:"
+  ],
+  [
+   "t",
+   "I categorized the quality of the player from bad to excellent and recorded what each team would pay at each level. Punjab won’t pay a rupee for an opener until quality passes pWAR of the current openers, because their incumbent is already better than that. Kolkata start bidding at 0.18 pWAR because they have a genuine hole."
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-07.jpg",
+   ""
+  ],
+  [
+   "h",
+   "Recovery Probability"
+  ],
+  [
+   "t",
+   "This gives us the quantity I actually need for trade evaluation: **If this player leaves, what is the probability that the team can recover his value through the auction?** I separated this into the **Probability of filling the vacancy** and the **Probability of acquiring someone at least as good as the player lost** because a team can have a high probability of filling a role while having a much lower probability of replacing the actual quality it lost. That distinction helps us to produce the **recovery-value distribution** used in the trade evaluation."
+  ],
+  [
+   "H",
+   "IV. Putting a price on Trades"
+  ],
+  [
+   "t",
+   "In Football or Baseball, once you buy a player, you can keep him for years. In IPL, due to a 3-year cycle the upcoming 2027 is the last season of the current cycle. After that, the mega auction occurs and teams have to start again. So whoever gets Hardik Pandya is effectively renting him for one season, with an option to retain him at a fixed slab price afterwards: ₹18, 14 and 11 crore for capped players and ₹4 crore for uncapped. Hence, an uncapped Indian who's already good is such a strange asset as he's the only kind of player you can keep cheaply."
+  ],
+  [
+   "t",
+   "**Surplus value:** (What he’s worth - what he costs) summed over every year you hold him."
+  ],
+  [
+   "t",
+   "*Surplus = (market-fair price − salary) + retention option value*"
+  ],
+  [
+   "t",
+   "The first bracket is the guaranteed 2027 season where market-fair price is:"
+  ],
+  [
+   "t",
+   "*price = **−₹1.24cr + ₹1.20cr × pWAR + ₹2.21cr × scarcity + ₹0.27cr × flexibility + ₹4.42cr × capped − ₹1.37cr × overseas***"
+  ],
+  [
+   "t",
+   "The second term is 2028 onward, and obviously it only exists if you retain him. So, it’s only worth something when his projected value clears the slab price:"
+  ],
+  [
+   "f",
+   "\\text{Option Value} = \\sum_t \\max(0, \\text{Value}_t - \\text{Slab Price}) \\times \\text{Discount}^t"
+  ],
+  [
+   "t",
+   "where value_t is his value in the year ‘t’ and slab price is at least ₹11 crore for a capped player and ₹4 crore for an uncapped one."
+  ],
+  [
+   "h",
+   "Opportunity Cost"
+  ],
+  [
+   "t",
+   "If I spend ₹10 crore acquiring one player, that ₹10 crore isn’t available for the other vacancies in my squad. So the financial calculation feeds back into the auction model through **opportunity cost**. So the trade is evaluated using:"
+  ],
+  [
+   "t",
+   "(**Player value + team fit + replacement value + financial surplus − opportunity cost**) rather than simply comparing the two players involved."
+  ],
+  [
+   "H",
+   "V. Does the team actually end up better off?"
+  ],
+  [
+   "t",
+   "So now we’ve got something substantial- there’s a value, a price, and a probability of recovery. The last thing left is to actually run the season and see what changes wrt States **S1** and **S2** as they’re 2 different states of the same team based on the decision they took in the trade."
+  ],
+  [
+   "t",
+   "**S1**: No trade so the player(s) stays. The team goes into the release process with its original squad, builds its purse, enters the auction and fills whatever vacancies it has."
+  ],
+  [
+   "t",
+   "**S2**: Trade. The trade happens first which in turn changes the squad, the salaries and the vacancies. The release decisions are then applied to that new state, the purse changes accordingly, and the team enters the auction with a different set of needs."
+  ],
+  [
+   "h",
+   "Season Simulation"
+  ],
+  [
+   "t",
+   "Then I simulated the season 2000 times for both states. The simulation produces distributions for **Regular-season win percentage, Playoff probability, Title probability, Final squad/XII value, and Asset value**."
+  ],
+  [
+   "t",
+   "The trade’s effect is then measured as the difference between the two states: **Δ=S2−S1**. So, for example: Δ Playoff Probability=P(Playoffs ∣ S2)−P(Playoffs ∣ S1)"
+  ],
+  [
+   "h",
+   "Trade Utility"
+  ],
+  [
+   "t",
+   "The final trade utility asks a counterfactual question: **Is the team better off after making the trade than it would have been if the trade had never happened?** That is the final output of the framework."
+  ],
+  [
+   "h",
+   "The trade that already happened"
+  ],
+  [
+   "t",
+   "Pant to Delhi, Kuldeep to Lucknow."
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-08.jpg",
+   ""
+  ],
+  [
+   "t",
+   "Lucknow gained nine points of playoff probability by giving up their captain. Pant on ₹27 crore was costing them more than he was returning, and shedding that contract freed up a squad they could actually build in the auction. Delhi barely moved either way meaning their playoff probability won't change much by this trade."
+  ],
+  [
+   "t",
+   "Now, I won't bore you more with more technical stuff, here's what you've been waiting for this long to see:"
+  ],
+  [
+   "H",
+   "The three versions of the Hardik Pandya trade"
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-09.jpg",
+   ""
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-10.jpg",
+   ""
+  ],
+  [
+   "i",
+   "to-trade-or-not-to-trade-11.jpg",
+   ""
+  ],
+  [
+   "t",
+   "For CSK that’s a spread of four percentage points of title probability and it’s decided entirely by which second name goes to MI. Mhatre alone is worth more than twice what Khaleel is worth in this deal and that only shows up because Mhatre’s surplus value is way more than Khaleel’s and most likely he’ll remain uncapped till the next mega auction. So, CSK fans don’t give up Mhatre. Also, try to push Hardik’s salary down. But the reality is he doesn’t fix what’s actually wrong for them."
+  ],
+  [
+   "t",
+   "Mumbai improves in all three cases, which shows they would be the happier of the 2 sides. Interestingly, MI has more odds of reaching playoffs in the 2nd case than the 3rd which makes sense because they need a player of Khaleel’s attributes way more than that of Brevis."
+  ],
+  [
+   "t",
+   "Finally, if I can measure what a team gives up in a trade, and then show the conditions under which the deal makes sense, I’m closer to answering the question I started with:"
+  ],
+  [
+   "H",
+   "What is an IPL trade actually worth?"
+  ]
+ ]
+}

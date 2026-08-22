@@ -1,0 +1,111 @@
+{
+ "title": "Varun Chakravarthy: When one bad over bends everything",
+ "subtitle": "A deep look at why Varun’s games go from brilliant to brittle, what the data actually says, and how he could stay dangerous without trying to be a magician every ball.",
+ "description": "A deep look at why Varun’s games go from brilliant to brittle, what the data actually says, and how he could stay dangerous without trying to be a magician every ball.",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "March 2026",
+ "date_sort": "2026-03-07",
+ "cover": "varun-chakravarthy-when-one-bad-over-01.jpg",
+ "likes": 6,
+ "order": null,
+ "blocks": [
+  [
+   "t",
+   "I love Varun Chakravarthy because he makes batsmen uncomfortable in ways very few spinners can. He is clever, subtly violent, and when the ball lands in his channel he can wreck a middle over in a heartbeat. But, I began to notice a pattern that worries me: when his very first over of a match is expensive, everything that follows tends to unravel. That is not story telling. That is what the numbers and the pitch maps show."
+  ],
+  [
+   "h",
+   "What I checked, and why it matters"
+  ],
+  [
+   "t",
+   "I pulled together every Varun’s T20 appearance since 2024, then separated his innings into two simple groups. Group A are matches where, after Varun’s first over, the score was 10 runs or less. Group B are matches where the opposition scored more than 10 in his first over."
+  ],
+  [
+   "t",
+   "I then asked a handful of direct questions:"
+  ],
+  [
+   "t",
+   "*does his economy change? do batsmen play different shots? does his preferred line and length shift? do dismissals happen in a different pattern?*"
+  ],
+  [
+   "t",
+   "The answers are crisp, and they point at one central idea: giving away runs early forces Varun into a different game, and that different game is worse for him. He basically isn’t Varun anymore, but becomes something very different."
+  ],
+  [
+   "i",
+   "varun-chakravarthy-when-one-bad-over-02.jpg",
+   ""
+  ],
+  [
+   "t",
+   "• When Varun’s first over is 10 runs or less, his economy sits around 7.17, strike rate is about 10.15 (balls per wicket 10.15), and he averages roughly 12.1 per wicket. \n• When his first over concedes more than 10, his economy jumps to about 10.02, bowling average to 25.8, and his wickets per match fall. In plain terms, he becomes far less effective."
+  ],
+  [
+   "t",
+   "What actually shifts: line and length \n• Line: after a hit first over, Varun’s balls move more into the pads. The share of “on the stumps” increases by about 7.8 percentage points. Outside off decreases by roughly 7.3 points. \n• Length: the share of short of a good length and yorker increase slightly, while good length proportion falls a bit. That suggests less consistency in the middle length that Varun usually prefers. \n• The practical result: his “golden channel” i.e., good length pitched outside off stump gets rarer. Balls per golden channel go from **3.09** to **4.02**, meaning batsmen see more balls outside his ideal corridor when he has been punished early."
+  ],
+  [
+   "i",
+   "varun-chakravarthy-when-one-bad-over-03.jpg",
+   ""
+  ],
+  [
+   "i",
+   "varun-chakravarthy-when-one-bad-over-04.jpg",
+   ""
+  ],
+  [
+   "t",
+   "*These changes are not random. Chi square tests for statistical significance on line and length distributions produce **p-values** in the **1e-5** to **1e-4** range. That is a statistical red flag that the bowling pattern shifts meaningfully after an expensive first over.*"
+  ],
+  [
+   "h",
+   "How the batsmen adapt, and why this hurts Varun"
+  ],
+  [
+   "t",
+   "• Aggressive shots go up. On-drive and flick share increase when he was hammered early. Defensive shots like drop. Batsmen go hunting, not defending. \n• For right handers in particular, the increase in balls into the stumps moves scoring into the mid on region. Mid on share rises to **25%** from **17%** in this condition. That is exactly the region Varun wants to avoid; it is scoring heaven for on drives and flicks."
+  ],
+  [
+   "i",
+   "varun-chakravarthy-when-one-bad-over-05.png",
+   ""
+  ],
+  [
+   "t",
+   "• Dismissal patterns change too. Caught percentages rise and bowled reduces slightly."
+  ],
+  [
+   "t",
+   "*In other words, when Varun errs in line, batters eat him with straighter hits rather than being beaten.*"
+  ],
+  [
+   "h",
+   "Variation profile: googly vs leg break"
+  ],
+  [
+   "t",
+   "• When games go wrong early, Varun throws a higher share of leg break attempts and seems to lean on the **flick-away** idea. The economy of his leg break balls rises in those matches, and the googly economy also looks worse. In short, the variations are not buying him escape routes; they are sometimes making the situation worse. \n• My read: Varun is trying to fight back by turning the ball away from the stump line which is difficult and especially considering Varun is not a big turner of the ball, when precision is off, the tactic backfires."
+  ],
+  [
+   "i",
+   "varun-chakravarthy-when-one-bad-over-06.png",
+   ""
+  ],
+  [
+   "t",
+   "When Varun starts the match under pressure, he stops bowling the channel that makes him dangerous. He drifts in, attempts contrarian variations, and the result is higher run rates and fewer wickets. It is not that he loses ability. It is that his profile changes from “subtle, consistent spin” into “hit-or-miss variety”, and modern T20 batters can exploit that."
+  ],
+  [
+   "t",
+   "Players like Varun live on subtlety. His core asset is that he gets batsmen to buy a small uncertainty, and that uncertainty turns into a mistake. But modern T20 often punishes subtlety with brute aggression, especially early on. The key for Varun is not to out-fox batsmen every ball. It is to remain predictable in his best channel while keeping the occasional surprise using variations. That is the paradox of success for craft spinners today: *be both simple and rare*."
+  ],
+  [
+   "t",
+   "Drop a comment telling me what facet of the game you want me to deep dive into next. If you disagree, brilliant. Tell me your thoughts. That is how we have better cricket discussions."
+  ]
+ ]
+}

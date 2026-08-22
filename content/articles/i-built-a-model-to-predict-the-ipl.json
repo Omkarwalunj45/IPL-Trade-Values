@@ -1,0 +1,288 @@
+{
+ "title": "I built a model to predict the IPL 2026 points table. Last Year, it Got 3 of 4 Playoff Teams Right.",
+ "subtitle": "Here is what it is saying for 2026. And why I think you should pay attention.",
+ "description": "Here is what it is saying for 2026. And why I think you should pay attention.",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "March 2026",
+ "date_sort": "2026-03-21",
+ "cover": "i-built-a-model-to-predict-the-ipl-01.png",
+ "likes": 6,
+ "order": null,
+ "blocks": [
+  [
+   "t",
+   "Let me ask you something before we get into the numbers."
+  ],
+  [
+   "t",
+   "When you watch an IPL match and a batter hits a six in the 18th over of a chase, do you actually know how much that shot was worth? Not emotionally. Not aesthetically. In terms of what it did to your team’s chance of winning that specific game?"
+  ],
+  [
+   "t",
+   "Most cricket analysis does not answer that question. It counts the six. It adds it to a strike rate. It moves on."
+  ],
+  [
+   "t",
+   "That is the problem I set out to fix."
+  ],
+  [
+   "H",
+   "First, Let Me Earn Your Trust"
+  ],
+  [
+   "t",
+   "I am not going to ask you to believe a 2026 prediction from a model you have never heard of."
+  ],
+  [
+   "t",
+   "So let me go back to 2025 first."
+  ],
+  [
+   "t",
+   "Before IPL 2025 started, before a single ball was bowled, I ran my model on the squads as they stood and generated a points table forecast."
+  ],
+  [
+   "t",
+   "My predicted top four: **MI, RCB, GT, KKR.**"
+  ],
+  [
+   "t",
+   "The actual top four: **PBKS, RCB, GT, MI.**"
+  ],
+  [
+   "i",
+   "i-built-a-model-to-predict-the-ipl-02.png",
+   ""
+  ],
+  [
+   "t",
+   "Three of four correct. Champions RCB right. GT right. MI right."
+  ],
+  [
+   "t",
+   "Think about what that means for a moment. In a ten-team tournament where the difference between 4th and 5th place is razor-thin, the model correctly identified three of the four teams that made the playoffs - before the season began."
+  ],
+  [
+   "t",
+   "That is not luck. That is signal."
+  ],
+  [
+   "H",
+   "The Miss Matters As Much As The Hits"
+  ],
+  [
+   "t",
+   "I got PBKS wrong. And honestly, that miss helped more than a clean perfect call would have. Why? Because it showed me exactly where the model needed to improve. And I want to talk about that honestly because I think it is the most important part of this whole piece."
+  ],
+  [
+   "t",
+   "A good model should not just look impressive after the season ends. It should teach you something when it misses. That is where the real work begins."
+  ],
+  [
+   "t",
+   "Cricket data is noisy. Very noisy. And if you work in cricket long enough, you know this already."
+  ],
+  [
+   "t",
+   "One breakout player, one role change, one tactical shift, one injury, and the surface numbers start to wobble. Few players from PBKS had almost no prior IPL history for the model to work with. But even in that noise, my model was still catching the small patterns that matter in T20 cricket. It is not just looking at runs and wickets. It is picking up micropatterns in impact, role, usage, and match context. The newer version now has robust ‘League Translations’ to build on cross-league performance. That is the part I trust."
+  ],
+  [
+   "H",
+   "What Is Team Effective ICR?"
+  ],
+  [
+   "t",
+   "Before the 2026 table, let me explain what is actually powering this forecast."
+  ],
+  [
+   "t",
+   "**ICR — Integrated Contextual Ratings.**"
+  ],
+  [
+   "t",
+   "It does not ask how many runs you scored. It asks how much you shifted your team’s probability of winning."
+  ],
+  [
+   "t",
+   "Every delivery in a T20 match has a win probability attached to it. Based on score, wickets, overs remaining, target, match context. When you hit a boundary, probability shifts. When you get out, it shifts the other way. When you take a wicket at a critical moment, it shifts significantly."
+  ],
+  [
+   "t",
+   "ICR measures exactly how much each player moves that needle and then normalises it against what a typical player of the same role, in the same phase, in the same league would have done."
+  ],
+  [
+   "t",
+   "The output is not a raw number. It is a contextual judgment. *How good were you, relative to the specific situation you were asked to perform in?*"
+  ],
+  [
+   "t",
+   "*If you haven’t read my article on ICR, please go through this:*"
+  ],
+  [
+   "t",
+   "This will help you understand the basis of the model."
+  ],
+  [
+   "t",
+   "**Team Effective ICR** takes this one level further. It weights each player’s ICR by their actual usage and builds a team score."
+  ],
+  [
+   "H",
+   "The 2026 Forecast"
+  ],
+  [
+   "t",
+   "The model has been updated with squad compositions as of today reflecting actual player availability for IPL 2026."
+  ],
+  [
+   "t",
+   "Here is what it is saying:"
+  ],
+  [
+   "i",
+   "i-built-a-model-to-predict-the-ipl-03.png",
+   ""
+  ],
+  [
+   "t",
+   "**1. Punjab Kings - Predicted Win% 59.88**"
+  ],
+  [
+   "t",
+   "Squad largely intact. Roles clearly defined. The model that underestimated them heading into 2025 is now giving them full credit and then some. Players are no longer unknown quantities. The model can see them now."
+  ],
+  [
+   "t",
+   "If PBKS do not finish top two in 2026, the most likely reason will be injury to a key player. The squad strength is genuinely there."
+  ],
+  [
+   "t",
+   "**2. Mumbai Indians - Predicted Win% 58.55**"
+  ],
+  [
+   "t",
+   "Two consecutive years of being rated second in this model. That kind of consistency means something."
+  ],
+  [
+   "t",
+   "MI’s batting depth shows up clearly in ICR - multiple players in the top quartile of their positional groups. The bowling is the variable. A fully fit, fully motivated Burmah, Chahar and Hardik change their ceiling significantly."
+  ],
+  [
+   "t",
+   "ICR cannot measure fitness or motivation. That is the caveat. The squad quality is not in question."
+  ],
+  [
+   "t",
+   "**3. Lucknow Super Giants - Predicted Win% 56.56**"
+  ],
+  [
+   "t",
+   "This is the bold call. LSG finished 7th in 2025. The model has them jumping to 3rd in 2026."
+  ],
+  [
+   "t",
+   "What is driving it? Their auction. They’ve used the mini auction and trades and most importantly their home venue in a better way."
+  ],
+  [
+   "t",
+   "**4. Royal Challengers Bengaluru - Predicted Win% 55.02**"
+  ],
+  [
+   "t",
+   "The batting order has genuine depth and variety. The bowling is competent without being dominant."
+  ],
+  [
+   "t",
+   "RCB drop slightly from their 2025 prediction but remain firmly top four."
+  ],
+  [
+   "t",
+   "**5, 6, 7 - Delhi Capitals, Gujarat Titans, Sunrisers Hyderabad**"
+  ],
+  [
+   "t",
+   "Win% range: 51 to 53, which is very, very close."
+  ],
+  [
+   "t",
+   "I am going to be honest here. These three teams are genuinely indistinguishable in the model. Two percentage points separate them. Any of them finishing anywhere from 4th to 8th is entirely consistent with their ICR scores. And, in a game like T20, this can happen."
+  ],
+  [
+   "t",
+   "**8. Rajasthan Royals - Predicted Win% 49.40**"
+  ],
+  [
+   "t",
+   "Correctly placed in the bottom half in both our 2025 prediction and the 2025 actual table. The model sees the same structural weaknesses carrying into 2026."
+  ],
+  [
+   "t",
+   "**9. Kolkata Knight Riders - Predicted Win% 46.46**"
+  ],
+  [
+   "t",
+   "The 2024 champions. Second bottom in this forecast."
+  ],
+  [
+   "t",
+   "This might be the most debated prediction in this piece and I want to address it directly. The 2026 model has looked harder at what happened to their squad since the title and the replacements for their departed players do not match the ICR ratings of what they lost."
+  ],
+  [
+   "t",
+   "**10. Chennai Super Kings - Predicted Win% 46.23**"
+  ],
+  [
+   "t",
+   "Issues in the batting core and role overlap. Limited genuine pace in the bowling attack. Structural over-reliance on senior players whose ICR trend lines are moving in one direction."
+  ],
+  [
+   "H",
+   "What This Model Cannot Do"
+  ],
+  [
+   "t",
+   "Before you take this to your fantasy league or your team meeting, be clear about the limitations."
+  ],
+  [
+   "t",
+   "It cannot predict injuries. A Bumrah injury changes MI’s outlook entirely."
+  ],
+  [
+   "t",
+   "These are not reasons to dismiss the forecast."
+  ],
+  [
+   "t",
+   "The model tells you about squad construction and structural strength. What happens on the 22 yards is still cricket."
+  ],
+  [
+   "H",
+   "Why I Am Building This"
+  ],
+  [
+   "t",
+   "I am not a team. I am not a company. I am one person who became obsessed with a question that cricket analytics has not answered properly yet."
+  ],
+  [
+   "q",
+   "“*Why do we keep measuring cricket performance with numbers that do not measure what actually wins matches?”*"
+  ],
+  [
+   "t",
+   "DeepCrease is my attempt to build something better."
+  ],
+  [
+   "t",
+   "If you are a coach, an analyst, a team management professional, or someone who makes decisions about cricket and you are interested in what this kind of analysis can actually do for you - get in touch."
+  ],
+  [
+   "t",
+   "The season starts next week."
+  ],
+  [
+   "t",
+   "Let us see if the model was right."
+  ]
+ ]
+}

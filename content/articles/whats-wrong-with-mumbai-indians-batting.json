@@ -1,0 +1,191 @@
+{
+ "title": "What's wrong with Mumbai Indians' Batting? And How to Solve it?",
+ "subtitle": "The data tells a story MI's think tank needs to read fast.",
+ "description": "The data tells a story MI's think tank needs to read fast.",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "April 2026",
+ "date_sort": "2026-04-12",
+ "cover": "whats-wrong-with-mumbai-indians-batting-01.webp",
+ "likes": 1,
+ "order": null,
+ "blocks": [
+  [
+   "t",
+   "IPL 2026 hasn’t begun well for MI. They’ve lost 2 of their first 3 matches. More importantly, they a problem with their batting which is a function of a lot of factors like form, resource allocation and role play."
+  ],
+  [
+   "t",
+   "If you’ve followed me for some time, you know I don’t like the use of batting positions in T20s. There has to be an **Entry Points Optimized** Batting strategy which maximizes the Win% of the team. So let me show you exactly what MI are missing and how they fix it."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "First things first. The Powerplay."
+  ],
+  [
+   "t",
+   "MI have a good opening pair of Rohit and Rickelton. There is always a tussle to play de Kock instead of Rickelton, but they are trusting Rickelton and rightly so. But still, this batting pair needs a Powerplay hitter at number 3 when the first wicket falls within the Powerplay."
+  ],
+  [
+   "t",
+   "**But why is the Powerplay so important?**"
+  ],
+  [
+   "t",
+   "Since 2023, teams scoring more in the Powerplay win 65.89% of their matches."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-02.jpg",
+   ""
+  ],
+  [
+   "t",
+   "Look at the 2025 IPL Powerplay table."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-03.jpg",
+   ""
+  ],
+  [
+   "t",
+   "Only 4 teams had the R (ratio of Runs Scored/Runs Conceded) above 1, meaning they scored more than they conceded in the Powerplay. 3 of those 4 qualified for the playoffs. The one that didn’t have R>1 but still qualified, the Gujarat Titans, had the best average in the Powerplay and accelerated later into the innings. But this approach which worked in the past isn’t ideal anymore."
+  ],
+  [
+   "t",
+   "Since the last 2 seasons, the game has changed so much that you need a designated hitter in the Powerplay. **KKR 2024** had Salt and Narine. **RCB 2025** had Salt too."
+  ],
+  [
+   "t",
+   "And MI, they have to add Naman Dhir in the Powerplay. He’s in a great touch and the amount of damage he can do is scary during that time."
+  ],
+  [
+   "t",
+   "MI do have Suryakumar Yadav and Tilak Varma but they need someone who can do that Powerplay impact fearlessly. Look at the T20 data since 2024."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-04.png",
+   ""
+  ],
+  [
+   "t",
+   "Naman Dhir surpasses both Surya and Tilak in the Powerplay. MI somehow needs this scary impact in the Powerplay which they’re missing right now. Naman can use the field restrictions very well and use that to his advantage. They need this Designated Hitter for the Powerplay which will boost their R."
+  ],
+  [
+   "t",
+   "Even more so because in T20s, the Powerplay is becoming unmissable. Playing it well is so necessary that even though a good Powerplay doesn’t guarantee a win but if you mess up in the Powerplay, whether with the bat or the ball, you’ll be blown away. The game can effectively end in the Powerplay itself."
+  ],
+  [
+   "t",
+   "So, if Rohit and Rickelton have a great first wicket partnership which continues long after the Powerplay, SKY goes out to bat. That’s how the entry points work. But if the wkt falls in the Powerplay, MI should send Naman to boost the Powerplay usage."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "MI’s Untapped Middle-Order Spin Hitter"
+  ],
+  [
+   "t",
+   "**Now, one more role, or rather one more player, that MI are not using well.** They’re using Pandya or Tilak at 5. But just look at this."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-05.png",
+   ""
+  ],
+  [
+   "t",
+   "Since 2024, in T20 cricket, batters at position 5 face one of the highest percentages of spin bowling of any batting position. At positions 1 and 2, around 34% of balls are from spinners. By position 5, that number is 45%. Nearly half the deliveries faced are spin. This means that the player batting in this phase around 10-16 overs must be a remarkable player of spin to maximize the team’s score."
+  ],
+  [
+   "t",
+   "This tells you that the role of a spin hitter is absolutely critical at number 5. Shreyas Iyer played that role for PBKS last season. Patidar did it for RCB. MI do not have any such player in that role right now."
+  ],
+  [
+   "t",
+   "So **Sherfane Rutherford** walking out ahead of Hardik and Tilak is crucial."
+  ],
+  [
+   "t",
+   "Tilak Varma’s strike rate against spin in the middle overs was **136** between 2023 and 2025. In 2026, in the middle overs, it has dipped to **88.57**. On the other hand, since late 2025, Rutherford has completely changed his game against spin. His strike rate has seen a huge jump to **143** in the middle overs against spin, which is well above average and something MI needs desperately."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-06.png",
+   ""
+  ],
+  [
+   "t",
+   "Look at the wagon charts of Rutherford against spin in 2022-24 and then since 2025."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-07.jpg",
+   ""
+  ],
+  [
+   "t",
+   "See the change in the cover and point region increasing by nearly **7%** and **9%** respectively. Before, he was dependent only on the mid-wicket region with **34%** of his runs being scored there."
+  ],
+  [
+   "t",
+   "Now if you dig deeper, the two scoring zone charts show where he plays good length deliveries on the stumps against spin. Earlier he used to target the mid-wicket zone only. Since 2025 he has a strong scoring region in the extra cover region too."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-08.jpg",
+   ""
+  ],
+  [
+   "t",
+   "His relative scoring zone on the same line and length against spin tells the full story. He now scores **10.4%** more in the cover region compared to an average left-handed batter."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-09.jpg",
+   ""
+  ],
+  [
+   "t",
+   "This makes him an ideal spin hitter for MI. Giving this WI power hitter a license to kill can be a massive plus. Sherfane has the potential to win games on his own."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "So where does Tilak go?"
+  ],
+  [
+   "t",
+   "Owing to Tilak’s weakness against spin, his role has to be as a pace hitter after 15 overs, finishing the innings with skipper Hardik Pandya. He has the 2nd highest strike rate in the 15 to 20 over phase against pace since 2025, ahead of even Hardik and others. Only Surya is ahead of him. That’s the role. That’s where he belongs right now to provide the finish which ultimately wins you games."
+  ],
+  [
+   "i",
+   "whats-wrong-with-mumbai-indians-batting-10.png",
+   ""
+  ],
+  [
+   "H",
+   "The Optimum Lineup. What it means in numbers."
+  ],
+  [
+   "t",
+   "This optimized lineup will give MI a boost in their Predicted Win% from 58.5% to 61%. I know that looks small. But in a league like the IPL, these are the fine margins which shape matches and possibly entire campaigns."
+  ],
+  [
+   "t",
+   "The players are already there. Naman Dhir for the Powerplay. Rutherford as the spin destroyer in the middle. Tilak and Hardik finishing against pace. Three specific adjustments in one optimized structure."
+  ]
+ ]
+}

@@ -1,0 +1,273 @@
+{
+ "title": "How I Created a New Way to Measure Hidden Value in T20 Cricket",
+ "subtitle": "Quantifying Hidden Value in T20 Cricket Using a Novel Metric that explains over 70% of the variance in team win percentages across the season.",
+ "description": "Quantifying Hidden Value in T20 Cricket Using a Novel Metric that explains over 70% of the variance in team win percentages across the season.",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "November 2025",
+ "date_sort": "2025-11-16",
+ "cover": "the-unseen-game-icr-metric-01.png",
+ "likes": 16,
+ "order": null,
+ "blocks": [
+  [
+   "h",
+   "The Innings That Saved RCB’s Season and the Metric That Proved It"
+  ],
+  [
+   "t",
+   "**It was April 18, 2025,** RCB were playing at home, facing the Punjab Kings in a rain-curtailed, 14-over slugfest. They were in deep trouble. I mean, **33/5** after just **6.1** overs kind of trouble. The situation was so desperate they actually had to burn their Impact Substitute immediately, leaving them with only five bowling options for the chase. That’s a death sentence in T20 cricket."
+  ],
+  [
+   "t",
+   "Into this absolute firestorm walked **Tim David**."
+  ],
+  [
+   "t",
+   "The commentators called it “the last throw of the dice.” On a slow, spitting surface where only Rajat Patidar had managed to cross double figures, David launched a fearless counterattack. He didn’t just survive, he took over, smashing an unbeaten **50** off just **26** balls at a strike rate over 190. He single-handedly dragged RCB to a fighting total, rescuing them from utter humiliation."
+  ],
+  [
+   "t",
+   "Here’s the kicker though: Punjab Kings eventually chased the target. So, was David’s heroic innings for nothing? Absolutely not."
+  ],
+  [
+   "t",
+   "By turning a potential sub-60 score into a respectable one, David achieved something far more critical than a match win: he safeguarded RCB’s Net Run Rate (NRR). At the season’s end, RCB and Gujarat Titans were tied on points, but RCB’s superior NRR, courtesy of innings like David’s, secured them a coveted Top-2 finish."
+  ],
+  [
+   "t",
+   "Why does Top-2 matter? History shows that in 18 seasons of the IPL, only one champion has emerged from outside that elite group. Tim David’s innings, which would never result in the “**Orange Cap**”, analytically gave his team a crucial, extra shot at the title."
+  ],
+  [
+   "t",
+   "**The Analytical Blind Spot**"
+  ],
+  [
+   "t",
+   "That Tim David moment illustrates the precise problem with T20 analysis today. Modern T20 cricket isn’t just a sport of averages; it’s a high-variance, role-driven format. Traditional statistics are simply too blunt for multi-million-dollar decisions:"
+  ],
+  [
+   "t",
+   "- **Batting averages** often flatter slow accumulators who score slowly when the team needed acceleration."
+  ],
+  [
+   "t",
+   "- **Strike rates** can exaggerate the value of one-dimensional hitters who only perform when the pressure is already off."
+  ],
+  [
+   "h",
+   "The Auction Spotlight: Jeddah’s Frenzy and the Quiet Revolution"
+  ],
+  [
+   "t",
+   "On November 24–25, 2024, under the glittering lights of Jeddah, the IPL 2025 Mega Auction unfolded. Headlines were dominated by the five most expensive signings; each celebrated as a potential “game-changer.” And yet, one team broke away from this spectacle: Royal Challengers Bengaluru (RCB). RCB, stunned critics with their unorthodox approach. They passed on many marquee names and refused to chase the hype. Instead, they quietly built their squad around role-specific players: Jitesh Sharma, a fearless young Indian wicketkeeper-batter; Tim David, a proven finisher for Mumbai Indians; and Phil Salt, an explosive opener who many had overlooked. The backlash was immediate. Fans mocked RCB’s “lack of ambition,” and commentators questioned their approach."
+  ],
+  [
+   "i",
+   "the-unseen-game-icr-metric-02.png",
+   ""
+  ],
+  [
+   "t",
+   "***Figure 1: The five most expensive players from the IPL 2025 Mega Auction.***"
+  ],
+  [
+   "t",
+   "*Their high price reflects the traditional market valuation of players based on reputation and prior performance, a contrast to the contextual value explored in this paper. Notably, none of these belonged to RCB, which instead invested in role-specific match-winners such as Jitesh Sharma and Tim David.*"
+  ],
+  [
+   "t",
+   "In T20 cricket, impact often comes from volatile roles: finishers, powerplay hitters, and death-over bowlers. These are the “dirty tasks”, roles that rarely bring glamour but often decide matches. Such players are notoriously difficult to evaluate. Raw averages mislead, strike rates lack context, and small sample sizes hide true value. Traditional statistics cannot explain why some “underrated” batters consistently tilt games while others, despite big reputations, fade when conditions shift. This is where my work steps in."
+  ],
+  [
+   "t",
+   "I present the **Integrated Contextual Rating**: Research-grade metric designed precisely for this reality. By blending venue adjustment, role-specific baselines, and match impact, ICR uncovers the hidden value of players like Jitesh Sharma or Tim David. These are the players franchises quietly rely on to win titles, even if fans and headlines fail to notice. **(**Integrated Contextual Rating (ICR) for batting and Bowling ICR (BICR**)** for bowling.**)**"
+  ],
+  [
+   "t",
+   "ICR isn’t just one number; it’s a composite, research-grade measure that combines three critical elements to quantify both a batter’s raw skill and their contextual value:"
+  ],
+  [
+   "t",
+   "- **Venue-Adjusted Performance (VAP):** Benchmarks player output against role-specific peers based on the specific conditions of the ground. I computed a peer baseline and measured how far a player’s performance deviated from what was normally expected. The result is a contextual metric that tells you what a player *actually* contributed, stripped of pitch bias and role distortion."
+  ],
+  [
+   "t",
+   "- **Win Probability Added (WPA):** WPA is the change in the team’s win probability solely attributed to a batter or a bowler’s contribution. The power of WPA is its inherent ability to assign higher value to events that occur in high-leverage situations. A big over scored by a batter when the match win probability is low and the pressure is high (e.g., a tight chase in the 19th over) results in a massive change in WPA."
+  ],
+  [
+   "t",
+   "- **Role Stability Factor:** Captures consistency, adaptability, and the reliable performance required for high-pressure situations. While VAP captures contextual quality and WPA measures impact, RSF ensures those signals aren’t distorted by volatility. All these measures are normalized within each role group so that openers, middle-order players, and finishers are judged against the unique expectations of their role, ensuring fair and context-aware comparisons."
+  ],
+  [
+   "t",
+   "*Why It Matters*?"
+  ],
+  [
+   "t",
+   "This approach ensures that ICR is not simply rewarding “box office” innings but rather sustainable impact. It aligns directly with the kind of forward-looking decision-making that is crucial for franchise success:"
+  ],
+  [
+   "t",
+   "*Which players can repeat their performance over a long, gruelling 14-game season?*"
+  ],
+  [
+   "t",
+   "*Who can handle role volatility when team combinations change?*"
+  ],
+  [
+   "h",
+   "Results: Unveiling Predictive Power and Market Inefficiencies"
+  ],
+  [
+   "t",
+   "When I correlated the **Effective Team ICR** (the predicted ICR score of a team’s primary playing XI using the past seasons and other major leagues using a robust ‘League Translation Index’ to normalise performances across leagues) with the actual 2025 season’s win percentage, the results were highly compelling. I achieved a **0.7047 R²** accuracy in predicting the Win Percentage in IPL 2025. This means that over 70% of the variance in team win percentages across the season can be statistically explained by the team’s combined ICR score."
+  ],
+  [
+   "i",
+   "the-unseen-game-icr-metric-03.png",
+   ""
+  ],
+  [
+   "t",
+   "*Figure 2: The chart illustrates the strategic flaw in relying on conventional T20 metrics. While past research has emphasized metrics like Strike Rate and Economy, this graph shows their limited predictive value in the modern game. The **Team Effective Total ICR**, is shown to be a far more accurate predictor of a team’s win percentage in the IPL 2025 season. This highlights how the ICR framework aligns with and successfully measures the nuanced, strategic gameplay that defines modern T20 cricket.*"
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "h",
+   "Top 20 Batters in IPL 2025: A Portrait of Contextual Impact"
+  ],
+  [
+   "i",
+   "the-unseen-game-icr-metric-04.jpg",
+   ""
+  ],
+  [
+   "t",
+   "*Figure 3: The list of the top 20 batters ranked by ICR clearly validates the metric’s purpose: it prioritizes contextual, high-leverage impact over raw volume.*"
+  ],
+  [
+   "t",
+   "Interestingly, this list is not dominated by the “**Orange Cap**“ run machines. Instead, the top positions are occupied by players who consistently deliver high-value contributions in variety of roles, showcasing their superior WPA and VAP scores."
+  ],
+  [
+   "t",
+   "**Surfacing Undervalued Talent**"
+  ],
+  [
+   "t",
+   "Perhaps the most exciting finding is the metric’s ability to surface players whose value is completely missed by traditional scouting. My Top 20 list includes uncapped or under-the-radar domestic players who consistently delivered high contextual value for their roles:"
+  ],
+  [
+   "t",
+   "- **Naman Dhir** (ICR: 91.04)"
+  ],
+  [
+   "t",
+   "- **Jitesh Sharma (**ICR: 86.57)"
+  ],
+  [
+   "t",
+   "These players are valued by ICR above several established international names. This demonstrates the metric’s power as a predictive tool for auction strategy, allowing a franchise to acquire proven contextual value at a fraction of the cost of an established star whose performance, when contextualized by VAP and WPA, is less impactful."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "h",
+   "Auction Simulator and Who’s Really Worth the Money?"
+  ],
+  [
+   "t",
+   "The most transformative result came from my auction simulation. I created a simulated auction process using the ICR as the sole valuation metric to build an optimized roster for each team. The result was staggering: the optimized rosters boosted the **Effective Team ICR** by **15.8 points** on average compared to the actual 2025 owner-built rosters. This proves that massive market inefficiencies exist and demonstrates the profound, transformative potential of using ICR to build a more efficient, higher-performing squad."
+  ],
+  [
+   "h",
+   "Why Ignoring Santner’s BICR Cost MI a Top 2 Spot?"
+  ],
+  [
+   "t",
+   "For team management, the utility of ICR extends far beyond the auction hall. It provides the tactical intelligence needed to optimize in-game decisions like role assignments and bowler over allocation. Take the case of **Mitchell Santner** on the Mumbai Indians squad. My **Bowler Integrated Contextual Rating (BICR)** showed that his Venue-Adjusted Performance (VAP) and consistency were being severely underutilized. Santner, a highly consistent left-arm spinner, was often restricted to fewer overs or only brought on in low-leverage phases. By running simulations where Mumbai simply extended his bowling spells using him more aggressively in the middle overs where he excelled against his peer group: my model predicted a **2.46 %** surge in the team’s **Win Percentage**. That percentage point difference could have played a crucial role in securing a top-two finish. This demonstrates the **Dual Power** of my metric: it’s not just a bidding tool; it’s a dynamic tactical tool for management within a tournament too."
+  ],
+  [
+   "h",
+   "A Tactical Miscalculation"
+  ],
+  [
+   "t",
+   "**Dewald Brevis**, sitting high with an **ICR percentile of 82.09**, was a prime example of an undervalued asset entering the season. While Delhi Capitals missed a crucial opportunity to sign him as a replacement, he later proved the ICR’s faith by delivering match-winning performances for Chennai Super Kings."
+  ],
+  [
+   "t",
+   "The missed opportunity becomes even clearer when we factor in Venue-Adjusted Performance (VAP). Brevis’s high ICR predicted success, but imagine the explosive compounding effect if he had played at the **Arun Jaitley Stadium (Venue Factor** of **1.13** as compared to **0.89** that of **MA Chidambaram Stadium)**, a venue known for its shorter boundaries and flatter decks. His VAP score would have surged dramatically there, potentially turning DC’s season around. This is the difference between a high-potential player and a high-impact player: ICR identifies the talent, and VAP tells management exactly **where** and **how** to use it for maximum competitive advantage."
+  ],
+  [
+   "h",
+   "The RCB Squad: A Case Study in ICR-Driven Success"
+  ],
+  [
+   "t",
+   "The success of the Royal Challengers Bengaluru (RCB) squad in the 2025 season provides a critical real-world validation of the ICR framework. While their on-field performance was a testament to the value of contextual players, their auction strategy reveals a profound, persistent market inefficiency that ICR is designed to exploit."
+  ],
+  [
+   "t",
+   "RCB’s brilliance lay in their ability to prioritize impact over reputation and build a formidable squad for a fraction of the cost of a traditional, star-studded line-up. This strategy is perfectly captured by the team’s spending distribution:"
+  ],
+  [
+   "t",
+   "- **The Anchor:** The franchise spent an immense **~21 Cr** to retain a single player, Virat Kohli, whose role is to provide a high-volume anchor."
+  ],
+  [
+   "t",
+   "- **The Impact Unit:** In stark contrast, they spent a collective total of **21.85 Cr** on a group of six high-impact, volatile finishers and middle-order accelerators: **Jitesh Sharma, Krunal Pandya, Tim David, Romario Shepherd, Chikara, and Bhandage.**"
+  ],
+  [
+   "t",
+   "This comparison is not a critique of Virat Kohli’s immense value, but rather a powerful illustration of a market still hesitant to properly value the most difficult and volatile roles in T20 cricket. The amount spent on one high-volume star nearly matches the collective investment in six players whose primary function is to win games in high-pressure situations."
+  ],
+  [
+   "t",
+   "The fact that two of those players, Romario Shepherd and Krunal Pandya, can also contribute with four overs of bowling further underscores the multifaceted value RCB secured. Krunal Pandya’s **Player of the Match** performance in the final serves as undeniable proof that this group of contextual players was worth every penny."
+  ],
+  [
+   "t",
+   "The core of RCB’s approach lay in its recognition of a fundamental truth that aligns perfectly with my research: while top order batters dominate headlines and scorecards, it is often the lower-order batters who decide the outcome of a match. Their role is high-risk, requires a specific, clutch skill set, a set that traditional metrics cannot adequately measure, but which the ICR identifies and quantifies. The RCB strategy, whether explicitly ICR-driven or intuitively aligned with its philosophy, proves that a winning team can be constructed by identifying and investing in the most impactful, rather than the most expensive, players. It offers a blueprint for a more efficient, resilient, and ultimately successful approach to modern team building."
+  ],
+  [
+   "h",
+   "The Era of Contextual Value"
+  ],
+  [
+   "t",
+   "ICR provides a powerful tool to correct market inefficiencies. As my analysis of auction prices showed, there is a significant divergence between a **player’s monetary value** and their **contextual value**. By using ICR, teams can identify undervalued talent that others may overlook, leading to smarter, more efficient recruitment and squad construction. It moves scouting from a focus on historical aggregates to a focus on sustainable, game-winning impact."
+  ],
+  [
+   "t",
+   "In conclusion, the era of evaluating players solely on averages and strike rates is over. In the high-stakes, fast-paced world of T20, success hinges on a player’s ability to perform under pressure and in a specific context. The **Integrated Contextual Rating (ICR)** framework provides the language and the data to have this conversation, ensuring that we finally give credit where it is truly due."
+  ],
+  [
+   "t",
+   "As the **IPL 2026** auction approaches, teams will again gamble, overpay, underestimate, and misread impact, and that’s exactly why frameworks like ICR matter. The **correct philosophy** is to identify the roles that you need in your team, don’t see the player’s name see the role, the value added to your team by that player, and for all such roles find the overall optimum solution and not the best player for a particular role. Finding best player for every role strategy will fail miserably in an auction environment. Many a times buy expensive players just for their name but they don’t realise that the player doesn’t even have any role to play in their current team. In a landscape where decisions worth crores are made in minutes, separating noise from truth isn’t optional anymore; it’s an edge. I’ve built ICR to expose value others don’t see, challenge outdated evaluation models, and quantify the kind of contextual impact that actually wins T20 games. The full research paper will go deeper, but if this article makes you think differently about talent, roles, and match context, then we’re already speaking the same language. And if you’re an analyst, scout, or franchise decision-maker reading this, the doors are open. There’s a lot more where this came from."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "If you want to read on an amazing application of ICR, see how one move from Lucknow Super Giants can increase their Win % by whooping **6.23 %**, that’s ‘**One Extra Win**’ in the season."
+  ],
+  [
+   "t",
+   "Check this out, you’d absolutely love it:"
+  ]
+ ]
+}

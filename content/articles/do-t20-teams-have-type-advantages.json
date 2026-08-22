@@ -1,0 +1,338 @@
+{
+ "title": "Do T20 Teams Have Type Advantages Like Pokemon?",
+ "subtitle": "Turns Out Yes. And the Data Proves It.",
+ "description": "Turns Out Yes. And the Data Proves It.",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "May 2026",
+ "date_sort": "2026-05-22",
+ "cover": "do-t20-teams-have-type-advantages-01.webp",
+ "likes": 7,
+ "order": null,
+ "blocks": [
+  [
+   "t",
+   "If you grew up playing Pokemon, you remember the moment it clicked. You sent out your Charizard (Fire Type), full of confidence, and the opponent's Blastoise (Water Type) used **Hydro Pump**. \"It's super effective!\" your Game Boy said, and Charizard went down in one hit. You sat there for a second, slightly humiliated, then you understood something that no one had to spell out for you: types matter. Who you send out against who is often more important than how strong your individual Pokemon is."
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-02.jpg",
+   "Blastoise, a water type pokemon vs Charizard, a fire type pokemon"
+  ],
+  [
+   "t",
+   "That lesson, it turns out, applies pretty cleanly to **T20 cricket.** I know that Cricket and Pokemon are not 2 things which one can associate closely and even if you have no idea what Pokemon is stay with me, it’ll be fun. Maybe playing a bit too much Pokemon Showdown ignited that curiosity to search in the cricket data and look if the types exist. And, before any game, identifying the opponent’s current type and checking historical records against it can help teams make smarter decisions about playing XI, tactics, and approach."
+  ],
+  [
+   "t",
+   "The numbers from thousands of T20 matches tell a surprisingly clean story: certain team profiles beat certain other team profiles at rates that are statistically hard to dismiss. Some matchups are genuinely “super effective.” And just like in Pokemon, a team that looks like a loser on paper can still win, but only if they change the way they play."
+  ],
+  [
+   "t",
+   "Let’s build this up from the beginning."
+  ],
+  [
+   "H",
+   "The Type System: What Kind of Team Are You?"
+  ],
+  [
+   "t",
+   "I split teams into four batting types and four bowling types."
+  ],
+  [
+   "t",
+   "Batting Types: A, B, C, D"
+  ],
+  [
+   "t",
+   "Powerplay, is the heart of these profiles. **But why is the Powerplay so important?**"
+  ],
+  [
+   "t",
+   "Since 2023, teams scoring more in the Powerplay win 65.89% of their matches."
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-03.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "Every team gets a batting label based on two things: their run rate in the Powerplay and their run rate in the middle overs and death. Both are measured relative to the league average in that specific competition and year."
+  ],
+  [
+   "t",
+   "The four quadrants that come out of this are:"
+  ],
+  [
+   "t",
+   "**A: Fast starters who fade.** These teams score above the league average in the Powerplay but drop below it through the middle and death overs. They come out swinging, take full advantage of fielding restrictions, and then tend to consolidate."
+  ],
+  [
+   "t",
+   "**B: Slow starters who finish strong.** Below average in the Powerplay, above average later. These teams tend to be patient early, take time to read the surface and conditions, and then build into the innings. Often their best hitters bat at four, five, six."
+  ],
+  [
+   "t",
+   "**C: Strong throughout.** Above average in both phases. These teams are hard to plan against because there is no obvious window where the bowling side gets a free phase."
+  ],
+  [
+   "t",
+   "**D: Weak throughout.** Below average in both phases. This is not necessarily a disaster, as we will see, because a D-type batting team can still win matches if their bowling is elite. But it does mean they are regularly starting with their bowling under pressure."
+  ],
+  [
+   "t",
+   "Bowling Types: A, B, C, D"
+  ],
+  [
+   "t",
+   "Here the two measurements are Powerplay bowling strike rate and overall economy rate across the full innings."
+  ],
+  [
+   "t",
+   "**A: Powerplay wicket-takers who leak runs.** They strike early and often in the Powerplay. They disrupt the top order, but they give away runs across the innings."
+  ],
+  [
+   "t",
+   "**B: Economical but not threatening with wickets.** They dry up the scoring without creating breakthroughs early."
+  ],
+  [
+   "t",
+   "**C: Excellent at both.** Low Powerplay strike rate and low economy. The complete bowling attack."
+  ],
+  [
+   "t",
+   "**D: Poor at both.** Expensive and wicketless. When a team has a D-type bowling attack, they are essentially hoping their batting bails them out every single time."
+  ],
+  [
+   "H",
+   "The Full Type Code"
+  ],
+  [
+   "t",
+   "A team’s full type is written as two letters: one for batting, one for bowling. So a team labelled CC (strong batting throughout, wickets and economy in bowling) is the complete package. A team labelled DD (weak batting throughout, expensive and wicketless bowling) is in structural trouble. Everything else sits somewhere between those extremes."
+  ],
+  [
+   "H",
+   "Where IPL 2025 Teams Actually Landed"
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-04.png",
+   ""
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-05.png",
+   ""
+  ],
+  [
+   "t",
+   "The Top teams of the last season- RCB: CC PBKS: CA MI: CC GT: AB"
+  ],
+  [
+   "H",
+   "Do the Types Actually Predict Anything?"
+  ],
+  [
+   "t",
+   "Here is the overall win percentage by type across all matches in the dataset:"
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-06.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "The spread runs from 66.8% down to 19.9% which isn’t noise. When a type is winning nearly 67% of the time across more than 2000 matches, the type is capturing something real about team quality and profile."
+  ],
+  [
+   "t",
+   "But the overall win rate is not the interesting part. The interesting part is what happens in specific matchups."
+  ],
+  [
+   "H",
+   "The Matchup Chart"
+  ],
+  [
+   "t",
+   "In Pokemon, type advantages work on a simple scale. An attack is either super effective (does double damage), normal (standard damage), not very effective (half damage), or has no effect at all."
+  ],
+  [
+   "t",
+   "I built an equivalent scale for T20 team matchups."
+  ],
+  [
+   "t",
+   "Here is what the data says for each type."
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-07.jpg",
+   ""
+  ],
+  [
+   "H",
+   "Some Key Profiles for Better Understanding"
+  ],
+  [
+   "t",
+   "**CC (Strong batting throughout + Complete bowling: wickets and economy)**"
+  ],
+  [
+   "t",
+   "The CC type is as close to a legendary Pokemon as this dataset has. Against nine different types, it wins more than 55% of the time. It is super effective against virtually everyone. Only against itself and the other top-tier types like CB (strong batting, economical bowling) and BC (late flourish in batting, complete bowling) it doesn’t have a decisive edge."
+  ],
+  [
+   "t",
+   "The one type that does not just roll over for CC is BC (late flourish, complete bowling). BC gives CC a real contest because the complete bowling attack limits CC’s strong batting enough to keep things competitive. CC still wins the majority, but the margin compresses."
+  ],
+  [
+   "t",
+   "**CB (Strong batting throughout + Economical but not a wicket-threat in bowling)**"
+  ],
+  [
+   "t",
+   "CB profile does not bowl teams out. It starves them instead. And when paired with strong batting in both phases, it wins because the opposition simply cannot score enough runs to matter. I"
+  ],
+  [
+   "t",
+   "The catches: CB is not very effective against CA (strong batting, powerplay-wicket bowling) and CC (strong batting, complete bowling). Against teams that can score freely and threaten wickets early, CB’s miser bowling is not threatening enough to take control."
+  ],
+  [
+   "t",
+   "**BC (Late Flourish in Batting + Complete bowling: wickets and economy)**"
+  ],
+  [
+   "t",
+   "BC is the type that wins through bowling. Moderate batting means they will not always post imposing totals, but their bowling is complete enough to defend or restrict effectively."
+  ],
+  [
+   "t",
+   "**AC (Fast-start batting + Complete bowling)**"
+  ],
+  [
+   "t",
+   "AC is arguably the most interesting type in the dataset because it is the classic unpredictable profile that actually comes out ahead overall. Fast-start batting means AC teams go hard in the Powerplay. Complete bowling means they can take wickets and control runs. The combination makes them genuinely dangerous."
+  ],
+  [
+   "t",
+   "AC is not very effective against AB (fast-start batting, economical bowling), BC (late flourish in batting, complete bowling), CB (strong batting, economical bowling), and CC (strong batting, complete bowling). Consistently strong batting types with any bowling control eat into AC’s attacking style."
+  ],
+  [
+   "t",
+   "**DA (Weak batting + Powerplay wicket-taking bowling)**"
+  ],
+  [
+   "t",
+   "DA is perhaps the saddest type in the chart. The bowling can take wickets in the Powerplay, which should theoretically create pressure. But the batting is weak throughout both phases, which means even when the bowling performs, the total being defended is almost never enough. DA is not very effective against almost everything in the dataset. DD (Weak batting + Poor bowling)"
+  ],
+  [
+   "t",
+   "**DD (Weak batting + Weak bowling)**"
+  ],
+  [
+   "t",
+   "DD is the base Magikarp of this system. Not very effective against everything, super effective against nothing. 19.9% win rate across 1365 matches."
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-08.jpg",
+   "A Magikarp. Although a weak pokemon, it evolves into a Gyarados which is a great pokemon to own. Although same can’t be said about a DD Cricket Side."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "The Lesson That Actually Applies Here"
+  ],
+  [
+   "t",
+   "Here is the thing about Pokemon that made it more than just a game about hitting stuff: even the worst type matchup was survivable if you played correctly. A Charizard (Fire) against a Blastoise (Water) was not an automatic loss. It was a hard matchup that required a different strategy."
+  ],
+  [
+   "t",
+   "T20 cricket works the same way. The type advantage data tells you the baseline probability. It does not tell you the match is over before it starts."
+  ],
+  [
+   "t",
+   "Here is a beautiful real example from the 2026 IPL."
+  ],
+  [
+   "H",
+   "CSK vs KKR: A DD Type CSK Beats an AD Type KKR by Becoming an AC Type"
+  ],
+  [
+   "t",
+   "For the whole of IPL 2026 before the game, CSK had been a DD type. Weak batting throughout all the phases, poor bowling."
+  ],
+  [
+   "t",
+   "KKR for the season were an AD type. Fast-start batting (Powerplay run rate comfortably above average) but poor bowling throughout. The AD type historically beats the DD type pretty comfortably. The data across all of T20 cricket says AD teams win against DD teams 61.8% of the time. A DD team going into that matchup should be worried."
+  ],
+  [
+   "t",
+   "And yet, CSK won."
+  ],
+  [
+   "t",
+   "Look at what CSK actually did on the day. Their match Powerplay run rate was 11.33, and their middle-over run rate was 7.79. Their match bowling strike rate was 18.0 with an economy of 7.65. On the day, CSK’s match type was AC. Fast-start batting (A), complete bowling (C). Wickets and control in the same bowling performance."
+  ],
+  [
+   "t",
+   "AC against AD. That is a matchup where AC wins 54.7% of the time. Completely different probability from the season-level DD vs AD picture."
+  ],
+  [
+   "t",
+   "What this means is that the type system tells you what you need to change. CSK played with a specific plan to attack the Powerplay with the bat and bowl for wickets up front. They changed the Charizard’s moveset. They used moves that were effective against a Water type. And it worked."
+  ],
+  [
+   "t",
+   "This is the analytical gift of the type system."
+  ],
+  [
+   "t",
+   "If you know your type is disadvantaged against your opponent’s type, you know which aspects of your game need to flip on match day. You do not need to be a CC type permanently. You need to play like one for three hours."
+  ],
+  [
+   "H",
+   "The IPL 2026 Matchup Table"
+  ],
+  [
+   "t",
+   "Now let’s look at how the 2026 IPL season started through this lens. Each match below shows the two teams’ types for the season, the historical record between those two types, and what actually happened on the day."
+  ],
+  [
+   "i",
+   "do-t20-teams-have-type-advantages-09.png",
+   ""
+  ],
+  [
+   "H",
+   "What This Is Really About"
+  ],
+  [
+   "t",
+   "What the type system does is it gives you a structural picture. It tells you, before a ball is bowled, which team has a profile advantage. It tells you how often that advantage has translated into a result historically. And most importantly, it tells you which dimensions of the game the disadvantaged team needs to change if they want to flip the probability."
+  ],
+  [
+   "t",
+   "If you are a DD type playing a CC type, you are not trying to out-CC them. You are trying to be an AC type for one day. Or a BC type. You are looking at the matchup chart and finding the moveset that gives you a fighting chance. You are doing what every kid with a Charizard eventually figured out: the type you are and the type you play like do not have to be the same thing."
+  ],
+  [
+   "t",
+   "The data across thousands of T20 matches says the types are real. Before any game, identifying the opponent’s current type and checking historical records against it can help teams make smarter decisions about playing XI, tactics, and approach. That combination is what makes this worth knowing."
+  ]
+ ]
+}

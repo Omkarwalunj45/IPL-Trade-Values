@@ -1,0 +1,441 @@
+{
+ "title": "I Built a Cricket Intelligence Platform Teams Don’t Share Publicly",
+ "subtitle": "Inside a T20 analysis platform that answers where, when, against what and why.",
+ "description": "Inside a T20 analysis platform that answers where, when, against what and why.",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "February 2026",
+ "date_sort": "2026-02-08",
+ "cover": "i-built-a-cricket-intelligence-platform-01.png",
+ "likes": 10,
+ "order": null,
+ "blocks": [
+  [
+   "H",
+   "The Uncomfortable Truth"
+  ],
+  [
+   "t",
+   "I need to tell you something that might annoy you."
+  ],
+  [
+   "t",
+   "Most of what you see online as “cricket analysis”... isn’t analysis."
+  ],
+  [
+   "t",
+   "It’s highlights with numbers attached."
+  ],
+  [
+   "t",
+   "Averages without context. Strike rates divorced from conditions. Wagon wheels that look pretty but explain nothing."
+  ],
+  [
+   "t",
+   "**They tell you what happened.** \n**They almost never tell you why.** \n**And they definitely don’t tell you when it will happen again.**"
+  ],
+  [
+   "t",
+   "But then I started asking different questions. The kind teams ask. The kind that don’t have easy answers on Cricinfo."
+  ],
+  [
+   "t",
+   "And that’s when everything changed."
+  ],
+  [
+   "i",
+   "i-built-a-cricket-intelligence-platform-02.jpg",
+   ""
+  ],
+  [
+   "H",
+   "The Question That Started Everything"
+  ],
+  [
+   "t",
+   "Teams don’t ask:"
+  ],
+  [
+   "q",
+   "“Who scored runs?”"
+  ],
+  [
+   "t",
+   "They ask:"
+  ],
+  [
+   "t",
+   "- **Where** were the runs scored?"
+  ],
+  [
+   "t",
+   "- **When** did they come?"
+  ],
+  [
+   "t",
+   "- **Against what** kind of bowling?"
+  ],
+  [
+   "t",
+   "- **Under which phase and match state?**"
+  ],
+  [
+   "t",
+   "- And **why does this pattern repeat?**"
+  ],
+  [
+   "t",
+   "These are smart people with massive budgets. But **the tools don’t exist.** At least not publicly. So I decided to build one."
+  ],
+  [
+   "t",
+   "That gap is exactly what DeepCrease is built to solve."
+  ],
+  [
+   "h",
+   "A few key features:"
+  ],
+  [
+   "h",
+   "1. Strength–Weakness Maps by Real Context"
+  ],
+  [
+   "t",
+   "Every batter and bowler can be analysed by:"
+  ],
+  [
+   "t",
+   "- **Line × Length**"
+  ],
+  [
+   "t",
+   "- **Phase**"
+  ],
+  [
+   "t",
+   "- **Bowling type** (pace / spin, sub-types included)"
+  ],
+  [
+   "t",
+   "- **Matchups** (batter vs bowler, along with role vs role)"
+  ],
+  [
+   "t",
+   "This means:"
+  ],
+  [
+   "t",
+   "- a “weakness” in Powerplay may **vanish** in Middle overs"
+  ],
+  [
+   "t",
+   "- a safe zone vs spin may become a risk zone vs pace"
+  ],
+  [
+   "t",
+   "- context flips the narrative and the data shows it"
+  ],
+  [
+   "t",
+   "One thing I didn’t expect while building this:"
+  ],
+  [
+   "q",
+   "How often “weaknesses” disappear when you change phase + bowler type."
+  ],
+  [
+   "t",
+   "Cricket is a context game. \nWe’ve just been measuring it wrong."
+  ],
+  [
+   "i",
+   "i-built-a-cricket-intelligence-platform-03.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "h",
+   "2. Shot Likelihood Heatmaps (Individual + Relative)"
+  ],
+  [
+   "t",
+   "This is where it gets serious."
+  ],
+  [
+   "t",
+   "For any **line–length–phase–bowling type** combination, **DeepCrease** shows:"
+  ],
+  [
+   "t",
+   "- **Individual Scoring Zones** \n→ Where *this batter* actually plays the ball"
+  ],
+  [
+   "t",
+   "- **Relative Scoring Zones** \n→ Where the batter accesses zones **more or less than an average batter**"
+  ],
+  [
+   "t",
+   "This isn’t a wagon wheel for aesthetics."
+  ],
+  [
+   "t",
+   "It answers:"
+  ],
+  [
+   "q",
+   "*“What does this batter do differently from the baseline?”*"
+  ],
+  [
+   "t",
+   "That’s gold for:"
+  ],
+  [
+   "t",
+   "- opponent prep"
+  ],
+  [
+   "t",
+   "- bowling plans"
+  ],
+  [
+   "t",
+   "- field placement"
+  ],
+  [
+   "t",
+   "- matchup targeting"
+  ],
+  [
+   "i",
+   "i-built-a-cricket-intelligence-platform-04.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "h",
+   "3. Phase-wise Control %, Boundary Intent & Risk Profiles"
+  ],
+  [
+   "t",
+   "Instead of generic strike rates, the platform shows:"
+  ],
+  [
+   "t",
+   "- **Control %**"
+  ],
+  [
+   "t",
+   "- **Boundary intent by zone**"
+  ],
+  [
+   "t",
+   "- **Risk profiles that change by phase**"
+  ],
+  [
+   "i",
+   "i-built-a-cricket-intelligence-platform-05.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "h",
+   "4. Matchups That Actually Change With Context"
+  ],
+  [
+   "t",
+   "If you want to see:"
+  ],
+  [
+   "q",
+   "*Where Abhishek Sharma has scored against Shaheen Afridi — and how that changes by phase*"
+  ],
+  [
+   "t",
+   "You can."
+  ],
+  [
+   "t",
+   "And more importantly:"
+  ],
+  [
+   "t",
+   "- you can see **where the matchup flips**"
+  ],
+  [
+   "t",
+   "- where the risk zones emerge"
+  ],
+  [
+   "t",
+   "- where the “obvious” narrative breaks"
+  ],
+  [
+   "i",
+   "i-built-a-cricket-intelligence-platform-06.jpg",
+   ""
+  ],
+  [
+   "i",
+   "i-built-a-cricket-intelligence-platform-07.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "h",
+   "5.Batters’ Caught Dismissals"
+  ],
+  [
+   "t",
+   "Where exactly a player has been caught while playing his shots in each phase, tells you where to set the field to trap him. \nUSA had a fielder in Deep Cover for Abhishek in Powerplay, which was a great move. Over **26%** of his runs in Powerplay are in this region against pace with **3** dismissals"
+  ],
+  [
+   "i",
+   "i-built-a-cricket-intelligence-platform-08.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "h",
+   "6. Multi-Tournament, Global Coverage"
+  ],
+  [
+   "t",
+   "All of this works across **10+ global tournaments**, including:"
+  ],
+  [
+   "t",
+   "- IPL"
+  ],
+  [
+   "t",
+   "- T20Is"
+  ],
+  [
+   "t",
+   "- and multiple franchise leagues"
+  ],
+  [
+   "t",
+   "Same logic. \nSame framework. \nDifferent contexts."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "In simple words"
+  ],
+  [
+   "t",
+   "👉 DeepCrease doesn’t tell you *what happened* \n👉 It tells you *why it happened* \n👉 And *when it’s likely to happen again*"
+  ],
+  [
+   "t",
+   "That’s the difference between content and **decision-making**."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "Why make this public?"
+  ],
+  [
+   "t",
+   "Because this kind of analysis usually lives **inside teams**."
+  ],
+  [
+   "t",
+   "Very few teams even do this properly. \nAlmost none of it is visible publicly."
+  ],
+  [
+   "t",
+   "I decided to change that- at least for now."
+  ],
+  [
+   "t",
+   "🔗 **The platform is live:**"
+  ],
+  [
+   "t",
+   "https://omkarthecricketest-deepcrease.hf.space/"
+  ],
+  [
+   "t",
+   "If this feels *too detailed*- you’re probably the right audience."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "What’s next?"
+  ],
+  [
+   "t",
+   "This is **Version 1**."
+  ],
+  [
+   "t",
+   "The scary part isn’t what this does today."
+  ],
+  [
+   "t",
+   "It’s what this kind of analysis unlocks next."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "H",
+   "If you’re reading this and you’re:"
+  ],
+  [
+   "t",
+   "- a **coach** preparing opponents"
+  ],
+  [
+   "t",
+   "- an **analyst** tired of surface-level metrics"
+  ],
+  [
+   "t",
+   "- a **player** who wants patterns, not vibes"
+  ],
+  [
+   "t",
+   "- or a **team / organisation** looking for an edge"
+  ],
+  [
+   "t",
+   "My DMs are open."
+  ],
+  [
+   "t",
+   "Happy to walk through how this can actually be used for prep and decisions."
+  ],
+  [
+   "t",
+   "Cricket deserves better analysis. \nThis is my attempt to build it."
+  ]
+ ]
+}

@@ -1,0 +1,276 @@
+{
+ "title": "Rebuilding The T20 Skill Scale From First Principles",
+ "subtitle": "Here is how I built a transparent Skill Scale with real definitions for Acceleration, Power and Innovation.",
+ "description": "Here is how I built a transparent Skill Scale with real definitions for Acceleration, Power and Innovation.",
+ "category": "",
+ "by": "Omkar Walunj",
+ "date": "February 2026",
+ "date_sort": "2026-02-27",
+ "cover": "rebuilding-the-t20-skill-scale-from-01.png",
+ "likes": 17,
+ "order": null,
+ "blocks": [
+  [
+   "i",
+   "rebuilding-the-t20-skill-scale-from-02.jpg",
+   "Skill Scores shown in the World Cup have caused a lot of confusion among the fans in Player Evaluation"
+  ],
+  [
+   "t",
+   "Enough is said about the Skill Scale metric developed by CricViz for the World Cup. Creating such a unified metric is not at all easy, and there will always be some edge cases which might be difficult to understand at first glance. The friction comes from the lack of visibility into how those numbers are formed. When the logic stays hidden, interpretation becomes subjective."
+  ],
+  [
+   "t",
+   "That raises a more interesting possibility."
+  ],
+  [
+   "t",
+   "If a Skill Scale is going to shape how players are discussed, can it be built in a way where every number has an understandable cricket meaning?"
+  ],
+  [
+   "t",
+   "That question is what led to this work."
+  ],
+  [
+   "t",
+   "Instead of speculating about the broadcast model, my aim is to create a version where the pathway from data to number is clear. A framework where the rating is not just something you see, but something you can trace, question, and understand."
+  ],
+  [
+   "t",
+   "In short, a Skill Scale designed to be transparent by default. Because right now, the broadcast numbers look analytical but feel mysterious. That confusion is what this work starts from. Not to criticise the idea, but to build a Skill Scale where every number has a visible cricket meaning. So, let’s see can we come up with our skill scale?"
+  ],
+  [
+   "t",
+   "This project started from a simple belief."
+  ],
+  [
+   "t",
+   "If we are going to describe skills, every skill must come from a behaviour on the field that we can explain."
+  ],
+  [
+   "t",
+   "That is what the DeepCrease Skill Score tries to do."
+  ],
+  [
+   "t",
+   "Not a black box rating. A set of interpretable skill metrics that answer real cricket questions."
+  ],
+  [
+   "t",
+   "Three skills sit at the core right now."
+  ],
+  [
+   "t",
+   "**Acceleration. \nPower. \nInnovation.**"
+  ],
+  [
+   "t",
+   "(I have skipped control because that is intuitive, and one more issue is for accurate measurement we need a detailed explanation of bat and ball contact in the data.)"
+  ],
+  [
+   "t",
+   "Each one is built from a different cricket idea."
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "**Acceleration** is about impact speed, not final strike rate, this difference is crucial in understanding what we’re trying to do. A batter can finish with a high strike rate but still take too long to influence the game. He’ll earn many fantasy points due to boundaries and SR, but that SR at a low acceleration would not be enough to take his team home. In T20, timing of impact matters as much as magnitude."
+  ],
+  [
+   "t",
+   "So the first step was to define a reference point for meaningful impact."
+  ],
+  [
+   "t",
+   "Instead of picking an arbitrary strike rate, the model looks at winning innings. Across matches (I’ve used T20I ball by ball data since 2021), we compute the strike rate that winning teams actually achieve. This becomes a dynamic benchmark for what winning batting looks like in that dataset."
+  ],
+  [
+   "t",
+   "Now the question becomes behavioural."
+  ],
+  [
+   "t",
+   "How quickly does a batter reach that level and **stay there,** because sustaining a high SR is important.?"
+  ],
+  [
+   "t",
+   "For every innings, cumulative strike rate is tracked ball by ball. Reaching the benchmark once is not enough. The batter must sustain it for a short window of 5 balls. That prevents random spikes from being treated as acceleration."
+  ],
+  [
+   "t",
+   "This produces a very intuitive quantity: **Balls required to reach winning impact.**"
+  ],
+  [
+   "t",
+   "Batters who consistently get there faster rate higher. Batters who rarely reach it or reach it late rate lower. The final Acceleration rating blends three signals. Speed to the benchmark, frequency of reaching it, and sample size stability."
+  ],
+  [
+   "t",
+   "Acceleration stops being a narrative label. It becomes a measurable timing skill."
+  ],
+  [
+   "i",
+   "rebuilding-the-t20-skill-scale-from-03.png",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "**Power** starts from a different cricket truth. Power is not just sixes. It is meaningful six hitting."
+  ],
+  [
+   "t",
+   "Counting sixes alone rewards volume without context. Strike rate alone hides scoring composition. A batter who scores quickly through fours is different from one who bends the game with sixes."
+  ],
+  [
+   "t",
+   "The Power metric combines three ideas."
+  ],
+  [
+   "t",
+   "Six frequency captures how often a batter hits sixes. \nSix share captures how much of their scoring comes from sixes as compared to fours. \nVolume ensures sustained hitters separate from small sample outliers."
+  ],
+  [
+   "t",
+   "When these interact, the metric identifies players who repeatedly create large scoring events and rely on them as a core scoring method. Converting this into a percentile rating produces a scale that aligns closely with how we intuitively recognise power hitters. Power becomes structural, not highlight driven."
+  ],
+  [
+   "i",
+   "rebuilding-the-t20-skill-scale-from-04.png",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "**Innovation** is the most nuanced skill because it is not about runs alone. It is about options. Now, this needed the most creativity in thinking, and it’s something which can have different interpretation for different individuals."
+  ],
+  [
+   "t",
+   "Innovation here is framed as contextual shot diversity. Instead of looking at runs scored in certain regions or how many unorthodox shots a batter plays, Innovation, if it has to have any meaning in T20 cricket, then it has to be helping the batter to play the field."
+  ],
+  [
+   "t",
+   "For every bowling situation defined by line, length, bowling type, and batter handedness, we observe how scoring shots are distributed across the league. That distribution represents the typical solution space."
+  ],
+  [
+   "t",
+   "We then look at each batter."
+  ],
+  [
+   "t",
+   "Within the same situation, how many different scoring solutions do they actually use? Are they predictable or flexible?"
+  ],
+  [
+   "t",
+   "Think of it has a student having a number of ways to solve a math problem, and now depending upon the time he has in his exam, he choses a feasible methodology. In the same manner, the question is the ball itself, and time represents the field placement, so a batter who’ll have more answers to that ball will end up getting a long-term success."
+  ],
+  [
+   "t",
+   "This is measured using an effective number of shots concept derived from entropy. In simple terms, it estimates how many distinct scoring options a batter genuinely uses rather than how many appear once."
+  ],
+  [
+   "t",
+   "Exposure weighting is critical. Situations faced more often should matter more than rare ones. Light smoothing prevents small samples from exaggerating creativity."
+  ],
+  [
+   "t",
+   "The result is an Innovation score that captures adaptability rather than aesthetics."
+  ],
+  [
+   "t",
+   "A scoop is not innovative because it looks cool. It is innovative when it expands the solution space relative to what most players do in that context."
+  ],
+  [
+   "i",
+   "rebuilding-the-t20-skill-scale-from-05.png",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "Once the three skill dimensions are computed, they are converted into percentile style ratings to form the DeepCrease Skill Score. The goal is readability without losing meaning."
+  ],
+  [
+   "t",
+   "Each number answers a question."
+  ],
+  [
+   "t",
+   "- *How quickly does this batter reach winning impact?*"
+  ],
+  [
+   "t",
+   "- *How strongly do they generate large scoring events?*"
+  ],
+  [
+   "t",
+   "- *How wide is their scoring solution space across contexts?*"
+  ],
+  [
+   "t",
+   "That clarity matters more than the exact formula."
+  ],
+  [
+   "t",
+   "Because the real purpose of this work is not ranking players. It is changing how we talk about skill. The bowler metrics are fascinating too, especially the **Threat** which I’ll work out soon."
+  ],
+  [
+   "t",
+   "When metrics are interpretable, disagreement becomes productive. Debates become valuable because the assumptions are visible."
+  ],
+  [
+   "t",
+   "That is the philosophy behind DeepCrease."
+  ],
+  [
+   "t",
+   "Context first. Behaviour first. Transparency first."
+  ],
+  [
+   "i",
+   "rebuilding-the-t20-skill-scale-from-06.jpg",
+   ""
+  ],
+  [
+   "r",
+   ""
+  ],
+  [
+   "t",
+   "I’ll shortly put all the batter’s Skill Scores on the DeepCrease Website"
+  ],
+  [
+   "t",
+   "https://omkarthecricketest-deepcrease.hf.space/"
+  ],
+  [
+   "i",
+   "rebuilding-the-t20-skill-scale-from-07.jpg",
+   ""
+  ],
+  [
+   "t",
+   "Skill scores should not feel mysterious. They should feel like compressed cricket understanding."
+  ],
+  [
+   "t",
+   "And ideally, when a number moves, you should be able to imagine what changed on the field."
+  ],
+  [
+   "t",
+   "Finally, As and Nathan Leamon had beautifully explained that the biggest contribution which data can make in Cricket is not towards a team or a player, but it’s explaining this game in a different, and better perspective, this is my small attempt to do so. \n \nIf you’re interested in T20 Player Evaluation, then check out my article on **Integrated Contextual Rating,** which elegantly solves the issue in volatility of various roles in T20 Cricket which differ significantly from the longer forms. This explained 70.47% of the variance in the Win% of teams in IPL 2025. Check it out here:"
+  ]
+ ]
+}
