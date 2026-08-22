@@ -29,7 +29,7 @@ Mitchell Marsh,2.855,2.94,3.21,LSG,Allrounder,3.4,1,1,retained,1602,1089,1849.01
 Naman Dhir,2.835,2.93,3.51,MI,Batter,5.25,0,0,retained,1037,0,1037,IPL only,419,52,4,Death+Middle,spin bowler,Middle,566,2.68,0.25,2.74
 Pat Cummins,2.65,2.58,2.36,SRH,Allrounder,18,1,1,retained,1589,195,1633.231707,IPL+T20I,170,786,8,Death+Middle+Powerplay,pace bowler,Lower,633,2.67,-0.09,2.72
 Krunal Pandya,2.64,2.66,2.91,RCB,Allrounder,5.75,1,0,retained,1921,0,1921,IPL only,285,678,7,Middle,spin bowler,Lower,958,2.55,0.11,2.62
-Sam Curran,2.58,0.04,-0.16,RR,Allrounder,2.4,1,1,traded,778,1566,1133.214634,IPL+T20I,303,319,4,Death+Middle+Powerplay,pace bowler,Middle,156,0.12,-0.08,-0.02
+Sam Curran,2.08,0.04,-0.16,RR,Allrounder,2.4,1,1,traded,778,1566,1133.214634,IPL+T20I,303,319,4,Death+Middle+Powerplay,pace bowler,Middle,156,0.12,-0.08,-0.02
 Anshul Kamboj,2.52,2.59,3.07,CSK,Bowler,3.4,1,0,retained,1164,0,1164,IPL only,44,434,9,Death+Middle+Powerplay,pace bowler,Tail,686,2.38,0.21,2.45
 Tim David,2.33,2.33,2.27,RCB,Batter,3,1,1,retained,726,599,861.8707317,IPL+T20I,371,6,6,Middle,spin bowler,Lower,349,2.35,-0.02,2.33
 Phil Salt,2.246,2.25,1.64,RCB,WK-Batter,11.5,1,1,retained,1057,0,1057,IPL (war_final),588,0,1,,,Opener,469,2.25,0,2.25
@@ -117,7 +117,7 @@ Jaydev Unadkat,0.555,0.55,0.54,SRH,Bowler,1,1,0,retained,739,0,739,IPL only,29,4
 Harshit Rana,0.61,0.54,0.51,KKR,Bowler,4,1,0,retained,891,525,1010.085366,IPL+T20I,53,519,9,Death+Middle+Powerplay,pace bowler,Tail,319,0.55,-0.01,0.52
 Vipraj Nigam,0.53,0.53,0.55,DC,Bowler,0.5,0,0,retained,829,0,829,IPL only,89,293,7,Middle+Powerplay,spin bowler,Lower,447,0.52,0.01,0.53
 M Shahrukh Khan,0.52,0.52,0.23,GT,Allrounder,4,0,0,retained,398,0,398,IPL (war_final),208,18,7,,spin bowler,Lower,172,0.52,0,0.52
-Romario Shepherd,0.512,-0.4,-0.36,RCB,Allrounder,1.5,1,1,retained,870,1951,1312.543902,IPL+T20I,111,277,7,Death+Middle,pace bowler,Lower,482,-0.42,0.02,-0.61
+Romario Shepherd,0.572,-0.4,-0.36,RCB,Allrounder,1.5,1,1,retained,870,1951,1312.543902,IPL+T20I,111,277,7,Death+Middle,pace bowler,Lower,482,-0.42,0.02,-0.61
 AM Ghazanfar,0.968,0.56,0.85,MI,Bowler,4.8,1,1,retained,573,136,603.8487805,IPL+T20I,,191,,Death+Middle+Powerplay,spin bowler,,382,0.43,0.13,0.43
 Mitchell Starc,0.611,0.31,0.24,DC,Bowler,11.75,1,1,retained,1020,151,1054.25122,IPL+T20I,23,572,9,Death+Powerplay,pace bowler,Tail,425,0.34,-0.03,0.33
 Jamie Smith,0.485,0.03,0,,WK-Batter,2,1,1,unsold,0,134,30.39512195,T20I only,,,,,,,,0.04,-0.01,0.03
