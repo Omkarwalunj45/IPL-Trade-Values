@@ -56,6 +56,20 @@
    ]
   },
   {
+   "year": 2027,
+   "label": "T Natarajan to Hyderabad, Zeeshan Ansari to Delhi",
+   "note": "The second completed deal of the 2026 window.",
+   "A": "SRH", "B": "DC",
+   "players": [
+    {"player": "T Natarajan",    "to": "SRH", "pWAR":  0.18, "salary": 5.00, "market": 5.78, "surplus":  0.78, "role": "Bowler"},
+    {"player": "Zeeshan Ansari", "to": "DC",  "pWAR": -0.35, "salary": 0.40, "market": 0.08, "surplus": -0.32, "role": "Bowler"}
+   ],
+   "rows": [
+    {"team": "SRH", "xii_no": 0, "xii_yes": 0, "top4_no": 0, "top4_yes": 0, "title_no": 0, "title_yes": 0, "purse_no": 0, "purse_yes": 0, "assets": 0, "util": 0},
+    {"team": "DC",  "xii_no": 0, "xii_yes": 0, "top4_no": 0, "top4_yes": 0, "title_no": 0, "title_yes": 0, "purse_no": 0, "purse_yes": 0, "assets": 0, "util": 0}
+   ]
+  },  
+  {
    "year": 2026,
    "label": "Sanju Samson to Chennai, Jadeja and Curran to Rajasthan",
    "note": "The largest swap of the window.",
