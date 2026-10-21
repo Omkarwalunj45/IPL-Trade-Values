@@ -14,7 +14,8 @@
      "salary": 15.0,
      "market": 8.89,
      "surplus": -6.11,
-     "role": "WK-Batter"
+     "role": "WK-Batter",
+     "prev": 27.0
     },
     {
      "player": "Kuldeep Yadav",
@@ -23,7 +24,8 @@
      "salary": 13.5,
      "market": 6.92,
      "surplus": -6.58,
-     "role": "Bowler"
+     "role": "Bowler",
+     "prev": 13.25
     }
    ],
    "rows": [
@@ -69,7 +71,8 @@
      "salary": 5.0,
      "market": 5.78,
      "surplus": 0.78,
-     "role": "Bowler"
+     "role": "Bowler",
+     "prev": 10.75
     },
     {
      "player": "Zeeshan Ansari",
@@ -78,7 +81,8 @@
      "salary": 0.4,
      "market": 0.08,
      "surplus": -0.32,
-     "role": "Bowler"
+     "role": "Bowler",
+     "prev": 0.4
     }
    ],
    "rows": [
