@@ -120,6 +120,14 @@ def evaluate(tA, tB, a_gets, b_gets, sal):
     mf = lambda n: float(market_fair2(PA[PA.player == n].iloc[0], pm2))
     out = dict(A=tA, B=tB, players=[], rows=[], holes=[], infeasible=infeasible,
                unaffordable=[t for t in (tA, tB) if p1.loc[t,'purse'] < 0])
+    # A traded player already on his club's projected release list frees no extra money:
+    # the no-trade purse counted his salary as released. Say so, or the purse looks stuck.
+    out['purse_notes'] = []
+    for n, frm in [(n, tB) for n in a_gets] + [(n, tA) for n in b_gets]:
+        if n in C['REL'].get(frm, []):
+            r = PW[(PW.player == n) & (PW.team == frm)]
+            s0 = float(r.salary.iloc[0]) if len(r) and pd.notna(r.salary.iloc[0]) else salary_of(n)
+            out['purse_notes'].append(dict(player=n, team=frm, salary=round(s0, 2)))
     for n in a_gets + b_gets:
         r = PA[PA.player == n].iloc[0]; s = sal.get(n, salary_of(n))
         out['players'].append(dict(player=n, to=tA if n in a_gets else tB, pWAR=round(float(r.pWAR),2),
