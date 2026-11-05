@@ -58,7 +58,16 @@ TEAM_MAP = {"Chennai Super Kings":"CSK","Delhi Capitals":"DC","Gujarat Titans":"
  "Kolkata Knight Riders":"KKR","Lucknow Super Giants":"LSG","Mumbai Indians":"MI",
  "Punjab Kings":"PBKS","Rajasthan Royals":"RR","Royal Challengers Bangalore":"RCB",
  "Royal Challengers Bengaluru":"RCB","Sunrisers Hyderabad":"SRH"}
-
+# Players with no IPL ball-by-ball history have no row in build_players(), so the
+# inner join below silently drops them and they cannot be picked in the simulator.
+# Overseas and domestic signings yet to debut get a hand-built row: slot and phases
+# from how they are used in their home league, rates left at 0 so pWAR drives value.
+DEBUTANTS = [
+    dict(player='Jack Edwards', last_team='SRH', nat_slot=6, phases={'Middle'},
+         can_bowl=True, overseas=1, role='All-rounder', sal_cr=3.0, is_wk=False,
+         bat_rate=0.0, bowl_rate=0.0, nat_pos=6.0,
+         wbatRAR=0.0, wbf=0.0, wbowlRAR=0.0, wbb=0.0, bf_tot=0.0, bb_tot=0.0),
+]
 # ------------------------------------------------ SLOT EXPOSURE (Statsguru, 581 innings)
 _INNS = 581
 _BAT_BF  = {1:24070/2, 2:24070/2, 3:10561, 4:9915, 5:7926, 6:5777, 7:4067, 8:2362}
@@ -274,6 +283,8 @@ def build_players_pwar(verbose=False):
        converted back:  rate = pWAR * RPW / expected_balls, then split between
        batting and bowling in the proportion the player actually plays them."""
     P=build_players(verbose=False)
+    if DEBUTANTS:
+      P = pd.concat([P, pd.DataFrame(DEBUTANTS)], ignore_index=True)
     W=pd.read_csv(PWAR_PATH); W['player']=fix(W.player)
     if 'pWAR_final' in W.columns: W['pWAR']=W.pWAR_final
     W=W[['player','pWAR','ipl_balls_faced','ipl_balls_bowled','balls_eq','team','bat_group','bowl_phase','role','salary','overseas','capped']]
