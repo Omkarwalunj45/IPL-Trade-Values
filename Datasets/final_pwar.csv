@@ -42,7 +42,7 @@ Kagiso Rabada,2.04,2.07,2.11,GT,Bowler,10.75,1,1,retained,1368,1072,1611.160976,
 Tilak Varma,2.285,2.01,1.73,MI,Batter,8,1,0,retained,1300,1491,1638.202439,IPL+T20I,700,4,5,Death,spin bowler,Middle,596,2.13,-0.12,2.02
 Eshan Malinga,1.984,1.73,1.83,SRH,Bowler,1.2,1,1,retained,1109,325,1182.719512,IPL+T20I,9,414,10,Death+Middle+Powerplay,pace bowler,Tail,686,1.69,0.04,1.71
 Rashid Khan,1.92,1.91,1.59,GT,Allrounder,18,1,1,retained,1889,1512,2231.965854,IPL+T20I,128,843,8,Death+Middle,spin bowler,Lower,918,2.05,-0.14,1.93
-Prince Yadav,1.915,1.92,2.07,LSG,Bowler,0.3,0,0,retained,1035,0,1035,IPL only,11,383,10,Death+Middle+Powerplay,pace bowler,Tail,641,1.86,0.06,1.91
+Prince Yadav,2.015,1.92,2.07,LSG,Bowler,0.3,0,0,retained,1035,0,1035,IPL only,11,383,10,Death+Middle+Powerplay,pace bowler,Tail,641,1.86,0.06,1.91
 Noor Ahmad,1.87,1.9,2.05,CSK,Bowler,10,1,1,retained,1635,732,1801.039024,IPL+T20I,44,753,10,Middle,spin bowler,Tail,838,1.84,0.06,1.84
 Ryan Rickelton,1.835,1.86,1.85,MI,WK-Batter,1,1,1,retained,1123,1000,1349.829268,IPL+T20I,460,,1,,,Opener,663,1.87,-0.01,1.81
 Ayush Mhatre,1.83,1.83,1.92,CSK,Allrounder,0.3,0,0,retained,593,0,593,IPL only,240,,3,,,No3,353,1.79,0.04,1.83
@@ -65,7 +65,7 @@ Nitish Kumar Reddy,1.425,1.46,1.68,SRH,Allrounder,6,1,0,retained,1537,104,1560.5
 Lungi Ngidi,1.41,1.42,1.25,DC,Bowler,2,1,1,sold,727,1177,993.9780488,IPL+T20I,9,250,10,Death+Middle+Powerplay,pace bowler,Tail,468,1.49,-0.07,1.4
 Sameer Rizvi,1.225,1.67,2.03,DC,Batter,0.95,0,0,retained,714,0,714,IPL only,293,,4,,,Middle,421,1.51,0.16,1.55
 Finn Allen,2.16,1.4,1.2,KKR,WK-Batter,2,1,1,sold,306,873,504.0219512,IPL+T20I,102,,2,,,Opener,204,1.49,-0.09,1.41
-Mohsin Khan,1.295,1.3,1.41,LSG,Bowler,4,0,0,retained,601,0,601,IPL only,5,348,11,Death+Middle+Powerplay,pace bowler,Tail,248,1.26,0.04,1.29
+Mohsin Khan,1.695,1.3,1.41,LSG,Bowler,4,0,0,retained,601,0,601,IPL only,5,348,11,Death+Middle+Powerplay,pace bowler,Tail,248,1.26,0.04,1.29
 Ayush Badoni,1.16,1.32,1.52,LSG,Batter,4,0,0,retained,1031,0,1031,IPL only,515,28,5,Death+Middle,spin bowler,Middle,488,1.23,0.09,1.26
 Sakib Hussain,1.12,1.25,1.22,SRH,Bowler,0.3,0,0,sold,543,0,543,IPL only,,181,,Death+Middle+Powerplay,pace bowler,,362,1.27,-0.02,1.3
 Vaibhav Arora,1.02,1.21,1.02,KKR,Bowler,1.8,0,0,retained,1334,0,1334,IPL only,12,645,10,Death+Powerplay,pace bowler,Tail,677,1.29,-0.08,1.33
@@ -323,7 +323,7 @@ Matt Henry,-0.395,-0.37,-0.55,CSK,Bowler,2,1,1,sold,282,1239,563.0414634,IPL+T20
 Danish Malewar,-0.435,-0.45,-0.53,MI,Batter,0.3,0,0,sold,15,0,15,thin,5,,2,,,Opener,10,-0.41,-0.04,-0.42
 Simarjeet Singh,-0.46,-0.48,-0.6,,Bowler,0.3,0,0,unsold,208,0,208,IPL only,7,133,11,Death+Middle+Powerplay,pace bowler,Tail,68,-0.43,-0.05,-0.44
 Auqib Nabi,-0.483,-0.48,-0.48,DC,Allrounder,8.4,0,0,sold,219,0,219,IPL (war_final),4,69,8.5,Powerplay,pace bowler,Lower,146,-0.48,0,-0.48
-Mayank Yadav,-0.55,-1.16,-1.34,LSG,Bowler,11,0,0,retained,329,75,346.0121951,IPL only,5,170,9,Middle+Powerplay,pace bowler,Tail,154,-1.08,-0.08,-1.12
+Mayank Yadav,1.05,-1.16,-1.34,LSG,Bowler,11,0,0,retained,329,75,346.0121951,IPL only,5,170,9,Middle+Powerplay,pace bowler,Tail,154,-1.08,-0.08,-1.12
 Akash Deep,-0.55,-0.52,-0.39,KKR,Bowler,1,1,0,sold,255,0,255,IPL only,4,135,9.5,Death+Middle+Powerplay,pace bowler,Tail,116,-0.57,0.05,-0.58
 Rasikh Salam,0.565,-0.61,-0.32,RCB,Bowler,6,0,0,retained,687,0,687,IPL (war_final),32,327,9,Death+Middle+Powerplay,pace bowler,Lower,328,-0.61,0,-0.61
 Sai Kishore,0.98,-0.62,-0.54,GT,Bowler,2,0,0,retained,644,0,644,IPL (war_final),16,351,10,Death+Middle,spin bowler,Lower,277,-0.62,0,-0.62
