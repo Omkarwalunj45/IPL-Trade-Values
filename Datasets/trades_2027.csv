@@ -1,15 +1,15 @@
-trade,label,player,from_team,to_team,fee,prev_fee
-1,"RR-LSG: Shami and Siddharth to Rajasthan, Curran to Lucknow",Manimaran Siddharth,LSG,RR,0.75,0.75
-1,"RR-LSG: Shami and Siddharth to Rajasthan, Curran to Lucknow",Mohammad Shami,LSG,RR,8.0,10.0
-1,"RR-LSG: Shami and Siddharth to Rajasthan, Curran to Lucknow",Sam Curran,RR,LSG,2.4,2.4
-2,SRH-GT: Harshal Patel to Gujarat (all cash),Harshal Patel,SRH,GT,4.0,8.0
-3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Jack Edwards,SRH,CSK,3.0,3.0
-3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Khaleel Ahmed,CSK,SRH,4.8,4.8
-3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Liam Livingstone,SRH,CSK,6.0,13.0
-3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Nathan Ellis,CSK,SRH,2.0,2.0
-4,"DC-SRH: Natarajan to Hyderabad, Zeeshan Ansari to Delhi",T Natarajan,DC,SRH,5.0,10.75
-4,"DC-SRH: Natarajan to Hyderabad, Zeeshan Ansari to Delhi",Zeeshan Ansari,SRH,DC,0.4,0.4
-5,"MI-PBKS: Hardik Pandya to Punjab, Arshdeep Singh to Mumbai",Arshdeep Singh,PBKS,MI,18.0,18.0
-5,"MI-PBKS: Hardik Pandya to Punjab, Arshdeep Singh to Mumbai",Hardik Pandya,MI,PBKS,18.0,16.5
-6,"DC-LSG: Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",Kuldeep Yadav,DC,LSG,13.5,13.25
-6,"DC-LSG: Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",Rishabh Pant,LSG,DC,15.0,27.0
+trade,label,player,from_team,to_team,fee,prev_fee,date
+1,"DC-LSG: Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",Kuldeep Yadav,DC,LSG,13.5,13.25,23 June 2026
+1,"DC-LSG: Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",Rishabh Pant,LSG,DC,15.0,27.0,23 June 2026
+2,"DC-SRH: Natarajan to Hyderabad, Zeeshan Ansari to Delhi",T Natarajan,DC,SRH,5.0,10.75,14 October 2026
+2,"DC-SRH: Natarajan to Hyderabad, Zeeshan Ansari to Delhi",Zeeshan Ansari,SRH,DC,0.4,0.4,14 October 2026
+3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Jack Edwards,SRH,CSK,3.0,3.0,5 November 2026
+3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Khaleel Ahmed,CSK,SRH,4.8,4.8,5 November 2026
+3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Liam Livingstone,SRH,CSK,6.0,13.0,5 November 2026
+3,"CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",Nathan Ellis,CSK,SRH,2.0,2.0,5 November 2026
+4,"MI-PBKS: Hardik Pandya to Punjab, Arshdeep Singh to Mumbai",Arshdeep Singh,PBKS,MI,18.0,18.0,11 November 2026
+4,"MI-PBKS: Hardik Pandya to Punjab, Arshdeep Singh to Mumbai",Hardik Pandya,MI,PBKS,18.0,16.35,11 November 2026
+5,"RR-LSG: Shami and Siddharth to Rajasthan, Curran to Lucknow",Manimaran Siddharth,LSG,RR,0.75,0.75,17 November 2026
+5,"RR-LSG: Shami and Siddharth to Rajasthan, Curran to Lucknow",Mohammad Shami,LSG,RR,8.0,10.0,17 November 2026
+5,"RR-LSG: Shami and Siddharth to Rajasthan, Curran to Lucknow",Sam Curran,RR,LSG,2.4,2.4,17 November 2026
+6,SRH-GT: Harshal Patel to Gujarat (all cash),Harshal Patel,SRH,GT,4.0,8.0,November 2026
