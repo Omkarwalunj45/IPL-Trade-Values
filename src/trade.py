@@ -258,12 +258,27 @@ def purse_and_slots(P, releases, trades=None):
         committed=float(on_books.salary.fillna(0).sum())
         computed=CAP-committed
         base=OFF.get(tm, computed)
-        # the hypothetical trade, on top of wherever the club actually stands
-        out=sum(float(sq[sq.player==t['player']].salary.iloc[0])
-                for t in trades if t['from']==tm and (sq.player==t['player']).any())
+        # The IPL rule, stated plainly: the SELLING club frees the player's FULL
+        # ORIGINAL fee, and the BUYING club is charged the NEW negotiated fee. The
+        # difference simply leaves the league's books -- that is why Delhi freed
+        # 10.75 on Natarajan while Hyderabad paid only 5.00.
+        #
+        # The original fee used to be read out of the selling club's own squad
+        # rows, which silently returned ZERO whenever the player was not currently
+        # listed there -- an all-cash sale with nobody coming back the other way,
+        # or any evaluation run against data where the move has already been
+        # applied. Harshal Patel left Hyderabad for four crore and Hyderabad's
+        # purse did not move at all. The fee is now looked up across the whole
+        # player table, with an explicit prev_fee on the trade winning if given.
+        def _orig(t):
+            if t.get('prev_fee') is not None: return float(t['prev_fee'])
+            r=P[P.player==t['player']]
+            if len(r) and pd.notna(r.salary.iloc[0]): return float(r.salary.iloc[0])
+            return float(t.get('new_salary') or 0.0)
+        out=sum(_orig(t) for t in trades if t['from']==tm)
         inn=sum(float(t['new_salary']) for t in trades if t['to']==tm)
         p=base+out-inn
-        n_out=sum(1 for t in trades if t['from']==tm and (sq.player==t['player']).any())
+        n_out=sum(1 for t in trades if t['from']==tm)
         n_in=sum(1 for t in trades if t['to']==tm)
         final=len(sq)-n_out+n_in-len(rel)
         rows.append(dict(team=tm,committed=round(committed,2),computed=round(computed,2),
