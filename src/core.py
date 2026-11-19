@@ -21,6 +21,109 @@ def cr(x):
     if not isinstance(x,str) or str(x).strip() in ('--','','-','nan'): return np.nan
     v=float(re.sub(r'[^0-9.]','',str(x))); return v/100 if ' L' in str(x) else v
 
+SEASON=2027
+
+USE_ANNOUNCED_RELEASES = True
+# Every trade completed so far this cycle happened BEFORE the retention deadline,
+# so the only release information those clubs had was the projection -- that is the
+# world those deals were made in and the world their cards must be priced against.
+# The window is open again until the auction, and a trade made now faces the
+# announced lists. So the resolver is switched by context: the live simulator uses
+# the announced lists, tools/rebuild_featured.py sets this False for historical
+# cards. Nothing about the projection is deleted either way.
+
+def release_list(year=SEASON, strict=False):
+    """The release list for a season, announced if we have it, projected if not.
+
+       Until the franchises announce, the only release list available is the one
+       the model projects, and every purse, vacancy and recovery probability on
+       the site rests on it. Once the real lists are published the projection is
+       no longer the best available answer -- but it must not be deleted, because
+       next season starts in the same position: a window where only a projection
+       exists.
+
+       So the resolver is a fallback, not a replacement. Datasets/release_list_
+       <year>_actual.csv wins whenever it is present and parses; otherwise the
+       projected release_list_<year>.csv is used exactly as before. Dropping the
+       announced file into Datasets is the whole switch-over -- no code changes,
+       and it works unchanged for 2028.
+
+       Returns (DataFrame, source) where source is 'announced' or 'projected'.
+       `strict` raises instead of falling back, for a pipeline run that must not
+       quietly publish projections as fact."""
+    act=_os.path.join(_DATA,'release_list_%d_actual.csv'%year)
+    prj=_os.path.join(_DATA,'release_list_%d.csv'%year)
+    if USE_ANNOUNCED_RELEASES and _os.path.isfile(act):
+        try:
+            d=pd.read_csv(act)
+            if len(d) and {'team','player'} <= set(d.columns):
+                d['player']=fix(d.player)
+                d['team']=d.team.astype(str).str.strip()
+                d=d.dropna(subset=['player']).drop_duplicates(['team','player'])
+                if len(d): return d, 'announced'
+            raise ValueError('%s has no usable team/player rows'%act)
+        except Exception as e:
+            if strict: raise
+            print('! announced release list unusable (%s) -- falling back to the projection'%e)
+    elif strict:
+        raise FileNotFoundError(act)
+    d=pd.read_csv(prj)
+    d['player']=fix(d.player)
+    d['team']=d.team.astype(str).str.strip()
+    return d.drop_duplicates(['team','player']), 'projected'
+
+
+def completed_trades(year=SEASON):
+    """The trades that have actually been done this window, in announcement order.
+
+       Datasets/trades_2027.csv carries one row per player with the trade number
+       he moved in. final_pwar.csv already reflects ALL of them -- a player's team
+       there is where he plays now -- which is right for the simulator, because a
+       user building a new deal should start from today's squads.
+
+       It is wrong for the Featured cards. Trade 4 did not happen in a world where
+       trades 5 and 6 had already been done, so pricing it against today's squads
+       double-counts them: Delhi's purse before Natarajan was not the purse they
+       hold after also doing Pant. rewind(n) returns the moves to reverse to get
+       back to the world immediately before trade n, so each card is built against
+       the state that deal actually faced."""
+    f=_os.path.join(_DATA,'trades_%d.csv'%year)
+    if not _os.path.isfile(f): return pd.DataFrame(
+        columns=['trade','label','player','from_team','to_team','fee','prev_fee'])
+    d=pd.read_csv(f); d['player']=fix(d.player)
+    return d.sort_values(['trade','player']).reset_index(drop=True)
+
+
+def rewind(n, year=SEASON):
+    """Moves to undo so the squads read as they did just BEFORE trade n.
+
+       Returns a list of dicts {player, team, salary}: put that player back on
+       that club at that fee. Trades numbered n and above are reversed, newest
+       first, so applying them in order lands on the pre-trade-n world."""
+    d=completed_trades(year)
+    if not len(d): return []
+    back=d[d.trade>=n].sort_values('trade',ascending=False)
+    return [dict(player=r.player, team=r.from_team,
+                 salary=(None if pd.isna(r.prev_fee) else float(r.prev_fee)))
+            for r in back.itertuples()]
+
+
+def squads_before(n, year=SEASON):
+    """final_pwar rows with team/salary rolled back to just before trade n."""
+    P=players()
+    for m in rewind(n, year):
+        i=P.player==m['player']
+        P.loc[i,'team']=m['team']
+        if m['salary'] is not None: P.loc[i,'salary']=m['salary']
+    return P
+
+
+def release_source(year=SEASON):
+    """'announced' or 'projected', without loading the whole list twice."""
+    return 'announced' if (USE_ANNOUNCED_RELEASES and _os.path.isfile(
+        _os.path.join(_DATA,'release_list_%d_actual.csv'%year))) else 'projected'
+
+
 def players():
     d=pd.read_csv(PWAR)
     d['player']=fix(d.player)
@@ -71,7 +174,20 @@ def archetype_features(P):
     """Scarcity and flexibility -- what a one-variable pWAR regression cannot see."""
     d=P.copy()
     d['nat']=np.where(d.overseas==1,'OS','IN')
-    d['arch']=d.nat+'|'+d.role.fillna('?')+'|'+d.bat_group.fillna('none').astype(str)
+    # A bowling archetype is not just 'Bowler'. Leg-spin and off-spin are not
+    # interchangeable to a side that has lost one, and the auction prices them
+    # differently, so the key carries the DELIVERY TYPE as well. bowl_class comes
+    # from bowl_style in the ball-by-ball data (LB/LBG/LWS -> wrist-spin,
+    # OB/SLA -> finger-spin, the rest pace); where a man has never bowled in the
+    # IPL it falls back to the coarse bowl_kind, and failing that to 'none', so
+    # nobody drops out of the count.
+    _bk=d.get('bowl_class')
+    if _bk is None: _bk=pd.Series(index=d.index,dtype=object)
+    _bk=_bk.fillna(d.bowl_kind.fillna('').astype(str).str.replace(' bowler','',regex=False))
+    _bk=_bk.replace('',pd.NA).fillna('none')
+    d['bowl_class_f']=np.where(d.role.isin(['Bowler','Allrounder']),_bk,'none')
+    d['arch']=(d.nat+'|'+d.role.fillna('?')+'|'+d.bat_group.fillna('none').astype(str)
+               +'|'+d.bowl_class_f)
     cnt=d.arch.value_counts()
     d['arch_n']=d.arch.map(cnt)
     d['scarcity']=1.0/np.sqrt(d.arch_n)              # rarer archetype -> higher

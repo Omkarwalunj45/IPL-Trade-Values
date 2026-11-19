@@ -266,106 +266,6 @@ PWAR_PATH=_os.path.join(_DATA,'final_pwar.csv')
 # These are corrected by hand from how the player is actually used.
 NAT_SLOT_FIX = {'Lhuan-dre Pretorius': 1}
 
-# ---------------------------------------------------------------- DEBUTANTS
-# build_players() is derived entirely from IPL ball-by-ball, so a contracted player
-# who has never played an IPL match has no row there and the inner join above drops
-# him silently. He then never reaches engine.boot()'s squad lists and cannot be
-# picked in the simulator at all -- which is how a 3 crore overseas signing ends up
-# invisible. 35 players on 2027 rosters were in that position.
-#
-# Their rows are rebuilt from rosters_2027_scored.csv, which already carries a
-# role-prior bat_rate and bowl_rate for exactly these players (src = 'Role Prior').
-# Those rates are used as-is rather than recomputed: the recomputation above divides
-# by IPL balls faced and bowled, and for a man with no IPL record both are zero.
-
-_SLOT_BY_ROLE = {'Batter': 3, 'WK-Batter': 4, 'Allrounder': 6, 'All-rounder': 6, 'Bowler': 9}
-# mirrors core.BAT_EXP / core.BOWL_EXP -- duplicated rather than imported to keep
-# this module free of a core dependency, since engine imports both.
-_BAT_EXP = {'Opener': 290.0, 'No3': 254.5, 'Middle': 215.0, 'Lower': 98.0, 'Tail': 13.0}
-_BOWL_EXP = {'Powerplay': 290.0, 'Middle': 270.0, 'Death': 180.0}
-_GROUP_BY_SLOT = {1: 'Opener', 2: 'Opener', 3: 'No3', 4: 'Middle', 5: 'Middle',
-                  6: 'Lower', 7: 'Lower', 8: 'Tail', 9: 'Tail'}
-
-
-def _prior_pwar(w, grp, phases, bat_rate, bowl_rate):
-    """pWAR for a man with no IPL record.
-
-       The pipeline gives these players 0, because pWAR is fitted on IPL and T20I
-       balls and they have neither. 0 is not wrong so much as unusable: it puts a
-       3 crore signing at exactly replacement level and he can never enter an XII.
-
-       Where the roster carries a role-prior rate, that rate is converted the same
-       way the engine converts any rate -- rate x expected exposure / runs-per-win --
-       so the number is the model's own arithmetic rather than a guess. A player who
-       already has a real fitted pWAR keeps it."""
-    _p = _cell(w, 'pWAR')
-    have = bool(_p) and abs(float(_p)) > 1e-9
-    if have:
-        return float(_p)
-    bat = float(bat_rate) * _BAT_EXP.get(grp, 98.0) / RPW
-    usable = [_BOWL_EXP[x] for x in phases if x in _BOWL_EXP]
-    exp = float(np.mean(usable)) if usable else 0.0
-    bowl = float(bowl_rate) * float(exp) / RPW
-    return round(max(bat + bowl, 0.0), 3)
-
-
-def _cell(w, col):
-    """A CSV cell as clean text. A blank reads back as NaN and str(NaN) is 'nan',
-       which is truthy -- that silently turned an empty bowl_phase into a phase
-       literally named 'nan' and produced a NaN pWAR."""
-    if w is None: return ''
-    v = w.get(col)
-    if v is None or pd.isna(v): return ''
-    t = str(v).strip()
-    return '' if t.lower() in ('nan', 'none') else t
-
-
-def _add_debutants(M, P):
-    """Put contracted players with no IPL history back into the squad table."""
-    try:
-        R = pd.read_csv(_os.path.join(_DATA, 'rosters_2027_scored.csv'))
-    except Exception:
-        return M
-    R['player'] = fix(R.player)
-    W = pd.read_csv(PWAR_PATH); W['player'] = fix(W.player)
-    if 'pWAR_final' in W.columns: W['pWAR'] = W.pWAR_final
-    WI = W.set_index('player')
-
-    missing = R[~R.player.isin(set(M.player))]
-    if missing.empty:
-        return M
-
-    rows = []
-    for _, r in missing.iterrows():
-        w = WI.loc[r.player] if r.player in WI.index else None
-        if w is not None and getattr(w, 'ndim', 1) > 1: w = w.iloc[0]
-        role = str(r.get('role') or _cell(w, 'role') or 'Batter')
-        slot = _SLOT_BY_ROLE.get(role, 6)
-        grp = _cell(w, 'bat_group') or _GROUP_BY_SLOT.get(slot, 'Lower')
-        can_bowl = role in ('Bowler', 'Allrounder', 'All-rounder')
-        ph = _cell(w, 'bowl_phase')
-        phases = set(x for x in ph.split('+') if x) if ph else ({'Middle'} if can_bowl else set())
-        br = float(r.bat_rate) if pd.notna(r.get('bat_rate')) else 0.0
-        wr = float(r.bowl_rate) if pd.notna(r.get('bowl_rate')) else 0.0
-        rows.append(dict(
-            player=r.player, last_team=r.team, team=r.team, role=role,
-            nat_slot=slot, nat_pos=float(slot), bat_group=grp, bowl_phase=ph or None,
-            phases=phases, can_bowl=can_bowl, is_wk=(role == 'WK-Batter'),
-            bat_rate=br, bowl_rate=wr if can_bowl else 0.0,
-            overseas=int(float(r.os)) if pd.notna(r.get('os')) else 0,
-            capped=int(float(_cell(w, 'capped') or 0)),
-            salary=float(r.sal) if pd.notna(r.get('sal')) else 0.30,
-            sal_cr=float(r.sal) if pd.notna(r.get('sal')) else 0.30,
-            pWAR=_prior_pwar(w, grp, phases, br, wr if can_bowl else 0.0),
-            ipl_balls_faced=0.0, ipl_balls_bowled=0.0, balls_eq=0.0,
-            wbatRAR=0.0, wbf=0.0, wbowlRAR=0.0, wbb=0.0, bf_tot=0.0, bb_tot=0.0,
-            share_bat=0.5, share_bowl=0.5))
-    D = pd.DataFrame(rows)
-    for c in M.columns:
-        if c not in D.columns: D[c] = np.nan
-    return pd.concat([M, D[M.columns]], ignore_index=True)
-
-
 def build_players_pwar(verbose=False):
     """Same squad structure as build_players -- natural slot, phases, keeper,
        overseas, all constraints unchanged -- but the VALUE comes from pWAR.
@@ -376,7 +276,13 @@ def build_players_pwar(verbose=False):
     P=build_players(verbose=False)
     W=pd.read_csv(PWAR_PATH); W['player']=fix(W.player)
     if 'pWAR_final' in W.columns: W['pWAR']=W.pWAR_final
-    W=W[['player','pWAR','ipl_balls_faced','ipl_balls_bowled','balls_eq','team','bat_group','bowl_phase','role','salary','overseas','capped']]
+    _keep=['player','pWAR','ipl_balls_faced','ipl_balls_bowled','balls_eq','team',
+           'bat_group','bowl_phase','role','salary','overseas','capped']
+    # delivery type has to reach the squad frame or a bowling hole cannot say what
+    # kind of bowler would fill it
+    for _c in ('bowl_class','bowl_kind'):
+        if _c in W.columns: _keep.append(_c)
+    W=W[_keep]
     P=P.drop(columns=[c for c in ['team','salary','overseas','capped','role'] if c in P.columns],errors='ignore')
     M=P.merge(W,on='player',how='inner')
     bf=M.ipl_balls_faced.fillna(0); bb=M.ipl_balls_bowled.fillna(0)
@@ -387,7 +293,6 @@ def build_players_pwar(verbose=False):
     M['bat_rate']=np.where(bf>0, RAR*M.share_bat/bf.replace(0,np.nan), 0.0)
     M['bowl_rate']=np.where(bb>0, RAR*M.share_bowl/bb.replace(0,np.nan), 0.0)
     M[['bat_rate','bowl_rate']]=M[['bat_rate','bowl_rate']].fillna(0.0)
-    M=_add_debutants(M,P)
     M['overseas']=M.overseas.fillna(0).astype(int)
     for _p, _s in NAT_SLOT_FIX.items():
         M.loc[M.player == _p, 'nat_slot'] = _s
@@ -396,12 +301,31 @@ def build_players_pwar(verbose=False):
             len(M),M.bat_rate.min(),M.bat_rate.max(),M.bowl_rate.min(),M.bowl_rate.max()))
     return M
 
+_REL_CACHE={}
+
+def _released(team):
+    """Names the club has released, from the resolved release list."""
+    if not _REL_CACHE:
+        try:
+            from core import release_list
+            rel,_src=release_list()
+            for t,g in rel.groupby('team'): _REL_CACHE[t]=set(g.player)
+        except Exception:
+            _REL_CACHE['__none__']=set()
+    return _REL_CACHE.get(team,set())
+
+
 def squad_pwar(P, team, add=(), drop=(), fillers=True):
     """Squad after a trade.  A club that loses its only opener does not cease to
        exist: it goes to the auction with a hole it must fill.  So replacement-level
        cover (pWAR 0) is always available for every slot, which keeps the XII legal
        and turns the gap into a vacancy the auction then has to solve."""
-    names = set(P[P.team==team].player) - set(drop) | set(add)
+    # Released players are NOT squad members. final_pwar's team column is the
+    # pre-release squad -- that is correct as a universe, but a man the club has
+    # already let go cannot be picked in its best XII, and leaving him there both
+    # inflates the XII and hides the hole his departure actually created. SRH's
+    # XII was still opening with Travis Head a week after they released him.
+    names = set(P[P.team==team].player) - _released(team) - set(drop) | set(add)
     sq = P[P.player.isin(names)].reset_index(drop=True)
     if not fillers:
         return sq

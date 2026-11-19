@@ -36,14 +36,25 @@ def _auction(C, vac_by_team, purse, slots, sims=45, seed=7):
     pool['bat_rate'] = pool.pWAR / eb; pool['bowl_rate'] = pool.pWAR / 280.
     pool['rel'] = np.clip(pool.balls_eq.fillna(200) / 1000, .1, .9)
     pool['capped_f'] = np.where(pool.capped.fillna(0) == 1, 'CAPPED', 'UNCAPPED')
-    pool['kind'] = pool.bowl_kind.fillna('pace'); pool['role'] = pool.role.fillna('Batter')
+    # coarse spin/pace, to match how a bowling requirement is gated in trade.vacancies
+    _bc = (pool['bowl_class'] if 'bowl_class' in pool.columns
+           else pd.Series(index=pool.index, dtype=object))
+    _bc = _bc.fillna(pool.bowl_kind.fillna('').astype(str).str.replace(' bowler','',regex=False))
+    pool['kind'] = np.where(_bc.astype(str).str.contains('spin'), 'spin', 'pace')
+    pool['role'] = pool.role.fillna('Batter')
     pool['ipl_bf'] = pool.ipl_balls_faced.fillna(0); pool['ipl_bb'] = pool.ipl_balls_bowled.fillna(0)
     pool['sal'] = pool.salary; pool['overseas'] = pool.overseas.fillna(0)
-    rows = [dict(team=t, unit='bat', role=r.slot, occupant=r.occupant,
-                 rate=r.pWAR / EX.get(r.slot, 150.), par=r.par / EX.get(r.slot, 150.),
-                 exposure=EX.get(r.slot, 150.), req_kind=None,
-                 incumbent_rate=r.pWAR / EX.get(r.slot, 150.))
-            for t, v in vac_by_team.items() for r in v.itertuples() if r.slot in EX]
+    from trade import BOWL_EX
+    rows = []
+    for t, v in vac_by_team.items():
+        for r in v.itertuples():
+            unit = getattr(r, 'unit', 'bat')
+            ex = (BOWL_EX if unit == 'bowl' else EX).get(r.slot)
+            if ex is None: continue
+            rows.append(dict(team=t, unit=unit, role=r.slot, occupant=r.occupant,
+                             rate=r.pWAR / ex, par=r.par / ex, exposure=ex,
+                             req_kind=getattr(r, 'req_kind', None),
+                             incumbent_rate=r.pWAR / ex))
     if not rows:
         return {t: 0.0 for t in vac_by_team}, pd.DataFrame()
     R = pd.DataFrame(rows).reset_index(drop=True)
@@ -69,14 +80,16 @@ def boot():
     c['PA'] = PA; c['pm2'] = price_model2(P); c['PW'] = build_players_pwar()
     c['bb'] = pd.read_csv(os.path.join(DATA, 'bench_bat.csv'))
     c['bw'] = pd.read_csv(os.path.join(DATA, 'bench_bowl.csv'))
-    rel = pd.read_csv(os.path.join(DATA, 'release_list_2027.csv'))
-    rel['player'] = fix(rel.player)
+    from core import release_list
+    rel, c['rel_source'] = release_list()
     c['REL'] = rel.groupby('team').player.apply(list).to_dict()
     c['teams'] = sorted(c['PW'].team.dropna().unique())
     c['base'] = {t: vacancies(c['PW'], t, c['bb'], c['bw']) for t in c['teams']}
     c['k'] = 2.8 / np.mean([c['base'][t][1] for t in c['teams']])
     c['p0'] = purse_and_slots(c['PW'], c['REL'])
+    # par by role, batting slots AND bowling phases -- draw_entrants needs both now
     c['par'] = dict(zip(c['bb'].bat_group, c['bb'].par_pWAR))
+    c['par'].update(dict(zip(c['bw'].phase, c['bw'].par_pWAR)))
     c['squads'] = c['PW'].groupby('team').player.apply(lambda s: sorted(s)).to_dict()
     # NO-TRADE STATE: every squad also goes to the auction and fills what it can.
     # Both states must be measured the same way, otherwise the post-trade side gets
@@ -120,14 +133,6 @@ def evaluate(tA, tB, a_gets, b_gets, sal):
     mf = lambda n: float(market_fair2(PA[PA.player == n].iloc[0], pm2))
     out = dict(A=tA, B=tB, players=[], rows=[], holes=[], infeasible=infeasible,
                unaffordable=[t for t in (tA, tB) if p1.loc[t,'purse'] < 0])
-    # A traded player already on his club's projected release list frees no extra money:
-    # the no-trade purse counted his salary as released. Say so, or the purse looks stuck.
-    out['purse_notes'] = []
-    for n, frm in [(n, tB) for n in a_gets] + [(n, tA) for n in b_gets]:
-        if n in C['REL'].get(frm, []):
-            r = PW[(PW.player == n) & (PW.team == frm)]
-            s0 = float(r.salary.iloc[0]) if len(r) and pd.notna(r.salary.iloc[0]) else salary_of(n)
-            out['purse_notes'].append(dict(player=n, team=frm, salary=round(s0, 2)))
     for n in a_gets + b_gets:
         r = PA[PA.player == n].iloc[0]; s = sal.get(n, salary_of(n))
         out['players'].append(dict(player=n, to=tA if n in a_gets else tB, pWAR=round(float(r.pWAR),2),

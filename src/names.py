@@ -101,3 +101,13 @@ def fix(s):
     encoding and whitespace damage that `.str.strip()` cannot see.
     """
     return s.map(one)
+
+# Spelling variants from the announced IPL 2027 release lists. Verified one by
+# one against the squad each man was released from; Dian Forrester, Keshav
+# Maharaj, Luvnith Sisodia, Kulwant Khejroliya, Emanjot Chahal, Rehan Ahmad,
+# Tejasvi Singh and CSK's Kuldip Yadav are deliberately NOT mapped -- they are
+# absent from final_pwar.csv entirely, not misspelt. CSK's Kuldip Yadav in
+# particular is a different man from DC's Kuldeep Yadav.
+RELEASE_ALIAS = {'Mohammad Shami': 'Mohammed Shami', 'Mohammad Izhar': 'Mohammed Salahuddin Izhar', 'Navdeep Siani': 'Navdeep Saini', 'D Madhushanka': 'Dilshan Madushanka', 'Prithviraj Yarra': 'Prithvi Raj Yarra', 'D Chameera': 'Dushmantha Chameera', 'Yudhvir Charak': 'Yudhvir Singh', 'Aakash Madhwal': 'Akash Madhwal'}
+
+ALIAS.update(RELEASE_ALIAS)

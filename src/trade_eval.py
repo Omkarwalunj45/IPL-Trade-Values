@@ -58,8 +58,29 @@ def par_table():
     return p.to_dict()
 
 def rosters():
-    r=pd.read_csv(_os.path.join(_DATA,'rosters_2027_scored.csv'))
-    return r[r.player!='Ajinkya Rahane'][['team','player']]
+    """Who is actually still on each squad.
+
+       The pre-release squad is final_pwar.csv's `team` column: that is the one
+       place a player's club is kept up to date, including after a trade. The
+       resolved release list is subtracted from it.
+
+       It used to be built from rosters_2027_scored.csv plus the projected
+       release list, but that file is the retained list UNDER THE PROJECTION and
+       the projected list carries pre-trade clubs, so a man who was projected to
+       be released and then traded instead (Livingstone, Pant, Hardik, Curran,
+       Siddharth, Harshal) came back wearing his old shirt. Sourcing the squad
+       from one column removes that whole class of drift."""
+    from core import release_list
+    P=pd.read_csv(_os.path.join(_DATA,'final_pwar.csv'))
+    P['player']=fix(P.player)
+    pre=P[P.team.notna() & (P.team.astype(str).str.strip()!='')][['team','player']].copy()
+    pre['team']=pre.team.astype(str).str.strip()
+    pre=pre.drop_duplicates(['team','player'])
+    rel,_src=release_list()
+    gone=set(map(tuple,rel[['team','player']].values))
+    out=pre[[ (t,pl) not in gone for t,pl in zip(pre.team,pre.player) ]]
+    return out[out.player!='Ajinkya Rahane'].reset_index(drop=True)
+
 
 def squad_of(P, roster, team, add=(), drop=(), fillers=True):
     names=set(roster[roster.team==team].player) - set(drop) | set(add)

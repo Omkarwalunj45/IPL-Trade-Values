@@ -93,8 +93,16 @@ elif TAB == "Trade simulator":
         st.session_state["_eng"] = B
         b.empty()
     TEAMS, SQ = B['teams'], B['squads']
+    # Every purse, vacancy and recovery figure below rests on who gets released.
+    # Say which basis is in use, so a projection is never read as a fact.
+    _rs = B.get('rel_source', 'projected')
+    _basis = ('Purses and vacancies use the <b>announced</b> release lists.'
+              if _rs == 'announced' else
+              'Releases are <b>projected</b> by the model, not yet announced, '
+              'so purses and vacancies are estimates.')
     st.markdown('<div class="sechead">Trade Simulator</div><p>Build any deal between two squads. '
-                'Salaries pre-fill from the 2026 contract and stay editable.</p>', unsafe_allow_html=True)
+                'Salaries pre-fill from the 2026 contract and stay editable. '
+                + _basis + '</p>', unsafe_allow_html=True)
     c1, c2 = st.columns(2)
     A = c1.selectbox("Team A", TEAMS, index=TEAMS.index('CSK'))
     B_ = c2.selectbox("Team B", [t for t in TEAMS if t != A], index=0)

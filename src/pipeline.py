@@ -40,14 +40,31 @@ def load_state():
     ros=ros[ros.player!='Ajinkya Rahane'].copy()
     ros['player']=fix(ros.player)
     ros=ros[['team','player','role','sal']].rename(columns={'sal':'salary'}).drop_duplicates(['team','player'])
-    rel=pd.read_csv(_os.path.join(_DATA,'release_list_2027.csv'))
-    rel['player']=fix(rel.player)
+    from core import release_list
+    rel,_src=release_list()
+    for _c in ('role','sal'):
+        if _c not in rel.columns: rel[_c]=np.nan
     rel=rel[['team','player','role','sal']].rename(columns={'sal':'salary'}).drop_duplicates(['team','player'])
+    # The pre-release squad is fixed: it is the retained file plus the PROJECTED
+    # list. The resolved list only decides who leaves it, so a man the projection
+    # wrongly released does not fall out of the squad entirely.
+    _pr=pd.read_csv(_os.path.join(_DATA,'release_list_2027.csv'))
+    _pr['player']=fix(_pr.player)
+    _pr=_pr[['team','player','role','sal']].rename(columns={'sal':'salary'}).drop_duplicates(['team','player'])
     pool=pd.read_csv(_os.path.join(_DATA,'pool_2027_scored.csv'))
     pool['player']=fix(pool.player)
-    # PRE-release squad = post-release roster + the players we predict will be released
-    squad=pd.concat([ros.assign(status='keep'),rel.assign(status='release')],ignore_index=True)
-    squad=squad.drop_duplicates(['team','player'])
+    # PRE-release squad = post-release roster + the players released. With the
+    # announced list in place those are facts; without it they are the projection.
+    squad=pd.concat([ros,_pr],ignore_index=True).drop_duplicates(['team','player'])
+    _gone=set(map(tuple,rel[['team','player']].values))
+    squad['status']=np.where(
+        [ (t,p) in _gone for t,p in zip(squad.team,squad.player) ],'release','keep')
+    # anyone released who was never in the pre-release union (a name the projection
+    # did not know about) still has to be counted as leaving
+    _extra=rel[~rel.apply(lambda r:(r.team,r.player) in
+                          set(map(tuple,squad[['team','player']].values)),axis=1)]
+    if len(_extra):
+        squad=pd.concat([squad,_extra.assign(status='release')],ignore_index=True)
     return squad, rel, pool
 
 # ---------------------------------------------------------------- the sequence
