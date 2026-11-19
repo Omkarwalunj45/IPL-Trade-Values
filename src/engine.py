@@ -106,8 +106,14 @@ def salary_of(name):
     C = boot(); r = C['PA'][C['PA'].player == name]
     return float(r.salary.iloc[0]) if len(r) and pd.notna(r.salary.iloc[0]) else 0.0
 
-def evaluate(tA, tB, a_gets, b_gets, sal):
-    """a_gets/b_gets: player names.  sal: {player: negotiated salary}."""
+def evaluate(tA, tB, a_gets, b_gets, sal, prev=None):
+    """a_gets/b_gets: player names.  sal: {player: negotiated salary}.
+
+       prev: {player: fee he was on at the SELLING club}. The seller frees that
+       full amount while the buyer is charged `sal`; the gap leaves the league's
+       books. Without it the current salary is used, which is right for a live
+       hypothetical and wrong when replaying a move already applied to the data."""
+    prev = prev or {}
     from core import market_fair2
     from trade import vacancies, purse_and_slots, simulate
     import trade_eval as TE
@@ -123,8 +129,10 @@ def evaluate(tA, tB, a_gets, b_gets, sal):
     infeasible = [t for t in (tA, tB) if not np.isfinite(aft[t][1])]
     for t in infeasible:
         aft[t] = (aft[t][0], base[t][1], aft[t][2], 'infeasible')
-    trades = ([{'from': tB, 'to': tA, 'player': p, 'new_salary': sal.get(p, salary_of(p))} for p in a_gets] +
-              [{'from': tA, 'to': tB, 'player': p, 'new_salary': sal.get(p, salary_of(p))} for p in b_gets])
+    trades = ([{'from': tB, 'to': tA, 'player': p, 'new_salary': sal.get(p, salary_of(p)),
+                'prev_fee': prev.get(p)} for p in a_gets] +
+              [{'from': tA, 'to': tB, 'player': p, 'new_salary': sal.get(p, salary_of(p)),
+                'prev_fee': prev.get(p)} for p in b_gets])
     p1 = purse_and_slots(PW, C['REL'], trades)
     # ---- POST-TRADE STATE: same auction routine, same settings, every team
     rec, auc = _auction(C, {t: aft[t][2] for t in teams}, p1.purse.to_dict(), p1.slots.to_dict())
