@@ -2,83 +2,6 @@
   "trades": [
     {
       "year": 2027,
-      "label": "CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",
-      "note": "The third completed deal of the window.",
-      "A": "CSK",
-      "B": "SRH",
-      "players": [
-        {
-          "player": "Jack Edwards",
-          "to": "CSK",
-          "pWAR": 0.06,
-          "salary": 3.0,
-          "market": -1.27,
-          "surplus": -4.27,
-          "role": "Allrounder",
-          "prev": 3.0
-        },
-        {
-          "player": "Khaleel Ahmed",
-          "to": "SRH",
-          "pWAR": 1.76,
-          "salary": 4.8,
-          "market": 7.39,
-          "surplus": 2.59,
-          "role": "Bowler",
-          "prev": 4.8
-        },
-        {
-          "player": "Liam Livingstone",
-          "to": "CSK",
-          "pWAR": 0.89,
-          "salary": 6.0,
-          "market": 3.8,
-          "surplus": -2.2,
-          "role": "Allrounder",
-          "prev": 13.0
-        },
-        {
-          "player": "Nathan Ellis",
-          "to": "SRH",
-          "pWAR": 1.06,
-          "salary": 2.0,
-          "market": 3.9,
-          "surplus": 1.9,
-          "role": "Bowler",
-          "prev": 2.0
-        }
-      ],
-      "rows": [
-        {
-          "team": "CSK",
-          "xii_no": 22.53,
-          "xii_yes": 21.04,
-          "top4_no": 34.6,
-          "top4_yes": 29.5,
-          "title_no": 6.1,
-          "title_yes": 4.3,
-          "purse_no": 30.25,
-          "purse_yes": 28.05,
-          "assets": -10.96,
-          "util": -3.05
-        },
-        {
-          "team": "SRH",
-          "xii_no": 26.0,
-          "xii_yes": 27.28,
-          "top4_no": 43.7,
-          "top4_yes": 46.9,
-          "title_no": 12.1,
-          "title_yes": 13.7,
-          "purse_no": 22.95,
-          "purse_yes": 32.15,
-          "assets": 17.96,
-          "util": 4.3
-        }
-      ]
-    },
-    {
-      "year": 2027,
       "label": "RR-LSG: Shami and Siddharth to Rajasthan, Curran to Lucknow",
       "note": "The fourth completed deal of the window.",
       "A": "LSG",
@@ -250,58 +173,78 @@
     },
     {
       "year": 2027,
-      "label": "Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",
-      "note": "The only completed deal of the 2026 window.",
-      "A": "DC",
-      "B": "LSG",
+      "label": "CSK-SRH: Livingstone and Edwards to Chennai, Ellis and Khaleel to Hyderabad",
+      "note": "The third completed deal of the window.",
+      "A": "CSK",
+      "B": "SRH",
       "players": [
         {
-          "player": "Rishabh Pant",
-          "to": "DC",
-          "pWAR": 1.058,
-          "salary": 15.0,
-          "market": 8.89,
-          "surplus": -6.11,
-          "role": "WK-Batter",
-          "prev": 27.0
+          "player": "Jack Edwards",
+          "to": "CSK",
+          "pWAR": 0.06,
+          "salary": 3.0,
+          "market": -1.27,
+          "surplus": -4.27,
+          "role": "Allrounder",
+          "prev": 3.0
         },
         {
-          "player": "Kuldeep Yadav",
-          "to": "LSG",
-          "pWAR": 1.185,
-          "salary": 13.5,
-          "market": 6.92,
-          "surplus": -6.58,
+          "player": "Khaleel Ahmed",
+          "to": "SRH",
+          "pWAR": 1.76,
+          "salary": 4.8,
+          "market": 7.39,
+          "surplus": 2.59,
           "role": "Bowler",
-          "prev": 13.25
+          "prev": 4.8
+        },
+        {
+          "player": "Liam Livingstone",
+          "to": "CSK",
+          "pWAR": 0.89,
+          "salary": 6.0,
+          "market": 3.8,
+          "surplus": -2.2,
+          "role": "Allrounder",
+          "prev": 13.0
+        },
+        {
+          "player": "Nathan Ellis",
+          "to": "SRH",
+          "pWAR": 1.06,
+          "salary": 2.0,
+          "market": 3.9,
+          "surplus": 1.9,
+          "role": "Bowler",
+          "prev": 2.0
         }
       ],
       "rows": [
         {
-          "team": "DC",
-          "xii_no": 17.78,
-          "xii_yes": 17.54,
-          "top4_no": 22.6,
-          "top4_yes": 22.1,
-          "title_no": 3.2,
-          "title_yes": 2.9,
-          "purse_no": 30.9,
-          "purse_yes": 29.15,
-          "assets": -0.02,
-          "util": 0.37
+          "team": "CSK",
+          "xii_no": 22.53,
+          "xii_yes": 21.04,
+          "top4_no": 34.6,
+          "top4_yes": 29.5,
+          "title_no": 6.1,
+          "title_yes": 4.3,
+          "purse_no": 30.25,
+          "purse_yes": 28.05,
+          "assets": -10.96,
+          "util": -3.05
         },
         {
-          "team": "LSG",
-          "xii_no": 19.61,
-          "xii_yes": 20.71,
-          "top4_no": 27.1,
-          "top4_yes": 29.7,
-          "title_no": 5.2,
-          "title_yes": 6.1,
-          "purse_no": 25.6,
-          "purse_yes": 39.1,
-          "assets": 11.77,
-          "util": 2.96
+          "team": "SRH",
+          "xii_no": 26.0,
+          "xii_yes": 27.28,
+          "top4_no": 43.7,
+          "top4_yes": 46.9,
+          "title_no": 12.1,
+          "title_yes": 13.7,
+          "purse_no": 22.95,
+          "purse_yes": 32.15,
+          "assets": 17.96,
+          "util": 4.3
         }
       ]
     },
@@ -362,6 +305,63 @@
         }
       ]
     },
+    {
+      "year": 2027,
+      "label": "Rishabh Pant to Delhi, Kuldeep Yadav to Lucknow",
+      "note": "The only completed deal of the 2026 window.",
+      "A": "DC",
+      "B": "LSG",
+      "players": [
+        {
+          "player": "Rishabh Pant",
+          "to": "DC",
+          "pWAR": 1.058,
+          "salary": 15.0,
+          "market": 8.89,
+          "surplus": -6.11,
+          "role": "WK-Batter",
+          "prev": 27.0
+        },
+        {
+          "player": "Kuldeep Yadav",
+          "to": "LSG",
+          "pWAR": 1.185,
+          "salary": 13.5,
+          "market": 6.92,
+          "surplus": -6.58,
+          "role": "Bowler",
+          "prev": 13.25
+        }
+      ],
+      "rows": [
+        {
+          "team": "DC",
+          "xii_no": 17.78,
+          "xii_yes": 17.54,
+          "top4_no": 22.6,
+          "top4_yes": 22.1,
+          "title_no": 3.2,
+          "title_yes": 2.9,
+          "purse_no": 30.9,
+          "purse_yes": 29.15,
+          "assets": -0.02,
+          "util": 0.37
+        },
+        {
+          "team": "LSG",
+          "xii_no": 19.61,
+          "xii_yes": 20.71,
+          "top4_no": 27.1,
+          "top4_yes": 29.7,
+          "title_no": 5.2,
+          "title_yes": 6.1,
+          "purse_no": 25.6,
+          "purse_yes": 39.1,
+          "assets": 11.77,
+          "util": 2.96
+        }
+      ]
+    };
     {
       "year": 2026,
       "label": "Sanju Samson to Chennai, Jadeja and Curran to Rajasthan",
