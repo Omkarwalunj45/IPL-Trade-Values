@@ -187,6 +187,15 @@ elif TAB == "Player rankings":
                 'one scale.</p>', unsafe_allow_html=True)
     d = pd.read_csv(os.path.join(DATA, "final_pwar.csv"))
     d = d[d.source.astype(str).str.contains("IPL", na=False)].copy()
+    # current club = final_pwar.team (trades already applied) minus the announced /
+    # projected release list; anyone without a club is shown as Released
+    from core import release_list
+    from names import fix as _fix
+    d['player'] = _fix(d.player)
+    _rel, _ = release_list()
+    _gone = set(zip(_rel.team, _rel.player))
+    d['team'] = [('Released' if (pd.isna(t) or (t, p) in _gone) else t)
+                 for t, p in zip(d.team, d.player)]
     d['capped'] = d.capped.map({1: "Capped", 0: "Uncapped"}).fillna("Uncapped")
     d['overseas'] = d.overseas.map({1: "Overseas", 0: "Indian"}).fillna("Indian")
     d = d[['player', 'pWAR_final', 'team', 'role', 'salary', 'capped', 'overseas',
