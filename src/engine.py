@@ -90,7 +90,11 @@ def boot():
     # par by role, batting slots AND bowling phases -- draw_entrants needs both now
     c['par'] = dict(zip(c['bb'].bat_group, c['bb'].par_pWAR))
     c['par'].update(dict(zip(c['bw'].phase, c['bw'].par_pWAR)))
-    c['squads'] = c['PW'].groupby('team').player.apply(lambda s: sorted(s)).to_dict()
+    # released players are in the auction pool, not on a roster -- keep them out of
+    # every 'who can be traded' list
+    c['released'] = {(t, p) for t, ps in c['REL'].items() for p in ps}
+    _on = c['PW'][[(t, p) not in c['released'] for t, p in zip(c['PW'].team, c['PW'].player)]]
+    c['squads'] = _on.groupby('team').player.apply(lambda s: sorted(s)).to_dict()
     # NO-TRADE STATE: every squad also goes to the auction and fills what it can.
     # Both states must be measured the same way, otherwise the post-trade side gets
     # a free lift purely from being the one where the auction was counted.
