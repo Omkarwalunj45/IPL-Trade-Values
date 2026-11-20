@@ -418,6 +418,8 @@ def screen(team, slot, C=None, max_candidates=None, unit='Batting'):
     known = set(C['PA'].player)
     cand = PW[(PW.team != team) & (PW.player.isin(known))
               & (~PW.player.astype(str).str.startswith('Replacement'))].copy()
+    _rel = C.get('released', set())
+    cand = cand[[(t, p) not in _rel for t, p in zip(cand.team, cand.player)]]
     # a player cannot fix a batting hole he is worse than, and a specialist bowler
     # cannot fix one at all -- both filters are about candidacy, not quality
     # a batting hole needs someone who bats, a bowling hole someone who bowls
